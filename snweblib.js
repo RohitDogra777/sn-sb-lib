@@ -1742,25 +1742,37 @@
   ((_globalThis$litElemen2 = globalThis.litElementVersions) !== null && _globalThis$litElemen2 !== void 0 ? _globalThis$litElemen2 : globalThis.litElementVersions = []).push("4.0.4");
 
   var _templateObject$3, _templateObject2$3;
+  // import './fonts/fonts.css';
   /**
    * Service Now Text Component
    * @input label, type
    * @output <sn-wc-text> in dom
    */
+
+  var hasLoadedMaterialSymbolsFont$2 = false;
+  var loadLatoFont = function loadLatoFont() {
+    if (hasLoadedMaterialSymbolsFont$2) {
+      return;
+    }
+    hasLoadedMaterialSymbolsFont$2 = true;
+    var fontSheet = new CSSStyleSheet();
+    fontSheet.replaceSync("\n  @font-face {\n    font-family: 'lato';\n    src: url(https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff) format('woff');\n    font-weight: normal;\n  }");
+    document.adoptedStyleSheets.push(fontSheet);
+  };
   var SnWcText = /*#__PURE__*/function (_LitElement) {
     _inherits(SnWcText, _LitElement);
     function SnWcText() {
       var _this;
       _classCallCheck(this, SnWcText);
       _this = _callSuper(this, SnWcText);
-      _this.styles = {};
+      loadLatoFont();
       return _this;
     }
     _createClass(SnWcText, [{
       key: "render",
       value: function render() {
         var mode = "sn-wc-text";
-        return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["\n    <style>\n     @import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20880');\n      p {\n      font-family:'gilroy-regular', sans-serif !important;\n      }\n </style>\n      <p part=\"sn-wc-text\" class=", ">\n        <slot></slot>\n      </p>\n    "])), [mode].join(" "));
+        return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["\n    <style>\n      p {\n        font-family:'lato' !important;\n      }\n    </style>\n      <p part=\"sn-wc-text\" class=", ">\n        <slot></slot>\n      </p>\n    "])), [mode].join(" "));
       }
     }], [{
       key: "properties",
@@ -1777,7 +1789,7 @@
     }]);
     return SnWcText;
   }(s);
-  _defineProperty(SnWcText, "styles", i$2(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["\n  @font-face {\n    font-family: 'Lato';\n    src: url('data:application/font-woff;charset=utf-8;base64,[Base64 encoded .woff file]') format('woff'),\n        url('data:application/font-woff2;charset=utf-8;base64,[Base64 encoded .woff2 file]') format('woff2'),\n        url('data:application/font-truetype;charset=utf-8;base64,[Base64 encoded .ttf file]') format('truetype');\n     font-weight: normal;\n     font-style: normal;\n  }\n  *{\n    padding: 0;\n    margin: 0;\n  }\n    :host {\n      --sn-wc-font-size: 16px;\n      --sn-wc-text-color: #1f1f1f;\n      --sn-wc-line-height: 24px;\n      --sn-wc-padding-x: 0px;\n      --sn-wc-padding-y: 0px;\n    }\n    .sn-wc-text {\n      font-size: var(--sn-wc-font-size);\n      color: var(--sn-wc-text-color);\n      line-height: var(--sn-wc-line-height);\n      font-family: 'Lato';\n      font-weight:400;\n    }\n  "]))));
+  _defineProperty(SnWcText, "styles", i$2(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["\n  *{\n    padding: 0;\n    margin: 0;\n  }\n    :host {\n      --sn-wc-text-color: #1f1f1f;\n      --sn-wc-line-height: 24px;\n      --sn-wc-padding-x: 0px;\n      --sn-wc-padding-y: 0px;\n    }\n    .sn-wc-text {\n      color: var(--sn-wc-text-color);\n      line-height: var(--sn-wc-line-height);\n    }\n  "]))));
   customElements.define("sn-wc-text", SnWcText);
 
   var ButtonClickEvent = /*#__PURE__*/function (_Event) {
@@ -1803,11 +1815,24 @@
    * @output <sn-wc-link> in dom
    * @args onClick, type, size, target, href
    */
+  var hasLoadedMaterialSymbolsFont$1 = false;
+  var loadGilroyFont$1 = function loadGilroyFont() {
+    if (hasLoadedMaterialSymbolsFont$1) {
+      return;
+    }
+    hasLoadedMaterialSymbolsFont$1 = true;
+    var fontSheet = new CSSStyleSheet();
+    fontSheet.replaceSync("\n  @font-face {\n    font-family: 'gilroy-bold';\n    src: url(https://fonts.cdnfonts.com/s/16219/Gilroy-Bold.woff) format('woff');\n    font-weight: normal;\n  }");
+    document.adoptedStyleSheets.push(fontSheet);
+  };
   var SnWcLink = /*#__PURE__*/function (_LitElement) {
     _inherits(SnWcLink, _LitElement);
     function SnWcLink() {
+      var _this;
       _classCallCheck(this, SnWcLink);
-      return _callSuper(this, SnWcLink);
+      _this = _callSuper(this, SnWcLink);
+      loadGilroyFont$1();
+      return _this;
     }
     _createClass(SnWcLink, [{
       key: "handleButtonClick",
@@ -1843,7 +1868,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n      <style>\n      @import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20880');\n      a,button {\n      font-family:'gilroy-bold', sans-serif1 !important;\n      }\n        .btn {\n            --bs-btn-padding-x: 24px;\n            --bs-btn-padding-y: 4px;\n            --bs-btn-font-family: Lato;\n            --bs-btn-font-size: 16px;\n            --bs-btn-font-weight: bold;\n            --bs-btn-line-height: 1.5;\n            --bs-btn-color: #212529;\n            --bs-btn-bg: transparent;\n            --bs-btn-border-width: 1px;\n            --bs-btn-border-color: #298319;\n            --bs-btn-border-radius: 50rem;\n            --bs-btn-hover-border-color: transparent;\n            --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),\n            --bs-btn-hover-color:  #1f6213;\n            --bs-link-hover-color: #1F6213;\n            --bs-link-color: #298319;\n            --bs-btn-disabled-opacity: 0.65;\n            --bs-btn-focus-box-shadow: 0 0 0 0.25rem\n              rgba(var(--bs-btn-focus-shadow-rgb), 0.5);\n            display: inline-block;\n            padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);\n            font-family: var(--bs-btn-font-family);\n            font-size: var(--bs-btn-font-size);\n            font-weight: var(--bs-btn-font-weight);\n            line-height: var(--bs-btn-line-height);\n            color: var(--bs-btn-color);\n            text-align: center;\n            text-decoration: none;\n            vertical-align: middle;\n            cursor: pointer;\n            user-select: none;\n            border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);\n            border-radius: var(--bs-btn-border-radius);\n            background-color: var(--bs-btn-bg);\n            transition: color 0.15s ease-in-out,\n              background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,\n              box-shadow 0.15s ease-in-out;\n          }\n          .btn:hover {\n            color: var(--bs-btn-hover-color);\n            background-color: var(--bs-btn-hover-bg);\n            border-color: var(--bs-btn-hover-border-color);\n            transform: translateY(-1px);\n          }\n          .btn:focus-visible {\n            color: var(--bs-btn-hover-color);\n            background-color: var(--bs-btn-hover-bg);\n            border-color: var(--bs-btn-hover-border-color);\n            outline: 0;\n            box-shadow: var(--bs-btn-focus-box-shadow);\n          }\n          .btn.active {\n            color: var(--bs-btn-active-color);\n            background-color: var(--bs-btn-active-bg);\n            border-color: var(--bs-btn-active-border-color);\n          }\n\n          .btn-solid {\n            --bs-btn-color: #fff;\n            --bs-btn-bg: #298319;\n            --bs-btn-border-color:var( --bs-btn-border-color);\n            --bs-btn-hover-color: #fff;\n            --bs-btn-hover-bg: #1f6213;\n            --bs-btn-hover-border-color: #1f6213;\n            --bs-btn-focus-shadow-rgb: 212, 38, 119;\n            --bs-btn-active-color: #fff;\n            --bs-btn-active-bg: #1f6213;\n            --bs-btn-active-border-color: #1f6213;\n            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n\n          }\n          .btn-outline {\n            --bs-btn-color: #298319;\n            --bs-btn-border-color: #298319;\n            --bs-btn-hover-color: #1f6213;\n            --bs-btn-hover-bg: #fffff;\n            --bs-btn-hover-border-color: #1f6213;\n            --bs-btn-focus-shadow-rgb: 25, 135, 84;\n            --bs-btn-active-color: #fff;\n            --bs-btn-active-bg: #fff;\n            --bs-btn-active-border-color: #198754;\n            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n            --bs-gradient: none;\n          }\n\n          .btn-link {\n            --bs-btn-font-weight: bold;\n            --bs-btn-color: var(--bs-link-color);\n            --bs-btn-bg: transparent;\n            --bs-btn-border-color: transparent;\n            --bs-btn-hover-color: var(--bs-link-hover-color);\n            --bs-btn-hover-border-color: transparent;\n            --bs-btn-active-color: var(--bs-link-hover-color);\n            --bs-btn-active-border-color: transparent;\n            --bs-btn-box-shadow: none;\n            --bs-btn-focus-shadow-rgb: 212, 38, 119;\n            --bs-btn-padding-x: 0;\n            text-decoration: none;\n          }\n          .btn-link:focus-visible {\n            color: var(--bs-btn-color);\n          }\n          .btn-link:hover {\n            color: var(--bs-btn-hover-color);\n          }\n\n          .btn-lg {\n            --bs-btn-padding-y: 8px;\n            --bs-btn-padding-x: 32px;\n            --bs-btn-font-size: 24px;\n            --bs-btn-border-radius: 50rem;\n          }\n\n          .btn-md {\n            --bs-btn-padding-y: 6px;\n            --bs-btn-padding-x: 28px;\n            --bs-btn-font-size: 18px;\n            --bs-btn-border-radius: 50rem;\n          }\n          .btn-link-md{\n            --bs-btn-font-size:18px;\n            --bs-btn-border-radius: 0.25rem;\n          }\n          .btn-link-lg{\n            --bs-btn-font-size: 32px;\n            --bs-btn-border-radius: 0.5rem;\n          }\n      </style>\n      ", "\n    "])), this.getAnchorTag());
+        return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n      <style>\n      a,button {\n      font-family:'gilroy-bold', sans-serif !important;\n      }\n        .btn {\n            --bs-btn-padding-x: 24px;\n            --bs-btn-padding-y: 4px;\n            --bs-btn-font-family: Lato;\n            --bs-btn-font-size: 16px;\n            --bs-btn-font-weight: bold;\n            --bs-btn-line-height: 1.5;\n            --bs-btn-color: #212529;\n            --bs-btn-bg: transparent;\n            --bs-btn-border-width: 1px;\n            --bs-btn-border-color: #298319;\n            --bs-btn-border-radius: 50rem;\n            --bs-btn-hover-border-color: transparent;\n            --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),\n            --bs-btn-hover-color:  #1f6213;\n            --bs-link-hover-color: #1F6213;\n            --bs-link-color: #298319;\n            --bs-btn-disabled-opacity: 0.65;\n            --bs-btn-focus-box-shadow: 0 0 0 0.25rem\n              rgba(var(--bs-btn-focus-shadow-rgb), 0.5);\n            display: inline-block;\n            padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);\n            font-family: var(--bs-btn-font-family);\n            font-size: var(--bs-btn-font-size);\n            font-weight: var(--bs-btn-font-weight);\n            line-height: var(--bs-btn-line-height);\n            color: var(--bs-btn-color);\n            text-align: center;\n            text-decoration: none;\n            vertical-align: middle;\n            cursor: pointer;\n            user-select: none;\n            border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);\n            border-radius: var(--bs-btn-border-radius);\n            background-color: var(--bs-btn-bg);\n            transition: color 0.15s ease-in-out,\n              background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,\n              box-shadow 0.15s ease-in-out;\n          }\n          .btn:hover {\n            color: var(--bs-btn-hover-color);\n            background-color: var(--bs-btn-hover-bg);\n            border-color: var(--bs-btn-hover-border-color);\n            transform: translateY(-1px);\n          }\n          .btn:focus-visible {\n            color: var(--bs-btn-hover-color);\n            background-color: var(--bs-btn-hover-bg);\n            border-color: var(--bs-btn-hover-border-color);\n            outline: 0;\n            box-shadow: var(--bs-btn-focus-box-shadow);\n          }\n          .btn.active {\n            color: var(--bs-btn-active-color);\n            background-color: var(--bs-btn-active-bg);\n            border-color: var(--bs-btn-active-border-color);\n          }\n\n          .btn-solid {\n            --bs-btn-color: #fff;\n            --bs-btn-bg: #298319;\n            --bs-btn-border-color:var( --bs-btn-border-color);\n            --bs-btn-hover-color: #fff;\n            --bs-btn-hover-bg: #1f6213;\n            --bs-btn-hover-border-color: #1f6213;\n            --bs-btn-focus-shadow-rgb: 212, 38, 119;\n            --bs-btn-active-color: #fff;\n            --bs-btn-active-bg: #1f6213;\n            --bs-btn-active-border-color: #1f6213;\n            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n\n          }\n          .btn-outline {\n            --bs-btn-color: #298319;\n            --bs-btn-border-color: #298319;\n            --bs-btn-hover-color: #1f6213;\n            --bs-btn-hover-bg: #fffff;\n            --bs-btn-hover-border-color: #1f6213;\n            --bs-btn-focus-shadow-rgb: 25, 135, 84;\n            --bs-btn-active-color: #fff;\n            --bs-btn-active-bg: #fff;\n            --bs-btn-active-border-color: #198754;\n            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n            --bs-gradient: none;\n          }\n\n          .btn-link {\n            --bs-btn-font-weight: bold;\n            --bs-btn-color: var(--bs-link-color);\n            --bs-btn-bg: transparent;\n            --bs-btn-border-color: transparent;\n            --bs-btn-hover-color: var(--bs-link-hover-color);\n            --bs-btn-hover-border-color: transparent;\n            --bs-btn-active-color: var(--bs-link-hover-color);\n            --bs-btn-active-border-color: transparent;\n            --bs-btn-box-shadow: none;\n            --bs-btn-focus-shadow-rgb: 212, 38, 119;\n            --bs-btn-padding-x: 0;\n            text-decoration: none;\n          }\n          .btn-link:focus-visible {\n            color: var(--bs-btn-color);\n          }\n          .btn-link:hover {\n            color: var(--bs-btn-hover-color);\n          }\n\n          .btn-lg {\n            --bs-btn-padding-y: 8px;\n            --bs-btn-padding-x: 32px;\n            --bs-btn-font-size: 24px;\n            --bs-btn-border-radius: 50rem;\n          }\n\n          .btn-md {\n            --bs-btn-padding-y: 6px;\n            --bs-btn-padding-x: 28px;\n            --bs-btn-font-size: 18px;\n            --bs-btn-border-radius: 50rem;\n          }\n          .btn-link-md{\n            --bs-btn-font-size:18px;\n            --bs-btn-border-radius: 0.25rem;\n          }\n          .btn-link-lg{\n            --bs-btn-font-size: 32px;\n            --bs-btn-border-radius: 0.5rem;\n          }\n      </style>\n      ", "\n    "])), this.getAnchorTag());
       }
     }], [{
       key: "properties",
@@ -1932,7 +1957,7 @@
     }]);
     return SnWcCard;
   }(s);
-  _defineProperty(SnWcCard, "styles", i$2(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n    ::part(sn-wc-heading) {\n      display: -webkit-box;\n      -webkit-box-orient: vertical;\n      overflow: hidden;\n      text-overflow: ellipses;\n      -webkit-line-clamp: 1;\n      \n    }\n    ::part(sn-wc-text) {\n      color: #1f1f1f;\n      font-family: Lato;\n      font-size: 16px;\n      font-style: normal;\n      font-weight: 400;\n      line-height: 24px;\n    }\n  "]))));
+  _defineProperty(SnWcCard, "styles", i$2(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n    ::part(sn-wc-heading) {\n      display: -webkit-box;\n      -webkit-box-orient: vertical;\n      overflow: hidden;\n      text-overflow: ellipses;\n      -webkit-line-clamp: 1;\n      font-size: 20px;\n      line-height: 28px;\n    }\n    ::part(sn-wc-text) {\n      color: #1f1f1f;\n      font-size: 16px;\n      font-style: normal;\n      font-weight: 400;\n      line-height: 24px;\n    }\n  "]))));
   customElements.define("sn-wc-card", SnWcCard);
 
   var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9;
@@ -1941,6 +1966,17 @@
    * @input label, type
    * @output <sn-wc-heading> in dom
    */
+
+  var hasLoadedMaterialSymbolsFont = false;
+  var loadGilroyFont = function loadGilroyFont() {
+    if (hasLoadedMaterialSymbolsFont) {
+      return;
+    }
+    hasLoadedMaterialSymbolsFont = true;
+    var fontSheet = new CSSStyleSheet();
+    fontSheet.replaceSync("\n  @font-face {\n    font-family: 'gilroy-bold';\n    src: url(https://fonts.cdnfonts.com/s/16219/Gilroy-Bold.woff) format('woff');\n    font-weight: normal;\n  }");
+    document.adoptedStyleSheets.push(fontSheet);
+  };
   var SnWcHeading = /*#__PURE__*/function (_LitElement) {
     _inherits(SnWcHeading, _LitElement);
     function SnWcHeading() {
@@ -1948,6 +1984,7 @@
       _classCallCheck(this, SnWcHeading);
       _this = _callSuper(this, SnWcHeading);
       _this.surface = "Dark";
+      loadGilroyFont();
       return _this;
     }
     _createClass(SnWcHeading, [{
@@ -1977,7 +2014,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    <style>\n    @import url('https://fonts.cdnfonts.com/css/gilroy-bold');\n    *{\n      font-family: 'gilroy-bold';\n    }\n    .sn-wc-heading{\n      font-weight: bold;\n      margin: 0px;\n      padding:0px;\n      margin-bottom: var(--sn-wc-margin-bottom);\n     }\n     .white-surface{\n        color:  #FFFFFF;\n     }\n     .dark-surface{\n        color:  #1f1f1f;\n     }\n    </style>\n    ", "\n    "])), this.getHeading(this.surface));
+        return x(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      font-family: 'gilroy-bold';\n    }\n    .sn-wc-heading{\n      font-weight: bold;\n      margin: 0px;\n      padding:0px;\n      margin-bottom: var(--sn-wc-margin-bottom);\n     }\n     .white-surface{\n        color:  #FFFFFF;\n     }\n     .dark-surface{\n        color:  #1f1f1f;\n     }\n    </style>\n    ", "\n    "])), this.getHeading(this.surface));
       }
     }], [{
       key: "properties",
