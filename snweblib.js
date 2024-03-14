@@ -1891,12 +1891,7 @@
     _createClass(SnWcCard, [{
       key: "triggerClick",
       value: function triggerClick(e) {
-        if (typeof this.handleClick == "string") {
-          var myFn = new Function('return (' + this.handleClick + ')')();
-          myFn(e);
-        } else {
-          this.handleClick(e);
-        }
+        window.open(this.viewMoreLink, '_blank');
       }
     }, {
       key: "getCardComponent",
@@ -1926,8 +1921,8 @@
           linkLabel: {
             type: String
           },
-          handleClick: {
-            type: Function
+          viewMoreLink: {
+            type: String
           }
         };
       }
