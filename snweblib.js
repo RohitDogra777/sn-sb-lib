@@ -1750,7 +1750,7 @@
    */
 
   var hasLoadedMaterialSymbolsFont$2 = false;
-  var loadLatoFont = function loadLatoFont() {
+  var loadLatoFont$1 = function loadLatoFont() {
     if (hasLoadedMaterialSymbolsFont$2) {
       return;
     }
@@ -1765,7 +1765,7 @@
       var _this;
       _classCallCheck(this, SnWcText);
       _this = _callSuper(this, SnWcText);
-      loadLatoFont();
+      loadLatoFont$1();
       return _this;
     }
     _createClass(SnWcText, [{
@@ -1816,13 +1816,13 @@
    * @args onClick, type, size, target, href
    */
   var hasLoadedMaterialSymbolsFont$1 = false;
-  var loadGilroyFont$1 = function loadGilroyFont() {
+  var loadLatoFont = function loadLatoFont() {
     if (hasLoadedMaterialSymbolsFont$1) {
       return;
     }
     hasLoadedMaterialSymbolsFont$1 = true;
     var fontSheet = new CSSStyleSheet();
-    fontSheet.replaceSync("\n  @font-face {\n    font-family: 'gilroy-bold';\n    src: url(https://fonts.cdnfonts.com/s/16219/Gilroy-Bold.woff) format('woff');\n    font-weight: normal;\n  }");
+    fontSheet.replaceSync("\n  @font-face{font-family:lato;font-style:normal;font-weight:700;src:local('Lato'),url(https://fonts.cdnfonts.com/s/14882/Lato-Bold.woff) format('woff')}");
     document.adoptedStyleSheets.push(fontSheet);
   };
   var SnWcLink = /*#__PURE__*/function (_LitElement) {
@@ -1831,14 +1831,14 @@
       var _this;
       _classCallCheck(this, SnWcLink);
       _this = _callSuper(this, SnWcLink);
-      loadGilroyFont$1();
+      loadLatoFont();
       return _this;
     }
     _createClass(SnWcLink, [{
       key: "handleButtonClick",
       value: function handleButtonClick(e) {
         this.dispatchEvent(new ButtonClickEvent({
-          message: 'Link Button clicked'
+          message: "Link Button clicked"
         }));
       }
     }, {
@@ -1860,7 +1860,7 @@
           } else {
             btnClass = btnClass + " btn-solid";
           }
-          return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["<button type=\"button\" part=\"sn-wc-link\" @click=\"", "\"\n        class=", "\n        \n      >\n        ", "\n      </button>"])), this.handleButtonClick, [btnClass, size, "btn-spacing"].join(" "), this.label);
+          return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["<button\n        type=\"button\"\n        part=\"sn-wc-link\"\n        @click=\"", "\"\n        class=", "\n      >\n        ", "\n      </button>"])), this.handleButtonClick, [btnClass, size, "btn-spacing"].join(" "), this.label);
         } else {
           return x(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n        <a\n          part=\"sn-wc-link\"\n          href=\"", "\"\n          class=", "\n          style=\"--sn-wc-padding-y: 0px;\"\n          target=\"", "\"\n        >\n          ", "\n        </a>\n      "])), this.href, ["btn btn-link", linkSize, "btn-spacing"].join(" "), this.target, this.label);
         }
@@ -1868,7 +1868,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n      <style>\n      a,button {\n      font-family:'gilroy-bold', sans-serif !important;\n      }\n        .btn {\n            --bs-btn-padding-x: 24px;\n            --bs-btn-padding-y: 4px;\n            --bs-btn-font-family: Lato;\n            --bs-btn-font-size: 16px;\n            --bs-btn-font-weight: bold;\n            --bs-btn-line-height: 1.5;\n            --bs-btn-color: #212529;\n            --bs-btn-bg: transparent;\n            --bs-btn-border-width: 1px;\n            --bs-btn-border-color: #298319;\n            --bs-btn-border-radius: 50rem;\n            --bs-btn-hover-border-color: transparent;\n            --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),\n            --bs-btn-hover-color:  #1f6213;\n            --bs-link-hover-color: #1F6213;\n            --bs-link-color: #298319;\n            --bs-btn-disabled-opacity: 0.65;\n            --bs-btn-focus-box-shadow: 0 0 0 0.25rem\n              rgba(var(--bs-btn-focus-shadow-rgb), 0.5);\n            display: inline-block;\n            padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);\n            font-family: var(--bs-btn-font-family);\n            font-size: var(--bs-btn-font-size);\n            font-weight: var(--bs-btn-font-weight);\n            line-height: var(--bs-btn-line-height);\n            color: var(--bs-btn-color);\n            text-align: center;\n            text-decoration: none;\n            vertical-align: middle;\n            cursor: pointer;\n            user-select: none;\n            border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);\n            border-radius: var(--bs-btn-border-radius);\n            background-color: var(--bs-btn-bg);\n            transition: color 0.15s ease-in-out,\n              background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,\n              box-shadow 0.15s ease-in-out;\n          }\n          .btn:hover {\n            color: var(--bs-btn-hover-color);\n            background-color: var(--bs-btn-hover-bg);\n            border-color: var(--bs-btn-hover-border-color);\n            transform: translateY(-1px);\n          }\n          .btn:focus-visible {\n            color: var(--bs-btn-hover-color);\n            background-color: var(--bs-btn-hover-bg);\n            border-color: var(--bs-btn-hover-border-color);\n            outline: 0;\n            box-shadow: var(--bs-btn-focus-box-shadow);\n          }\n          .btn.active {\n            color: var(--bs-btn-active-color);\n            background-color: var(--bs-btn-active-bg);\n            border-color: var(--bs-btn-active-border-color);\n          }\n\n          .btn-solid {\n            --bs-btn-color: #fff;\n            --bs-btn-bg: #298319;\n            --bs-btn-border-color:var( --bs-btn-border-color);\n            --bs-btn-hover-color: #fff;\n            --bs-btn-hover-bg: #1f6213;\n            --bs-btn-hover-border-color: #1f6213;\n            --bs-btn-focus-shadow-rgb: 212, 38, 119;\n            --bs-btn-active-color: #fff;\n            --bs-btn-active-bg: #1f6213;\n            --bs-btn-active-border-color: #1f6213;\n            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n\n          }\n          .btn-outline {\n            --bs-btn-color: #298319;\n            --bs-btn-border-color: #298319;\n            --bs-btn-hover-color: #1f6213;\n            --bs-btn-hover-bg: #fffff;\n            --bs-btn-hover-border-color: #1f6213;\n            --bs-btn-focus-shadow-rgb: 25, 135, 84;\n            --bs-btn-active-color: #fff;\n            --bs-btn-active-bg: #fff;\n            --bs-btn-active-border-color: #198754;\n            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n            --bs-gradient: none;\n          }\n\n          .btn-link {\n            --bs-btn-font-weight: bold;\n            --bs-btn-color: var(--bs-link-color);\n            --bs-btn-bg: transparent;\n            --bs-btn-border-color: transparent;\n            --bs-btn-hover-color: var(--bs-link-hover-color);\n            --bs-btn-hover-border-color: transparent;\n            --bs-btn-active-color: var(--bs-link-hover-color);\n            --bs-btn-active-border-color: transparent;\n            --bs-btn-box-shadow: none;\n            --bs-btn-focus-shadow-rgb: 212, 38, 119;\n            --bs-btn-padding-x: 0;\n            text-decoration: none;\n          }\n          .btn-link:focus-visible {\n            color: var(--bs-btn-color);\n          }\n          .btn-link:hover {\n            color: var(--bs-btn-hover-color);\n          }\n\n          .btn-lg {\n            --bs-btn-padding-y: 8px;\n            --bs-btn-padding-x: 32px;\n            --bs-btn-font-size: 24px;\n            --bs-btn-border-radius: 50rem;\n          }\n\n          .btn-md {\n            --bs-btn-padding-y: 6px;\n            --bs-btn-padding-x: 28px;\n            --bs-btn-font-size: 18px;\n            --bs-btn-border-radius: 50rem;\n          }\n          .btn-link-md{\n            --bs-btn-font-size:18px;\n            --bs-btn-border-radius: 0.25rem;\n          }\n          .btn-link-lg{\n            --bs-btn-font-size: 32px;\n            --bs-btn-border-radius: 0.5rem;\n          }\n      </style>\n      ", "\n    "])), this.getAnchorTag());
+        return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n      <style>\n        a,button {\n        font-family:'lato', sans-serif !important;\n        }\n          .btn {\n              --bs-btn-padding-x: 24px;\n              --bs-btn-padding-y: 4px;\n              --bs-btn-font-family: Lato;\n              --bs-btn-font-size: 16px;\n              --bs-btn-font-weight: 700;\n              --bs-btn-line-height: 1.5;\n              --bs-btn-color: #212529;\n              --bs-btn-bg: transparent;\n              --bs-btn-border-width: 1px;\n              --bs-btn-border-color: #298319;\n              --bs-btn-border-radius: 50rem;\n              --bs-btn-hover-border-color: transparent;\n              --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),\n              --bs-btn-hover-color:  #1f6213;\n              --bs-link-hover-color: #1F6213;\n              --bs-link-color: #298319;\n              --bs-btn-disabled-opacity: 0.65;\n              --bs-btn-focus-box-shadow: 0 0 0 0.25rem\n                rgba(var(--bs-btn-focus-shadow-rgb), 0.5);\n              display: inline-block;\n              padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);\n              font-family: var(--bs-btn-font-family);\n              font-size: var(--bs-btn-font-size);\n              font-weight: var(--bs-btn-font-weight);\n              line-height: 24px;\n              color: var(--bs-btn-color);\n              text-align: center;\n              text-decoration: none;\n              vertical-align: middle;\n              cursor: pointer;\n              user-select: none;\n              border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);\n              border-radius: var(--bs-btn-border-radius);\n              background-color: var(--bs-btn-bg);\n              transition: color 0.15s ease-in-out,\n                background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,\n                box-shadow 0.15s ease-in-out;\n            }\n            .btn:hover {\n              color: var(--bs-btn-hover-color);\n              background-color: var(--bs-btn-hover-bg);\n              border-color: var(--bs-btn-hover-border-color);\n\n            }\n            .btn:focus-visible {\n              color: var(--bs-btn-hover-color);\n              background-color: var(--bs-btn-hover-bg);\n              border-color: var(--bs-btn-hover-border-color);\n              outline: 0;\n              box-shadow: var(--bs-btn-focus-box-shadow);\n            }\n            .btn.active {\n              color: var(--bs-btn-active-color);\n              background-color: var(--bs-btn-active-bg);\n              border-color: var(--bs-btn-active-border-color);\n            }\n\n            .btn-solid {\n              --bs-btn-color: #fff;\n              --bs-btn-bg: #298319;\n              --bs-btn-border-color:var( --bs-btn-border-color);\n              --bs-btn-hover-color: #fff;\n              --bs-btn-hover-bg: #1f6213;\n              --bs-btn-hover-border-color: #1f6213;\n              --bs-btn-focus-shadow-rgb: 212, 38, 119;\n              --bs-btn-active-color: #fff;\n              --bs-btn-active-bg: #1f6213;\n              --bs-btn-active-border-color: #1f6213;\n              --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n\n            }\n            .btn-outline {\n              --bs-btn-color: #298319;\n              --bs-btn-border-color: #298319;\n              --bs-btn-hover-color: #1f6213;\n              --bs-btn-hover-bg: #fffff;\n              --bs-btn-hover-border-color: #1f6213;\n              --bs-btn-focus-shadow-rgb: 25, 135, 84;\n              --bs-btn-active-color: #fff;\n              --bs-btn-active-bg: #fff;\n              --bs-btn-active-border-color: #198754;\n              --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n              --bs-gradient: none;\n            }\n\n            .btn-link {\n              --bs-btn-font-weight: bold;\n              --bs-btn-color: var(--bs-link-color);\n              --bs-btn-bg: transparent;\n              --bs-btn-border-color: transparent;\n              --bs-btn-hover-color: var(--bs-link-hover-color);\n              --bs-btn-hover-border-color: transparent;\n              --bs-btn-active-color: var(--bs-link-hover-color);\n              --bs-btn-active-border-color: transparent;\n              --bs-btn-box-shadow: none;\n              --bs-btn-focus-shadow-rgb: 212, 38, 119;\n              --bs-btn-padding-x: 0;\n              text-decoration: none;\n            }\n            .btn-link:focus-visible {\n              color: var(--bs-btn-color);\n            }\n            .btn-link:hover {\n              color: var(--bs-btn-hover-color);\n            }\n\n            .btn-lg {\n              --bs-btn-padding-y: 8px;\n              --bs-btn-padding-x: 32px;\n              --bs-btn-font-size: 24px;\n              --bs-btn-border-radius: 50rem;\n            }\n\n            .btn-md {\n              --bs-btn-padding-y: 6px;\n              --bs-btn-padding-x: 28px;\n              --bs-btn-font-size: 18px;\n              --bs-btn-border-radius: 50rem;\n            }\n            .btn-link-md{\n              --bs-btn-font-size:18px;\n              --bs-btn-border-radius: 0.25rem;\n            }\n            .btn-link-lg{\n              --bs-btn-font-size: 32px;\n              --bs-btn-border-radius: 0.5rem;\n            }\n      </style>\n      ", "\n    "])), this.getAnchorTag());
       }
     }], [{
       key: "properties",
@@ -1897,70 +1897,10 @@
     }]);
     return SnWcLink;
   }(s);
-  _defineProperty(SnWcLink, "styles", i$2(_templateObject4$1 || (_templateObject4$1 = _taggedTemplateLiteral(["\n   \n  "]))));
+  _defineProperty(SnWcLink, "styles", i$2(_templateObject4$1 || (_templateObject4$1 = _taggedTemplateLiteral([""]))));
   customElements.define("sn-wc-link", SnWcLink);
 
-  var _templateObject$1, _templateObject2$1;
-
-  /**
-   * Service Now Text Component
-   * @input label, type
-   * @output <sn-wc-text> in dom
-   */
-  var SnWcCard = /*#__PURE__*/function (_LitElement) {
-    _inherits(SnWcCard, _LitElement);
-    function SnWcCard() {
-      _classCallCheck(this, SnWcCard);
-      return _callSuper(this, SnWcCard);
-    }
-    _createClass(SnWcCard, [{
-      key: "triggerClick",
-      value: function triggerClick(e) {
-        window.open(this.viewMoreLink, '_blank');
-      }
-    }, {
-      key: "getCardComponent",
-      value: function getCardComponent() {}
-    }, {
-      key: "render",
-      value: function render() {
-        "snow-storybook-".concat(this.type);
-        return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["\n      <style>\n        @font-face {\n          font-family: \"Lato\";\n          src: url(\"data:application/font-woff;charset=utf-8;base64,[Base64 encoded .woff file]\")\n              format(\"woff\"),\n            url(\"data:application/font-woff2;charset=utf-8;base64,[Base64 encoded .woff2 file]\")\n              format(\"woff2\"),\n            url(\"data:application/font-truetype;charset=utf-8;base64,[Base64 encoded .ttf file]\")\n              format(\"truetype\");\n          font-weight: normal;\n          font-style: normal;\n        }\n        .card {\n          --bs-card-spacer-y: 8px;\n          --bs-card-spacer-x: 16px;\n          --bs-card-border-width: 1px;\n          --bs-card-border-color: rgba(0, 0, 0, 0.175);\n          --bs-card-border-radius: 1.5rem;\n          --bs-card-bg: #fff;\n          --bs-card-img-overlay-padding: 1rem;\n          --bs-card-height: 350px;\n          --bs-card-width: 401px;\n          font-size: var(--sn-wc-font-size);\n          position: relative;\n          display: flex;\n          flex-direction: column;\n          min-width: 0;\n          width: 100%;\n          word-wrap: break-word;\n          background-color: var(--bs-card-bg);\n          background-clip: border-box;\n          border: var(--bs-card-border-width) solid var(--bs-card-border-color);\n          border-radius: var(--bs-card-border-radius);\n          margin-bottom: 18px;\n          overflow: hidden;\n          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n          transition: box-shaddow 0.3s;\n          min-height: 0;\n        }\n        .card-body {\n          flex: 1 1 auto;\n          padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);\n          color: var(--bs-card-color);\n        }\n        .card-img-overlay {\n          position: absolute;\n          top: 0;\n          right: 0;\n          bottom: 0;\n          left: 0;\n          padding: var(--bs-card-img-overlay-padding);\n          border-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .card-img,\n        .card-img-top,\n        .card-img-bottom {\n          width: 100%;\n        }\n\n        .card-img,\n        .card-img-top {\n          border-top-left-radius: var(--bs-card-inner-border-radius);\n          border-top-right-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .card-img,\n        .card-img-bottom {\n          border-bottom-right-radius: var(--bs-card-inner-border-radius);\n          border-bottom-left-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .snow-storybook-card-image {\n          height: 144px;\n          object-fit: cover;\n        }\n        .snow-storybook-card {\n          max-width: 401px;\n        }\n        .card-link {\n          margin-top: 16px;\n          margin-bottom: 12px;\n        }\n\n        .card-text {\n          display: -webkit-box;\n          -webkit-box-orient: vertical;\n          overflow: hidden;\n          text-overflow: ellipses;\n          -webkit-line-clamp: 3;\n          height: 75px;\n        }\n\n        @media screen and (max-width: 568px) {\n          .snow-storybook-card-image {\n            display: none;\n          }\n          .card {\n            padding: 0px;\n            height: auto;\n          }\n        }\n        sn-wc-heading {\n          --sn-wc-margin-bottom: 6px;\n          --sn-wc-font-size: 20px;\n        }\n      </style>\n      <div class=\"card snow-storybook-card\">\n        <img src=", " class=\"snow-storybook-card-image\" />\n        <div class=\"card-body\">\n          <sn-wc-heading heading-level=\"3\">", "</sn-wc-heading>\n          <div class=\"card-text\" slot=\"sn-wc-text\">\n            <sn-wc-text>", "</sn-wc-text>\n          </div>\n          <div class=\"card-link\">\n            <sn-wc-link\n              type=\"", "\"\n              label=\"", "\"\n              target=\"", "\",\n              href=\"", "\"\n              @btn-click-event=\"", "\"\n            ></sn-wc-link>\n          </div>\n        </div>\n      </div>\n    "])), this.imageSrc, this.heading, this.subHeading, this.linkType, this.linkLabel, this.target, this.viewMoreLink, this.triggerClick);
-      }
-    }], [{
-      key: "properties",
-      get: function get() {
-        return {
-          linkType: {
-            type: String
-          },
-          imageSrc: {
-            type: String
-          },
-          heading: {
-            type: String
-          },
-          subHeading: {
-            type: String
-          },
-          linkLabel: {
-            type: String
-          },
-          viewMoreLink: {
-            type: String
-          },
-          target: {
-            type: String
-          }
-        };
-      }
-    }]);
-    return SnWcCard;
-  }(s);
-  _defineProperty(SnWcCard, "styles", i$2(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n    ::part(sn-wc-heading) {\n      display: -webkit-box;\n      -webkit-box-orient: vertical;\n      overflow: hidden;\n      text-overflow: ellipses;\n      -webkit-line-clamp: 1;\n      font-size: 20px;\n      line-height: 28px;\n    }\n    ::part(sn-wc-text) {\n      color: #1f1f1f;\n      font-size: 16px;\n      font-style: normal;\n      font-weight: 400;\n      line-height: 24px;\n    }\n  "]))));
-  customElements.define("sn-wc-card", SnWcCard);
-
-  var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9;
+  var _templateObject$1, _templateObject2$1, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9;
   /**
    * Service Now Heading Component
    * @input label, type
@@ -1992,10 +1932,10 @@
       value: function getHeading(surface) {
         var mode = surface == "Dark" ? 'dark-surface' : 'white-surface';
         if (this['heading-level'] == "1") {
-          return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["<h1 part=\"sn-wc-heading\" class=", "><slot></slot></h1>"])), ["sn-wc-heading", mode].join(' '));
+          return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["<h1 part=\"sn-wc-heading\" class=", "><slot></slot></h1>"])), ["sn-wc-heading", mode].join(' '));
         }
         if (this['heading-level'] == "2") {
-          return x(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["<h2 part=\"sn-wc-heading\" class=", "><slot></slot></h2>"])), ["sn-wc-heading", mode].join(' '));
+          return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["<h2 part=\"sn-wc-heading\" class=", "><slot></slot></h2>"])), ["sn-wc-heading", mode].join(' '));
         }
         if (this['heading-level'] == "3") {
           return x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<h3 part=\"sn-wc-heading\" class=", "><slot></slot></h3>"])), ["sn-wc-heading", mode].join(' '));
@@ -2014,7 +1954,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      font-family: 'gilroy-bold';\n    }\n    .sn-wc-heading{\n      font-weight: bold;\n      margin: 0px;\n      padding:0px;\n      margin-bottom: var(--sn-wc-margin-bottom);\n     }\n     .white-surface{\n        color:  #FFFFFF;\n     }\n     .dark-surface{\n        color:  #1f1f1f;\n     }\n    </style>\n    ", "\n    "])), this.getHeading(this.surface));
+        return x(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      font-family: 'gilroy-bold';\n    }\n    .sn-wc-heading{\n      font-weight: semibold;\n      margin: 0px;\n      padding:0px;\n      margin-bottom: var(--sn-wc-margin-bottom);\n     }\n     .white-surface{\n        color:  #FFFFFF;\n     }\n     .dark-surface{\n        color:  #1f1f1f;\n     }\n    </style>\n    ", "\n    "])), this.getHeading(this.surface));
       }
     }], [{
       key: "properties",
@@ -2033,6 +1973,66 @@
   }(s);
   _defineProperty(SnWcHeading, "styles", i$2(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n        :host{\n          --sn-wc-margin-bottom: 0px;\n        }\n    "]))));
   customElements.define("sn-wc-heading", SnWcHeading);
+
+  var _templateObject, _templateObject2;
+
+  /**
+   * Service Now Text Component
+   * @input label, type
+   * @output <sn-wc-text> in dom
+   */
+  var SnWcCard = /*#__PURE__*/function (_LitElement) {
+    _inherits(SnWcCard, _LitElement);
+    function SnWcCard() {
+      _classCallCheck(this, SnWcCard);
+      return _callSuper(this, SnWcCard);
+    }
+    _createClass(SnWcCard, [{
+      key: "triggerClick",
+      value: function triggerClick(e) {
+        window.open(this.viewMoreLink, '_blank');
+      }
+    }, {
+      key: "getCardComponent",
+      value: function getCardComponent() {}
+    }, {
+      key: "render",
+      value: function render() {
+        "snow-storybook-".concat(this.type);
+        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <style>\n        @font-face {\n          font-family: \"Lato\";\n          src: url(\"data:application/font-woff;charset=utf-8;base64,[Base64 encoded .woff file]\")\n              format(\"woff\"),\n            url(\"data:application/font-woff2;charset=utf-8;base64,[Base64 encoded .woff2 file]\")\n              format(\"woff2\"),\n            url(\"data:application/font-truetype;charset=utf-8;base64,[Base64 encoded .ttf file]\")\n              format(\"truetype\");\n          font-weight: normal;\n          font-style: normal;\n        }\n        .card {\n          --bs-card-spacer-y: 8px;\n          --bs-card-spacer-x: 16px;\n          --bs-card-border-width: 1px;\n          --bs-card-border-color: rgba(0, 0, 0, 0.175);\n          --bs-card-border-radius: 1.5rem;\n          --bs-card-bg: #fff;\n          --bs-card-img-overlay-padding: 1rem;\n          --bs-card-height: 350px;\n          --bs-card-width: 401px;\n          font-size: var(--sn-wc-font-size);\n          position: relative;\n          display: flex;\n          flex-direction: column;\n          min-width: 0;\n          width: 100%;\n          word-wrap: break-word;\n          background-color: var(--bs-card-bg);\n          background-clip: border-box;\n          border: var(--bs-card-border-width) solid var(--bs-card-border-color);\n          border-radius: var(--bs-card-border-radius);\n          margin-bottom: 18px;\n          overflow: hidden;\n         \n          transition: box-shaddow 0.3s;\n          min-height: 0;\n        }\n        .card-body {\n          flex: 1 1 auto;\n          padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);\n          color: var(--bs-card-color);\n        }\n        .card-img-overlay {\n          position: absolute;\n          top: 0;\n          right: 0;\n          bottom: 0;\n          left: 0;\n          padding: var(--bs-card-img-overlay-padding);\n          border-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .card-img,\n        .card-img-top,\n        .card-img-bottom {\n          width: 100%;\n        }\n\n        .card-img,\n        .card-img-top {\n          border-top-left-radius: var(--bs-card-inner-border-radius);\n          border-top-right-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .card-img,\n        .card-img-bottom {\n          border-bottom-right-radius: var(--bs-card-inner-border-radius);\n          border-bottom-left-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .snow-storybook-card-image {\n          height: 144px;\n          object-fit: cover;\n        }\n        .snow-storybook-card {\n          max-width: 401px;\n        }\n        .card-link {\n          margin-top: 16px;\n          margin-bottom: 12px;\n        }\n\n        .card-text {\n          display: -webkit-box;\n          -webkit-box-orient: vertical;\n          overflow: hidden;\n          text-overflow: ellipses;\n          -webkit-line-clamp: 3;\n          height: 75px;\n        }\n\n        @media screen and (max-width: 568px) {\n          .snow-storybook-card-image {\n            display: none;\n          }\n          .card {\n            padding: 0px;\n            height: auto;\n          }\n        }\n        sn-wc-heading {\n          --sn-wc-margin-bottom: 6px;\n          --sn-wc-font-size: 20px;\n        }\n      </style>\n      <div class=\"card snow-storybook-card\">\n        <img src=", " class=\"snow-storybook-card-image\" />\n        <div class=\"card-body\">\n          <sn-wc-heading heading-level=\"4\">", "</sn-wc-heading>\n          <div class=\"card-text\" slot=\"sn-wc-text\">\n            <sn-wc-text>", "</sn-wc-text>\n          </div>\n          <div class=\"card-link\">\n            <sn-wc-link\n              type=\"", "\"\n              label=\"", "\"\n              target=\"", "\",\n              href=\"", "\"\n              @btn-click-event=\"", "\"\n            ></sn-wc-link>\n          </div>\n        </div>\n      </div>\n    "])), this.imageSrc, this.heading, this.body, this.linkType, this.linkLabel, this.target, this.viewMoreLink, this.triggerClick);
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return {
+          linkType: {
+            type: String
+          },
+          imageSrc: {
+            type: String
+          },
+          heading: {
+            type: String
+          },
+          body: {
+            type: String
+          },
+          linkLabel: {
+            type: String
+          },
+          viewMoreLink: {
+            type: String
+          },
+          target: {
+            type: String
+          }
+        };
+      }
+    }]);
+    return SnWcCard;
+  }(s);
+  _defineProperty(SnWcCard, "styles", i$2(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    ::part(sn-wc-heading) {\n      display: -webkit-box;\n      -webkit-box-orient: vertical;\n      overflow: hidden;\n      text-overflow: ellipses;\n      -webkit-line-clamp: 1;\n      font-size: 20px;\n      line-height: 28px;\n    }\n    ::part(sn-wc-text) {\n      color: #1f1f1f;\n      font-size: 16px;\n      font-style: normal;\n      font-weight: 400;\n      line-height: 24px;\n    }\n  "]))));
+  customElements.define("sn-wc-card", SnWcCard);
 
   exports.SnWcCard = SnWcCard;
   exports.SnWcHeading = SnWcHeading;
