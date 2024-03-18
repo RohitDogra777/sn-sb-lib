@@ -1930,31 +1930,31 @@
     _createClass(SnWcHeading, [{
       key: "getHeading",
       value: function getHeading(surface) {
-        var mode = surface == "Dark" ? 'dark-surface' : 'white-surface';
-        if (this['heading-level'] == "1") {
-          return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["<h1 part=\"sn-wc-heading\" class=", "><slot></slot></h1>"])), ["sn-wc-heading", mode].join(' '));
+        var mode = surface == "Dark" ? "dark-surface" : "white-surface";
+        if (this["heading-level"] == "1") {
+          return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["<h1\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h1>"])), ["sn-wc-heading", mode].join(" "));
         }
-        if (this['heading-level'] == "2") {
-          return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["<h2 part=\"sn-wc-heading\" class=", "><slot></slot></h2>"])), ["sn-wc-heading", mode].join(' '));
+        if (this["heading-level"] == "2") {
+          return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["<h2\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h2>"])), ["sn-wc-heading", mode].join(" "));
         }
-        if (this['heading-level'] == "3") {
-          return x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<h3 part=\"sn-wc-heading\" class=", "><slot></slot></h3>"])), ["sn-wc-heading", mode].join(' '));
+        if (this["heading-level"] == "3") {
+          return x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<h3\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h3>"])), ["sn-wc-heading", mode].join(" "));
         }
-        if (this['heading-level'] == "4") {
-          return x(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["<h4 part=\"sn-wc-heading\" class=", "><slot></slot></h4>"])), ["sn-wc-heading", mode].join(' '));
+        if (this["heading-level"] == "4") {
+          return x(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["<h4\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h4>"])), ["sn-wc-heading", mode].join(" "));
         }
-        if (this['heading-level'] == "5") {
-          return x(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["<h5 part=\"sn-wc-heading\" class=", " ><slot></slot></h5>"])), ["sn-wc-heading", mode].join(' '));
+        if (this["heading-level"] == "5") {
+          return x(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["<h5\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h5>"])), ["sn-wc-heading", mode].join(" "));
         }
-        if (this['heading-level'] == "6") {
-          return x(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["<h6 part=\"sn-wc-heading\" class=", " ><slot></slot></h6>"])), ["sn-wc-heading", mode].join(' '));
+        if (this["heading-level"] == "6") {
+          return x(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["<h6\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h6>"])), ["sn-wc-heading", mode].join(" "));
         }
-        return x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["<h1 part=\"sn-wc-heading\" class=", "><slot></slot></h1>"])), ["sn-wc-heading", mode].join(' '));
+        return x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["<h1\n      part=\"sn-wc-heading\"\n      class=", "\n    >\n      <slot></slot>\n    </h1>"])), ["sn-wc-heading", mode].join(" "));
       }
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      font-family: 'gilroy';\n    }\n    .sn-wc-heading{\n      font-weight: 600;\n      margin: 0px;\n      padding:0px;\n      margin-bottom: var(--sn-wc-margin-bottom);\n     }\n     .white-surface{\n        color:  #FFFFFF;\n     }\n     .dark-surface{\n        color:  #1f1f1f;\n     }\n    </style>\n    ", "\n    "])), this.getHeading(this.surface));
+        return x(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          font-family: \"gilroy\";\n\n          font-weight: 600;\n        }\n        .sn-wc-heading {\n          margin: 0px;\n          padding: 0px;\n          margin-bottom: var(--sn-wc-margin-bottom);\n        }\n        .white-surface {\n          color: #ffffff;\n        }\n        .dark-surface {\n          color: #1f1f1f;\n        }\n      </style>\n      ", "\n    "])), this.getHeading(this.surface));
       }
     }], [{
       key: "properties",
@@ -1971,7 +1971,7 @@
     }]);
     return SnWcHeading;
   }(s);
-  _defineProperty(SnWcHeading, "styles", i$2(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n        :host{\n          --sn-wc-margin-bottom: 0px;\n        }\n    "]))));
+  _defineProperty(SnWcHeading, "styles", i$2(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n    :host {\n      --sn-wc-margin-bottom: 0px;\n    }\n  "]))));
   customElements.define("sn-wc-heading", SnWcHeading);
 
   var _templateObject, _templateObject2;
@@ -1999,7 +1999,7 @@
       key: "render",
       value: function render() {
         "snow-storybook-".concat(this.type);
-        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <style>\n        .card {\n          --bs-card-spacer-y: 8px;\n          --bs-card-spacer-x: 16px;\n          --bs-card-border-width: 1px;\n          --bs-card-border-color: rgba(0, 0, 0, 0.175);\n          --bs-card-border-radius: 1.5rem;\n          --bs-card-bg: #fff;\n          --bs-card-img-overlay-padding: 1rem;\n          --bs-card-height: 350px;\n          --bs-card-width: 401px;\n          font-size: var(--sn-wc-font-size);\n          position: relative;\n          display: flex;\n          flex-direction: column;\n          min-width: 0;\n          width: 100%;\n          word-wrap: break-word;\n          background-color: var(--bs-card-bg);\n          background-clip: border-box;\n          border: var(--bs-card-border-width) solid var(--bs-card-border-color);\n          border-radius: var(--bs-card-border-radius);\n          overflow: hidden;\n          transition: box-shaddow 0.3s;\n          min-height: 0;\n        }\n        .card-body {\n          flex: 1 1 auto;\n          padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);\n          color: var(--bs-card-color);\n        }\n        .card-img-overlay {\n          position: absolute;\n          top: 0;\n          right: 0;\n          bottom: 0;\n          left: 0;\n          padding: var(--bs-card-img-overlay-padding);\n          border-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .card-img,\n        .card-img-top,\n        .card-img-bottom {\n          width: 100%;\n        }\n\n        .card-img,\n        .card-img-top {\n          border-top-left-radius: var(--bs-card-inner-border-radius);\n          border-top-right-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .card-img,\n        .card-img-bottom {\n          border-bottom-right-radius: var(--bs-card-inner-border-radius);\n          border-bottom-left-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .snow-storybook-card-image {\n          height: 144px;\n          object-fit: cover;\n        }\n        .snow-storybook-card {\n          max-width: 401px;\n        }\n        .card-link {\n          margin-top: 16px;\n          margin-bottom: 12px;\n        }\n\n        .card-text {\n          display: -webkit-box;\n          -webkit-box-orient: vertical;\n          overflow: hidden;\n          text-overflow: ellipses;\n          -webkit-line-clamp: 3;\n          height: 75px;\n        }\n\n        @media screen and (max-width: 568px) {\n          .snow-storybook-card-image {\n            display: none;\n          }\n          .card {\n            padding: 0px;\n            height: auto;\n          }\n        }\n        sn-wc-heading {\n          --sn-wc-margin-bottom: 4px;\n          --sn-wc-font-size: 20px;\n        }\n      </style>\n      <div class=\"card snow-storybook-card\">\n        <img src=", " class=\"snow-storybook-card-image\" />\n        <div class=\"card-body\">\n          <sn-wc-heading heading-level=\"4\">", "</sn-wc-heading>\n          <div class=\"card-text\" slot=\"sn-wc-text\">\n            <sn-wc-text>", "</sn-wc-text>\n          </div>\n          <div class=\"card-link\">\n            <sn-wc-link\n              type=\"", "\"\n              label=\"", "\"\n              target=\"", "\",\n              href=\"", "\"\n              @btn-click-event=\"", "\"\n            ></sn-wc-link>\n          </div>\n        </div>\n      </div>\n    "])), this.imageSrc, this.heading, this.body, this.linkType, this.linkLabel, this.target, this.viewMoreLink, this.triggerClick);
+        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <style>\n        .card {\n          --bs-card-spacer-y: 8px;\n          --bs-card-spacer-x: 16px;\n          --bs-card-border-width: 1px;\n          --bs-card-border-color: rgba(0, 0, 0, 0.175);\n          --bs-card-border-radius: 2rem;\n          --bs-card-bg: #fff;\n          --bs-card-img-overlay-padding: 1rem;\n          --bs-card-height: 350px;\n          --bs-card-width: 401px;\n          font-size: var(--sn-wc-font-size);\n          position: relative;\n          display: flex;\n          flex-direction: column;\n          min-width: 0;\n          width: 100%;\n          word-wrap: break-word;\n          background-color: var(--bs-card-bg);\n          background-clip: border-box;\n          border: var(--bs-card-border-width) solid var(--bs-card-border-color);\n          border-radius: var(--bs-card-border-radius);\n          overflow: hidden;\n          transition: box-shaddow 0.3s;\n          min-height: 0;\n        }\n        .card-body {\n          flex: 1 1 auto;\n          padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);\n          color: var(--bs-card-color);\n        }\n        .card-img-overlay {\n          position: absolute;\n          top: 0;\n          right: 0;\n          bottom: 0;\n          left: 0;\n          padding: var(--bs-card-img-overlay-padding);\n          border-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .card-img,\n        .card-img-top,\n        .card-img-bottom {\n          width: 100%;\n        }\n\n        .card-img,\n        .card-img-top {\n          border-top-left-radius: var(--bs-card-inner-border-radius);\n          border-top-right-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .card-img,\n        .card-img-bottom {\n          border-bottom-right-radius: var(--bs-card-inner-border-radius);\n          border-bottom-left-radius: var(--bs-card-inner-border-radius);\n        }\n\n        .snow-storybook-card-image {\n          height: 144px;\n          object-fit: cover;\n        }\n        .snow-storybook-card {\n          max-width: 401px;\n        }\n        .card-link {\n          margin-top: 16px;\n          margin-bottom: 12px;\n        }\n\n        .card-text {\n          display: -webkit-box;\n          -webkit-box-orient: vertical;\n          overflow: hidden;\n          text-overflow: ellipses;\n          -webkit-line-clamp: 3;\n          height: 75px;\n        }\n\n        @media screen and (max-width: 568px) {\n          .snow-storybook-card-image {\n            display: none;\n          }\n          .card {\n            padding: 0px;\n            height: auto;\n          }\n        }\n        sn-wc-heading {\n          --sn-wc-margin-bottom: 4px;\n          --sn-wc-font-size: 20px;\n        }\n      </style>\n      <div class=\"card snow-storybook-card\">\n        <img src=", " class=\"snow-storybook-card-image\" />\n        <div class=\"card-body\">\n          <sn-wc-heading heading-level=\"4\">", "</sn-wc-heading>\n          <div class=\"card-text\" slot=\"sn-wc-text\">\n            <sn-wc-text>", "</sn-wc-text>\n          </div>\n          <div class=\"card-link\">\n            <sn-wc-link\n              type=\"", "\"\n              label=\"", "\"\n              target=\"", "\",\n              href=\"", "\"\n              @btn-click-event=\"", "\"\n            ></sn-wc-link>\n          </div>\n        </div>\n      </div>\n    "])), this.imageSrc, this.heading, this.body, this.linkType, this.linkLabel, this.target, this.viewMoreLink, this.triggerClick);
       }
     }], [{
       key: "properties",
