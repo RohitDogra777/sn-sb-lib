@@ -1741,7 +1741,7 @@
   });
   ((_globalThis$litElemen2 = globalThis.litElementVersions) !== null && _globalThis$litElemen2 !== void 0 ? _globalThis$litElemen2 : globalThis.litElementVersions = []).push("4.0.4");
 
-  var _templateObject$5, _templateObject2$5;
+  var _templateObject$8, _templateObject2$7;
   // import './fonts/fonts.css';
   /**
    * Service Now Text Component
@@ -1749,29 +1749,29 @@
    * @output <sn-wc-text> in dom
    */
 
-  var hasLoadedMaterialSymbolsFont$3 = false;
-  var loadLatoFont$1 = function loadLatoFont() {
-    if (hasLoadedMaterialSymbolsFont$3) {
+  var hasLoadedMaterialSymbolsFont$4 = false;
+  var loadLatoFont$2 = function loadLatoFont() {
+    if (hasLoadedMaterialSymbolsFont$4) {
       return;
     }
-    hasLoadedMaterialSymbolsFont$3 = true;
+    hasLoadedMaterialSymbolsFont$4 = true;
     var fontSheet = new CSSStyleSheet();
     fontSheet.replaceSync("\n  @font-face {\n    font-family: 'lato';\n    src: url(https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff) format('woff');\n    font-weight: normal;\n  }");
     document.adoptedStyleSheets.push(fontSheet);
   };
-  var SnWcText = /*#__PURE__*/function (_LitElement) {
-    _inherits(SnWcText, _LitElement);
-    function SnWcText() {
+  var ODSText = /*#__PURE__*/function (_LitElement) {
+    _inherits(ODSText, _LitElement);
+    function ODSText() {
       var _this;
-      _classCallCheck(this, SnWcText);
-      _this = _callSuper(this, SnWcText);
-      loadLatoFont$1();
+      _classCallCheck(this, ODSText);
+      _this = _callSuper(this, ODSText);
+      loadLatoFont$2();
       return _this;
     }
-    _createClass(SnWcText, [{
+    _createClass(ODSText, [{
       key: "render",
       value: function render() {
-        return x(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      padding: 0;\n      margin: 0;\n      box-sizing:border-box;\n      font-family:'lato' !important;\n    }\n    :host{\n      letter-spacing:var(--sn-wc-letter-spacing);\n    }\n    .para-text{\n        color: var(--sn-wc-color,#1f1f1f);\n        line-height: var(--sn-wc-line-height, 24px);\n        font-size: var(--sn-wc-font-size, 16px);\n        padding: var(--sn-wc-padding-top,0px) var(--sn-wc-padding-end,0px) var(--sn-wc-padding-bottom,0px) var(--sn-wc-padding-start,0px);\n        margin: var(--sn-wc-margin-top,0px) var(--sn-wc-margin-end,0px) var(--sn-wc-margin-bottom,0px) var(--sn-wc-margin-start,0px);\n      }\n    </style>\n      <p class='para-text'>\n        <slot></slot>\n      </p>\n    "])));
+        return x(_templateObject$8 || (_templateObject$8 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      padding: 0;\n      margin: 0;\n      box-sizing:border-box;\n      font-family:'lato' !important;\n    }\n    :host{\n      letter-spacing:var(--sn-wc-letter-spacing);\n    }\n    .para-text{\n        color: var(--sn-wc-color,#1f1f1f);\n        line-height: var(--sn-wc-line-height, 24px);\n        font-size: var(--sn-wc-font-size, 16px);\n        padding: var(--sn-wc-padding-top,0px) var(--sn-wc-padding-end,0px) var(--sn-wc-padding-bottom,0px) var(--sn-wc-padding-start,0px);\n        margin: var(--sn-wc-margin-top,0px) var(--sn-wc-margin-end,0px) var(--sn-wc-margin-bottom,0px) var(--sn-wc-margin-start,0px);\n      }\n    </style>\n      <p class='para-text'>\n        <slot></slot>\n      </p>\n    "])));
       }
     }], [{
       key: "properties",
@@ -1786,10 +1786,10 @@
         };
       }
     }]);
-    return SnWcText;
+    return ODSText;
   }(s);
-  _defineProperty(SnWcText, "styles", i$2(_templateObject2$5 || (_templateObject2$5 = _taggedTemplateLiteral(["\n  "]))));
-  customElements.define("sn-wc-text", SnWcText);
+  _defineProperty(ODSText, "styles", i$2(_templateObject2$7 || (_templateObject2$7 = _taggedTemplateLiteral(["\n  "]))));
+  customElements.define("ods-text", ODSText);
 
   var ButtonClickEvent = /*#__PURE__*/function (_Event) {
     _inherits(ButtonClickEvent, _Event);
@@ -1806,7 +1806,7 @@
     return _createClass(ButtonClickEvent);
   }( /*#__PURE__*/_wrapNativeSuper(Event));
 
-  var _templateObject$4, _templateObject2$4, _templateObject3$3, _templateObject4$3;
+  var _templateObject$7, _templateObject2$6, _templateObject3$4, _templateObject4$4;
 
   /**
    * Service Now Link Component
@@ -1814,26 +1814,26 @@
    * @output <sn-wc-link> in dom
    * @args onClick, type, size, target, href
    */
-  var hasLoadedMaterialSymbolsFont$2 = false;
-  var loadLatoFont = function loadLatoFont() {
-    if (hasLoadedMaterialSymbolsFont$2) {
+  var hasLoadedMaterialSymbolsFont$3 = false;
+  var loadLatoFont$1 = function loadLatoFont() {
+    if (hasLoadedMaterialSymbolsFont$3) {
       return;
     }
-    hasLoadedMaterialSymbolsFont$2 = true;
+    hasLoadedMaterialSymbolsFont$3 = true;
     var fontSheet = new CSSStyleSheet();
     fontSheet.replaceSync("\n  @font-face{font-family:lato;font-style:normal;font-weight:700;src:local('Lato'),url(https://fonts.cdnfonts.com/s/14882/Lato-Bold.woff) format('woff')}");
     document.adoptedStyleSheets.push(fontSheet);
   };
-  var SnWcLink = /*#__PURE__*/function (_LitElement) {
-    _inherits(SnWcLink, _LitElement);
-    function SnWcLink() {
+  var ODSLink = /*#__PURE__*/function (_LitElement) {
+    _inherits(ODSLink, _LitElement);
+    function ODSLink() {
       var _this;
-      _classCallCheck(this, SnWcLink);
-      _this = _callSuper(this, SnWcLink);
-      loadLatoFont();
+      _classCallCheck(this, ODSLink);
+      _this = _callSuper(this, ODSLink);
+      loadLatoFont$1();
       return _this;
     }
-    _createClass(SnWcLink, [{
+    _createClass(ODSLink, [{
       key: "handleButtonClick",
       value: function handleButtonClick(e) {
         this.dispatchEvent(new ButtonClickEvent({
@@ -1859,15 +1859,15 @@
           } else {
             btnClass = btnClass + " btn-solid";
           }
-          return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["<button\n        type=\"button\"\n        part=\"sn-wc-link\"\n        @click=\"", "\"\n        class=", "\n      >\n        ", "\n      </button>"])), this.handleButtonClick, [btnClass, size, "btn-spacing"].join(" "), this.label);
+          return x(_templateObject$7 || (_templateObject$7 = _taggedTemplateLiteral(["<button\n        type=\"button\"\n        part=\"sn-wc-link\"\n        @click=\"", "\"\n        class=", "\n      >\n        ", "\n      </button>"])), this.handleButtonClick, [btnClass, size, "btn-spacing"].join(" "), this.label);
         } else {
-          return x(_templateObject2$4 || (_templateObject2$4 = _taggedTemplateLiteral(["\n        <a\n          part=\"sn-wc-link\"\n          href=\"", "\"\n          class=", "\n          style=\"--sn-wc-padding-y: 0px;\"\n          target=\"", "\"\n        >\n          ", "\n        </a>\n      "])), this.href, ["btn btn-link", linkSize, "btn-spacing"].join(" "), this.target, this.label);
+          return x(_templateObject2$6 || (_templateObject2$6 = _taggedTemplateLiteral(["\n        <a\n          part=\"sn-wc-link\"\n          href=\"", "\"\n          class=", "\n          style=\"--sn-wc-padding-y: 0px;\"\n          target=\"", "\"\n        >\n          ", "\n        </a>\n      "])), this.href, ["btn btn-link", linkSize, "btn-spacing"].join(" "), this.target, this.label);
         }
       }
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject3$3 || (_templateObject3$3 = _taggedTemplateLiteral(["\n      <style>\n        *{\n          padding:0;\n          margin:0;\n          box-sizing:border-box;\n        }\n          a,button {\n          font-family:'lato', sans-serif !important;\n          }\n            .btn {\n               --sn-btn-padding-x: 16px;\n               --sn-btn-padding-y: 4px;\n               --sn-btn-font-family: Lato;\n               --sn-btn-font-size: 16px;\n               --sn-btn-font-weight: 700;\n               --sn-btn-line-height: 1.5;\n               --sn-btn-color: #212529;\n               --sn-btn-bg: transparent;\n               --sn-btn-border-width: 1px;\n               --sn-btn-border-color: #298319;\n               --sn-btn-border-radius: 50rem;\n               --sn-btn-hover-border-color: transparent;\n               --sn-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),\n               --sn-btn-hover-color:  #1f6213;\n               --sn-link-hover-color: #1F6213;\n               --sn-link-color: #298319;\n               --sn-btn-disabled-opacity: 0.65;\n               --sn-btn-focus-box-shadow: 0 0 0 0.25rem\n                  rgba(var(--sn-btn-focus-shadow-rgb), 0.5);\n                display: inline-block;\n                padding: var(--sn-btn-padding-y) var(--sn-btn-padding-x);\n                font-family: var(--sn-btn-font-family);\n                font-size: var(--sn-btn-font-size);\n                font-weight: var(--sn-btn-font-weight);\n                line-height: 24px;\n                color: var(--sn-btn-color);\n                text-align: center;\n                text-decoration: none;\n                vertical-align: middle;\n                cursor: pointer;\n                user-select: none;\n                border: var(--sn-btn-border-width) solid var(--sn-btn-border-color);\n                border-radius: var(--sn-btn-border-radius);\n                background-color: var(--sn-btn-bg);\n                transition: color 0.15s ease-in-out,\n                  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,\n                  box-shadow 0.15s ease-in-out;\n              }\n              .btn:hover {\n                color: var(--sn-btn-hover-color);\n                background-color: var(--sn-btn-hover-bg);\n                border-color: var(--sn-btn-hover-border-color);\n\n              }\n              .btn:focus-visible {\n                color: var(--sn-btn-hover-color);\n                background-color: var(--sn-btn-hover-bg);\n                border-color: var(--sn-btn-hover-border-color);\n                outline: 0;\n                box-shadow: var(--sn-btn-focus-box-shadow);\n              }\n              .btn.active {\n                color: var(--sn-btn-active-color);\n                background-color: var(--sn-btn-active-bg);\n                border-color: var(--sn-btn-active-border-color);\n              }\n\n              .btn-solid {\n               --sn-btn-color: #fff;\n               --sn-btn-bg: #298319;\n               --sn-btn-border-color:var(--sn-btn-border-color);\n               --sn-btn-hover-color: #fff;\n               --sn-btn-hover-bg: #1f6213;\n               --sn-btn-hover-border-color: #1f6213;\n               --sn-btn-focus-shadow-rgb: 212, 38, 119;\n               --sn-btn-active-color: #fff;\n               --sn-btn-active-bg: #1f6213;\n               --sn-btn-active-border-color: #1f6213;\n               --sn-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n\n              }\n              .btn-outline {\n               --sn-btn-color: #298319;\n               --sn-btn-border-color: #298319;\n               --sn-btn-hover-color: #1f6213;\n               --sn-btn-hover-bg: #fffff;\n               --sn-btn-hover-border-color: #1f6213;\n               --sn-btn-focus-shadow-rgb: 25, 135, 84;\n               --sn-btn-active-color: #fff;\n               --sn-btn-active-bg: #fff;\n               --sn-btn-active-border-color: #198754;\n               --sn-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n               --sn-gradient: none;\n              }\n\n              .btn-link {\n               --sn-btn-font-weight: bold;\n               --sn-btn-color: var(--sn-link-color);\n               --sn-btn-bg: transparent;\n               --sn-btn-border-color: transparent;\n               --sn-btn-hover-color: var(--sn-link-hover-color);\n               --sn-btn-hover-border-color: transparent;\n               --sn-btn-active-color: var(--sn-link-hover-color);\n               --sn-btn-active-border-color: transparent;\n               --sn-btn-box-shadow: none;\n               --sn-btn-focus-shadow-rgb: 212, 38, 119;\n               --sn-btn-padding-x: 0;\n                text-decoration: none;\n              }\n              .btn-link:focus-visible {\n                color: var(--sn-btn-color);\n              }\n              .btn-link:hover {\n                color: var(--sn-btn-hover-color);\n              }\n\n              .btn-lg {\n               --sn-btn-padding-y: 8px;\n               --sn-btn-padding-x: 32px;\n               --sn-btn-font-size: 24px;\n               --sn-btn-border-radius: 50rem;\n              }\n\n              .btn-md {\n               --sn-btn-padding-y: 6px;\n               --sn-btn-padding-x: 28px;\n               --sn-btn-font-size: 18px;\n               --sn-btn-border-radius: 50rem;\n              }\n              .btn-link-md{\n               --sn-btn-font-size:18px;\n               --sn-btn-border-radius: 0.25rem;\n              }\n              .btn-link-lg{\n               --sn-btn-font-size: 32px;\n               --sn-btn-border-radius: 0.5rem;\n              }\n      </style>\n      ", "\n    "])), this.getAnchorTag());
+        return x(_templateObject3$4 || (_templateObject3$4 = _taggedTemplateLiteral(["\n      <style>\n        *{\n          padding:0;\n          margin:0;\n          box-sizing:border-box;\n        }\n          a,button {\n          font-family:'lato', sans-serif !important;\n          }\n            .btn {\n               --sn-btn-padding-x: 16px;\n               --sn-btn-padding-y: 4px;\n               --sn-btn-font-family: Lato;\n               --sn-btn-font-size: 16px;\n               --sn-btn-font-weight: 700;\n               --sn-btn-line-height: 1.5;\n               --sn-btn-color: #212529;\n               --sn-btn-bg: transparent;\n               --sn-btn-border-width: 1px;\n               --sn-btn-border-color: #298319;\n               --sn-btn-border-radius: 50rem;\n               --sn-btn-hover-border-color: transparent;\n               --sn-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),\n               --sn-btn-hover-color:  #1f6213;\n               --sn-link-hover-color: #1F6213;\n               --sn-link-color: #298319;\n               --sn-btn-disabled-opacity: 0.65;\n               --sn-btn-focus-box-shadow: 0 0 0 0.25rem\n                  rgba(var(--sn-btn-focus-shadow-rgb), 0.5);\n                display: inline-block;\n                padding: var(--sn-btn-padding-y) var(--sn-btn-padding-x);\n                font-family: var(--sn-btn-font-family);\n                font-size: var(--sn-btn-font-size);\n                font-weight: var(--sn-btn-font-weight);\n                line-height: 24px;\n                color: var(--sn-btn-color);\n                text-align: center;\n                text-decoration: none;\n                vertical-align: middle;\n                cursor: pointer;\n                user-select: none;\n                border: var(--sn-btn-border-width) solid var(--sn-btn-border-color);\n                border-radius: var(--sn-btn-border-radius);\n                background-color: var(--sn-btn-bg);\n                transition: color 0.15s ease-in-out,\n                  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,\n                  box-shadow 0.15s ease-in-out;\n              }\n              .btn:hover {\n                color: var(--sn-btn-hover-color);\n                background-color: var(--sn-btn-hover-bg);\n                border-color: var(--sn-btn-hover-border-color);\n\n              }\n              .btn:focus-visible {\n                color: var(--sn-btn-hover-color);\n                background-color: var(--sn-btn-hover-bg);\n                border-color: var(--sn-btn-hover-border-color);\n                outline: 0;\n                box-shadow: var(--sn-btn-focus-box-shadow);\n              }\n              .btn.active {\n                color: var(--sn-btn-active-color);\n                background-color: var(--sn-btn-active-bg);\n                border-color: var(--sn-btn-active-border-color);\n              }\n\n              .btn-solid {\n               --sn-btn-color: #fff;\n               --sn-btn-bg: #298319;\n               --sn-btn-border-color:var(--sn-btn-border-color);\n               --sn-btn-hover-color: #fff;\n               --sn-btn-hover-bg: #1f6213;\n               --sn-btn-hover-border-color: #1f6213;\n               --sn-btn-focus-shadow-rgb: 212, 38, 119;\n               --sn-btn-active-color: #fff;\n               --sn-btn-active-bg: #1f6213;\n               --sn-btn-active-border-color: #1f6213;\n               --sn-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n\n              }\n              .btn-outline {\n               --sn-btn-color: #298319;\n               --sn-btn-border-color: #298319;\n               --sn-btn-hover-color: #1f6213;\n               --sn-btn-hover-bg: #fffff;\n               --sn-btn-hover-border-color: #1f6213;\n               --sn-btn-focus-shadow-rgb: 25, 135, 84;\n               --sn-btn-active-color: #fff;\n               --sn-btn-active-bg: #fff;\n               --sn-btn-active-border-color: #198754;\n               --sn-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n               --sn-gradient: none;\n              }\n\n              .btn-link {\n               --sn-btn-font-weight: bold;\n               --sn-btn-color: var(--sn-link-color);\n               --sn-btn-bg: transparent;\n               --sn-btn-border-color: transparent;\n               --sn-btn-hover-color: var(--sn-link-hover-color);\n               --sn-btn-hover-border-color: transparent;\n               --sn-btn-active-color: var(--sn-link-hover-color);\n               --sn-btn-active-border-color: transparent;\n               --sn-btn-box-shadow: none;\n               --sn-btn-focus-shadow-rgb: 212, 38, 119;\n               --sn-btn-padding-x: 0;\n                text-decoration: none;\n              }\n              .btn-link:focus-visible {\n                color: var(--sn-btn-color);\n              }\n              .btn-link:hover {\n                color: var(--sn-btn-hover-color);\n              }\n\n              .btn-lg {\n               --sn-btn-padding-y: 8px;\n               --sn-btn-padding-x: 32px;\n               --sn-btn-font-size: 24px;\n               --sn-btn-border-radius: 50rem;\n              }\n\n              .btn-md {\n               --sn-btn-padding-y: 6px;\n               --sn-btn-padding-x: 28px;\n               --sn-btn-font-size: 18px;\n               --sn-btn-border-radius: 50rem;\n              }\n              .btn-link-md{\n               --sn-btn-font-size:18px;\n               --sn-btn-border-radius: 0.25rem;\n              }\n              .btn-link-lg{\n               --sn-btn-font-size: 32px;\n               --sn-btn-border-radius: 0.5rem;\n              }\n      </style>\n      ", "\n    "])), this.getAnchorTag());
       }
     }], [{
       key: "properties",
@@ -1894,66 +1894,66 @@
         };
       }
     }]);
-    return SnWcLink;
+    return ODSLink;
   }(s);
-  _defineProperty(SnWcLink, "styles", i$2(_templateObject4$3 || (_templateObject4$3 = _taggedTemplateLiteral([""]))));
-  customElements.define("sn-wc-link", SnWcLink);
+  _defineProperty(ODSLink, "styles", i$2(_templateObject4$4 || (_templateObject4$4 = _taggedTemplateLiteral([""]))));
+  customElements.define("ods-link", ODSLink);
 
-  var _templateObject$3, _templateObject2$3, _templateObject3$2, _templateObject4$2, _templateObject5$2, _templateObject6$1, _templateObject7$1, _templateObject8$1, _templateObject9$1;
+  var _templateObject$6, _templateObject2$5, _templateObject3$3, _templateObject4$3, _templateObject5$3, _templateObject6$2, _templateObject7$2, _templateObject8$2, _templateObject9$2;
   /**
    * Service Now Heading Component
    * @input label, type
    * @output <sn-wc-heading> in dom
    */
 
-  var hasLoadedMaterialSymbolsFont$1 = false;
+  var hasLoadedMaterialSymbolsFont$2 = false;
   var loadGilroyFont$1 = function loadGilroyFont() {
-    if (hasLoadedMaterialSymbolsFont$1) {
+    if (hasLoadedMaterialSymbolsFont$2) {
       return;
     }
-    hasLoadedMaterialSymbolsFont$1 = true;
+    hasLoadedMaterialSymbolsFont$2 = true;
     var fontSheet = new CSSStyleSheet();
     fontSheet.replaceSync("\n  @font-face {\n    font-family: 'gilroy';\n    src: url(https://cdn.jsdelivr.net/gh/RohitDogra777/gilroy-font@v1.0.0/Gilroy-Semibold.woff) format('woff');\n    font-weight: normal;\n  }");
     document.adoptedStyleSheets.push(fontSheet);
   };
-  var SnWcHeading = /*#__PURE__*/function (_LitElement) {
-    _inherits(SnWcHeading, _LitElement);
-    function SnWcHeading() {
+  var ODSHeading = /*#__PURE__*/function (_LitElement) {
+    _inherits(ODSHeading, _LitElement);
+    function ODSHeading() {
       var _this;
-      _classCallCheck(this, SnWcHeading);
-      _this = _callSuper(this, SnWcHeading);
+      _classCallCheck(this, ODSHeading);
+      _this = _callSuper(this, ODSHeading);
       _this.surface = "Dark";
       loadGilroyFont$1();
       return _this;
     }
-    _createClass(SnWcHeading, [{
+    _createClass(ODSHeading, [{
       key: "getHeading",
       value: function getHeading(surface) {
         var mode = surface == "Dark" ? "dark-surface" : "white-surface";
         if (this["heading-level"] == "1") {
-          return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["<h1\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h1>"])), ["sn-wc-heading", mode].join(" "));
+          return x(_templateObject$6 || (_templateObject$6 = _taggedTemplateLiteral(["<h1\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h1>"])), ["sn-wc-heading", mode].join(" "));
         }
         if (this["heading-level"] == "2") {
-          return x(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["<h2\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h2>"])), ["sn-wc-heading", mode].join(" "));
+          return x(_templateObject2$5 || (_templateObject2$5 = _taggedTemplateLiteral(["<h2\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h2>"])), ["sn-wc-heading", mode].join(" "));
         }
         if (this["heading-level"] == "3") {
-          return x(_templateObject3$2 || (_templateObject3$2 = _taggedTemplateLiteral(["<h3\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h3>"])), ["sn-wc-heading", mode].join(" "));
+          return x(_templateObject3$3 || (_templateObject3$3 = _taggedTemplateLiteral(["<h3\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h3>"])), ["sn-wc-heading", mode].join(" "));
         }
         if (this["heading-level"] == "4") {
-          return x(_templateObject4$2 || (_templateObject4$2 = _taggedTemplateLiteral(["<h4\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h4>"])), ["sn-wc-heading", mode].join(" "));
+          return x(_templateObject4$3 || (_templateObject4$3 = _taggedTemplateLiteral(["<h4\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h4>"])), ["sn-wc-heading", mode].join(" "));
         }
         if (this["heading-level"] == "5") {
-          return x(_templateObject5$2 || (_templateObject5$2 = _taggedTemplateLiteral(["<h5\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h5>"])), ["sn-wc-heading", mode].join(" "));
+          return x(_templateObject5$3 || (_templateObject5$3 = _taggedTemplateLiteral(["<h5\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h5>"])), ["sn-wc-heading", mode].join(" "));
         }
         if (this["heading-level"] == "6") {
-          return x(_templateObject6$1 || (_templateObject6$1 = _taggedTemplateLiteral(["<h6\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h6>"])), ["sn-wc-heading", mode].join(" "));
+          return x(_templateObject6$2 || (_templateObject6$2 = _taggedTemplateLiteral(["<h6\n        part=\"sn-wc-heading\"\n        class=", "\n      >\n        <slot></slot>\n      </h6>"])), ["sn-wc-heading", mode].join(" "));
         }
-        return x(_templateObject7$1 || (_templateObject7$1 = _taggedTemplateLiteral(["<h1\n      part=\"sn-wc-heading\"\n      class=", "\n    >\n      <slot></slot>\n    </h1>"])), ["sn-wc-heading", mode].join(" "));
+        return x(_templateObject7$2 || (_templateObject7$2 = _taggedTemplateLiteral(["<h1\n      part=\"sn-wc-heading\"\n      class=", "\n    >\n      <slot></slot>\n    </h1>"])), ["sn-wc-heading", mode].join(" "));
       }
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject8$1 || (_templateObject8$1 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          font-family: \"gilroy\";\n          font-weight: 600;\n          margin: 0px;\n          padding: 0px;\n          box-sizing:border-box;\n        }\n        :host{\n          font-size: var(--sn-wc-font-size);\n          line-height: var(--sn-wc-line-height);\n        }\n        .sn-wc-heading {\n          padding: var(--sn-wc-padding-top,0px) var(--sn-wc-padding-end,0px) var(--sn-wc-padding-bottom,0px) var(--sn-wc-padding-start,0px);\n          margin: var(--sn-wc-margin-top,0px) var(--sn-wc-margin-end,0px) var(--sn-wc-margin-bottom,0px) var(--sn-wc-margin-start,0px);\n          color: var(--sn-wc-color,#1f1f1f);\n        }\n        .white-surface {\n          color: #ffffff;\n        }\n        .dark-surface {\n          color: #1f1f1f;\n        }\n      </style>\n      ", "\n    "])), this.getHeading(this.surface));
+        return x(_templateObject8$2 || (_templateObject8$2 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          font-family: \"gilroy\";\n          font-weight: 600;\n          margin: 0px;\n          padding: 0px;\n          box-sizing:border-box;\n        }\n        :host{\n          font-size: var(--sn-wc-font-size);\n          line-height: var(--sn-wc-line-height);\n        }\n        .sn-wc-heading {\n          padding: var(--sn-wc-padding-top,0px) var(--sn-wc-padding-end,0px) var(--sn-wc-padding-bottom,0px) var(--sn-wc-padding-start,0px);\n          margin: var(--sn-wc-margin-top,0px) var(--sn-wc-margin-end,0px) var(--sn-wc-margin-bottom,0px) var(--sn-wc-margin-start,0px);\n          color: var(--sn-wc-color,#1f1f1f);\n        }\n        .white-surface {\n          color: #ffffff;\n        }\n        .dark-surface {\n          color: #1f1f1f;\n        }\n      </style>\n      ", "\n    "])), this.getHeading(this.surface));
       }
     }], [{
       key: "properties",
@@ -1968,27 +1968,27 @@
         };
       }
     }]);
-    return SnWcHeading;
+    return ODSHeading;
   }(s);
-  _defineProperty(SnWcHeading, "styles", i$2(_templateObject9$1 || (_templateObject9$1 = _taggedTemplateLiteral(["\n    :host {\n      --sn-wc-margin-bottom: 0px;\n    }\n  "]))));
-  customElements.define("sn-wc-heading", SnWcHeading);
+  _defineProperty(ODSHeading, "styles", i$2(_templateObject9$2 || (_templateObject9$2 = _taggedTemplateLiteral(["\n    :host {\n      --sn-wc-margin-bottom: 0px;\n    }\n  "]))));
+  customElements.define("ods-heading", ODSHeading);
 
-  var _templateObject$2, _templateObject2$2;
+  var _templateObject$5, _templateObject2$4;
   /**
    * Service Now Image Component
    * @input label, type
    * @output <sn-wc-image> in dom
    */
-  var SnWcImage = /*#__PURE__*/function (_LitElement) {
-    _inherits(SnWcImage, _LitElement);
-    function SnWcImage() {
-      _classCallCheck(this, SnWcImage);
-      return _callSuper(this, SnWcImage);
+  var ODSImage = /*#__PURE__*/function (_LitElement) {
+    _inherits(ODSImage, _LitElement);
+    function ODSImage() {
+      _classCallCheck(this, ODSImage);
+      return _callSuper(this, ODSImage);
     }
-    _createClass(SnWcImage, [{
+    _createClass(ODSImage, [{
       key: "render",
       value: function render() {
-        return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin:0;\n          padding:0;\n          box-sizing:border-box;\n        }\n        .sn-wc-image{ \n          object-fit: var(--sn-wc-object-fit,cover);\n          max-width:100%;\n          height: var(--sn-wc-height,100%);\n          width: var(--sn-wc-width,100%);\n        }\n      </style>\n      <picture>\n         <source media=\"(min-width:768px)\" srcset=\"", "\">\n         <source media=\"(min-width:568px)\" srcset=\"", "\">\n         <source media=\"(min-width:320px)\" srcset=\"", "\">\n         <img class=\"sn-wc-image\" src=\"", "\" alt=\"", "\" loading=\"", "\">\n      </picture>\n    "])), this['src'], this['src-medium'], this['src-small'], this['src'], this.alt, this.loading);
+        return x(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin:0;\n          padding:0;\n          box-sizing:border-box;\n        }\n        .sn-wc-image{ \n          object-fit: var(--sn-wc-object-fit,cover);\n          max-width:100%;\n          height: var(--sn-wc-height,100%);\n          width: var(--sn-wc-width,100%);\n        }\n      </style>\n      <picture>\n         <source media=\"(min-width:768px)\" srcset=\"", "\">\n         <source media=\"(min-width:568px)\" srcset=\"", "\">\n         <source media=\"(min-width:320px)\" srcset=\"", "\">\n         <img class=\"sn-wc-image\" src=\"", "\" alt=\"", "\" loading=\"", "\">\n      </picture>\n    "])), this['src'], this['src-medium'], this['src-small'], this['src'], this.alt, this.loading);
       }
     }], [{
       key: "properties",
@@ -2012,25 +2012,25 @@
         };
       }
     }]);
-    return SnWcImage;
+    return ODSImage;
   }(s);
-  _defineProperty(SnWcImage, "styles", i$2(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n  "]))));
-  customElements.define("sn-wc-image", SnWcImage);
+  _defineProperty(ODSImage, "styles", i$2(_templateObject2$4 || (_templateObject2$4 = _taggedTemplateLiteral(["\n  "]))));
+  customElements.define("ods-image", ODSImage);
 
-  var _templateObject$1, _templateObject2$1, _templateObject3$1, _templateObject4$1, _templateObject5$1, _templateObject6, _templateObject7, _templateObject8, _templateObject9;
+  var _templateObject$4, _templateObject2$3, _templateObject3$2, _templateObject4$2, _templateObject5$2, _templateObject6$1, _templateObject7$1, _templateObject8$1, _templateObject9$1;
 
   /**
    * Service Now Text Component
    * @input label, type
    * @output <sn-wc-text> in dom
    */
-  var SnWcCard = /*#__PURE__*/function (_LitElement) {
-    _inherits(SnWcCard, _LitElement);
-    function SnWcCard() {
-      _classCallCheck(this, SnWcCard);
-      return _callSuper(this, SnWcCard);
+  var ODSCard = /*#__PURE__*/function (_LitElement) {
+    _inherits(ODSCard, _LitElement);
+    function ODSCard() {
+      _classCallCheck(this, ODSCard);
+      return _callSuper(this, ODSCard);
     }
-    _createClass(SnWcCard, [{
+    _createClass(ODSCard, [{
       key: "triggerClick",
       value: function triggerClick(e) {
         window.open(this.viewMoreLink, "_blank");
@@ -2039,33 +2039,33 @@
       key: "getImageComponent",
       value: function getImageComponent() {
         if (this.imageSrc && this.imageSrc != "") {
-          return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["<sn-wc-image\n        class=\"card-img\"\n        src=\"", "\"\n        src-medium=\"", "\"\n        src-small=\"", "\"\n        loading=\"lazy\"\n      >\n      </sn-wc-image>"])), this.imageSrc, this.imageSrc, this.imageSrc);
+          return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["<ods-image\n        class=\"card-img\"\n        src=\"", "\"\n        src-medium=\"", "\"\n        src-small=\"", "\"\n        loading=\"lazy\"\n      >\n      </ods-image>"])), this.imageSrc, this.imageSrc, this.imageSrc);
         }
-        return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral([""])));
+        return x(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral([""])));
       }
     }, {
       key: "getHeadingComponent",
       value: function getHeadingComponent() {
         if (this.heading && this.heading != "") {
-          return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral([" <sn-wc-heading class=\"card-heading\" heading-level=\"4\"\n        >", "</sn-wc-heading\n      >"])), this.heading);
+          return x(_templateObject3$2 || (_templateObject3$2 = _taggedTemplateLiteral([" <ods-heading class=\"card-heading\" heading-level=\"4\"\n        >", "</ods-heading\n      >"])), this.heading);
         }
-        return x(_templateObject4$1 || (_templateObject4$1 = _taggedTemplateLiteral([""])));
+        return x(_templateObject4$2 || (_templateObject4$2 = _taggedTemplateLiteral([""])));
       }
     }, {
       key: "getTextComponent",
       value: function getTextComponent() {
         if (this.body && this.body != "") {
-          return x(_templateObject5$1 || (_templateObject5$1 = _taggedTemplateLiteral(["<sn-wc-text class=\"card-body\">", "</sn-wc-text>"])), this.body);
+          return x(_templateObject5$2 || (_templateObject5$2 = _taggedTemplateLiteral(["<ods-text class=\"card-body\">", "</ods-text>"])), this.body);
         }
-        return x(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral([""])));
+        return x(_templateObject6$1 || (_templateObject6$1 = _taggedTemplateLiteral([""])));
       }
     }, {
       key: "getLinkComponent",
       value: function getLinkComponent() {
         if (this.linkLabel && this.linkLabel != "") {
-          return x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral([" <sn-wc-link\n        class=\"card-link\"\n        type=\"", "\"\n        label=\"", "\"\n        target=\"", "\"\n        href=\"", "\"\n        @btn-click-event=\"", "\"\n      ></sn-wc-link>"])), this.linkType, this.linkLabel, this.target, this.viewMoreLink, this.triggerClick);
+          return x(_templateObject7$1 || (_templateObject7$1 = _taggedTemplateLiteral([" <ods-link\n        class=\"card-link\"\n        type=\"", "\"\n        label=\"", "\"\n        target=\"", "\"\n        href=\"", "\"\n        @btn-click-event=\"", "\"\n      ></ods-link>"])), this.linkType, this.linkLabel, this.target, this.viewMoreLink, this.triggerClick);
         }
-        return x(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral([""])));
+        return x(_templateObject8$1 || (_templateObject8$1 = _taggedTemplateLiteral([""])));
       }
     }, {
       key: "render",
@@ -2074,7 +2074,7 @@
         if (this.surface == "Dark") {
           surface = "#1f1f1f";
         }
-        return x(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin: 0;\n          padding: 0;\n          box-sizing: border-box;\n        }\n        .card {\n          --sn-card-spacer-y: 8px;\n          --sn-card-spacer-x: 16px;\n          --sn-card-border-width: 1px;\n          --sn-card-border-color: rgba(0, 0, 0, 0.175);\n          --sn-card-border-radius: 1rem;\n          --sn-card-bg: ", ";\n          --sn-card-img-overlay-padding: 1rem;\n          font-size: var(--sn-wc-font-size);\n          min-width: 0;\n          min-height: 0;\n          word-wrap: break-word;\n          overflow: hidden;\n          transition: box-shaddow 0.3s;\n          width: var(--sn-wc-width, 100%);\n          display: flex;\n          flex-direction: column;\n          background-color: var(--sn-card-bg);\n          background-clip: border-box;\n          border: var(--sn-card-border-width) solid var(--sn-card-border-color);\n          border-radius: var(--sn-card-border-radius);\n        }\n        sn-wc-heading.card-heading {\n          --sn-wc-padding-start: 16px;\n          --sn-wc-padding-end: 16px;\n          --sn-wc-padding-top: 4px;\n          --sn-wc-font-size: 20px;\n          --sn-wc-font-weight: 28px;\n        }\n        sn-wc-text.card-body {\n          --sn-wc-padding-start: 16px;\n          --sn-wc-padding-end: 16px;\n          --sn-wc-padding-top: 4px;\n          // display: -webkit-box;\n          // -webkit-box-orient: vertical;\n          // overflow: hidden;\n          // text-overflow: ellipses;\n          //-webkit-line-clamp: 3;\n        }\n        sn-wc-link.card-link {\n          margin-top: auto;\n          padding: 20px 16px 10px 16px;\n        }\n        sn-wc-image.card-img {\n          --sn-wc-height: 152px;\n          --sn-wc-width: 100%;\n        }\n      </style>\n      <div class=\"card\">\n        ", " \n        ", "\n        ", " \n        ", "\n\n      </div>\n    "])), surface, this.getImageComponent(), this.getHeadingComponent(), this.getTextComponent(), this.getLinkComponent());
+        return x(_templateObject9$1 || (_templateObject9$1 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin: 0;\n          padding: 0;\n          box-sizing: border-box;\n        }\n        .card {\n          --sn-card-spacer-y: 8px;\n          --sn-card-spacer-x: 16px;\n          --sn-card-border-width: 1px;\n          --sn-card-border-color: rgba(0, 0, 0, 0.175);\n          --sn-card-border-radius: 1rem;\n          --sn-card-bg: ", ";\n          --sn-card-img-overlay-padding: 1rem;\n          font-size: var(--sn-wc-font-size);\n          min-width: 0;\n          min-height: 0;\n          word-wrap: break-word;\n          overflow: hidden;\n          transition: box-shaddow 0.3s;\n          width: var(--sn-wc-width, 100%);\n          display: flex;\n          flex-direction: column;\n          background-color: var(--sn-card-bg);\n          background-clip: border-box;\n          border: var(--sn-card-border-width) solid var(--sn-card-border-color);\n          border-radius: var(--sn-card-border-radius);\n        }\n        ods-heading.card-heading {\n          --sn-wc-padding-start: 16px;\n          --sn-wc-padding-end: 16px;\n          --sn-wc-padding-top: 4px;\n          --sn-wc-font-size: 20px;\n          --sn-wc-font-weight: 28px;\n        }\n        ods-text.card-body {\n          --sn-wc-padding-start: 16px;\n          --sn-wc-padding-end: 16px;\n          --sn-wc-padding-top: 4px;\n          // display: -webkit-box;\n          // -webkit-box-orient: vertical;\n          // overflow: hidden;\n          // text-overflow: ellipses;\n          //-webkit-line-clamp: 3;\n        }\n        ods-link.card-link {\n          margin-top: auto;\n          padding: 20px 16px 10px 16px;\n        }\n       ods-image.card-img {\n          --sn-wc-height: 152px;\n          --sn-wc-width: 100%;\n        }\n      </style>\n      <div class=\"card\">\n        ", " \n        ", "\n        ", " \n        ", "\n\n      </div>\n    "])), surface, this.getImageComponent(), this.getHeadingComponent(), this.getTextComponent(), this.getLinkComponent());
       }
     }], [{
       key: "properties",
@@ -2107,40 +2107,40 @@
         };
       }
     }]);
-    return SnWcCard;
+    return ODSCard;
   }(s);
-  customElements.define("sn-wc-card", SnWcCard);
+  customElements.define("ods-card", ODSCard);
 
   var AnonymousImg = "data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M22%207.96479C22%205.83667%2020.8125%203.89633%2019%202.76968C17.125%201.70562%2014.8125%201.70562%2013%202.76968C11.125%203.89633%2010%205.83667%2010%207.96479C10%2010.1555%2011.125%2012.0958%2013%2013.2225C14.8125%2014.2866%2017.125%2014.2866%2019%2013.2225C20.8125%2012.0958%2022%2010.1555%2022%207.96479ZM8%207.96479C8%205.14817%209.5%202.51932%2012%201.07971C14.4375%20-0.359902%2017.5%20-0.359902%2020%201.07971C22.4375%202.51932%2024%205.14817%2024%207.96479C24%2010.844%2022.4375%2013.4729%2020%2014.9125C17.5%2016.3521%2014.4375%2016.3521%2012%2014.9125C9.5%2013.4729%208%2010.844%208%207.96479ZM4%2029.9971H28C27.875%2025.0523%2023.8125%2020.9839%2018.8125%2020.9839H13.125C8.125%2020.9839%204.0625%2025.0523%204%2029.9971ZM2%2030.1848C2%2023.9883%206.9375%2018.9809%2013.125%2018.9809H18.8125C25%2018.9809%2030%2023.9883%2030%2030.1848C30%2031.1863%2029.125%2032%2028.125%2032H3.8125C2.8125%2032%202%2031.1863%202%2030.1848Z%22%20fill%3D%22%23FFFFFF%22%2F%3E%3C%2Fsvg%3E";
 
-  var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
+  var _templateObject$3, _templateObject2$2, _templateObject3$1, _templateObject4$1, _templateObject5$1;
 
   /**
    * Service Now Avatar Component
    * @input label, type
    * @output <ods-avatar> in dom
    */
-  var hasLoadedMaterialSymbolsFont = false;
+  var hasLoadedMaterialSymbolsFont$1 = false;
   var loadGilroyFont = function loadGilroyFont() {
-    if (hasLoadedMaterialSymbolsFont) {
+    if (hasLoadedMaterialSymbolsFont$1) {
       return;
     }
-    hasLoadedMaterialSymbolsFont = true;
+    hasLoadedMaterialSymbolsFont$1 = true;
     var fontSheet = new CSSStyleSheet();
     fontSheet.replaceSync("\n  @font-face {\n    font-family: 'gilroy';\n    src: url(https://cdn.jsdelivr.net/gh/RohitDogra777/gilroy-font@v1.0.0/Gilroy-Semibold.woff) format('woff');\n    font-weight: 600;\n  }");
     document.adoptedStyleSheets.push(fontSheet);
   };
-  var SnWcAvatar = /*#__PURE__*/function (_LitElement) {
-    _inherits(SnWcAvatar, _LitElement);
-    function SnWcAvatar() {
+  var ODSAvatar = /*#__PURE__*/function (_LitElement) {
+    _inherits(ODSAvatar, _LitElement);
+    function ODSAvatar() {
       var _this;
-      _classCallCheck(this, SnWcAvatar);
-      _this = _callSuper(this, SnWcAvatar);
+      _classCallCheck(this, ODSAvatar);
+      _this = _callSuper(this, ODSAvatar);
       loadGilroyFont();
       _this.size = "M";
       return _this;
     }
-    _createClass(SnWcAvatar, [{
+    _createClass(ODSAvatar, [{
       key: "getAvatarText",
       value: function getAvatarText() {
         var name = this.name.trim();
@@ -2156,20 +2156,20 @@
       value: function getAvatarContent() {
         var size = "".concat(this.size);
         size = size.toLowerCase();
-        var bellSize = "bell-icon-".concat(size);
+        var bellSize = "ods-avatar-icon-".concat(size);
         if (this.image && this.image != '') {
-          return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        <img\n          class=", "\n          src=\"", "\"\n          alt=\"Avatar Image\"\n        />\n      "])), ["avatar", size].join(" "), this.image);
+          return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["\n        <img\n          class=", "\n          src=\"", "\"\n          alt=\"Avatar Image\"\n        />\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.image);
         } else if (this.icon && this.icon != "") {
-          return x(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      <div class=", ">\n        <img class=", " src=\"", "\" alt=\"Bell Icon\" />\n      </div>\n    "])), ["avatar", size].join(" "), [bellSize].join(" "), this.icon);
+          return x(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n      <div class=", ">\n        <img class=", " src=\"", "\" alt=\"Bell Icon\" />\n      </div>\n    "])), ["ods-avatar", "ods-avatar-" + size].join(" "), [bellSize].join(" "), this.icon);
         } else if (this.name && this.name != "") {
-          return x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n      <div class=", ">\n        ", "\n      </div>\n    "])), ["avatar", size].join(" "), this.getAvatarText());
+          return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n      <div class=", ">\n        ", "\n      </div>\n    "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.getAvatarText());
         }
-        return x(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    <div class=", ">\n      <img class=", " src=\"", "\" alt=\"Bell Icon\" />\n    </div>\n  "])), ["avatar", size].join(" "), [bellSize].join(" "), AnonymousImg);
+        return x(_templateObject4$1 || (_templateObject4$1 = _taggedTemplateLiteral(["\n    <div class=", ">\n      <img class=", " src=\"", "\" alt=\"Bell Icon\" />\n    </div>\n  "])), ["ods-avatar", "ods-avatar-" + size].join(" "), [bellSize].join(" "), AnonymousImg);
       }
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin: 0;\n          padding: 0;\n          box-sizing: border-box;\n        }\n        .xxl {\n          width: 180px;\n          height: 180px;\n          font-size: 72px;\n          line-height: 108px;\n        }\n        .xl {\n          width: 84px;\n          height: 84px;\n          font-size: 32px;\n          line-height: 40px;\n        }\n        .l {\n          width: 48px;\n          height: 48px;\n          font-size: 20px;\n          line-height: 20px;\n        }\n        .m {\n          width: 32px;\n          height: 32px;\n          font-size: 14px;\n          line-height: 14px;\n        }\n        .sm {\n          width: 24px;\n          height: 24px;\n          font-size: 10px;\n          line-height: 10px;\n        }\n        .avatar {\n          position: relative;\n          display: inline-flex;\n          align-items: center;\n          justify-content: center;\n          vertical-align: middle;\n          border-radius: 50em;\n          transition: margin 0.15s;\n          --cui-bg-opacity: 1;\n          background-color: var(--sn-wc-bgColor, #395F72);\n          color: var(--sn-wc-color,#ffffff);\n          text-transform: uppercase;\n          font-family: \"gilroy\", sans-serif;\n          font-weight: 600;\n          object-fit: cover;\n        }\n        .bell-icon-xxl{\n            height:104px;\n            width:104px;\n        }\n        .bell-icon-xl{\n          height:40px;\n          width:40px;\n      }\n      .bell-icon-l{\n        height:24px;\n        width:24px;\n    }\n    .bell-icon-m{\n      height:16px;\n      width:16px;\n     }\n    .bell-icon-sm{\n      height:12px;\n      width:12px;\n     }\n      </style>\n      ", "\n    "])), this.getAvatarContent());
+        return x(_templateObject5$1 || (_templateObject5$1 = _taggedTemplateLiteral(["\n      <style>\n      * {\n      margin: 0;\n      padding: 0;\n      box-sizing: border-box;\n    }\n    .ods-avatar-xxl {\n      width: 180px;\n      height: 180px;\n      font-size: 72px;\n      line-height: 108px;\n    }\n    .ods-avatar-xl {\n      width: 84px;\n      height: 84px;\n      font-size: 32px;\n      line-height: 40px;\n    }\n    .ods-avatar-l {\n      width: 48px;\n      height: 48px;\n      font-size: 20px;\n      line-height: 20px;\n    }\n    .ods-avatar-m {\n      width: 32px;\n      height: 32px;\n      font-size: 14px;\n      line-height: 14px;\n    }\n    .ods-avatar-sm {\n      width: 24px;\n      height: 24px;\n      font-size: 10px;\n      line-height: 10px;\n    }\n    .ods-avatar {\n      position: relative;\n      display: inline-flex;\n      align-items: center;\n      justify-content: center;\n      vertical-align: middle;\n      border-radius: 50em;\n      transition: margin 0.15s;\n      --cui-bg-opacity: 1;\n      background-color: var(--sn-wc-bgColor, #395f72);\n      color: var(--sn-wc-color, #ffffff);\n      text-transform: uppercase;\n      font-family: \"gilroy\", sans-serif;\n      font-weight: 600;\n      object-fit: cover;\n    }\n    .ods-avatar-icon-xxl {\n      height: 104px;\n      width: 104px;\n    }\n    .ods-avatar-icon-xl {\n      height: 40px;\n      width: 40px;\n    }\n    .ods-avatar-icon-l {\n      height: 24px;\n      width: 24px;\n    }\n    .ods-avatar-icon-m {\n      height: 16px;\n      width: 16px;\n    }\n    .ods-avatar-icon-sm {\n      height: 12px;\n      width: 12px;\n    }    \n  </style>\n      ", "\n    "])), this.getAvatarContent());
       }
     }], [{
       key: "properties",
@@ -2190,14 +2190,203 @@
         };
       }
     }]);
-    return SnWcAvatar;
+    return ODSAvatar;
   }(s);
-  customElements.define("ods-avatar", SnWcAvatar);
+  customElements.define("ods-avatar", ODSAvatar);
 
-  exports.SnWcAvatar = SnWcAvatar;
-  exports.SnWcCard = SnWcCard;
-  exports.SnWcHeading = SnWcHeading;
-  exports.SnWcLink = SnWcLink;
-  exports.SnWcText = SnWcText;
+  var _templateObject$2, _templateObject2$1, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11;
+
+  /**
+   * Service Now Media Card Component
+   * @input size, showMedia, headLine, body, mediaSrc, description, action, footer
+   * @output <ods-media-card> in dom
+   */
+
+  var hasLoadedMaterialSymbolsFont = false;
+  var loadLatoFont = function loadLatoFont() {
+    if (hasLoadedMaterialSymbolsFont) {
+      return;
+    }
+    hasLoadedMaterialSymbolsFont = true;
+    var fontSheet = new CSSStyleSheet();
+    fontSheet.replaceSync("\n    @font-face {\n      font-family: 'lato';\n      src: url(https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff) format('woff');\n      font-weight: normal;\n    }");
+    document.adoptedStyleSheets.push(fontSheet);
+  };
+  var OdsMediaCard = /*#__PURE__*/function (_LitElement) {
+    _inherits(OdsMediaCard, _LitElement);
+    function OdsMediaCard() {
+      var _this;
+      _classCallCheck(this, OdsMediaCard);
+      _this = _callSuper(this, OdsMediaCard);
+      loadLatoFont();
+      return _this;
+    }
+    _createClass(OdsMediaCard, [{
+      key: "getChip",
+      value: function getChip() {
+        return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-card-header-chip\">\n            <span>Label</span>\n        </div>"])));
+      }
+    }, {
+      key: "getButton",
+      value: function getButton() {
+        return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n        <a href=\"google.com\" class=\"ods-card-body-link ods-card--flex\"> \n            <div>", "</div>\n            <div class=\"ods-card-body-link-icon ods-card--flex ods-card--flex--align-items-center\">\n            ", "\n            </div>\n        </a>"])), this.action, this.getRightArrowIcon());
+      }
+    }, {
+      key: "getFavoriteIcon",
+      value: function getFavoriteIcon() {
+        return x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 32 32\" fill=\"none\">\n            <path d=\"M15.25 7.82847L14.5 6.98472L14.2375 6.69097C12.6125 4.86597 10.1562 4.01597 7.75 4.45347C4.41875 5.05972 2 7.95972 2 11.3472V11.566C2 13.5847 2.8375 15.5097 4.31875 16.8847L15.8125 27.591C15.8625 27.6347 15.9312 27.666 16 27.666C16.0688 27.666 16.1375 27.641 16.1875 27.591L27.6875 16.8847C29.1625 15.5097 30 13.5847 30 11.566V11.3472C30 7.95972 27.5812 5.05972 24.25 4.45347C21.8438 4.01597 19.3875 4.86597 17.7625 6.69097L17.5 6.98472L16.75 7.82847C16.5625 8.04097 16.2875 8.16597 16 8.16597C15.7125 8.16597 15.4438 8.04097 15.25 7.82847ZM17.4312 4.25972C19.4375 2.69097 22.0438 2.02222 24.6063 2.48472C28.8875 3.26597 32 6.99722 32 11.3472V11.566C32 13.816 31.1812 15.9785 29.7125 17.6597C29.5 17.8972 29.2812 18.1285 29.0438 18.3472L17.5438 29.0535C17.4938 29.1035 17.4375 29.1472 17.3813 29.191C16.9875 29.4972 16.5 29.6597 16 29.6597C15.425 29.6597 14.875 29.441 14.45 29.0535L2.95 18.3535C2.7125 18.1347 2.49375 17.9035 2.28125 17.666C0.81875 15.9785 0 13.816 0 11.566V11.3472C0 6.99722 3.1125 3.26597 7.39375 2.48472C9.95 2.02222 12.5562 2.68472 14.5625 4.25972C14.9812 4.59097 15.375 4.95347 15.7312 5.35972L15.9937 5.65347L16.2563 5.35972C16.5188 5.06597 16.7937 4.79097 17.0875 4.54097C17.2 4.44722 17.3125 4.35347 17.425 4.25972H17.4312Z\" />\n        </svg>"])));
+      }
+    }, {
+      key: "getDottedIcon",
+      value: function getDottedIcon() {
+        return x(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\n            <path d=\"M11.9999 18.4615C11.2655 18.4615 10.5611 18.7533 10.0418 19.2726C9.52247 19.792 9.23071 20.4963 9.23071 21.2308C9.23071 21.9652 9.52247 22.6696 10.0418 23.1889C10.5611 23.7082 11.2655 24 11.9999 24C12.7344 24 13.4388 23.7082 13.9581 23.1889C14.4774 22.6696 14.7692 21.9652 14.7692 21.2308C14.7692 20.4963 14.4774 19.792 13.9581 19.2726C13.4388 18.7533 12.7344 18.4615 11.9999 18.4615ZM11.9999 9.23077C11.2655 9.23077 10.5611 9.52253 10.0418 10.0419C9.52247 10.5612 9.23071 11.2656 9.23071 12C9.23071 12.7344 9.52247 13.4388 10.0418 13.9581C10.5611 14.4775 11.2655 14.7692 11.9999 14.7692C12.7344 14.7692 13.4388 14.4775 13.9581 13.9581C14.4774 13.4388 14.7692 12.7344 14.7692 12C14.7692 11.2656 14.4774 10.5612 13.9581 10.0419C13.4388 9.52253 12.7344 9.23077 11.9999 9.23077ZM14.7692 2.76923C14.7692 2.40557 14.6975 2.04547 14.5584 1.70949C14.4192 1.37351 14.2152 1.06824 13.9581 0.811089C13.7009 0.553942 13.3957 0.349962 13.0597 0.210795C12.7237 0.0716282 12.3636 0 11.9999 0C11.6363 0 11.2762 0.0716282 10.9402 0.210795C10.6042 0.349962 10.2989 0.553942 10.0418 0.811089C9.78465 1.06824 9.58067 1.37351 9.44151 1.70949C9.30234 2.04547 9.23071 2.40557 9.23071 2.76923C9.23071 3.13289 9.30234 3.49299 9.44151 3.82897C9.58067 4.16495 9.78465 4.47023 10.0418 4.72737C10.2989 4.98452 10.6042 5.1885 10.9402 5.32767C11.2762 5.46683 11.6363 5.53846 11.9999 5.53846C12.3636 5.53846 12.7237 5.46683 13.0597 5.32767C13.3957 5.1885 13.7009 4.98452 13.9581 4.72737C14.2152 4.47023 14.4192 4.16495 14.5584 3.82897C14.6975 3.49299 14.7692 3.13289 14.7692 2.76923Z\" />\n        </svg>"])));
+      }
+    }, {
+      key: "getRightArrowIcon",
+      value: function getRightArrowIcon() {
+        return x(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n        <svg xmlns=\"http://www.w3.org/2000/svg\"  width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\">\n        <g clip-path=\"url(#clip0_1641_204)\">\n        <path d=\"M23.7592 12.599L14.3411 21.7656C14.0201 22.0781 13.4314 22.0781 13.1104 21.7656C12.7893 21.4531 12.7893 20.8802 13.1104 20.5677L21.0836 12.8073L0.856187 12.8073C0.428094 12.8073 0 12.4427 0 11.974C0 11.5573 0.428094 11.1406 0.856187 11.1406L21.0836 11.1406L13.1104 3.43229C12.7893 3.11979 12.7893 2.54688 13.1104 2.23438C13.4314 1.92187 14.0201 1.92187 14.3411 2.23438L23.7592 11.401C24.0803 11.7135 24.0803 12.2865 23.7592 12.599Z\" />\n        </g>\n        <defs>\n        <clipPath id=\"clip0_1641_204\">\n        <rect width=\"24\" height=\"24\" fill=\"white\"/>\n        </clipPath>\n        </defs>\n        </svg>"])));
+      }
+    }, {
+      key: "getImage",
+      value: function getImage() {
+        if (this.mediaSrc && this.showMedia === "true") {
+          return x(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n            <div class=\"ods-card-image\">\n                <img src=", " alt=\"Card Image\" />\n            </div>"])), this.mediaSrc);
+        }
+      }
+    }, {
+      key: "getCardHeader",
+      value: function getCardHeader() {
+        return x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n        <div class=\"ods-card-header\">\n                <div class=\"ods-card--flex ods-card--flex--justify-space-between ods-card--flex--align-items-center\">\n                    <div>\n                        ", "\n                    </div>\n                    <div class=\"ods-card-header-icon-dropdown ods-card--flex\">\n                        <div class=\"ods-card-header-icon-container\">\n                            <a class=\"ods-card-header-icon-dropdown\"> \n                                ", "\n                            </a>\n                        </div>\n                        <div class=\"ods-card-header-dropdown-container\">\n                            <a class=\"ods-card-header-icon-dropdown\">\n                            ", "\n                            </a>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"ods-card-header-heading-container\">\n                    <h1>\n                        ", "\n                    </h1> \n                </div>\n            </div>\n        "])), this.getChip(), this.getFavoriteIcon(), this.getDottedIcon(), this.headLine);
+      }
+    }, {
+      key: "getCardBody",
+      value: function getCardBody() {
+        return x(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n            <div class=\"ods-card-body\">\n                    <div class=\"ods-card-body-subheading\">\n                        <span>", "</span>\n                    </div>\n                <div class=\"ods-card-body-support\">\n                    <span>", "</span>\n                </div>\n                <div class=\"ods-card-body-link-container\">\n                    ", "\n                </div>\n            </div> \n        "])), this.body, this.description, this.getButton());
+      }
+    }, {
+      key: "getCardFooter",
+      value: function getCardFooter() {
+        return x(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n            <div class=\"ods-card-footer\">\n                <span>", "</span>\n            </div>\n        "])), this.footer);
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        return x(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n        <div class=\"ods-card-container\">\n            ", "\n            <div class=\"ods-card-container-content\">\n                ", "\n                ", "\n                <div class=\"ods-card-separator\"></div>\n                ", "\n            </div> \n        </div>"])), this.getImage(), this.getCardHeader(), this.getCardBody(), this.getCardFooter());
+      }
+    }], [{
+      key: "styles",
+      get: function get() {
+        return [i$2(_templateObject11 || (_templateObject11 = _taggedTemplateLiteral(["\n            *{\n                --ods-ref-color-green-100:  #FFFFFF;\n                --ods-ref-color-green-99:   #F9FFF0;\n                --ods-ref-color-green-98:   #F1FEE4;\n                --ods-ref-color-green-95:   #D6FDBE;\n                --ods-ref-color-green-90:   #BBF29E;\n                --ods-ref-color-green-80:   #A0D585;\n                --ods-ref-color-green-70:   #86B96D;\n                --ods-ref-color-green-60:   #6D9F56;\n                --ods-ref-color-green-50:   #54843E;\n                --ods-ref-color-green-40:   #3C6A29;\n                --ods-ref-color-green-35:   #315D1E;\n                --ods-ref-color-green-30:   #225112;\n                --ods-ref-color-green-25:   #1D440E;\n                --ods-ref-color-green-20:   #16380A;\n                --ods-ref-color-green-10:   #0A2104;\n                --ods-ref-color-green-0:    #000000;\n                --ods-ref-color-gray-100:   #FFFFFF;\n                --ods-ref-color-gray-99:    #FBFBFB;\n                --ods-ref-color-gray-98:    #F8F8F8;\n                --ods-ref-color-gray-95:    #F0F0F0;\n                --ods-ref-color-gray-90:    #E1E1E1;\n                --ods-ref-color-gray-80:    #C5C5C5;\n                --ods-ref-color-gray-70:    #AAAAAA;\n                --ods-ref-color-gray-60:    #909090;\n                --ods-ref-color-gray-50:    #767676;\n                --ods-ref-color-gray-40:    #5E5E5E;\n                --ods-ref-color-gray-35:    #515151;\n                --ods-ref-color-gray-30:    #464646;\n                --ods-ref-color-gray-25:    #3B3B3B;\n                --ods-ref-color-gray-20:    #303030;\n                --ods-ref-color-gray-10:    #1B1B1B;\n                --ods-ref-color-gray-0:     #000000;\n                --ods-sem-space-none:       0px;\n                --ods-sem-space-xsmall:     4px;\n                --ods-sem-space-small:      8px;\n                --ods-sem-space-medium:     16px;\n                --ods-sem-space-large:      24px;\n                --ods-sem-space-xlarge:     32px;\n                --ods-sem-space-xxlarge:    40px;\n                --ods-sem-space-xxxlarge:   48px;\n            }\n            .ods-card--flex{\n                display: flex;\n            }\n            .ods-card--flex--justify-space-between{\n                justify-content: space-between;\n            }\n            .ods-card--flex--align-items-center{\n                align-items: center;\n            }\n\n            /*** Card Container ****/\n            .ods-card-container{\n                border-style: solid;\n                border-width: 1px;\n                border-color: #ccc;\n                border-radius: var(--ods-sem-space-small);\n                max-width: 264px;\n                font-family: lato;\n            }\n\n            .ods-card-container-content{\n                padding: var(--ods-sem-space-medium);\n                gap: var(--ods-sem-space-medium);\n            }\n\n            /*** Card Image ***/\n            .ods-card-image{\n                border-radius: var(--ods-sem-space-small) var(--ods-sem-space-small) 0 0;\n                img{\n                    aspect-ratio: 16 / 9;\n                    width: 100%;\n                    object-fit: cover;\n                    max-height: 114px;\n                    border-radius: var(--ods-sem-space-small) var(--ods-sem-space-small) 0  0;\n                }\n            }\n\n            @media screen and (max-width: 320px) {\n                .ods-card-image{\n                    display: none;\n                }\n            }\n\n            /*** Card Header ***/\n            .ods-card-header{\n                /* background: var(--ods-ref-color-gray-70); */\n            }\n\n            .ods-card-header-chip{\n                border: 1px;\n                border-color: var(--ods-ref-color-green-50);\n                border-style: solid;\n                border-radius: var(--ods-sem-space-large);\n                background-color: var(--ods-ref-color-green-95);\n                padding: 0 var(--ods-sem-space-medium);\n                height: var(--ods-sem-space-large);\n                line-height: var(--ods-sem-space-large);\n                text-align: center;\n            }\n\n            .ods-card-header-icon-dropdown{\n                gap:8px;\n                svg{\n                    fill: var(--ods-ref-color-green-50);\n                }\n            }\n\n            .ods-card-header-heading-container{\n                font-family: gilroy-bold;\n                \n                h1{\n                    font-size: 20px;\n                    line-height:28px;\n                    margin-top: var(--ods-sem-space-medium);\n                    margin-bottom: var(--ods-sem-space-none);\n\n                }\n            }\n\n            /*** Card Body ****/\n            .ods-card-body{\n                font-family: lato;\n                font-size: var(--ods-sem-space-medium);\n                line-height: var(--ods-sem-space-large);\n                font-weight: 400;\n            }\n\n            .ods-card-body-support{\n                color: var(--ods-ref-color-gray-60);\n            }\n\n            .ods-card-body-link-container{\n                margin: var(--ods-sem-space-medium) var(--ods-sem-space-none);\n                color: var(--ods-ref-color-green-50);\n                display: flex;\n                align-items: center;\n            }\n\n            .ods-card-body-link{\n                color: var(--ods-ref-color-green-50);\n                text-decoration: inherit;\n                font-weight: bold;\n                gap: var(--ods-sem-space-small);\n            }\n\n            .ods-card-body-link-icon{\n                \n                svg{\n                    fill: var(--ods-ref-color-green-50);\n                }\n            }\n\n            .ods-card-separator{\n                background-color: lightgrey;\n                width: 100%;\n                height: 1px;   \n                margin-bottom: 10px;\n            }\n\n            /*** Card Footer ***/\n            .ods-card-footer{\n                color: var(--ods-ref-color-gray-60);\n            }\n            "])))];
+      }
+    }]);
+    return OdsMediaCard;
+  }(s);
+  _defineProperty(OdsMediaCard, "properties", {
+    showMedia: {
+      type: String
+    },
+    mediaSrc: {
+      type: String
+    },
+    headLine: {
+      type: String
+    },
+    body: {
+      type: String
+    },
+    description: {
+      type: String
+    },
+    linkText: {
+      type: String
+    },
+    action: {
+      type: String
+    },
+    footer: {
+      type: String
+    }
+  });
+  customElements.define('ods-media-card', OdsMediaCard);
+
+  var _templateObject$1, _templateObject2;
+
+  /**
+   * Service Now Text Component
+   * @input label, type
+   * @output <ods-container> in dom
+   */
+  var OdsContainer = /*#__PURE__*/function (_LitElement) {
+    _inherits(OdsContainer, _LitElement);
+    function OdsContainer() {
+      var _this;
+      _classCallCheck(this, OdsContainer);
+      _this = _callSuper(this, OdsContainer);
+      _this.padding = 'L';
+      return _this;
+    }
+    _createClass(OdsContainer, [{
+      key: "render",
+      value: function render() {
+        var padding = this.padding.toLowerCase();
+        return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral([" \n    <div class=\"ods-container ods-container--padding-", " ", "\">\n        <slot></slot>\n    </div>"])), padding, this.shadow ? 'ods-container--shadow' : '');
+      }
+    }]);
+    return OdsContainer;
+  }(s);
+  _defineProperty(OdsContainer, "properties", {
+    padding: {
+      type: String
+    },
+    shadow: {
+      type: Boolean
+    }
+  });
+  _defineProperty(OdsContainer, "styles", i$2(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    * {\n      --ods-sem-space-none:         0px;\n      --ods-sem-space-medium:       16px;\n      --ods-sem-space-large:        24px;\n      --ods-border-radius-large:    16px;\n      --ods-shadow-small-x:         0px;\n      --ods-shadow-small-y:         2px;\n      --ods-shadow-small-blur:      4px;\n      --ods-shadow-small-spread:    0px;\n      --ods-shadow-small-color:     rgba(59, 59, 59, 0.25);\n      --ods-ref-color-gray-80:      #C5C5C5;\n      --ods-ref-color-gray-100:     #FFF;\n    }\n    .ods-container{\n      display: flex;\n      padding: var(--ods-sem-space-medium);\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      border-radius: var(--ods-border-radius-large);\n      border: 1px solid var(--ods-ref-color-gray-80);\n      background: var(--ods-ref-color-gray-100);\n    }\n    \n    .ods-container--padding-m{\n      padding: var(--ods-sem-space-medium);\n    }\n    .ods-container--padding-l{\n      padding: var(--ods-sem-space-large);\n    }\n    .ods-container--padding-none{\n      padding: var(--ods-sem-space-none);\n      ::slotted(*) {\n        border-radius: var(--ods-border-radius-large);\n      }\n    }\n\n    .ods-container--shadow{\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--ods-shadow-small-blur) var(--ods-shadow-small-spread) var(--ods-shadow-small-color);\n    }\n\n  "]))));
+  customElements.define("ods-container", OdsContainer);
+
+  var _templateObject;
+  var OdsIcon = /*#__PURE__*/function (_LitElement) {
+    _inherits(OdsIcon, _LitElement);
+    function OdsIcon() {
+      var _this;
+      _classCallCheck(this, OdsIcon);
+      _this = _callSuper(this, OdsIcon);
+      _this.size = 'M';
+      _this.name = 'placeholder';
+      _this.color = '';
+      return _this;
+    }
+    _createClass(OdsIcon, [{
+      key: "render",
+      value: function render() {
+        // const ICON_PATH = '/stories/assets/icons'; LOCAL DEV
+        var ICON_PATH = './assets/icons'; //STORYBOOK
+        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        <style>\n        .ods-icon{\n            display: inline-flex;\n            background-color: ", ";\n            -webkit-mask: url(", "/", ".svg) no-repeat center;\n            mask: url(", "/", ".svg) no-repeat center;\n\n            --ods-sem-icon-small:     16px;\n            --ods-sem-icon-medium:    24px;\n            --ods-sem-icon-large:     32px;\n        }\n        .ods-icon::before {\n            content: \"\";\n            display: block;\n            padding-top: 82%;\n          }\n        .ods-icon--s{\n\n                height: var(--ods-sem-icon-small);\n                width:  var(--ods-sem-icon-small);\n                mask-size:  var(--ods-sem-icon-small);\n                   \n        }\n        .ods-icon--m{\n\n                height: var(--ods-sem-icon-medium);\n                width:  var(--ods-sem-icon-medium);\n                mask-size:  var(--ods-sem-icon-medium);   \n        }\n        .ods-icon--l{\n         \n                height: var(--ods-sem-icon-large);\n                width:  var(--ods-sem-icon-large);\n                mask-size:  var(--ods-sem-icon-large);\n              \n        }\n        \n        </style>\n        <div class=\"ods-icon ods-icon--", "\"></div>\n        "])), this.color && this.color !== "" && this.color !== "undefined" ? this.color : "#1B1B1B", ICON_PATH, this.name, ICON_PATH, this.name, this.size.toLocaleLowerCase());
+      }
+    }]);
+    return OdsIcon;
+  }(s);
+  _defineProperty(OdsIcon, "properties", {
+    size: {
+      type: String
+    },
+    name: {
+      type: String
+    },
+    color: {
+      type: String
+    }
+  });
+  customElements.define('ods-icon', OdsIcon);
+
+  exports.ODSAvatar = ODSAvatar;
+  exports.ODSCard = ODSCard;
+  exports.ODSHeading = ODSHeading;
+  exports.ODSLink = ODSLink;
+  exports.ODSText = ODSText;
+  exports.OdsContainer = OdsContainer;
+  exports.OdsIcon = OdsIcon;
+  exports.OdsMediaCard = OdsMediaCard;
 
 }));
