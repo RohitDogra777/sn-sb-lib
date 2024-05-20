@@ -3,7 +3,7 @@
  */
 window.addEventListener("DOMContentLoaded", function (event) {
   /**
-   * Load Avatar Component if Used in DOM
+   * Load Avatar Component if Used in DOM Test
    * */
   if (document.querySelector("ods-avatar")) {
     import('https://cdn.jsdelivr.net/gh/RohitDogra777/sn-sb-lib@v2.0.2/chunks/Avatar-BkeLH5Vq.js').then(function () {
