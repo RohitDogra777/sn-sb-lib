@@ -1,7 +1,7 @@
 /**
  * Import Web components chunks on Demand
  */
-window.addEventListener("DOMContentLoaded", function (event) {
+function loadWebComponents () {
   /**
    * Load Avatar Component if Used in DOM Test
    * */
@@ -54,4 +54,15 @@ window.addEventListener("DOMContentLoaded", function (event) {
       console.log("Card Component Chunk Loaded");
     });
   }
-});
+}
+
+/**
+ * Set Interval
+ */
+var intervalId = setInterval(function(){
+      console.log(intervalId);
+        if(document.readyState === 'complete'){
+           loadWebComponents();
+           //clearInterval(intervalId);
+        }
+},500);
