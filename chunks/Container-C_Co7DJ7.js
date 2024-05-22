@@ -1,5 +1,7 @@
 import { _ as _inherits, b as _classCallCheck, c as _callSuper, a as _createClass, f as _wrapNativeSuper, e as _defineProperty, i, d as _taggedTemplateLiteral, x, s } from './lit-element-DOIq0PaO.js';
-import './Text-DKPqFkRo.js';
+import './Text-C6-S6tLh.js';
+import './Heading-wKT0e24g.js';
+import './ColorAliases-BHKFUM47.js';
 
 var ButtonClickEvent = /*#__PURE__*/function (_Event) {
   _inherits(ButtonClickEvent, _Event);
@@ -16,7 +18,7 @@ var ButtonClickEvent = /*#__PURE__*/function (_Event) {
   return _createClass(ButtonClickEvent);
 }( /*#__PURE__*/_wrapNativeSuper(Event));
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4;
+var _templateObject$2, _templateObject2$2, _templateObject3, _templateObject4;
 
 /**
  * Service Now Link Component
@@ -69,9 +71,9 @@ var ODSLink = /*#__PURE__*/function (_LitElement) {
         } else {
           btnClass = btnClass + " btn-solid";
         }
-        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["<button\n        type=\"button\"\n        part=\"sn-wc-link\"\n        @click=\"", "\"\n        class=", "\n      >\n        ", "\n      </button>"])), this.handleButtonClick, [btnClass, size, "btn-spacing"].join(" "), this.label);
+        return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["<button\n        type=\"button\"\n        part=\"sn-wc-link\"\n        @click=\"", "\"\n        class=", "\n      >\n        ", "\n      </button>"])), this.handleButtonClick, [btnClass, size, "btn-spacing"].join(" "), this.label);
       } else {
-        return x(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n        <a\n          part=\"sn-wc-link\"\n          href=\"", "\"\n          class=", "\n          style=\"--sn-wc-padding-y: 0px;\"\n          target=\"", "\"\n        >\n          ", "\n        </a>\n      "])), this.href, ["btn btn-link", linkSize, "btn-spacing"].join(" "), this.target, this.label);
+        return x(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n        <a\n          part=\"sn-wc-link\"\n          href=\"", "\"\n          class=", "\n          style=\"--sn-wc-padding-y: 0px;\"\n          target=\"", "\"\n        >\n          ", "\n        </a>\n      "])), this.href, ["btn btn-link", linkSize, "btn-spacing"].join(" "), this.target, this.label);
       }
     }
   }, {
@@ -109,4 +111,84 @@ var ODSLink = /*#__PURE__*/function (_LitElement) {
 _defineProperty(ODSLink, "styles", i(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral([""]))));
 customElements.define("ods-link", ODSLink);
 
-export { ODSLink };
+var _templateObject$1, _templateObject2$1;
+/**
+ * Service Now Image Component
+ * @input label, type
+ * @output <sn-wc-image> in dom
+ */
+var ODSImage = /*#__PURE__*/function (_LitElement) {
+  _inherits(ODSImage, _LitElement);
+  function ODSImage() {
+    _classCallCheck(this, ODSImage);
+    return _callSuper(this, ODSImage);
+  }
+  _createClass(ODSImage, [{
+    key: "render",
+    value: function render() {
+      return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin:0;\n          padding:0;\n          box-sizing:border-box;\n        }\n        .sn-wc-image{ \n          object-fit: var(--sn-wc-object-fit,cover);\n          max-width:100%;\n          height: var(--sn-wc-height,100%);\n          width: var(--sn-wc-width,100%);\n        }\n      </style>\n      <picture>\n         <source media=\"(min-width:768px)\" srcset=\"", "\">\n         <source media=\"(min-width:568px)\" srcset=\"", "\">\n         <source media=\"(min-width:320px)\" srcset=\"", "\">\n         <img class=\"sn-wc-image\" src=\"", "\" alt=\"", "\" loading=\"", "\">\n      </picture>\n    "])), this['src'], this['src-medium'], this['src-small'], this['src'], this.alt, this.loading);
+    }
+  }], [{
+    key: "properties",
+    get: function get() {
+      return {
+        "src": {
+          type: String
+        },
+        'src-medium': {
+          type: String
+        },
+        'src-small': {
+          type: String
+        },
+        "loading": {
+          type: String
+        },
+        "alt": {
+          type: String
+        }
+      };
+    }
+  }]);
+  return ODSImage;
+}(s);
+_defineProperty(ODSImage, "styles", i(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n  "]))));
+customElements.define("ods-image", ODSImage);
+
+var _templateObject, _templateObject2;
+
+/**
+ * Service Now Text Component
+ * @input label, type
+ * @output <ods-container> in dom
+ */
+var OdsContainer = /*#__PURE__*/function (_LitElement) {
+  _inherits(OdsContainer, _LitElement);
+  function OdsContainer() {
+    var _this;
+    _classCallCheck(this, OdsContainer);
+    _this = _callSuper(this, OdsContainer);
+    _this.padding = 'L';
+    return _this;
+  }
+  _createClass(OdsContainer, [{
+    key: "render",
+    value: function render() {
+      var padding = this.padding.toLowerCase();
+      return x(_templateObject || (_templateObject = _taggedTemplateLiteral([" \n    <div class=\"ods-container ods-container--padding-", " ", "\">\n        <slot></slot>\n    </div>"])), padding, this.shadow ? 'ods-container--shadow' : '');
+    }
+  }]);
+  return OdsContainer;
+}(s);
+_defineProperty(OdsContainer, "properties", {
+  padding: {
+    type: String
+  },
+  shadow: {
+    type: Boolean
+  }
+});
+_defineProperty(OdsContainer, "styles", i(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    * {\n      --ods-sem-space-none:         0px;\n      --ods-sem-space-medium:       16px;\n      --ods-sem-space-large:        24px;\n      --ods-border-radius-large:    16px;\n      --ods-shadow-small-x:         0px;\n      --ods-shadow-small-y:         2px;\n      --ods-shadow-small-blur:      4px;\n      --ods-shadow-small-spread:    0px;\n      --ods-shadow-small-color:     rgba(59, 59, 59, 0.25);\n      --ods-ref-color-gray-80:      #C5C5C5;\n      --ods-ref-color-gray-100:     #FFF;\n    }\n    .ods-container{\n      display: flex;\n      padding: var(--ods-sem-space-medium);\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      border-radius: var(--ods-border-radius-large);\n      border: 1px solid var(--ods-ref-color-gray-80);\n      background: var(--ods-ref-color-gray-100);\n    }\n    \n    .ods-container--padding-m{\n      padding: var(--ods-sem-space-medium);\n    }\n    .ods-container--padding-l{\n      padding: var(--ods-sem-space-large);\n    }\n    .ods-container--padding-none{\n      padding: var(--ods-sem-space-none);\n      ::slotted(*) {\n        border-radius: var(--ods-border-radius-large);\n      }\n    }\n\n    .ods-container--shadow{\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--ods-shadow-small-blur) var(--ods-shadow-small-spread) var(--ods-shadow-small-color);\n    }\n\n  "]))));
+customElements.define("ods-container", OdsContainer);
+
+export { OdsContainer };
