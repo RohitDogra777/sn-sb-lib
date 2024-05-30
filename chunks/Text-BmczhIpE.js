@@ -1,5 +1,5 @@
-import { e as _defineProperty, _ as _inherits, a as _createClass, b as _classCallCheck, c as _callSuper, d as _taggedTemplateLiteral, s as s$1 } from './lit-element-DOIq0PaO.js';
-import { a as aliases, s, n } from './ColorAliases-BHKFUM47.js';
+import { f as _defineProperty, _ as _inherits, a as _createClass, b as _taggedTemplateLiteral, s as s$1, c as _classCallCheck, d as _callSuper } from './lit-element-DoT7jA1N.js';
+import { a as aliases, s, n } from './ColorAliases-C5SWS41X.js';
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
 // import './fonts/fonts.css';
@@ -20,15 +20,19 @@ var loadLatoFont = function loadLatoFont() {
   document.adoptedStyleSheets.push(fontSheet);
 };
 var ODSText = /*#__PURE__*/function (_LitElement) {
-  _inherits(ODSText, _LitElement);
   function ODSText() {
     var _this;
     _classCallCheck(this, ODSText);
     _this = _callSuper(this, ODSText);
+    _this['html-tag'] = 'regular';
+    _this.size = 'md';
+    _this.weight = 'regular';
+    _this.color = 'text-primary';
     loadLatoFont();
     return _this;
   }
-  _createClass(ODSText, [{
+  _inherits(ODSText, _LitElement);
+  return _createClass(ODSText, [{
     key: "render",
     value: function render() {
       var htmlTag = null;
@@ -49,7 +53,7 @@ var ODSText = /*#__PURE__*/function (_LitElement) {
           htmlTag = s(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["span"])));
           break;
       }
-      return n(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    \n    <style>\n    *{\n      color: var(--", ");\n      color: ", ";\n    }\n    ::slotted(a){\n        color:var(--ods-ref-color-green-40);\n    }\n    span, code{\n      display: inline;\n    }\n    p, div{\n      display: block;\n    }\n    span, p, div{\n      font-family: lato, Helvetica, Arial, sans-serif;\n    }\n    code{\n      font-family: \"Roboto Mono\", monospace;\n    }\n    .ods-text--size-sm{\n      font-size: 0.875rem;\n      line-height: 1.375rem;\n    }\n    .ods-text--size-md{\n      font-size: 1rem;\n      line-height: 1.5rem;\n    }\n    .ods-text--size-lg{\n      font-size: 1.25rem;\n      line-height: 1.75rem;\n    }\n    .ods-text--weight-regular{\n      font-weight: 400;\n    }\n    .ods-text--weight-bold{\n     \n      font-weight: 700;\n    }\n    </style>\n    <", " part='odsText' class=\"ods-text--weight-", " ods-text--size-", " ", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, weight, size, this["html-tag"] === 'code' ? 'code' : '', this.color, htmlTag);
+      return n(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    \n    <style>\n    *{\n      color: var(--", ");\n      color: ", ";\n      margin: 0;\n      padding: 0;\n    }\n    ::slotted(a){\n        color:var(--ods-ref-color-green-40);\n    }\n    span, code{\n      display: inline;\n    }\n    p, div{\n      display: block;\n    }\n    span, p, div{\n      font-family: lato, Helvetica, Arial, sans-serif;\n    }\n    code{\n      font-family: \"Roboto Mono\", monospace;\n    }\n    .ods-text--size-sm{\n      font-size: 0.875rem;\n      line-height: 1.375rem;\n    }\n    .ods-text--size-md{\n      font-size: 1rem;\n      line-height: 1.5rem;\n    }\n    .ods-text--size-lg{\n      font-size: 1.25rem;\n      line-height: 1.75rem;\n    }\n    .ods-text--weight-regular{\n      font-weight: 400;\n    }\n    .ods-text--weight-bold{\n     \n      font-weight: 700;\n    }\n    </style>\n    <", " part='odsText' class=\"ods-text--weight-", " ods-text--size-", " ", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, weight, size, this["html-tag"] === 'code' ? 'code' : '', this.color, htmlTag);
     }
   }], [{
     key: "properties",
@@ -70,7 +74,6 @@ var ODSText = /*#__PURE__*/function (_LitElement) {
       };
     }
   }]);
-  return ODSText;
 }(s$1);
 _defineProperty(ODSText, "styles", [aliases]);
 customElements.define("ods-text", ODSText);

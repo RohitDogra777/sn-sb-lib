@@ -1,10 +1,9 @@
-import { _ as _inherits, b as _classCallCheck, c as _callSuper, a as _createClass, f as _wrapNativeSuper, e as _defineProperty, i, d as _taggedTemplateLiteral, x, s } from './lit-element-DOIq0PaO.js';
-import './Text-C6-S6tLh.js';
-import './Heading-wKT0e24g.js';
-import './ColorAliases-BHKFUM47.js';
+import { _ as _inherits, a as _createClass, e as _wrapNativeSuper, c as _classCallCheck, d as _callSuper, f as _defineProperty, i, b as _taggedTemplateLiteral, x, s } from './lit-element-DoT7jA1N.js';
+import './Text-BmczhIpE.js';
+import './Heading-C2ZhQ64l.js';
+import './ColorAliases-C5SWS41X.js';
 
 var ButtonClickEvent = /*#__PURE__*/function (_Event) {
-  _inherits(ButtonClickEvent, _Event);
   function ButtonClickEvent(detail) {
     var _this;
     _classCallCheck(this, ButtonClickEvent);
@@ -15,6 +14,7 @@ var ButtonClickEvent = /*#__PURE__*/function (_Event) {
     _this.detail = detail;
     return _this;
   }
+  _inherits(ButtonClickEvent, _Event);
   return _createClass(ButtonClickEvent);
 }( /*#__PURE__*/_wrapNativeSuper(Event));
 
@@ -37,7 +37,6 @@ var loadLatoFont = function loadLatoFont() {
   document.adoptedStyleSheets.push(fontSheet);
 };
 var ODSLink = /*#__PURE__*/function (_LitElement) {
-  _inherits(ODSLink, _LitElement);
   function ODSLink() {
     var _this;
     _classCallCheck(this, ODSLink);
@@ -45,7 +44,8 @@ var ODSLink = /*#__PURE__*/function (_LitElement) {
     loadLatoFont();
     return _this;
   }
-  _createClass(ODSLink, [{
+  _inherits(ODSLink, _LitElement);
+  return _createClass(ODSLink, [{
     key: "handleButtonClick",
     value: function handleButtonClick(e) {
       this.dispatchEvent(new ButtonClickEvent({
@@ -106,7 +106,6 @@ var ODSLink = /*#__PURE__*/function (_LitElement) {
       };
     }
   }]);
-  return ODSLink;
 }(s);
 _defineProperty(ODSLink, "styles", i(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral([""]))));
 customElements.define("ods-link", ODSLink);
@@ -118,12 +117,12 @@ var _templateObject$1, _templateObject2$1;
  * @output <sn-wc-image> in dom
  */
 var ODSImage = /*#__PURE__*/function (_LitElement) {
-  _inherits(ODSImage, _LitElement);
   function ODSImage() {
     _classCallCheck(this, ODSImage);
     return _callSuper(this, ODSImage);
   }
-  _createClass(ODSImage, [{
+  _inherits(ODSImage, _LitElement);
+  return _createClass(ODSImage, [{
     key: "render",
     value: function render() {
       return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin:0;\n          padding:0;\n          box-sizing:border-box;\n        }\n        .sn-wc-image{ \n          object-fit: var(--sn-wc-object-fit,cover);\n          max-width:100%;\n          height: var(--sn-wc-height,100%);\n          width: var(--sn-wc-width,100%);\n        }\n      </style>\n      <picture>\n         <source media=\"(min-width:768px)\" srcset=\"", "\">\n         <source media=\"(min-width:568px)\" srcset=\"", "\">\n         <source media=\"(min-width:320px)\" srcset=\"", "\">\n         <img class=\"sn-wc-image\" src=\"", "\" alt=\"", "\" loading=\"", "\">\n      </picture>\n    "])), this['src'], this['src-medium'], this['src-small'], this['src'], this.alt, this.loading);
@@ -150,7 +149,6 @@ var ODSImage = /*#__PURE__*/function (_LitElement) {
       };
     }
   }]);
-  return ODSImage;
 }(s);
 _defineProperty(ODSImage, "styles", i(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n  "]))));
 customElements.define("ods-image", ODSImage);
@@ -163,7 +161,6 @@ var _templateObject, _templateObject2;
  * @output <ods-container> in dom
  */
 var OdsContainer = /*#__PURE__*/function (_LitElement) {
-  _inherits(OdsContainer, _LitElement);
   function OdsContainer() {
     var _this;
     _classCallCheck(this, OdsContainer);
@@ -171,14 +168,14 @@ var OdsContainer = /*#__PURE__*/function (_LitElement) {
     _this.padding = 'L';
     return _this;
   }
-  _createClass(OdsContainer, [{
+  _inherits(OdsContainer, _LitElement);
+  return _createClass(OdsContainer, [{
     key: "render",
     value: function render() {
       var padding = this.padding.toLowerCase();
       return x(_templateObject || (_templateObject = _taggedTemplateLiteral([" \n    <div class=\"ods-container ods-container--padding-", " ", "\">\n        <slot></slot>\n    </div>"])), padding, this.shadow ? 'ods-container--shadow' : '');
     }
   }]);
-  return OdsContainer;
 }(s);
 _defineProperty(OdsContainer, "properties", {
   padding: {

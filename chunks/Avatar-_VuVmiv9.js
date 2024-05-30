@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _createClass, b as _classCallCheck, c as _callSuper, x, d as _taggedTemplateLiteral, s } from './lit-element-DOIq0PaO.js';
+import { _ as _inherits, a as _createClass, x, b as _taggedTemplateLiteral, s, c as _classCallCheck, d as _callSuper } from './lit-element-DoT7jA1N.js';
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
 
@@ -8,7 +8,6 @@ var _templateObject, _templateObject2, _templateObject3, _templateObject4, _temp
  * @output <ods-avatar> in dom
  */
 var ODSAvatar = /*#__PURE__*/function (_LitElement) {
-  _inherits(ODSAvatar, _LitElement);
   function ODSAvatar() {
     var _this;
     _classCallCheck(this, ODSAvatar);
@@ -16,7 +15,8 @@ var ODSAvatar = /*#__PURE__*/function (_LitElement) {
     _this.size = "M";
     return _this;
   }
-  _createClass(ODSAvatar, [{
+  _inherits(ODSAvatar, _LitElement);
+  return _createClass(ODSAvatar, [{
     key: "getAvatarText",
     value: function getAvatarText() {
       var name = this.name.trim();
@@ -83,7 +83,6 @@ var ODSAvatar = /*#__PURE__*/function (_LitElement) {
       };
     }
   }]);
-  return ODSAvatar;
 }(s);
 customElements.define("ods-avatar", ODSAvatar);
 
