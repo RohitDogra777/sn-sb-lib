@@ -1,4 +1,4 @@
-var base_url = "https://cdn.jsdelivr.net/gh/RohitDogra777/sn-sb-lib@v4.0.1";
+var base_url = "https://cdn.jsdelivr.net/gh/RohitDogra777/sn-sb-lib@v4.0.2";
 /**
  * Import Web components chunks on Demand
  */
@@ -7,7 +7,7 @@ function loadWebComponents() {
    * Load Avatar Component if Used in DOM
    * */
   if (document.querySelector("ods-avatar")) {
-    import(`${base_url}/chunks/Avatar-_VuVmiv9.js`).then(function () {
+    import(`${base_url}/chunks/Avatar-gv9zMiff.js`).then(function () {
       console.log("Avatar Component Chunk Loaded");
     });
   }
