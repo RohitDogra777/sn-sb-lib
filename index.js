@@ -1,4 +1,4 @@
-var base_url = "https://cdn.jsdelivr.net/gh/RohitDogra777/sn-sb-lib@v4.0.0";
+var base_url = "https://cdn.jsdelivr.net/gh/RohitDogra777/sn-sb-lib@v4.0.1";
 /**
  * Import Web components chunks on Demand
  */
@@ -82,6 +82,6 @@ var intervalId = setInterval(function () {
   loadWebComponents();
   console.log(document.readyState);
   if (document.readyState === 'complete') {
-    clearInterval(intervalId);
+      setTimeout(function(){clearInterval(intervalId)},5000);
   }
 }, 100);
