@@ -1,9 +1,10 @@
+var BASE_URL = "https://cdn.jsdelivr.net/gh/RohitDogra777/sn-sb-lib@v5.0.1"
 /**
  * Load Avatar Component if Used in DOM
  */
 function loadOdsAvatar() {
   if (document.querySelector("ods-avatar")) {
-    import('./chunks/Avatar-T9Ee4N-Y.js').then(function () {
+    import(BASE_URL+'/chunks/Avatar-T9Ee4N-Y.js').then(function () {
       console.log("Avatar Component Chunk Loaded");
     });
   }
@@ -14,7 +15,7 @@ function loadOdsAvatar() {
  */
 function loadOdsHeading() {
   if (document.querySelector("ods-heading")) {
-    import('./chunks/Heading-p48oyot3.js').then(function () {
+    import(BASE_URL+'/chunks/Heading-p48oyot3.js').then(function () {
       console.log("Heading Component Chunk Loaded");
     });
   }
@@ -25,7 +26,7 @@ function loadOdsHeading() {
  */
 function loadOdsText() {
   if (document.querySelector("ods-text")) {
-    import('./chunks/Text-BT8UX2sj.js').then(function () {
+    import(BASE_URL+'/chunks/Text-BT8UX2sj.js').then(function () {
       console.log("Text Component Chunk Loaded");
     });
   }
@@ -36,7 +37,7 @@ function loadOdsText() {
  */
 function loadOdsIcon() {
   if (document.querySelector("ods-icon")) {
-    import('./chunks/Icon-DCtJ6N8A.js').then(function () {
+    import(BASE_URL+'/chunks/Icon-DCtJ6N8A.js').then(function () {
       console.log("Icon Component Chunk Loaded");
     });
   }
@@ -47,7 +48,7 @@ function loadOdsIcon() {
  */
 function loadOdsButton() {
   if (document.querySelector("ods-button")) {
-    import('./chunks/Button-RKnkBxzx.js').then(function () {
+    import(BASE_URL+'/chunks/Button-RKnkBxzx.js').then(function () {
       console.log("Button Component Chunk Loaded");
     });
   }
@@ -58,7 +59,7 @@ function loadOdsButton() {
  */
 function loadOdsContainer() {
   if (document.querySelector("ods-container")) {
-    import('./chunks/Container-oDyJdL8h.js').then(function () {
+    import(BASE_URL+'/chunks/Container-oDyJdL8h.js').then(function () {
       console.log("Container Component Chunk Loaded");
     });
   }
@@ -69,7 +70,7 @@ function loadOdsContainer() {
  */
 function loadOdsTextField() {
   if (document.querySelector("ods-text-field")) {
-    import('./chunks/TextField-Cv04iQP7.js').then(function () {
+    import(BASE_URL+'/chunks/TextField-Cv04iQP7.js').then(function () {
       console.log("Text Field Component Chunk Loaded");
     });
   }
@@ -80,7 +81,7 @@ function loadOdsTextField() {
  */
 function loadOdsTooltip() {
   if (document.querySelector("ods-tooltip")) {
-    import('./chunks/Tooltip-DWWB1pU5.js').then(function () {
+    import(BASE_URL+'/chunks/Tooltip-DWWB1pU5.js').then(function () {
       console.log("Text Field Component Chunk Loaded");
     });
   }
