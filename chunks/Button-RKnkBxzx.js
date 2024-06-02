@@ -1,5 +1,5 @@
-import { _ as _inherits, a as _createClass, x, b as _taggedTemplateLiteral, s, c as _classCallCheck, d as _callSuper } from './lit-element-DoT7jA1N.js';
-import './Icon-CH8z55jr.js';
+import { _ as _inherits, a as _createClass, x, b as _taggedTemplateLiteral, s, c as _classCallCheck, d as _callSuper } from './ColorAliases-BNiWx0rE.js';
+import './Icon-DCtJ6N8A.js';
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8;
 var hasLoadedMaterialSymbolsFont = false;
@@ -59,7 +59,7 @@ var OdsButton = /*#__PURE__*/function (_LitElement) {
       if (this.href) {
         return x(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", " ", "' href= \"", "\" target= \"", "\" tabindex= \"0\" aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.href, this.target || '_self', this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
       } else {
-        return x(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n        <button tabindex= \"0\" class='btn-", " ", " ", "' aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </button>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
+        return x(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n        <button @click=\"", "\" tabindex= \"0\" class='btn-", " ", " ", "' aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </button>\n      "])), this.onClick, this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
       }
     }
   }, {
@@ -91,6 +91,9 @@ var OdsButton = /*#__PURE__*/function (_LitElement) {
         },
         "full-width": {
           type: Boolean
+        },
+        onClick: {
+          type: Function
         }
       };
     }

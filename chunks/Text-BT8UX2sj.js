@@ -1,7 +1,7 @@
-import { f as _defineProperty, _ as _inherits, a as _createClass, b as _taggedTemplateLiteral, s as s$1, c as _classCallCheck, d as _callSuper } from './lit-element-DoT7jA1N.js';
-import { a as aliases, s, n } from './ColorAliases-C5SWS41X.js';
+import { f as _defineProperty, _ as _inherits, a as _createClass, g as colorAliases, o as _get, p as _getPrototypeOf, b as _taggedTemplateLiteral, s as s$1, c as _classCallCheck, d as _callSuper } from './ColorAliases-BNiWx0rE.js';
+import { s, n } from './static-8om-tG8X.js';
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6;
 // import './fonts/fonts.css';
 /**
  * Service Now Text Component
@@ -27,12 +27,19 @@ var ODSText = /*#__PURE__*/function (_LitElement) {
     _this['html-tag'] = 'regular';
     _this.size = 'md';
     _this.weight = 'regular';
-    _this.color = 'text-primary';
+    _this.color = 'text-primary', _this["for"] = "";
     loadLatoFont();
     return _this;
   }
   _inherits(ODSText, _LitElement);
   return _createClass(ODSText, [{
+    key: "updated",
+    value: function updated() {
+      _get(_getPrototypeOf(ODSText.prototype), "updated", this).call(this);
+      var thisLabel = this.shadowRoot.querySelector(this['html-tag']);
+      if ((this["for"] || this["for"] !== '') && this['html-tag'] === 'label') thisLabel.setAttribute('for', this["for"]);else thisLabel.removeAttribute('for');
+    }
+  }, {
     key: "render",
     value: function render() {
       var htmlTag = null;
@@ -48,12 +55,15 @@ var ODSText = /*#__PURE__*/function (_LitElement) {
         case 'code':
           htmlTag = s(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["code"])));
           break;
+        case 'label':
+          htmlTag = s(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["label"])));
+          break;
         case 'span':
         default:
-          htmlTag = s(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["span"])));
+          htmlTag = s(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["span"])));
           break;
       }
-      return n(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    \n    <style>\n    *{\n      color: var(--", ");\n      color: ", ";\n      margin: 0;\n      padding: 0;\n    }\n    ::slotted(a){\n        color:var(--ods-ref-color-green-40);\n    }\n    span, code{\n      display: inline;\n    }\n    p, div{\n      display: block;\n    }\n    span, p, div{\n      font-family: lato, Helvetica, Arial, sans-serif;\n    }\n    code{\n      font-family: \"Roboto Mono\", monospace;\n    }\n    .ods-text--size-sm{\n      font-size: 0.875rem;\n      line-height: 1.375rem;\n    }\n    .ods-text--size-md{\n      font-size: 1rem;\n      line-height: 1.5rem;\n    }\n    .ods-text--size-lg{\n      font-size: 1.25rem;\n      line-height: 1.75rem;\n    }\n    .ods-text--weight-regular{\n      font-weight: 400;\n    }\n    .ods-text--weight-bold{\n     \n      font-weight: 700;\n    }\n    </style>\n    <", " part='odsText' class=\"ods-text--weight-", " ods-text--size-", " ", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, weight, size, this["html-tag"] === 'code' ? 'code' : '', this.color, htmlTag);
+      return n(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n    \n    <style>\n    *{\n      color: var(--", ");\n      color: ", ";\n      margin: 0;\n      padding: 0;\n    }\n    ::slotted(a){\n        color:var(--ods-ref-color-green-40);\n    }\n    span, code, label{\n      display: inline;\n    }\n    p, div{\n      display: block;\n    }\n    span, p, div, label{\n      font-family: lato, Helvetica, Arial, sans-serif;\n    }\n    code{\n      font-family: \"Roboto Mono\", monospace;\n    }\n    .ods-text--size-sm{\n      font-size: 14px;\n      line-height: 22px;\n    }\n    .ods-text--size-md{\n      font-size: 16px;\n      line-height: 24px;\n    }\n    .ods-text--size-lg{\n      font-size: 20px;\n      line-height: 28px;\n    }\n    .ods-text--weight-regular{\n      font-weight: 400;\n    }\n    .ods-text--weight-bold{\n     \n      font-weight: 700;\n    }\n    </style>\n    <", " \n      part='odsText' \n      class=\"ods-text--weight-", " ods-text--size-", " ", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, weight, size, this["html-tag"] === 'code' ? 'code' : '', this.color, htmlTag);
     }
   }], [{
     key: "properties",
@@ -70,12 +80,15 @@ var ODSText = /*#__PURE__*/function (_LitElement) {
         },
         color: {
           type: String
+        },
+        "for": {
+          type: String
         }
       };
     }
   }]);
 }(s$1);
-_defineProperty(ODSText, "styles", [aliases]);
+_defineProperty(ODSText, "styles", [colorAliases]);
 customElements.define("ods-text", ODSText);
 
 export { ODSText };

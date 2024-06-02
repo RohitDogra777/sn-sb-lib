@@ -1,5 +1,5 @@
-import { _ as _inherits, a as _createClass, x, b as _taggedTemplateLiteral, s, c as _classCallCheck, d as _callSuper } from './lit-element-DoT7jA1N.js';
-import './Icon-CH8z55jr.js';
+import { _ as _inherits, a as _createClass, x, b as _taggedTemplateLiteral, s, c as _classCallCheck, d as _callSuper } from './ColorAliases-BNiWx0rE.js';
+import './Icon-DCtJ6N8A.js';
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
 

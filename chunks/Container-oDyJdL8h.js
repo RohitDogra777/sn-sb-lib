@@ -1,7 +1,7 @@
-import { _ as _inherits, a as _createClass, e as _wrapNativeSuper, c as _classCallCheck, d as _callSuper, f as _defineProperty, i, b as _taggedTemplateLiteral, x, s } from './lit-element-DoT7jA1N.js';
-import './Text-BmczhIpE.js';
-import './Heading-C2ZhQ64l.js';
-import './ColorAliases-C5SWS41X.js';
+import { _ as _inherits, a as _createClass, e as _wrapNativeSuper, c as _classCallCheck, d as _callSuper, f as _defineProperty, i, b as _taggedTemplateLiteral, x, s } from './ColorAliases-BNiWx0rE.js';
+import './Text-BT8UX2sj.js';
+import './Heading-p48oyot3.js';
+import './static-8om-tG8X.js';
 
 var ButtonClickEvent = /*#__PURE__*/function (_Event) {
   function ButtonClickEvent(detail) {

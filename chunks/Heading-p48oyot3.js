@@ -1,5 +1,5 @@
-import { f as _defineProperty, _ as _inherits, a as _createClass, b as _taggedTemplateLiteral, s as s$1, c as _classCallCheck, d as _callSuper } from './lit-element-DoT7jA1N.js';
-import { a as aliases, s, n } from './ColorAliases-C5SWS41X.js';
+import { f as _defineProperty, _ as _inherits, a as _createClass, g as colorAliases, b as _taggedTemplateLiteral, s as s$1, c as _classCallCheck, d as _callSuper } from './ColorAliases-BNiWx0rE.js';
+import { s, n } from './static-8om-tG8X.js';
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
 /**
@@ -52,7 +52,7 @@ var ODSHeading = /*#__PURE__*/function (_LitElement) {
           htmlTag = s(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["h3"])));
           break;
       }
-      return n(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          font-family: \"gilroy\", sans-serif;\n          font-weight: 600;\n          color: var(--", ");\n          color: ", ";\n          margin: 0;\n          padding: 0;\n        }\n    \n        .ods-heading--size-xxs {\n          font-size: 1rem;\n          line-height: 1.5rem;\n        }\n        \n        .ods-heading--size-xs{\n          font-size: 1.25rem;\n          line-height: 1.75rem;\n        }\n    \n        .ods-heading--size-sm{\n          font-size: 1.5rem;\n          line-height: 2rem;  \n        }\n    \n        .ods-heading--size-md{\n          font-size: 2rem;\n          line-height: 2.5rem;\n        }\n    \n        .ods-heading--size-lg{\n          font-size: 2.5rem;\n          line-height: 3rem;\n        }\n       \n      \n      </style>\n      <", " part='odsHeading' class=\"ods-heading--size-", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, this.size, this.color, htmlTag);
+      return n(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          font-family: \"gilroy\", sans-serif;\n          font-weight: 600;\n          color: var(--", ");\n          color: ", ";\n          margin: 0;\n          padding: 0;\n        }\n    \n        .ods-heading--size-xxs {\n          font-size: 16px;\n          line-height: 24px;\n        }\n        \n        .ods-heading--size-xs{\n          font-size: 20px;\n          line-height: 28px;\n        }\n    \n        .ods-heading--size-sm{\n          font-size: 24px;\n          line-height: 32px;\n        }\n    \n        .ods-heading--size-md{\n          font-size: 32px;\n          line-height: 40px;\n        }\n    \n        .ods-heading--size-lg{\n          font-size: 40px;\n          line-height: 48px;\n        }\n       \n      \n      </style>\n      <", " part='odsHeading' class=\"ods-heading--size-", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, this.size, this.color, htmlTag);
     }
   }], [{
     key: "properties",
@@ -71,7 +71,7 @@ var ODSHeading = /*#__PURE__*/function (_LitElement) {
     }
   }]);
 }(s$1);
-_defineProperty(ODSHeading, "styles", [aliases]);
+_defineProperty(ODSHeading, "styles", [colorAliases]);
 customElements.define("ods-heading", ODSHeading);
 
 export { ODSHeading };
