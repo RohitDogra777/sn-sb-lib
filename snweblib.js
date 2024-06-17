@@ -5705,7 +5705,7 @@
       value: function updateIconPosition() {
         var icon = this.shadowRoot.querySelector(".ods-chevron-container");
         var elmHeight = this.shadowRoot.querySelector(".ods-label-container");
-        console.log(icon, elmHeight);
+        console.log(icon, elmHeight.offsetHeight);
         if (!elmHeight) {
           icon.style.top = "8px";
         } else {
