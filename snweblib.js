@@ -4647,7 +4647,7 @@
     }, {
       key: "getContent",
       value: function getContent() {
-        return x(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n      <a class='menu-item' part='ods-menu-item'\n          target='", "'\n          @click=\"", "\"\n          href='", "' tabindex=\"-1\">\n          ", "\n      </a>"])), this.target, this.handleClick, this.href || '#', this.getSlots());
+        return x(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n      <a class='menu-item' part='ods-menu-item'\n          target='", "'\n          @click=\"", "\"\n          href='", "' tabindex=\"-1\">\n          ", "\n      </a>"])), this.target, this.handleClick, this.href || 'javascript:void(0);', this.getSlots());
       }
     }, {
       key: "getUsedSlots",
@@ -5705,6 +5705,7 @@
       value: function updateIconPosition() {
         var icon = this.shadowRoot.querySelector(".ods-chevron-container");
         var elmHeight = this.shadowRoot.querySelector(".ods-label-container");
+        console.log(icon, elmHeight);
         if (!elmHeight) {
           icon.style.top = "8px";
         } else {
