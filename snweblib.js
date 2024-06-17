@@ -5705,7 +5705,6 @@
       value: function updateIconPosition() {
         var icon = this.shadowRoot.querySelector(".ods-chevron-container");
         var elmHeight = this.shadowRoot.querySelector(".ods-label-container");
-        console.log(icon, elmHeight.offsetHeight);
         if (!elmHeight) {
           icon.style.top = "8px";
         } else {
@@ -5715,8 +5714,11 @@
     }, {
       key: "firstUpdated",
       value: function firstUpdated() {
+        var _this3 = this;
         this._menu = this.getDropdownMenu(this.options);
-        this.updateIconPosition();
+        setTimeout(function () {
+          _this3.updateIconPosition();
+        }, 500);
       }
     }, {
       key: "updated",
