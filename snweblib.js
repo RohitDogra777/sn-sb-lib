@@ -4558,20 +4558,6 @@
     _inherits(MenuItemKeyEvent, _Event5);
     return _createClass(MenuItemKeyEvent);
   }( /*#__PURE__*/_wrapNativeSuper(Event));
-  var MenuOnChangeEvent = /*#__PURE__*/function (_Event6) {
-    function MenuOnChangeEvent(detail) {
-      var _this6;
-      _classCallCheck(this, MenuOnChangeEvent);
-      _this6 = _callSuper(this, MenuOnChangeEvent, ["ods-on-change-event", {
-        bubbles: true,
-        composed: true
-      }]);
-      _this6.detail = detail;
-      return _this6;
-    }
-    _inherits(MenuOnChangeEvent, _Event6);
-    return _createClass(MenuOnChangeEvent);
-  }( /*#__PURE__*/_wrapNativeSuper(Event));
   var OdsOnInputBlurEvent = /*#__PURE__*/function (_Event7) {
     function OdsOnInputBlurEvent(detail) {
       var _this7;
@@ -5732,13 +5718,9 @@
       key: "handleItemClick",
       value: function handleItemClick(e) {
         var value = JSON.parse(e.detail.value);
-        this.dispatchEvent(new MenuOnChangeEvent({
-          value: this.value
-        }));
         this.shadowRoot.getElementById("".concat(this.name)).setAttribute("value", value.text);
         this.isOpened = false;
         this.value = value.text;
-        this.handleItemSelection(value);
       }
     }, {
       key: "getSelectedOption",
@@ -5867,9 +5849,6 @@
           },
           filteredOptions: {
             state: true
-          },
-          handleItemSelection: {
-            type: Function
           }
         };
       }
