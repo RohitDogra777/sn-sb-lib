@@ -5627,6 +5627,7 @@
       _this._menu = null;
       _this.labelDefault = 16;
       _this.placeholder = "Select";
+      _this.isDisabled = false;
       return _this;
     }
     _inherits(OdsSelectField, _LitElement);
@@ -5776,14 +5777,18 @@
         if (previousLabel != undefined) {
           this.updateIconPosition();
         }
+        var previousWidth = changedProperties.get("full-width");
+        if (previousWidth != undefined) {
+          this.updateIconPosition();
+        }
       }
     }, {
       key: "render",
       value: function render() {
         this.handleWidth();
-        var isReadOnly = this.isDisabled == true ? "readonly" : "";
+        var isReadOnly = this.isDisabled == "true" ? "readonly" : "";
         var isError = this.error != "" ? "error-state" : "";
-        if (this.isDisabled == true) {
+        if (this.isDisabled == "true") {
           isError = "";
           this.error = "";
         }
@@ -5798,7 +5803,7 @@
       get: function get() {
         return {
           isDisabled: {
-            type: Boolean
+            type: String
           },
           onInput: {
             type: Function
