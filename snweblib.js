@@ -4572,6 +4572,20 @@
     _inherits(MenuOnChangeEvent, _Event6);
     return _createClass(MenuOnChangeEvent);
   }( /*#__PURE__*/_wrapNativeSuper(Event));
+  var OdsOnInputBlurEvent = /*#__PURE__*/function (_Event7) {
+    function OdsOnInputBlurEvent(detail) {
+      var _this7;
+      _classCallCheck(this, OdsOnInputBlurEvent);
+      _this7 = _callSuper(this, OdsOnInputBlurEvent, ["ods-input-blur-event", {
+        bubbles: true,
+        composed: true
+      }]);
+      _this7.detail = detail;
+      return _this7;
+    }
+    _inherits(OdsOnInputBlurEvent, _Event7);
+    return _createClass(OdsOnInputBlurEvent);
+  }( /*#__PURE__*/_wrapNativeSuper(Event));
 
   var _templateObject$5, _templateObject2$4, _templateObject3$4, _templateObject4$4, _templateObject5$3, _templateObject6$3;
 
@@ -5718,12 +5732,13 @@
       key: "handleItemClick",
       value: function handleItemClick(e) {
         var value = JSON.parse(e.detail.value);
-        this.shadowRoot.getElementById("".concat(this.name)).setAttribute("value", value.text);
-        this.isOpened = false;
-        this.value = value.text;
         this.dispatchEvent(new MenuOnChangeEvent({
           value: this.value
         }));
+        this.shadowRoot.getElementById("".concat(this.name)).setAttribute("value", value.text);
+        this.isOpened = false;
+        this.value = value.text;
+        this.handleItemSelection(value);
       }
     }, {
       key: "getSelectedOption",
@@ -5852,6 +5867,9 @@
           },
           filteredOptions: {
             state: true
+          },
+          handleItemSelection: {
+            type: Function
           }
         };
       }
@@ -6050,6 +6068,13 @@
       key: "handleInput",
       value: function handleInput(e) {}
     }, {
+      key: "onBlur",
+      value: function onBlur(e) {
+        this.dispatchEvent(new OdsOnInputBlurEvent({
+          value: e.target.value
+        }));
+      }
+    }, {
       key: "getInputField",
       value: function getInputField() {
         var isRequired = this.required == "true" ? true : false;
@@ -6061,7 +6086,7 @@
         if (this.error != '') {
           errorAlert = true;
         }
-        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <input\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        @input=\"", "\"\n        @blur=\"", "\"\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n      />\n    "])), this.type, ["ods-form-control"].join(" "), this.onInput, this.onBlur, this.name, this.name, this.placeholder, this.error, this.name, this.value, this.disabled, isRequired, isOptional, errorAlert);
+        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <input\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        @input=\"", "\"\n        @blur=\"", "\"\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n      />\n    "])), this.type, ["ods-form-control"].join(" "), this.onInput, this.onBlur, this.name, this.name, this.placeholder, this.error, this.name, this.value, this.isDisabled, isRequired, isOptional, errorAlert);
       }
     }, {
       key: "getErrorMessage",
@@ -6111,9 +6136,9 @@
       key: "render",
       value: function render() {
         this.handleWidth();
-        var isReadOnly = this.disabled == "true" ? "readonly" : "";
+        var isReadOnly = this.isDisabled == "true" ? "readonly" : "";
         var isError = this.error != "" ? "error-state" : "";
-        if (this.disabled == "true") {
+        if (this.isDisabled == "true") {
           isError = "";
           this.error = "";
         }
@@ -6123,14 +6148,8 @@
       key: "properties",
       get: function get() {
         return {
-          disabled: {
+          isDisabled: {
             type: String
-          },
-          onInput: {
-            type: Function
-          },
-          onBlur: {
-            type: Function
           },
           error: {
             type: String
