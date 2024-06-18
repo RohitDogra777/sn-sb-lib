@@ -4369,7 +4369,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject$7 || (_templateObject$7 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-background-primary:         #FFF;\n      --ods-border-decorative-primary:  #C5C5C5;\n      --ods-sem-text-primary:           #1B1B1B;\n      --ods-sem-space-none:             0;\n      --ods-sem-space-xsmall:           4px;\n      --ods-sem-space-small:            8px;\n      --ods-border-radius-xsmall:       4px;\n      --ods-shadow-small-x:         0px;\n      --ods-shadow-small-y:         2px;\n      --ods-shadow-small-blur:      4px;\n      --ods-shadow-small-spread:    0px;\n      --ods-shadow-small-color:     rgba(59, 59, 59, 0.25);\n\n    }\n    :host {\n      visibility:hidden;\n      width: max-content;\n      position: absolute;\n      z-index: 100;\n      top: var(--ods-sem-space-none);\n      left: var(--ods-sem-space-none);\n      background: var(--ods-background-primary);\n      color: var(--ods-sem-text-primary);\n      border-radius: var(--ods-border-radius-xsmall);\n      max-width: 240px;\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--Shadow-Small-Blur, 4px) var(--ods-shadow-small-spread) var(--Shadow-Small-Color, var(--ods-shadow-small-color)); \n    }\n    .tooltip{\n      padding: var(--ods-sem-space-xsmall) var(--ods-sem-space-small);\n      border-radius: var(--ods-border-radius-xsmall);\n      box-shadow: 0 0 0 0 white, 0 0 0 1px var(--ods-border-decorative-primary);\n      word-break: break-all;\n    }\n    #arrow {\n      position: absolute;\n      background: var(--ods-border-decorative-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    #indicator {\n      position: absolute;\n      background: var(--ods-background-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    </style>\n    <div role=\"tooltip\" class='tooltip'>\n      <ods-text tag='span' size='sm'>", "</ods-text>\n      <div id='arrow'><div id='indicator'></div>\n    </div>                        \n    "])), this.label);
+        return x(_templateObject$7 || (_templateObject$7 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-background-primary:         #FFF;\n      --ods-border-decorative-primary:  #C5C5C5;\n      --ods-sem-text-primary:           #1B1B1B;\n      --ods-sem-space-none:             0;\n      --ods-sem-space-xsmall:           4px;\n      --ods-sem-space-small:            8px;\n      --ods-border-radius-xsmall:       4px;\n      --ods-shadow-small-x:         0px;\n      --ods-shadow-small-y:         2px;\n      --ods-shadow-small-blur:      4px;\n      --ods-shadow-small-spread:    0px;\n      --ods-shadow-small-color:     rgba(59, 59, 59, 0.25);\n\n    }\n    :host {\n      visibility:hidden;\n      width: max-content;\n      position: absolute;\n      z-index: 100;\n      top: var(--ods-sem-space-none);\n      left: var(--ods-sem-space-none);\n      background: var(--ods-background-primary);\n      color: var(--ods-sem-text-primary);\n      border-radius: var(--ods-border-radius-xsmall);\n      max-width: 240px;\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--Shadow-Small-Blur, 4px) var(--ods-shadow-small-spread) var(--Shadow-Small-Color, var(--ods-shadow-small-color)); \n    }\n    .tooltip{\n      padding: var(--ods-sem-space-xsmall) var(--ods-sem-space-small);\n      border-radius: var(--ods-border-radius-xsmall);\n      box-shadow: 0 0 0 0 white, 0 0 0 1px var(--ods-border-decorative-primary);\n      overflow-wrap: break-word;\n      hyphens: auto;\n    }\n    #arrow {\n      position: absolute;\n      background: var(--ods-border-decorative-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    #indicator {\n      position: absolute;\n      background: var(--ods-background-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    </style>\n    <div role=\"tooltip\" class='tooltip'>\n      <ods-text tag='span' size='sm'>", "</ods-text>\n      <div id='arrow'><div id='indicator'></div>\n    </div>                        \n    "])), this.label);
       }
     }]);
   }(s$2);
@@ -4590,6 +4590,7 @@
       _this.selected = false;
       _this.subtext = '';
       _this.handleKeyEvent = _this.handleKeyEvent.bind(_this);
+      _this._handleBlur = _this._handleBlur.bind(_this);
       return _this;
     }
     _inherits(OdsMenuItem, _LitElement);
@@ -4601,16 +4602,28 @@
     }, {
       key: "updated",
       value: function updated() {
+        var _this2 = this;
         _get(_getPrototypeOf(OdsMenuItem.prototype), "updated", this).call(this);
         this.setAvatarToSmall();
         this._parent = this.shadowRoot.host.parentElement;
         this._selectable = this._parent.selectable;
         this.addEventListener('keydown', this.handleKeyEvent);
+        this.addEventListener('blur', function (e) {
+          _this2._handleBlur(e, _this2);
+        });
       }
     }, {
       key: "disconnectedCallback",
       value: function disconnectedCallback() {
         this.removeEventListener('keydown', this.handleKeyEvent);
+      }
+    }, {
+      key: "_handleBlur",
+      value: function _handleBlur(event, currentMenuItem) {
+        var currentMenu = currentMenuItem._parent;
+        if (!(currentMenu._allMenuItems.includes(event.relatedTarget) || currentMenu.shadowRoot.host === event.relatedTarget)) {
+          currentMenu.closeMenu(false);
+        }
       }
     }, {
       key: "setAvatarToSmall",
@@ -4700,7 +4713,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject6$3 || (_templateObject6$3 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-utility-states-secondary-hover: rgba(162, 200, 219, 0.40);\n      --ods-utility-states-secondary-pressed: rgba(162, 200, 219, 0.64);\n      --ods-utility-states-focus: #298319;\n    }\n    :host{\n      width: 100%;\n    }\n  \n    .menu-item-main-container{\n      display: flex;\n    }\n    .menu-item{\n      border: 0;\n      /*flex: 1 1 100%;*/\n      width: 100%;\n      /*display:inline-flex;\n      flex-wrap: wrap;\n      gap: var(--Space-None, 8px);\n      align-self: stretch;*/\n      padding: var(--Space-Small, 8px) var(--Space-Medium, 16px);\n      text-align: left;\n      display: grid;\n      ", "\n      column-gap: 8px;\n      font-family: lato;\n      text-decoration: inherit;\n      color: inherit;\n      word-wrap: break-word;\n      background: inherit;\n    }\n\n    :host(:hover){\n      background: var(--ods-utility-states-secondary-hover);\n    }\n    .menu-item:hover, :host(:hover){\n      cursor: pointer;\n    }\n    .menu-item-main-container:active{\n      background: var(--ods-utility-states-secondary-pressed);\n    }\n    .menu-item:focus, .menu-item:focus-visible, .menu-item:focus-within{\n      outline: 2px var(--ods-utility-states-focus) solid;\n      outline-offset: -2px;\n    }\n    \n    .no-icon{\n      display: inline-flex;\n      width: 16px;\n      height: 16px;\n    }\n    .subtext-container{\n      \n    }\n    .text-container{\n      display: flex;\n      flex-direction: column;\n      font-size: 14px;\n      line-height: 24px;\n    }\n\n    .subtext-container{\n      display: flex;\n      flex-direction: column;\n      font-size: 14px;\n      line-height: 22px;\n      word-break: break-all;\n    }\n    .start-container, .end-container, .check-container{justify-self:center;  a}\n    .start-container [name='start']::slotted(ods-icon), .check-container ods-icon, .end-container [name='end']::slotted(ods-icon){\n      margin-top: 4px !important;\n    }\n    .start-container{grid-area: start; ", "}\n    .end-container{grid-area: end; justify-self: end; ", "}\n    .check-container{grid-area: check; ", "}\n    .text-container{grid-area: text;}\n    .subtext-container{grid-area: subtext;}\n    </style>\n    <li class='menu-item-main-container'>\n      ", "\n    </li>\n    "])), this._gridStyle, this._iconPosition !== 'start' ? 'display: none;' : '', this._iconPosition !== 'end' ? 'display: none;' : '', !this._selectable ? 'display: none;' : '', this.getContent());
+        return x(_templateObject6$3 || (_templateObject6$3 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-utility-states-secondary-hover: rgba(162, 200, 219, 0.40);\n      --ods-utility-states-secondary-pressed: rgba(162, 200, 219, 0.64);\n      --ods-utility-states-focus: #298319;\n    }\n    :host{\n      width: 100%;\n    }\n  \n    .menu-item-main-container{\n      display: flex;\n    }\n    .menu-item{\n      border: 0;\n      width: 100%;\n      padding: var(--Space-Small, 8px) var(--Space-Medium, 16px);\n      text-align: left;\n      display: grid;\n      ", "\n      column-gap: 8px;\n      font-family: lato;\n      text-decoration: inherit;\n      color: inherit;\n      word-wrap: break-word;\n      background: inherit;\n    }\n\n    :host(:hover){\n      background: var(--ods-utility-states-secondary-hover);\n    }\n    .menu-item:hover, :host(:hover){\n      cursor: pointer;\n    }\n    .menu-item-main-container:active{\n      background: var(--ods-utility-states-secondary-pressed);\n    }\n    .menu-item:focus, .menu-item:focus-visible, .menu-item:focus-within{\n      outline: 2px var(--ods-utility-states-focus) solid;\n      outline-offset: -2px;\n    }\n    \n    .no-icon{\n      display: inline-flex;\n      width: 16px;\n      height: 16px;\n    }\n    .subtext-container{\n      \n    }\n    .text-container{\n      display: flex;\n      flex-direction: column;\n      font-size: 14px;\n      line-height: 24px;\n    }\n\n    .subtext-container{\n      display: flex;\n      flex-direction: column;\n      font-size: 14px;\n      line-height: 22px;\n      word-break: break-all;\n    }\n    .start-container, .end-container, .check-container{justify-self:center;  a}\n    .start-container [name='start']::slotted(ods-icon), .check-container ods-icon, .end-container [name='end']::slotted(ods-icon){\n      margin-top: 4px !important;\n    }\n    .start-container{grid-area: start; ", "}\n    .end-container{grid-area: end; ", "}\n    .check-container{grid-area: check; ", "}\n    .text-container{grid-area: text;}\n    .subtext-container{grid-area: subtext;}\n    </style>\n    <li class='menu-item-main-container'>\n      ", "\n    </li>\n    "])), this._gridStyle, this._iconPosition !== 'start' ? 'display: none;' : '', this._iconPosition !== 'end' ? 'display: none;' : '', !this._selectable ? 'display: none;' : '', this.getContent());
       }
     }]);
   }(s$2);
@@ -4807,10 +4820,12 @@
       _this.anchor = '';
       _this['no-close-on-select'] = false;
       _this.selectable = false;
+      _this['no-items-label'] = 'No Items';
       _this._handleKeyEvents = _this._handleKeyEvents.bind(_this);
       _this._handleESCKeyEvent = _this._handleESCKeyEvent.bind(_this);
       _this._handleWindowClick = _this._handleWindowClick.bind(_this);
       _this._handleInjectedClick = _this._handleInjectedClick.bind(_this);
+      _this._handleAnchoredBlur = _this._handleAnchoredBlur.bind(_this);
       _this._handleResize = _this._handleResize.bind(_this);
       _this._defaultHeight = '266px';
       _this._anchoredWidth = '';
@@ -4965,7 +4980,7 @@
       value: function setEmptySlots() {
         var e = document.createElement('div');
         e.className = 'no-items';
-        e.innerHTML = 'No items';
+        e.innerHTML = this['no-items-label'];
         this.shadowRoot.querySelector('.menu-container').innerHTML = '';
         this.shadowRoot.querySelector('.menu-container').appendChild(e);
       }
@@ -5021,6 +5036,9 @@
         });
         this._isValid = true;
         if (this._isValid) {
+          this._anchored.addEventListener('blur', function (e) {
+            _this5._handleAnchoredBlur(e, _this5);
+          });
           this._anchored.addEventListener('keydown', this._handleKeyEvents);
           document.addEventListener('keydown', this._handleESCKeyEvent);
           document.addEventListener('click', this._handleWindowClick);
@@ -5072,12 +5090,14 @@
       }
     }, {
       key: "closeMenu",
-      value: function closeMenu() {
+      value: function closeMenu(focusAnchor) {
         if (this._isOpen) {
+          //Default is true
+          focusAnchor = typeof focusAnchor === 'undefined' ? true : focusAnchor;
           this._isOpen = false;
           this.triggerDispatchEvent(false);
           this.shadowRoot.querySelector('.menu-container').classList.add('hide-menu');
-          this._anchored.focus();
+          if (focusAnchor) this._anchored.focus();
         }
       }
     }, {
@@ -5094,6 +5114,14 @@
         document.removeEventListener('click', this._handleWindowClick);
         window.removeEventListener('resize', this._handleResize);
         this._anchored.removeEventListener('keydown', this._handleKeyEvents);
+        this._anchored.removeEventListener('blur', this._handleAnchoredBlur);
+      }
+    }, {
+      key: "_handleAnchoredBlur",
+      value: function _handleAnchoredBlur(event, currentMenu) {
+        if (!(currentMenu._allMenuItems.includes(event.relatedTarget) || currentMenu.shadowRoot.host === event.relatedTarget)) {
+          currentMenu.closeMenu(false);
+        }
       }
     }, {
       key: "_handleESCKeyEvent",
@@ -5109,7 +5137,6 @@
         var key = (_event$detail$key = (_event$detail = event.detail) === null || _event$detail === void 0 ? void 0 : _event$detail.key) !== null && _event$detail$key !== void 0 ? _event$detail$key : event.key;
         event.stopPropagation();
         switch (key) {
-          case 'Tab':
           case 'Enter':
           case 'Space':
           case ' ':
@@ -5117,14 +5144,19 @@
           case 'Esc':
           case 'Escape':
             this.closeMenu();
+          case 'Tab':
+            this.closeMenu(false);
+            break;
           default:
             event.preventDefault();
             break;
         }
+        //Menu Item
         if (event.detail.menuItem) {
           this._setKeyEvents(event.detail.key, event.target);
           return;
         }
+        //Anchored
         switch (key) {
           case 'Up':
           case 'ArrowUp':
@@ -5134,8 +5166,22 @@
             break;
           case 'ArrowDown':
           case 'Down':
+            event.preventDefault();
+            if (!this._isOpen) {
+              this.toggleMenu();
+            }
+            this._setKeyEvents(key, this._lastMenuItem);
+            break;
+          case 'Enter':
+          case ' ':
+          case 'Space':
+            event.preventDefault();
+            this.toggleMenu();
           case 'ArrowRight':
           case 'Right':
+            this._setKeyEvents(key, this._lastMenuItem);
+            break;
+          default:
             this._setKeyEvents(key, this._lastMenuItem);
             break;
         }
@@ -5318,7 +5364,7 @@
       key: "render",
       value: function render() {
         var height = this['max-height'] && this['max-height'] !== '' ? this['max-height'] : this._defaultHeight;
-        return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-background-primary:         #FFF;\n      --ods-border-decorative-primary:  #C5C5C5;\n      --ods-sem-text-primary:           #1B1B1B;\n      --ods-sem-space-none:             0;\n      --ods-sem-space-xsmall:           4px;\n      --ods-sem-space-small:            8px;\n      --ods-sem-space-medium:           16px;\n      --ods-sem-space-large:            24px;\n      --ods-border-radius-xsmall:       4px;\n      --ods-shadow-small-x:             0px;\n      --ods-shadow-small-y:             2px;\n      --ods-shadow-small-blur:          4px;\n      --ods-shadow-small-spread:        0px;\n      --ods-shadow-small-color:         rgba(59, 59, 59, 0.25);\n      --ods-sem-text-tertiary:          #5E5E5E;\n      font-size: 14px;\n    }\n    :host{\n      position: absolute;\n      /* Shadow/Small */\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--ods-shadow-small-blur) var(--ods-shadow-small-spread) var(--ods-shadow-small-color);\n      border-radius: var(--ods-border-radius-xsmall);\n      outline: 0;\n    }\n    .menu-container{\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-family: lato;\n      background: var(--ods-background-primary);\n      ", "\n      ", "\n      ", "\n      min-height: min-content;\n      max-height: ", ";\n      overflow-x: clip;\n      text-wrap: wrap;\n      word-wrap: break-word;\n      overflow-y: auto;\n      position: relative;\n      border-radius: var(--ods-border-radius-xsmall);\n      outline: 0;\n    }\n      nav{\n      outline: 0;\n      }\n    \n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    .check-container, .icon-container{\n      width: 24px;\n      height: 24px;\n    }\n\n    .hide-menu, .invalid-menu{\n      display: none;\n    }\n\n    .no-items{\n      display: flex;\n      padding: var(--Space-Small, 8px) var(--Space-Medium, 16px) !important;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--Space-None, 0px);\n      flex-shrink: 0;\n      font-size: 14px;\n      line-height: 22px;\n      color: var(--ods-sem-text-tertiary);\n    }\n    .menu-container::-webkit-scrollbar {\n      width: 10px;\n    }\n    \n    .menu-container::-webkit-scrollbar-track {\n      background-color: #FFFFFF;\n      border-radius: 100px;\n    }\n    \n    .menu-container::-webkit-scrollbar-thumb {\n      background-color: #c5c5c5;\n      border-radius: 100px;\n      height:30px;\n    }\n      ul{\n      padding: 0; margin:0;}\n    </style>\n    <nav>\n    <ul tabindex=\"0\" class='menu-container hide-menu' part='ods-menu' @menu-item-single-event=", " @menu-item-slot-change-event=", " @menu-item-key-event=", ">\n      <slot @slotchange=\"", "\">No Items</slot>    \n    </ul>\n    </nav>\n    "])), !this['match-width'] ? "width: ".concat(this['max-width'], "; max-width: ").concat(this['max-width'], ";") : '', this['match-width'] ? "width: ".concat(this._anchoredWidth, "px;") : '', this._isMobile ? "width: ".concat(this._anchoredWidth, "px; max-width: unset;") : '', height, this._handleSingleClick, this._handleItemSlotChanges, this._handleKeyEvents, this.handleSlotChange);
+        return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-background-primary:         #FFF;\n      --ods-border-decorative-primary:  #C5C5C5;\n      --ods-sem-text-primary:           #1B1B1B;\n      --ods-sem-space-none:             0;\n      --ods-sem-space-xsmall:           4px;\n      --ods-sem-space-small:            8px;\n      --ods-sem-space-medium:           16px;\n      --ods-sem-space-large:            24px;\n      --ods-border-radius-xsmall:       4px;\n      --ods-shadow-small-x:             0px;\n      --ods-shadow-small-y:             2px;\n      --ods-shadow-small-blur:          4px;\n      --ods-shadow-small-spread:        0px;\n      --ods-shadow-small-color:         rgba(59, 59, 59, 0.25);\n      --ods-sem-text-tertiary:          #5E5E5E;\n      font-size: 14px;\n    }\n    :host{\n      position: absolute;\n      /* Shadow/Small */\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--ods-shadow-small-blur) var(--ods-shadow-small-spread) var(--ods-shadow-small-color);\n      border-radius: var(--ods-border-radius-xsmall);\n      outline: 0;\n      z-index: 999;\n    }\n    .menu-container{\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-family: lato;\n      background: var(--ods-background-primary);\n      ", "\n      ", "\n      ", "\n      min-height: min-content;\n      max-height: ", ";\n      overflow-x: clip;\n      text-wrap: wrap;\n      word-wrap: break-word;\n      overflow-y: auto;\n      position: relative;\n      border-radius: var(--ods-border-radius-xsmall);\n      outline: 0;\n     \n    }\n      nav{\n      outline: 0;\n      }\n    \n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    .check-container, .icon-container{\n      width: 24px;\n      height: 24px;\n    }\n\n    .hide-menu, .invalid-menu{\n      display: none;\n    }\n\n    .no-items{\n      display: flex;\n      padding: var(--Space-Small, 8px) var(--Space-Medium, 16px) !important;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--Space-None, 0px);\n      flex-shrink: 0;\n      font-size: 14px;\n      line-height: 22px;\n      color: var(--ods-sem-text-tertiary);\n    }\n    .menu-container::-webkit-scrollbar {\n      width: 10px;\n    }\n    \n    .menu-container::-webkit-scrollbar-track {\n      background-color: #FFFFFF;\n      border-radius: 100px;\n    }\n    \n    .menu-container::-webkit-scrollbar-thumb {\n      background-color: #c5c5c5;\n      border-radius: 100px;\n      height:30px;\n    }\n      ul{\n      padding: 0; margin:0;}\n    </style>\n    <nav>\n    <ul tabindex=\"0\" class='menu-container hide-menu' part='ods-menu' \n      @menu-item-single-event=", " \n      @menu-item-slot-change-event=", " \n      @menu-item-key-event=", ">\n      <slot @slotchange=\"", "\"></slot>    \n    </ul>\n    </nav>\n    "])), !this['match-width'] ? "width: ".concat(this['max-width'], "; max-width: ").concat(this['max-width'], ";") : '', this['match-width'] ? "width: ".concat(this._anchoredWidth, "px;") : '', this._isMobile ? "width: ".concat(this._anchoredWidth, "px; max-width: unset;") : '', height, this._handleSingleClick, this._handleItemSlotChanges, this._handleKeyEvents, this.handleSlotChange);
       }
     }]);
   }(s$2);
@@ -5336,13 +5382,15 @@
     type: Boolean
   }), "elRef", {
     type: Object
+  }), 'no-items-label', {
+    type: String
   }), "_anchoredWidth", {
     state: true
   }), "_isMobile", {
     state: true
-  }), "_isOpen", {
+  }), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty2, "_isOpen", {
     state: true
-  }), _defineProperty(_defineProperty(_defineProperty(_defineProperty2, "_anchored", {
+  }), "_anchored", {
     state: true
   }), "_isValid", {
     state: true
@@ -5675,6 +5723,7 @@
         this.dispatchEvent(new MenuOnChangeEvent({
           value: this.value
         }));
+        this.handleEvent(e);
       }
     }, {
       key: "getSelectedOption",
@@ -5701,17 +5750,6 @@
         return x(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["<ods-menu\n      @menu-toggle-event=\"", "\"\n      max-width=\"184px\"\n      max-height=\"266px\"\n      match-width=\"true\"\n      anchor=\"buttonWithStart\"\n      no-close-on-select=\"false\"\n      selectable=\"true\"\n      .elRef=", "\n      single-select\n    >\n      ", "\n    </ods-menu>"])), this.handleSelectClick, this.inputRef.value, this.getOptions());
       }
     }, {
-      key: "updateIconPosition",
-      value: function updateIconPosition() {
-        var icon = this.shadowRoot.querySelector(".ods-chevron-container");
-        var elmHeight = this.shadowRoot.querySelector(".ods-label-container");
-        if (!elmHeight) {
-          icon.style.top = "8px";
-        } else {
-          icon.style.top = "".concat(elmHeight.offsetHeight + 12, "px");
-        }
-      }
-    }, {
       key: "firstUpdated",
       value: function firstUpdated() {
         var _this3 = this;
@@ -5724,15 +5762,11 @@
       key: "updated",
       value: function updated(changedProperties) {
         _get(_getPrototypeOf(OdsSelectField.prototype), "updated", this).call(this);
-        var previousLabel = changedProperties.get("label");
-        if (previousLabel != undefined) {
-          this.updateIconPosition();
-        }
+        changedProperties.get("label");
       }
     }, {
       key: "render",
       value: function render() {
-        console.log("This is menu", this._menu);
         this.handleWidth();
         var isReadOnly = this.disabled == "true" ? "readonly" : "";
         var isError = this.error != "" ? "error-state" : "";
@@ -5744,7 +5778,7 @@
         if (this.isOpened) {
           iconPosition = "rotateZ(-180deg)";
         }
-        return x(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n      <style>\n        :host{\n            ", "\n            position: relative;\n          }\n          * {\n            box-sizng: border-box;\n            margin: 0;\n            padding: 0;\n            --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.4);\n            --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n            --ods-ref-color-green-100: #ffffff;\n            --ods-ref-color-green-40: #298319;\n            --ods-ref-color-gray-35: #515151;\n          }\n          .ods-form-label {\n            margin-bottom: 0.5ods-form-labelrem;\n            font-family: lato;\n            font-weight: 400;\n            font-size: 14px;\n            line-height: 24px;\n            margin: 0;\n            color: #1b1b1b;\n          }\n          .ods-form-control {\n            display: block;\n            padding: var(--ods-input-padding, 6px 16px);\n            font-size: var(--ods-input-font-size, 16px);\n            font-family: lato, Helvetica, Arial, sans-serif;\n            font-weight: var(--ods-input-font-weight, 400);\n            line-height: var(--ods-input-line-height, 32px);\n            color: var(--ods-input-color, #1b1b1b);\n            background-color: var(--ods-input-background-color, #fff);\n            background-clip: padding-box;\n            box-shadow: 0 0 0 1px rgba(118, 118, 118, 1);\n            border-width: 0;\n            -webkit-appearance: none;\n            -moz-appearance: none;\n            appearance: none;\n            border-radius: var(--ods-text-field-border-radius, 4px);\n            cursor:pointer;\n          }\n          @media (prefers-reduced-motion: reduce) {\n            .ods-form-control {\n              transition: none;\n            }\n          }\n          .ods-form-control::-moz-placeholder {\n            color: #5e5e5e;\n            opacity: 1;\n          }\n          .ods-form-control::placeholder {\n            color: #5e5e5e;\n            opacity: 1;\n          }\n          .ods-select-field-container {\n            width: ", ";\n          }\n          .ods-field-container {\n            width: ", ";\n            display: flex;\n            /*position: relative;*/\n            flex-direction: column-reverse;\n            gap: var(--ods-content-gap, 4px);\n            box-sizing: border-box;\n          }\n          .ods-label-container {\n            display: flex;\n            align-items: flex-start;\n            gap: 4px;\n          }\n          .ods-label-container ods-icon-button {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            --ods-icon-button-height: 24px;\n            --ods-icon-button-width: 24px;\n          }\n          .ods-button {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            --ods-icon-button-height: 24px;\n            --ods-icon-button-width: 24px;\n          }\n          ods-icon-button ods-icon::part(odsIcon) {\n            width: 16px;\n            height: 16px;\n          }\n          .ods-error-container {\n            width: ", ";\n            display: flex;\n            justify-content: flex-start;\n            gap: 8px;\n          }\n          .ods-error-container ods-icon {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: 16px;\n            width: 16px;\n            padding: 4px 0px;\n          }\n\n          .ods-field-container {\n            input {\n              &:hover {\n                border-width: 0;\n                box-shadow: 0 0 0 1px rgba(31, 100, 19, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #1f6413;\n                }\n                ~ .ods-label-container label {\n                  cursor: pointer;\n                }\n              }\n              &:focus {\n                color: #1b1b1b;\n                background-color: #fff;\n                box-shadow: 0 0 0 2px rgba(31, 100, 19, 1);\n                border-width: 0;\n                outline: 0;\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #1f6413;\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px rgba(18, 58, 11, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #123a0b;\n                }\n              }\n            }\n            &.readonly {\n              opacity: 0.5;\n              cursor: not-allowed;\n              input {\n                pointer-events: none;\n                color: #515151;\n                background-color: #c5c5c5;\n                background-clip: padding-box;\n                box-shadow: 0 0 0 1px rgba(81, 81, 81, 1);\n                -webkit-appearance: none;\n                -moz-appearance: none;\n                appearance: none;\n              }\n              .ods-label-container ods-text::part(odsText) {\n                pointer-events: none;\n              }\n              .ods-button {\n                pointer-events: none;\n              }\n            }\n            &.error-state {\n              input {\n                box-shadow: 0 0 0 1px rgba(171, 45, 37, 1);\n                border-width: 0;\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #ab2d25;\n                }\n                &:hover {\n                  box-shadow: 0 0 0 1px rgba(130, 34, 28, 1);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: #82221c;\n                  }\n                }\n                &:focus {\n                  border-color: #ab2d25;\n                  box-shadow: 0 0 0 2px rgba(171, 45, 37, 1);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: #ab2d25;\n                  }\n                }\n                &:active {\n                  box-shadow: 0 0 0 1px rgba(75, 20, 16, 1);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: #4b1410;\n                  }\n                }\n              }\n            }\n          }\n          ods-text::part(odsText) {\n            line-height: 24px;\n            word-break: break-word;\n          }\n          ods-text.left-spacing {\n            margin-left: 4px;\n          }\n          ods-text {\n            display: inline-block;\n          }\n          button {\n            border-radius: 9999px;\n            height: var(--ods-icon-button-height, 44px);\n            width: var(--ods-icon-button-width, 44px);\n            text-decoration: none;\n            border: var(--ods-sem-space-none);\n            cursor: pointer;\n            justify-content: center;\n            box-sizing: border-box;\n            display: inline-flex;\n            align-items: center;\n            padding: 0;\n          }\n          .btn-ghost {\n            color: var(--ods-ref-color-green-40);\n            background: transparent;\n          }\n          .btn-ghost:hover {\n            background: var(--ods-utility-states-primary-hover);\n          }\n          .btn-ghost:focus {\n            outline: none;\n            box-shadow: 0 0 0 0.125rem var(--ods-ref-color-green-40);\n          }\n          .btn-ghost:active {\n            background: var(--ods-utility-states-primary-pressed);\n            box-shadow: none;\n          }\n          .ods-chevron-container {\n            position: absolute;\n            right: 16px;\n            transform: ", ";\n            transition: transform 0.2s ease-in-out;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: 16px;\n            width: 16px;\n            padding: 8px 0px;\n          }\n      </style>\n      <div class=", ">\n        ", "", " ", "\n        <ods-icon\n          class=\"ods-chevron-container\"\n          size=\"SM\"\n          name=\"chevron-down\"\n          color=\"\"\n        ></ods-icon>\n      </div>\n      ", "\n    "])), this["full-width"] === "false" ? "display: inline-flex;" : "", this.width, this.width, this.width, iconPosition, ["ods-field-container", isReadOnly, isError].join(" "), this.getErrorMessage(), this.getInputField(), this.getLabelField(), this._menu);
+        return x(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n      <style>\n        :host{\n            ", "\n            position: relative;\n          }\n          * {\n            box-sizng: border-box;\n            margin: 0;\n            padding: 0;\n            --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.4);\n            --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n            --ods-ref-color-green-100: #ffffff;\n            --ods-ref-color-green-40: #298319;\n            --ods-ref-color-gray-35: #515151;\n          }\n          .ods-form-label {\n            margin-bottom: 0.5ods-form-labelrem;\n            font-family: lato;\n            font-weight: 400;\n            font-size: 14px;\n            line-height: 24px;\n            margin: 0;\n            color: #1b1b1b;\n          }\n          .ods-form-control {\n            display: block;\n            padding: var(--ods-input-padding, 6px 16px);\n            font-size: var(--ods-input-font-size, 16px);\n            font-family: lato, Helvetica, Arial, sans-serif;\n            font-weight: var(--ods-input-font-weight, 400);\n            line-height: var(--ods-input-line-height, 32px);\n            color: var(--ods-input-color, #1b1b1b);\n            background-color: var(--ods-input-background-color, #fff);\n            background-clip: padding-box;\n            box-shadow: 0 0 0 1px rgba(118, 118, 118, 1);\n            border-width: 0;\n            -webkit-appearance: none;\n            -moz-appearance: none;\n            appearance: none;\n            border-radius: var(--ods-text-field-border-radius, 4px);\n            cursor:pointer;\n          }\n          @media (prefers-reduced-motion: reduce) {\n            .ods-form-control {\n              transition: none;\n            }\n          }\n          .ods-form-control::-moz-placeholder {\n            color: #5e5e5e;\n            opacity: 1;\n          }\n          .ods-form-control::placeholder {\n            color: #5e5e5e;\n            opacity: 1;\n          }\n          .ods-select-field-container {\n            width: ", ";\n          }\n          .ods-field-container {\n            width: ", ";\n            display: flex;\n            /*position: relative;*/\n            flex-direction: column-reverse;\n            gap: var(--ods-content-gap, 4px);\n            box-sizing: border-box;\n          }\n          .ods-label-container {\n            display: flex;\n            align-items: flex-start;\n            gap: 4px;\n          }\n          .ods-label-container ods-icon-button {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            --ods-icon-button-height: 24px;\n            --ods-icon-button-width: 24px;\n          }\n          .ods-button {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            --ods-icon-button-height: 24px;\n            --ods-icon-button-width: 24px;\n          }\n          ods-icon-button ods-icon::part(odsIcon) {\n            width: 16px;\n            height: 16px;\n          }\n          .ods-error-container {\n            width: ", ";\n            display: flex;\n            justify-content: flex-start;\n            gap: 8px;\n          }\n          .ods-error-container ods-icon {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: 16px;\n            width: 16px;\n            padding: 4px 0px;\n          }\n\n          .ods-field-container {\n            input {\n              &:hover {\n                border-width: 0;\n                box-shadow: 0 0 0 1px rgba(31, 100, 19, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #1f6413;\n                }\n                ~ .ods-label-container label {\n                  cursor: pointer;\n                }\n              }\n              &:focus {\n                color: #1b1b1b;\n                background-color: #fff;\n                box-shadow: 0 0 0 2px rgba(31, 100, 19, 1);\n                border-width: 0;\n                outline: 0;\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #1f6413;\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px rgba(18, 58, 11, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #123a0b;\n                }\n              }\n            }\n            &.readonly {\n              opacity: 0.5;\n              cursor: not-allowed;\n              input {\n                pointer-events: none;\n                color: #515151;\n                background-color: #c5c5c5;\n                background-clip: padding-box;\n                box-shadow: 0 0 0 1px rgba(81, 81, 81, 1);\n                -webkit-appearance: none;\n                -moz-appearance: none;\n                appearance: none;\n              }\n              .ods-label-container ods-text::part(odsText) {\n                pointer-events: none;\n              }\n              .ods-button {\n                pointer-events: none;\n              }\n            }\n            &.error-state {\n              input {\n                box-shadow: 0 0 0 1px rgba(171, 45, 37, 1);\n                border-width: 0;\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #ab2d25;\n                }\n                &:hover {\n                  box-shadow: 0 0 0 1px rgba(130, 34, 28, 1);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: #82221c;\n                  }\n                }\n                &:focus {\n                  border-color: #ab2d25;\n                  box-shadow: 0 0 0 2px rgba(171, 45, 37, 1);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: #ab2d25;\n                  }\n                }\n                &:active {\n                  box-shadow: 0 0 0 1px rgba(75, 20, 16, 1);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: #4b1410;\n                  }\n                }\n              }\n            }\n          }\n          ods-text::part(odsText) {\n            line-height: 24px;\n            word-break: break-word;\n          }\n          ods-text.left-spacing {\n            margin-left: 4px;\n          }\n          ods-text {\n            display: inline-block;\n          }\n          button {\n            border-radius: 9999px;\n            height: var(--ods-icon-button-height, 44px);\n            width: var(--ods-icon-button-width, 44px);\n            text-decoration: none;\n            border: var(--ods-sem-space-none);\n            cursor: pointer;\n            justify-content: center;\n            box-sizing: border-box;\n            display: inline-flex;\n            align-items: center;\n            padding: 0;\n          }\n          .btn-ghost {\n            color: var(--ods-ref-color-green-40);\n            background: transparent;\n          }\n          .btn-ghost:hover {\n            background: var(--ods-utility-states-primary-hover);\n          }\n          .btn-ghost:focus {\n            outline: none;\n            box-shadow: 0 0 0 0.125rem var(--ods-ref-color-green-40);\n          }\n          .btn-ghost:active {\n            background: var(--ods-utility-states-primary-pressed);\n            box-shadow: none;\n          }\n          .ods-chevron-container {\n            position: absolute;\n            right: 16px;\n            bottom: 4px;\n            transform: ", ";\n            transition: transform 0.2s ease-in-out;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: 16px;\n            width: 16px;\n            padding: 8px 0px;\n            pointer-events: none;\n          }\n      </style>\n      <div class=", ">\n        ", "", " ", "\n        <ods-icon\n          class=\"ods-chevron-container\"\n          size=\"SM\"\n          name=\"chevron-down\"\n          color=\"\"\n        ></ods-icon>\n      </div>\n      ", "\n    "])), this["full-width"] === "false" ? "display: inline-flex;" : "", this.width, this.width, this.width, iconPosition, ["ods-field-container", isReadOnly, isError].join(" "), this.getErrorMessage(), this.getInputField(), this.getLabelField(), this._menu);
       }
     }], [{
       key: "properties",
@@ -5800,6 +5834,9 @@
           },
           filteredOptions: {
             state: true
+          },
+          handleEvent: {
+            type: Function
           }
         };
       }
