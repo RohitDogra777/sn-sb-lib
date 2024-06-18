@@ -5650,7 +5650,7 @@
         if (this.error != "") {
           errorAlert = true;
         }
-        return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n      <input\n        readonly\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n        anchor=\"", "\"\n        ", "\n      />\n    "])), this.type, ["ods-form-control", "ods-input-select"].join(" "), this.name, this.name, this.placeholder, this.error, this.name, this.value, this.disabled, isRequired, isOptional, errorAlert, this.name, n(this.inputRef));
+        return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n      <input\n        readonly\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n        anchor=\"", "\"\n        ", "\n      />\n    "])), this.type, ["ods-form-control", "ods-input-select"].join(" "), this.name, this.name, this.placeholder, this.error, this.name, this.value, this.isDisabled, isRequired, isOptional, errorAlert, this.name, n(this.inputRef));
       }
     }, {
       key: "handleKeyPress",
@@ -5723,7 +5723,6 @@
         this.dispatchEvent(new MenuOnChangeEvent({
           value: this.value
         }));
-        this.handleEvent(e);
       }
     }, {
       key: "getSelectedOption",
@@ -5750,6 +5749,17 @@
         return x(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["<ods-menu\n      @menu-toggle-event=\"", "\"\n      max-width=\"184px\"\n      max-height=\"266px\"\n      match-width=\"true\"\n      anchor=\"buttonWithStart\"\n      no-close-on-select=\"false\"\n      selectable=\"true\"\n      .elRef=", "\n      single-select\n    >\n      ", "\n    </ods-menu>"])), this.handleSelectClick, this.inputRef.value, this.getOptions());
       }
     }, {
+      key: "updateIconPosition",
+      value: function updateIconPosition() {
+        var icon = this.shadowRoot.querySelector(".ods-chevron-container");
+        var elmHeight = this.shadowRoot.querySelector(".ods-label-container");
+        if (!elmHeight) {
+          icon.style.top = "8px";
+        } else {
+          icon.style.top = "".concat(elmHeight.offsetHeight + 12, "px");
+        }
+      }
+    }, {
       key: "firstUpdated",
       value: function firstUpdated() {
         var _this3 = this;
@@ -5762,15 +5772,18 @@
       key: "updated",
       value: function updated(changedProperties) {
         _get(_getPrototypeOf(OdsSelectField.prototype), "updated", this).call(this);
-        changedProperties.get("label");
+        var previousLabel = changedProperties.get("label");
+        if (previousLabel != undefined) {
+          this.updateIconPosition();
+        }
       }
     }, {
       key: "render",
       value: function render() {
         this.handleWidth();
-        var isReadOnly = this.disabled == "true" ? "readonly" : "";
+        var isReadOnly = this.isDisabled == true ? "readonly" : "";
         var isError = this.error != "" ? "error-state" : "";
-        if (this.disabled == "true") {
+        if (this.isDisabled == true) {
           isError = "";
           this.error = "";
         }
@@ -5784,8 +5797,8 @@
       key: "properties",
       get: function get() {
         return {
-          disabled: {
-            type: String
+          isDisabled: {
+            type: Boolean
           },
           onInput: {
             type: Function
@@ -5834,9 +5847,6 @@
           },
           filteredOptions: {
             state: true
-          },
-          handleEvent: {
-            type: Function
           }
         };
       }
