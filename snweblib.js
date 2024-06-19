@@ -2714,7 +2714,7 @@
       key: "render",
       value: function render() {
         var maxWidth = this["max-width"];
-        return x(_templateObject3$6 || (_templateObject3$6 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      --ods-background-reverse-primary: rgba(3, 45, 66, 0.75);\n      --ods-sem-space-none:       0px;\n      --ods-sem-space-xsmall:     4px;\n      --ods-sem-space-small:      8px;\n      --ods-sem-space-medium:     16px;\n      --ods-sem-space-large:      24px;\n      --ods-sem-space-xlarge:     32px;\n    }\n    :host {\n        display: block;\n      }\n      .scrim {\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background-color: var(--ods-background-reverse-primary);\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        z-index:9999;\n      }\n      .modal {\n        padding: var(--ods-sem-space-large);\n        background: white;\n        border-radius: var(--ods-sem-space-small);\n        max-width: ", ";\n        width: 100%;\n        max-height:470px;\n        display: flex;\n        flex-direction: column;\n        overflow: hidden;\n        margin: var(--ods-sem-space-large);\n      }\n      \n      .header {\n        display: inline-flex;\n        justify-content: space-between;\n        align-items: center;\n        gap: var(--ods-sem-space-small);\n        margin-bottom: var( --ods-sem-space-small);\n        word-break: break-word;\n      }\n      \n      .icon-close{\n        align-self: flex-start;\n      }\n\n      .content {\n        margin-bottom: var(--ods-sem-space-xlarge);\n        overflow-y: auto;\n        flex-grow: 1;\n      }\n      .footer {\n        gap: var(--ods-sem-space-small);\n        display: flex;\n        justify-content: flex-end;\n        word-break: break-word;\n      }\n\n      .modal.small-width .footer{\n        flex-direction: column-reverse;\n        align-items: stretch;\n      }\n\n      @media screen and (max-width: 479px){\n       .footer {\n        flex-direction: column-reverse;\n        align-items: stretch;\n        }\n        }\n\n      ods-heading{\n        padding: 6px 0px;\n      }\n     \n    </style>\n      ", "\n    "])), maxWidth, this.open ? this.getDialog() : '');
+        return x(_templateObject3$6 || (_templateObject3$6 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      --ods-background-reverse-primary: rgba(3, 45, 66, 0.75);\n      --ods-sem-space-none:       0px;\n      --ods-sem-space-xsmall:     4px;\n      --ods-sem-space-small:      8px;\n      --ods-sem-space-medium:     16px;\n      --ods-sem-space-large:      24px;\n      --ods-sem-space-xlarge:     32px;\n    }\n    :host {\n        display: block;\n      }\n      .scrim {\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background-color: var(--ods-background-reverse-primary);\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        z-index:9999;\n      }\n      .modal {\n        padding: var(--ods-sem-space-large);\n        background: white;\n        border-radius: var(--ods-sem-space-small);\n        max-width: ", ";\n        width: 100%;\n        max-height:527px;\n        display: flex;\n        flex-direction: column;\n        overflow: hidden;\n        margin: var(--ods-sem-space-large);\n      }\n      \n      .header {\n        display: inline-flex;\n        justify-content: space-between;\n        align-items: center;\n        gap: var(--ods-sem-space-small);\n        margin-bottom: var( --ods-sem-space-small);\n        word-break: break-word;\n      }\n      \n      .icon-close{\n        align-self: flex-start;\n      }\n\n      .content {\n        margin-bottom: var(--ods-sem-space-xlarge);\n        overflow-y: auto;\n        flex-grow: 1;\n      }\n      .footer {\n        gap: var(--ods-sem-space-small);\n        display: flex;\n        justify-content: flex-end;\n        word-break: break-word;\n      }\n\n      .modal.small-width .footer{\n        flex-direction: column-reverse;\n        align-items: stretch;\n      }\n\n      @media screen and (max-width: 479px){\n       .footer {\n        flex-direction: column-reverse;\n        align-items: stretch;\n        }\n        }\n\n      ods-heading{\n        padding: 6px 0px;\n      }\n     \n    </style>\n      ", "\n    "])), maxWidth, this.open ? this.getDialog() : '');
       }
     }], [{
       key: "properties",
@@ -5683,6 +5683,8 @@
       _this.placeholder = "Select";
       _this.isDisabled = false;
       _this._preventSpaceDefaultKey = _this._preventSpaceDefaultKey.bind(_this);
+      _this.handleOutSideClick = null;
+      _this.eventName = "ods-on-select";
       return _this;
     }
     _inherits(OdsSelectField, _LitElement);
@@ -5781,6 +5783,12 @@
         this.shadowRoot.getElementById("".concat(this.name)).setAttribute("value", value.text);
         this.isOpened = false;
         this.value = value.text;
+        var event = new CustomEvent(this.eventName, {
+          detail: e,
+          bubbles: true,
+          composed: true
+        });
+        this.dispatchEvent(event);
       }
     }, {
       key: "getSelectedOption",
@@ -5849,6 +5857,7 @@
     }, {
       key: "render",
       value: function render() {
+        console.log("Typeof passed function is", _typeof(this.customFunction));
         this.handleWidth();
         var isReadOnly = this.isDisabled == "true" ? "readonly" : "";
         var isError = this.error != "" ? "error-state" : "";
@@ -5916,6 +5925,12 @@
           },
           filteredOptions: {
             state: true
+          },
+          eventName: {
+            type: String
+          },
+          customFunction: {
+            type: Function
           }
         };
       }
