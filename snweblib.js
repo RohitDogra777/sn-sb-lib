@@ -4568,20 +4568,6 @@
     _inherits(MenuItemKeyEvent, _Event5);
     return _createClass(MenuItemKeyEvent);
   }( /*#__PURE__*/_wrapNativeSuper(Event));
-  var OdsOnInputBlurEvent = /*#__PURE__*/function (_Event7) {
-    function OdsOnInputBlurEvent(detail) {
-      var _this7;
-      _classCallCheck(this, OdsOnInputBlurEvent);
-      _this7 = _callSuper(this, OdsOnInputBlurEvent, ["ods-input-blur-event", {
-        bubbles: true,
-        composed: true
-      }]);
-      _this7.detail = detail;
-      return _this7;
-    }
-    _inherits(OdsOnInputBlurEvent, _Event7);
-    return _createClass(OdsOnInputBlurEvent);
-  }( /*#__PURE__*/_wrapNativeSuper(Event));
   var OdsActiveMenuEvent = /*#__PURE__*/function (_Event8) {
     function OdsActiveMenuEvent(detail) {
       var _this8;
@@ -5784,7 +5770,7 @@
         this.isOpened = false;
         this.value = value.text;
         var event = new CustomEvent(this.eventName, {
-          detail: e,
+          detail: value,
           bubbles: true,
           composed: true
         });
@@ -5846,6 +5832,10 @@
         }
         var previousWidth = changedProperties.get("full-width");
         if (previousWidth != undefined) {
+          this.updateIconPosition();
+        }
+        var previousError = changedProperties.get("error");
+        if (previousError != undefined) {
           this.updateIconPosition();
         }
       }
@@ -6131,9 +6121,12 @@
     }, {
       key: "onBlur",
       value: function onBlur(e) {
-        this.dispatchEvent(new OdsOnInputBlurEvent({
-          value: e.target.value
-        }));
+        var event = new CustomEvent(this.onBlurEvent, {
+          detail: e.target.value,
+          bubbles: true,
+          composed: true
+        });
+        this.dispatchEvent(event);
       }
     }, {
       key: "getInputField",
@@ -6240,6 +6233,9 @@
             type: String
           },
           value: {
+            type: String
+          },
+          onBlurEvent: {
             type: String
           }
         };
