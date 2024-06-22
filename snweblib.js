@@ -11976,6 +11976,9 @@
           },
           onBlurEvent: {
             type: String
+          },
+          user: {
+            type: Object
           }
         };
       }
