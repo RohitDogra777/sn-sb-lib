@@ -11839,21 +11839,6 @@
     }
     _inherits(ODSTextField, _NgLit);
     return _createClass(ODSTextField, [{
-      key: "attributeChangedCallback",
-      value:
-      // static get observedAttributes(){
-      //   return ['ng-prop-error','ng-prop-error'];
-      // }
-      function attributeChangedCallback(name, oldName, newName) {
-        _get(_getPrototypeOf(ODSTextField.prototype), "attributeChangedCallback", this).call(this, name, oldName, newName);
-        console.log("Here is Old Value And new name", name, oldName, newName);
-      }
-    }, {
-      key: "updated",
-      value: function updated(changedProperties) {
-        console.log(changedProperties);
-      }
-    }, {
       key: "handleInput",
       value: function handleInput(e) {}
     }, {
@@ -11878,7 +11863,7 @@
         if (this.error != '') {
           errorAlert = true;
         }
-        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <input\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        @input=\"", "\"\n        @blur=\"", "\"\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n      />\n    "])), this.type, ["ods-form-control"].join(" "), this.onInput, this.onBlur, this.name, this.name, this.placeholder, this.error, this.name, this.value, this.isDisabled, isRequired, isOptional, errorAlert);
+        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <input\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        @input=\"", "\"\n        @blur=\"", "\"\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n        ng-model=\"", "\"\n      />\n    "])), this.type, ["ods-form-control"].join(" "), this.onInput, this.onBlur, this.name, this.name, this.placeholder, this.error, this.name, this.isDisabled, isRequired, isOptional, errorAlert, modelValue);
       }
     }, {
       key: "getErrorMessage",
@@ -11927,7 +11912,6 @@
     }, {
       key: "render",
       value: function render() {
-        console.log(this.user);
         this.handleWidth();
         var isReadOnly = this.isDisabled == "true" ? "readonly" : "";
         var isError = this.error != "" ? "error-state" : "";
@@ -11979,6 +11963,9 @@
           },
           user: {
             type: Object
+          },
+          modelValue: {
+            type: String
           }
         };
       }
