@@ -7175,6 +7175,12 @@
         }
       }
     }, {
+      key: "connectedCallback",
+      value: function connectedCallback() {
+        _get(_getPrototypeOf(ODSTextArea.prototype), "connectedCallback", this).call(this);
+        this.NgApi = new OdsBridgeApi(this);
+      }
+    }, {
       key: "getInputField",
       value: function getInputField() {
         var isRequired = this.required == "true" ? true : false;
