@@ -7134,6 +7134,7 @@
       _this.error = "";
       _this.tooltip = "";
       _this.value = '';
+      _this.NgApi = null;
       return _this;
     }
     _inherits(ODSTextArea, _LitElement);
@@ -7141,13 +7142,11 @@
       key: "onBlur",
       value: function onBlur(e) {
         this.NgApi.triggerNg(e.target.value);
-        console.log("Text Area", e.target.value);
       }
     }, {
       key: "onInput",
       value: function onInput(e) {
         this.NgApi.triggerNg(e.target.value);
-        console.log("Text Area", e.target.value);
       }
     }, {
       key: "firstUpdated",
@@ -7194,7 +7193,7 @@
         if (this.error != '') {
           errorAlert = true;
         }
-        return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n    <textarea\n    tabindex=\"2\"\n    class=", "\n    id=\"", "\"\n    name=\"", "\"\n    resize=\"", "\"\n    placeholder=\"", "\"\n    error=\"", "\"\n    aria-describedby=\"", "\"\n    aria-disabled=\"", "\"\n    .value=\"", "\"\n    ?required=\"", "\"\n    ?optional=\"", "\"\n    aria-invalid=\"", "\"\n    @resize=\"", "\"\n    @input=\"", "\"\n    @blur=\"", "\"\n  ></textarea>\n    "])), ["ods-form-control"].join(" "), this.name, this.name, this.resize, this.placeholder, this.error, this.name, this.disabled, this.value, isRequired, isOptional, errorAlert, this.handletextsize, this.onInput, this.onBlur);
+        return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n    <textarea\n    @input=\"", "\"\n    @blur=\"", "\"\n    tabindex=\"2\"\n    class=", "\n    id=\"", "\"\n    name=\"", "\"\n    resize=\"", "\"\n    placeholder=\"", "\"\n    error=\"", "\"\n    aria-describedby=\"", "\"\n    aria-disabled=\"", "\"\n    .value=\"", "\"\n    ?required=\"", "\"\n    ?optional=\"", "\"\n    aria-invalid=\"", "\"\n    @resize=\"", "\"\n\n  ></textarea>\n    "])), this.onInput, this.onBlur, ["ods-form-control"].join(" "), this.name, this.name, this.resize, this.placeholder, this.error, this.name, this.disabled, this.value, isRequired, isOptional, errorAlert, this.handletextsize);
       }
     }, {
       key: "getErrorMessage",
@@ -7270,12 +7269,6 @@
           },
           error: {
             type: String
-          },
-          onInput: {
-            type: Function
-          },
-          onBlur: {
-            type: Function
           },
           "full-width": {
             type: String
