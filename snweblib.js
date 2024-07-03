@@ -7141,11 +7141,13 @@
       key: "onBlur",
       value: function onBlur(e) {
         this.NgApi.triggerNg(e.target.value);
+        console.log("Text Area", e.target.value);
       }
     }, {
       key: "onInput",
       value: function onInput(e) {
         this.NgApi.triggerNg(e.target.value);
+        console.log("Text Area", e.target.value);
       }
     }, {
       key: "firstUpdated",
