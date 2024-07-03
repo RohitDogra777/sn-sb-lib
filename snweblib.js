@@ -5959,174 +5959,6 @@
   }(s$2);
   customElements.define("ods-select-field", OdsSelectField);
 
-  var _templateObject$4, _templateObject2$3, _templateObject3$3, _templateObject4$2, _templateObject5$1, _templateObject6$1, _templateObject7$1;
-  var ODSTextArea = /*#__PURE__*/function (_LitElement) {
-    function ODSTextArea() {
-      var _this;
-      _classCallCheck(this, ODSTextArea);
-      _this = _callSuper(this, ODSTextArea);
-      _this.height = "128px";
-      _this.width = "280px";
-      _this.error = "";
-      _this.tooltip = "";
-      _this.value = '';
-      return _this;
-    }
-    _inherits(ODSTextArea, _LitElement);
-    return _createClass(ODSTextArea, [{
-      key: "firstUpdated",
-      value: function firstUpdated() {
-        var _this2 = this;
-        this.handleWidth();
-        var eleId = this.shadowRoot.getElementById('input');
-        var observer = new ResizeObserver(function (data) {
-          var _iterator = _createForOfIteratorHelper(data),
-            _step;
-          try {
-            for (_iterator.s(); !(_step = _iterator.n()).done;) {
-              var item = _step.value;
-              var width = "".concat(item.contentRect.width + item.contentRect.x * 2, "px");
-              _this2.width = width;
-            }
-          } catch (err) {
-            _iterator.e(err);
-          } finally {
-            _iterator.f();
-          }
-        });
-        observer.observe(eleId);
-      }
-    }, {
-      key: "getInputField",
-      value: function getInputField() {
-        var isRequired = this.required == "true" ? true : false;
-        var isOptional = this.optional == "true" ? true : false;
-        if (isRequired) {
-          isOptional = false;
-        }
-        var errorAlert = false;
-        if (this.error != '') {
-          errorAlert = true;
-        }
-        return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n    <textarea\n    tabindex=\"2\"\n    class=", "\n    id=\"", "\"\n    name=\"", "\"\n    resize=\"", "\"\n    placeholder=\"", "\"\n    error=\"", "\"\n    aria-describedby=\"", "\"\n    aria-disabled=\"", "\"\n    .value=\"", "\"\n    ?required=\"", "\"\n    ?optional=\"", "\"\n    aria-invalid=\"", "\"\n    @resize=\"", "\"\n    \n    \n  ></textarea>\n    "])), ["ods-form-control"].join(" "), this.name, this.name, this.resize, this.placeholder, this.error, this.name, this.disabled, this.value, isRequired, isOptional, errorAlert, this.handletextsize);
-      }
-    }, {
-      key: "getErrorMessage",
-      value: function getErrorMessage() {
-        if (this.error && this.error != "") {
-          return x(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"#AB2D25\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"#AB2D25\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
-        }
-        return "";
-      }
-    }, {
-      key: "getInfoIcon",
-      value: function getInfoIcon() {
-        if (this.tooltip != "") {
-          return x(_templateObject3$3 || (_templateObject3$3 = _taggedTemplateLiteral(["\n      <div class=\"ods-button\">\n      <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n        <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n      </button>\n      <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n    </div>\n      "])), this.tooltip);
-        }
-      }
-    }, {
-      key: "getLabelField",
-      value: function getLabelField() {
-        if (this.label != "") {
-          return x(_templateObject4$2 || (_templateObject4$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-label-container\">\n          <ods-text\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n          <label for=\"", "\"> ", "</label>\n          </ods-text>\n          ", "\n        </div>\n      "])), this.name, this.getLabelText(), this.getInfoIcon());
-        }
-        return "";
-      }
-    }, {
-      key: "getLabelText",
-      value: function getLabelText() {
-        var labelText = this.label;
-        if (this.required == "true") {
-          labelText = x(_templateObject5$1 || (_templateObject5$1 = _taggedTemplateLiteral(["", "<ods-text\n            class=\"left-spacing\"\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n            (required)\n          </ods-text>"])), labelText);
-        }
-        if (this.required != "true" && this.optional == "true") {
-          labelText = x(_templateObject6$1 || (_templateObject6$1 = _taggedTemplateLiteral(["", "<ods-text\n            class=\"left-spacing\"\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >(optional)</ods-text>"])), labelText);
-        }
-        return labelText;
-      }
-    }, {
-      key: "handleWidth",
-      value: function handleWidth() {
-        this.shadowRoot.querySelector('textarea').style = "";
-        if (this["full-width"] == "true") {
-          this.width = "100%";
-        } else {
-          this.width = "280px";
-        }
-      }
-    }, {
-      key: "updated",
-      value: function updated(changedProperties) {
-        _get(_getPrototypeOf(ODSTextArea.prototype), "updated", this).call(this);
-        var previousFullWidth = changedProperties.get('full-width');
-        if (previousFullWidth !== this['full-width'] && typeof previousFullWidth !== 'undefined') {
-          this.handleWidth();
-        }
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var isReadOnly = this.disabled == "true" ? "readonly" : "";
-        var isError = this.error != "" ? "error-state" : "";
-        if (this.disabled == "true") {
-          isError = "";
-          this.error = "";
-        }
-        return x(_templateObject7$1 || (_templateObject7$1 = _taggedTemplateLiteral(["\n    <style>\n        * {\n          box-sizng: border-box;\n          margin: 0;\n          padding: 0;\n          --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.4);\n          --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n          --ods-ref-color-green-100: #ffffff;\n          --ods-ref-color-green-40: #298319;\n          --ods-ref-color-gray-35: #515151;\n        }\n        .ods-form-label {\n          margin-bottom: 0.5ods-form-labelrem;\n          font-family: lato;\n          font-weight: 400;\n          font-size: 14px;\n          line-height: 22px;\n          margin: 0;\n          color: #1b1b1b;\n        }\n        .ods-form-control {\n          display: block;\n          resize: ", ";\n          height: var(--ods-height, 156px);\n          padding: var(--ods-textarea-padding, 10px 16px);\n          font-size: var(--ods-textarea-font-size, 16px);\n          font-family: lato, Helvetica, Arial, sans-serif;\n          font-weight: var(--ods-textarea-font-weight, 400);\n          line-height: var(--ods-textarea-line-height, 24px);\n          color: var(--ods-textarea-color, #1b1b1b);\n          background-color: var(--ods-textarea-background-color, #fff);\n          background-clip: padding-box;\n          box-shadow: 0 0 0 1px rgba(118, 118, 118, 1);\n          border-width: 0;\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          appearance: none;\n          border-radius: var(--ods-text-field-border-radius, 4px);\n        }\n        @media (prefers-reduced-motion: reduce) {\n          .ods-form-control {\n            transition: none;\n          }\n        }\n        .ods-form-control::-moz-placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-form-control::placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-field-container {\n          width: ", ";\n          display: flex;\n          position: relative;\n          flex-direction: column-reverse;\n          gap: var(--ods-content-gap, 4px);\n          box-sizing: border-box;\n        }\n        .ods-label-container {\n          display: flex;\n          align-items: flex-start;\n          gap: 4px;\n        }\n        .ods-label-container ods-icon-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        .ods-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        ods-icon-button ods-icon::part(odsIcon) {\n          width: 16px;\n          height: 16px;\n        }\n        .ods-error-container {\n          margin-top: 2px;\n          width: ", ";\n          display: flex;\n          justify-content: flex-start;\n          gap: 8px;\n        }\n        .ods-error-container ods-icon {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          height: 16px;\n          width: 16px;\n          padding: 4px 0px;\n        }\n\n        .ods-field-container {\n          textarea {\n            &:hover {\n              border-width: 0;\n              box-shadow: 0 0 0 1px rgba(31, 100, 19, 1);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #1f6413;\n              }\n              ~ .ods-label-container label {\n                cursor: pointer;\n              }\n            }\n            &:focus {\n              color: #1b1b1b;\n              background-color: #fff;\n              box-shadow: 0 0 0 2px rgba(31, 100, 19, 1);\n              border-width: 0;\n              outline: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #1f6413;\n              }\n            }\n            &:active {\n              box-shadow: 0 0 0 1px rgba(18, 58, 11, 1);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #123a0b;\n              }\n            }\n          }\n          &.readonly {\n            opacity: 0.5;\n            cursor: not-allowed;\n            textarea {\n              pointer-events: none;\n              color: #515151;\n              background-color: #c5c5c5;\n              background-clip: padding-box;\n              box-shadow: 0 0 0 1px rgba(81, 81, 81, 1);\n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n            }\n            .ods-label-container ods-text::part(odsText) {\n              pointer-events: none;\n            }\n            .ods-button {\n              pointer-events: none;\n            }\n          }\n          &.error-state {\n            textarea {\n              box-shadow: 0 0 0 1px rgba(171, 45, 37, 1);\n              border-width: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #ab2d25;\n              }\n              &:hover {\n                box-shadow: 0 0 0 1px rgba(130, 34, 28, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #82221c;\n                }\n              }\n              &:focus {\n                border-color: #ab2d25;\n                box-shadow: 0 0 0 2px rgba(171, 45, 37, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #ab2d25;\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px rgba(75, 20, 16, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #4b1410;\n                }\n              }\n            }\n          }\n        }\n        ods-text::part(odsText) {\n          line-height: 24px;\n          word-break: break-word;\n        }\n        ods-text.left-spacing {\n          margin-left: 4px;\n        }\n        ods-text {\n          display: inline-block;\n        }\n        button {\n          border-radius: 9999px;\n          height: var(--ods-icon-button-height, 44px);\n          width: var(--ods-icon-button-width, 44px);\n          text-decoration: none;\n          border: var(--ods-sem-space-none);\n          cursor: pointer;\n          justify-content: center;\n          box-sizing: border-box;\n          display: inline-flex;\n          align-items: center;\n          padding: 0;\n        }\n        .btn-ghost {\n          color: var(--ods-ref-color-green-40);\n          background: transparent;\n        }\n        .btn-ghost:hover {\n          background: var(--ods-utility-states-primary-hover);\n        }\n        .btn-ghost:focus{\n          outline: none;\n          box-shadow: 0 0 0 0.125rem var(--ods-ref-color-green-40);\n        }\n        .btn-ghost:active {\n          background: var(--ods-utility-states-primary-pressed);\n          box-shadow:none;\n        }\n        .ods-label-container ::-webkit-scrollbar{\n          width:12px;\n          position: absolute;\n          right: 4px;\n          top: 8px;\n      }\n      .ods-label-container ::-webkit-scrollbar-track{\n          background:#f1f1f1;\n          border-radius:10px;\n      }\n      .ods-label-container ::-webkit-scrollbar-thumb{\n          background-color:#1B1B1B\";\n          border-radius:10px;\n          opacity:0.3;\n      }\n\n      </style>\n      <div class=", ">\n        ", " ", "\n      </div>\n      <div class=\"ods-error-container\" style=\"resize: ", ";\">\n    ", "\n  </div>\n    "])), this.resize, this.width, this.width, ["ods-field-container", isReadOnly, isError].join(" "), this.getInputField(), this.getLabelField(), this.resize, this.getErrorMessage());
-      }
-    }], [{
-      key: "properties",
-      get: function get() {
-        return {
-          disabled: {
-            type: String
-          },
-          error: {
-            type: String
-          },
-          onInput: {
-            type: Function
-          },
-          onBlur: {
-            type: Function
-          },
-          "full-width": {
-            type: String
-          },
-          label: {
-            type: String
-          },
-          name: {
-            type: String
-          },
-          optional: {
-            type: String
-          },
-          placeholder: {
-            type: String
-          },
-          required: {
-            type: String
-          },
-          tooltip: {
-            type: String
-          },
-          value: {
-            type: String
-          },
-          resize: {
-            type: String
-          },
-          width: {
-            type: String
-          }
-        };
-      }
-    }]);
-  }(s$2);
-  customElements.define("ods-text-area", ODSTextArea);
-
   /** Detect free variable `global` from Node.js. */
   var freeGlobal = (typeof global === "undefined" ? "undefined" : _typeof(global)) == 'object' && global && global.Object === Object && global;
 
@@ -7291,6 +7123,188 @@
     }]);
   }();
 
+  var _templateObject$4, _templateObject2$3, _templateObject3$3, _templateObject4$2, _templateObject5$1, _templateObject6$1, _templateObject7$1;
+  var ODSTextArea = /*#__PURE__*/function (_LitElement) {
+    function ODSTextArea() {
+      var _this;
+      _classCallCheck(this, ODSTextArea);
+      _this = _callSuper(this, ODSTextArea);
+      _this.height = "128px";
+      _this.width = "280px";
+      _this.error = "";
+      _this.tooltip = "";
+      _this.value = '';
+      return _this;
+    }
+    _inherits(ODSTextArea, _LitElement);
+    return _createClass(ODSTextArea, [{
+      key: "onBlur",
+      value: function onBlur(e) {
+        this.NgApi.triggerNg(e.target.value);
+      }
+    }, {
+      key: "onInput",
+      value: function onInput(e) {
+        this.NgApi.triggerNg(e.target.value);
+      }
+    }, {
+      key: "firstUpdated",
+      value: function firstUpdated() {
+        var _this2 = this;
+        this.handleWidth();
+        var eleId = this.shadowRoot.getElementById('input');
+        var observer = new ResizeObserver(function (data) {
+          var _iterator = _createForOfIteratorHelper(data),
+            _step;
+          try {
+            for (_iterator.s(); !(_step = _iterator.n()).done;) {
+              var item = _step.value;
+              var width = "".concat(item.contentRect.width + item.contentRect.x * 2, "px");
+              _this2.width = width;
+            }
+          } catch (err) {
+            _iterator.e(err);
+          } finally {
+            _iterator.f();
+          }
+        });
+        observer.observe(eleId);
+        var elValue = this.NgApi.getNgModelValue();
+        if (elValue) {
+          this.value = elValue;
+        }
+      }
+    }, {
+      key: "getInputField",
+      value: function getInputField() {
+        var isRequired = this.required == "true" ? true : false;
+        var isOptional = this.optional == "true" ? true : false;
+        if (isRequired) {
+          isOptional = false;
+        }
+        var errorAlert = false;
+        if (this.error != '') {
+          errorAlert = true;
+        }
+        return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n    <textarea\n    tabindex=\"2\"\n    class=", "\n    id=\"", "\"\n    name=\"", "\"\n    resize=\"", "\"\n    placeholder=\"", "\"\n    error=\"", "\"\n    aria-describedby=\"", "\"\n    aria-disabled=\"", "\"\n    .value=\"", "\"\n    ?required=\"", "\"\n    ?optional=\"", "\"\n    aria-invalid=\"", "\"\n    @resize=\"", "\"\n    @input=\"", "\"\n    @blur=\"", "\"\n  ></textarea>\n    "])), ["ods-form-control"].join(" "), this.name, this.name, this.resize, this.placeholder, this.error, this.name, this.disabled, this.value, isRequired, isOptional, errorAlert, this.handletextsize, this.onInput, this.onBlur);
+      }
+    }, {
+      key: "getErrorMessage",
+      value: function getErrorMessage() {
+        if (this.error && this.error != "") {
+          return x(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"#AB2D25\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"#AB2D25\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
+        }
+        return "";
+      }
+    }, {
+      key: "getInfoIcon",
+      value: function getInfoIcon() {
+        if (this.tooltip != "") {
+          return x(_templateObject3$3 || (_templateObject3$3 = _taggedTemplateLiteral(["\n      <div class=\"ods-button\">\n      <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n        <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n      </button>\n      <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n    </div>\n      "])), this.tooltip);
+        }
+      }
+    }, {
+      key: "getLabelField",
+      value: function getLabelField() {
+        if (this.label != "") {
+          return x(_templateObject4$2 || (_templateObject4$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-label-container\">\n          <ods-text\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n          <label for=\"", "\"> ", "</label>\n          </ods-text>\n          ", "\n        </div>\n      "])), this.name, this.getLabelText(), this.getInfoIcon());
+        }
+        return "";
+      }
+    }, {
+      key: "getLabelText",
+      value: function getLabelText() {
+        var labelText = this.label;
+        if (this.required == "true") {
+          labelText = x(_templateObject5$1 || (_templateObject5$1 = _taggedTemplateLiteral(["", "<ods-text\n            class=\"left-spacing\"\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n            (required)\n          </ods-text>"])), labelText);
+        }
+        if (this.required != "true" && this.optional == "true") {
+          labelText = x(_templateObject6$1 || (_templateObject6$1 = _taggedTemplateLiteral(["", "<ods-text\n            class=\"left-spacing\"\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >(optional)</ods-text>"])), labelText);
+        }
+        return labelText;
+      }
+    }, {
+      key: "handleWidth",
+      value: function handleWidth() {
+        this.shadowRoot.querySelector('textarea').style = "";
+        if (this["full-width"] == "true") {
+          this.width = "100%";
+        } else {
+          this.width = "280px";
+        }
+      }
+    }, {
+      key: "updated",
+      value: function updated(changedProperties) {
+        _get(_getPrototypeOf(ODSTextArea.prototype), "updated", this).call(this);
+        var previousFullWidth = changedProperties.get('full-width');
+        if (previousFullWidth !== this['full-width'] && typeof previousFullWidth !== 'undefined') {
+          this.handleWidth();
+        }
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var isReadOnly = this.disabled == "true" ? "readonly" : "";
+        var isError = this.error != "" ? "error-state" : "";
+        if (this.disabled == "true") {
+          isError = "";
+          this.error = "";
+        }
+        return x(_templateObject7$1 || (_templateObject7$1 = _taggedTemplateLiteral(["\n    <style>\n        * {\n          box-sizng: border-box;\n          margin: 0;\n          padding: 0;\n          --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.4);\n          --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n          --ods-ref-color-green-100: #ffffff;\n          --ods-ref-color-green-40: #298319;\n          --ods-ref-color-gray-35: #515151;\n        }\n        .ods-form-label {\n          margin-bottom: 0.5ods-form-labelrem;\n          font-family: lato;\n          font-weight: 400;\n          font-size: 14px;\n          line-height: 22px;\n          margin: 0;\n          color: #1b1b1b;\n        }\n        .ods-form-control {\n          display: block;\n          resize: ", ";\n          height: var(--ods-height, 156px);\n          padding: var(--ods-textarea-padding, 10px 16px);\n          font-size: var(--ods-textarea-font-size, 16px);\n          font-family: lato, Helvetica, Arial, sans-serif;\n          font-weight: var(--ods-textarea-font-weight, 400);\n          line-height: var(--ods-textarea-line-height, 24px);\n          color: var(--ods-textarea-color, #1b1b1b);\n          background-color: var(--ods-textarea-background-color, #fff);\n          background-clip: padding-box;\n          box-shadow: 0 0 0 1px rgba(118, 118, 118, 1);\n          border-width: 0;\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          appearance: none;\n          border-radius: var(--ods-text-field-border-radius, 4px);\n        }\n        @media (prefers-reduced-motion: reduce) {\n          .ods-form-control {\n            transition: none;\n          }\n        }\n        .ods-form-control::-moz-placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-form-control::placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-field-container {\n          width: ", ";\n          display: flex;\n          position: relative;\n          flex-direction: column-reverse;\n          gap: var(--ods-content-gap, 4px);\n          box-sizing: border-box;\n        }\n        .ods-label-container {\n          display: flex;\n          align-items: flex-start;\n          gap: 4px;\n        }\n        .ods-label-container ods-icon-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        .ods-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        ods-icon-button ods-icon::part(odsIcon) {\n          width: 16px;\n          height: 16px;\n        }\n        .ods-error-container {\n          margin-top: 2px;\n          width: ", ";\n          display: flex;\n          justify-content: flex-start;\n          gap: 8px;\n        }\n        .ods-error-container ods-icon {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          height: 16px;\n          width: 16px;\n          padding: 4px 0px;\n        }\n\n        .ods-field-container {\n          textarea {\n            &:hover {\n              border-width: 0;\n              box-shadow: 0 0 0 1px rgba(31, 100, 19, 1);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #1f6413;\n              }\n              ~ .ods-label-container label {\n                cursor: pointer;\n              }\n            }\n            &:focus {\n              color: #1b1b1b;\n              background-color: #fff;\n              box-shadow: 0 0 0 2px rgba(31, 100, 19, 1);\n              border-width: 0;\n              outline: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #1f6413;\n              }\n            }\n            &:active {\n              box-shadow: 0 0 0 1px rgba(18, 58, 11, 1);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #123a0b;\n              }\n            }\n          }\n          &.readonly {\n            opacity: 0.5;\n            cursor: not-allowed;\n            textarea {\n              pointer-events: none;\n              color: #515151;\n              background-color: #c5c5c5;\n              background-clip: padding-box;\n              box-shadow: 0 0 0 1px rgba(81, 81, 81, 1);\n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n            }\n            .ods-label-container ods-text::part(odsText) {\n              pointer-events: none;\n            }\n            .ods-button {\n              pointer-events: none;\n            }\n          }\n          &.error-state {\n            textarea {\n              box-shadow: 0 0 0 1px rgba(171, 45, 37, 1);\n              border-width: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #ab2d25;\n              }\n              &:hover {\n                box-shadow: 0 0 0 1px rgba(130, 34, 28, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #82221c;\n                }\n              }\n              &:focus {\n                border-color: #ab2d25;\n                box-shadow: 0 0 0 2px rgba(171, 45, 37, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #ab2d25;\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px rgba(75, 20, 16, 1);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: #4b1410;\n                }\n              }\n            }\n          }\n        }\n        ods-text::part(odsText) {\n          line-height: 24px;\n          word-break: break-word;\n        }\n        ods-text.left-spacing {\n          margin-left: 4px;\n        }\n        ods-text {\n          display: inline-block;\n        }\n        button {\n          border-radius: 9999px;\n          height: var(--ods-icon-button-height, 44px);\n          width: var(--ods-icon-button-width, 44px);\n          text-decoration: none;\n          border: var(--ods-sem-space-none);\n          cursor: pointer;\n          justify-content: center;\n          box-sizing: border-box;\n          display: inline-flex;\n          align-items: center;\n          padding: 0;\n        }\n        .btn-ghost {\n          color: var(--ods-ref-color-green-40);\n          background: transparent;\n        }\n        .btn-ghost:hover {\n          background: var(--ods-utility-states-primary-hover);\n        }\n        .btn-ghost:focus{\n          outline: none;\n          box-shadow: 0 0 0 0.125rem var(--ods-ref-color-green-40);\n        }\n        .btn-ghost:active {\n          background: var(--ods-utility-states-primary-pressed);\n          box-shadow:none;\n        }\n        .ods-label-container ::-webkit-scrollbar{\n          width:12px;\n          position: absolute;\n          right: 4px;\n          top: 8px;\n      }\n      .ods-label-container ::-webkit-scrollbar-track{\n          background:#f1f1f1;\n          border-radius:10px;\n      }\n      .ods-label-container ::-webkit-scrollbar-thumb{\n          background-color:#1B1B1B\";\n          border-radius:10px;\n          opacity:0.3;\n      }\n\n      </style>\n      <div class=", ">\n        ", " ", "\n      </div>\n      <div class=\"ods-error-container\" style=\"resize: ", ";\">\n    ", "\n  </div>\n    "])), this.resize, this.width, this.width, ["ods-field-container", isReadOnly, isError].join(" "), this.getInputField(), this.getLabelField(), this.resize, this.getErrorMessage());
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return {
+          disabled: {
+            type: String
+          },
+          error: {
+            type: String
+          },
+          onInput: {
+            type: Function
+          },
+          onBlur: {
+            type: Function
+          },
+          "full-width": {
+            type: String
+          },
+          label: {
+            type: String
+          },
+          name: {
+            type: String
+          },
+          optional: {
+            type: String
+          },
+          placeholder: {
+            type: String
+          },
+          required: {
+            type: String
+          },
+          tooltip: {
+            type: String
+          },
+          value: {
+            type: String
+          },
+          resize: {
+            type: String
+          },
+          width: {
+            type: String
+          }
+        };
+      }
+    }]);
+  }(s$2);
+  customElements.define("ods-text-area", ODSTextArea);
+
   var _templateObject$3, _templateObject2$2, _templateObject3$2, _templateObject4$1, _templateObject5, _templateObject6, _templateObject7;
 
   /**
@@ -7441,9 +7455,6 @@
             type: String
           },
           value: {
-            type: String
-          },
-          "ng-model": {
             type: String
           }
         };
