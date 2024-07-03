@@ -1896,10 +1896,10 @@
   	"--ods-font-weight-600": "600"
   };
 
-  var _templateObject$i;
-  var colorAliases = i$3(_templateObject$i || (_templateObject$i = _taggedTemplateLiteral(["\n*{\n    --ods-ref-color-red-40: #AB2D25;\n    --ods-ref-color-orange-40: #7A571A;\n    --ods-ref-color-green-40: #298319;\n    --ods-ref-color-blue-40: #395F72;\n    --ods-ref-color-gray-40: #5E5E5E;\n    --ods-ref-color-purple-40: #4A5CA4;\n    --ods-ref-color-gray-10: #1B1B1B;\n    --ods-ref-color-gray-25: #3B3B3B;\n    --ods-ref-color-gray-100: #FFFFFF;\n    --text-primary: --ods-ref-color-gray-10;\n}\n.ods-sem-color-text-primary,.text-primary,.icon-primary{color: var(--ods-ref-color-gray-10);}\n.ods-sem-color-text-secondary,.text-secondary{color: var(--ods-ref-color-gray-25);}\n.ods-sem-color-text-inverse,.text-inverse{color: var(--ods-ref-color-gray-100);}\n.ods-sem-color-status-roles-error-error,.status-error,.ods-sem-color-status-roles-error,.error{color: var(--ods-ref-color-red-40);}\n.ods-sem-color-status-roles-warning-warning,.status-warning,.ods-sem-color-status-roles-warning,.warning{color: var(--ods-ref-color-orange-40);}\n.ods-sem-color-status-roles-success-success,.status-success,.ods-sem-color-status-roles-success,.success{color: var(--ods-ref-color-green-40);}\n.ods-sem-color-status-roles-info-info,.status-info,.ods-sem-color-status-roles-info,.info{color: var(--ods-ref-color-blue-40);}\n.ods-sem-color-roles-primary-primary,.role-primary,.ods-sem-color-roles-primary,.primary{ color: var(--ods-ref-color-green-40);}\n.ods-sem-color-roles-secondary-secondary,.role-secondary,.ods-sem-color-roles-secondary,.secondary{color: var(--ods-ref-color-blue-40);}\n.ods-sem-color-text-tertiary,.text-tertiary,.ods-sem-color-roles-neutral-neutral,.role-neutral,.ods-sem-color-roles-neutral,.neutral{color: var(--ods-ref-color-gray-40);}\n.ods-sem-color-roles-accent-accent,.role-accent,.ods-sem-color-roles-accent,.accent{color: var(--ods-ref-color-purple-40);}\n\n\n.ods-sem-color-text-primary-bg-color,.text-primary-bg-color,.icon-primary-bg-color{background-color: var(--ods-ref-color-gray-10);}\n.ods-sem-color-text-secondary-bg-color,.text-secondary-bg-color{background-color: var(--ods-ref-color-gray-25);}\n.ods-sem-color-text-inverse-bg-color,.text-inverse-bg-color{background-color: var(--ods-ref-color-gray-100);}\n.ods-sem-color-status-roles-error-error-bg-color,.status-error-bg-color,.ods-sem-color-status-roles-error-bg-color,.error-bg-color{background-color: var(--ods-ref-color-red-40);}\n.ods-sem-color-status-roles-warning-warning-bg-color,.status-warning-bg-color,.ods-sem-color-status-roles-warning-bg-color,.warning-bg-color{background-color: var(--ods-ref-color-orange-40);}\n.ods-sem-color-status-roles-success-success-bg-color,.status-success-bg-color,.ods-sem-color-status-roles-success-bg-color,.success-bg-color{background-color: var(--ods-ref-color-green-40);}\n.ods-sem-color-status-roles-info-info-bg-color,.status-info-bg-color,.ods-sem-color-status-roles-info-bg-color,.info-bg-color{background-color: var(--ods-ref-color-blue-40);}\n.ods-sem-color-roles-primary-primary-bg-color,.role-primary,.ods-sem-color-roles-primary,.primary-bg-color{ background-color: var(--ods-ref-color-green-40);}\n.ods-sem-color-roles-secondary-secondary-bg-color,.role-secondary-bg-color,.ods-sem-color-roles-secondary,.secondary-bg-color{background-color: var(--ods-ref-color-blue-40);}\n.ods-sem-color-text-tertiary-bg-color,.text-tertiary-bg-color,.ods-sem-color-roles-neutral-neutral-bg-color,.role-neutral-bg-color,.ods-sem-color-roles-neutral-bg-color,.neutral-bg-color{background-color: var(--ods-ref-color-gray-40);}\n.ods-sem-color-roles-accent-accent-bg-color,.role-accent-bg-color,.ods-sem-color-roles-accent-bg-color,.accent-bg-color{background-color: var(--ods-ref-color-purple-40);}\n\n"])));
+  var _templateObject$j;
+  var colorAliases = i$3(_templateObject$j || (_templateObject$j = _taggedTemplateLiteral(["\n*{\n    --ods-ref-color-red-40: #AB2D25;\n    --ods-ref-color-orange-40: #7A571A;\n    --ods-ref-color-green-40: #298319;\n    --ods-ref-color-blue-40: #395F72;\n    --ods-ref-color-gray-40: #5E5E5E;\n    --ods-ref-color-purple-40: #4A5CA4;\n    --ods-ref-color-gray-10: #1B1B1B;\n    --ods-ref-color-gray-25: #3B3B3B;\n    --ods-ref-color-gray-100: #FFFFFF;\n    --text-primary: --ods-ref-color-gray-10;\n}\n.ods-sem-color-text-primary,.text-primary,.icon-primary{color: var(--ods-ref-color-gray-10);}\n.ods-sem-color-text-secondary,.text-secondary{color: var(--ods-ref-color-gray-25);}\n.ods-sem-color-text-inverse,.text-inverse{color: var(--ods-ref-color-gray-100);}\n.ods-sem-color-status-roles-error-error,.status-error,.ods-sem-color-status-roles-error,.error{color: var(--ods-ref-color-red-40);}\n.ods-sem-color-status-roles-warning-warning,.status-warning,.ods-sem-color-status-roles-warning,.warning{color: var(--ods-ref-color-orange-40);}\n.ods-sem-color-status-roles-success-success,.status-success,.ods-sem-color-status-roles-success,.success{color: var(--ods-ref-color-green-40);}\n.ods-sem-color-status-roles-info-info,.status-info,.ods-sem-color-status-roles-info,.info{color: var(--ods-ref-color-blue-40);}\n.ods-sem-color-roles-primary-primary,.role-primary,.ods-sem-color-roles-primary,.primary{ color: var(--ods-ref-color-green-40);}\n.ods-sem-color-roles-secondary-secondary,.role-secondary,.ods-sem-color-roles-secondary,.secondary{color: var(--ods-ref-color-blue-40);}\n.ods-sem-color-text-tertiary,.text-tertiary,.ods-sem-color-roles-neutral-neutral,.role-neutral,.ods-sem-color-roles-neutral,.neutral{color: var(--ods-ref-color-gray-40);}\n.ods-sem-color-roles-accent-accent,.role-accent,.ods-sem-color-roles-accent,.accent{color: var(--ods-ref-color-purple-40);}\n\n\n.ods-sem-color-text-primary-bg-color,.text-primary-bg-color,.icon-primary-bg-color{background-color: var(--ods-ref-color-gray-10);}\n.ods-sem-color-text-secondary-bg-color,.text-secondary-bg-color{background-color: var(--ods-ref-color-gray-25);}\n.ods-sem-color-text-inverse-bg-color,.text-inverse-bg-color{background-color: var(--ods-ref-color-gray-100);}\n.ods-sem-color-status-roles-error-error-bg-color,.status-error-bg-color,.ods-sem-color-status-roles-error-bg-color,.error-bg-color{background-color: var(--ods-ref-color-red-40);}\n.ods-sem-color-status-roles-warning-warning-bg-color,.status-warning-bg-color,.ods-sem-color-status-roles-warning-bg-color,.warning-bg-color{background-color: var(--ods-ref-color-orange-40);}\n.ods-sem-color-status-roles-success-success-bg-color,.status-success-bg-color,.ods-sem-color-status-roles-success-bg-color,.success-bg-color{background-color: var(--ods-ref-color-green-40);}\n.ods-sem-color-status-roles-info-info-bg-color,.status-info-bg-color,.ods-sem-color-status-roles-info-bg-color,.info-bg-color{background-color: var(--ods-ref-color-blue-40);}\n.ods-sem-color-roles-primary-primary-bg-color,.role-primary,.ods-sem-color-roles-primary,.primary-bg-color{ background-color: var(--ods-ref-color-green-40);}\n.ods-sem-color-roles-secondary-secondary-bg-color,.role-secondary-bg-color,.ods-sem-color-roles-secondary,.secondary-bg-color{background-color: var(--ods-ref-color-blue-40);}\n.ods-sem-color-text-tertiary-bg-color,.text-tertiary-bg-color,.ods-sem-color-roles-neutral-neutral-bg-color,.role-neutral-bg-color,.ods-sem-color-roles-neutral-bg-color,.neutral-bg-color{background-color: var(--ods-ref-color-gray-40);}\n.ods-sem-color-roles-accent-accent-bg-color,.role-accent-bg-color,.ods-sem-color-roles-accent-bg-color,.accent-bg-color{background-color: var(--ods-ref-color-purple-40);}\n\n"])));
 
-  var _templateObject$h;
+  var _templateObject$i;
   var OdsIcon = /*#__PURE__*/function (_LitElement) {
     function OdsIcon() {
       var _this;
@@ -1915,7 +1915,7 @@
       key: "render",
       value: function render() {
         var svg = 'x_snc_ods.' + this.name + '.svg';
-        return x(_templateObject$h || (_templateObject$h = _taggedTemplateLiteral(["\n        <style>\n        :host{\n          display: inline-flex;\n        }\n        .ods-icon{\n            display: inline-flex;\n            background-color: ", ";\n            -webkit-mask: url(", ") no-repeat center;\n            mask: url(", ") no-repeat center;\n            --ods-sem-icon-small:     16px;\n            --ods-sem-icon-medium:    24px;\n            --ods-sem-icon-large:     32px;\n            mask-size: 100%;\n        }\n        .ods-icon--sm{\n          height: var(--ods-sem-icon-small);\n          width:  var(--ods-sem-icon-small);\n        }\n        .ods-icon--md{\n          height: var(--ods-sem-icon-medium);\n          width:  var(--ods-sem-icon-medium);\n        }\n        .ods-icon--lg{\n          height: var(--ods-sem-icon-large);\n          width:  var(--ods-sem-icon-large);    \n        }\n        </style>\n        <div part=\"odsIcon\" class=\"ods-icon ods-icon--", " ", "-bg-color\"></div>\n        "])), this.color && this.color !== "" && this.color !== "undefined" ? this.color : "#1B1B1B", svg, svg, this.size.toLocaleLowerCase(), this.color);
+        return x(_templateObject$i || (_templateObject$i = _taggedTemplateLiteral(["\n        <style>\n        :host{\n          display: inline-flex;\n        }\n        .ods-icon{\n            display: inline-flex;\n            background-color: ", ";\n            -webkit-mask: url(", ") no-repeat center;\n            mask: url(", ") no-repeat center;\n            --ods-sem-icon-small:     16px;\n            --ods-sem-icon-medium:    24px;\n            --ods-sem-icon-large:     32px;\n            mask-size: 100%;\n        }\n        .ods-icon--sm{\n          height: var(--ods-sem-icon-small);\n          width:  var(--ods-sem-icon-small);\n        }\n        .ods-icon--md{\n          height: var(--ods-sem-icon-medium);\n          width:  var(--ods-sem-icon-medium);\n        }\n        .ods-icon--lg{\n          height: var(--ods-sem-icon-large);\n          width:  var(--ods-sem-icon-large);    \n        }\n        </style>\n        <div part=\"odsIcon\" class=\"ods-icon ods-icon--", " ", "-bg-color\"></div>\n        "])), this.color && this.color !== "" && this.color !== "undefined" ? this.color : "#1B1B1B", svg, svg, this.size.toLocaleLowerCase(), this.color);
       }
     }]);
   }(s$2);
@@ -1933,7 +1933,7 @@
   _defineProperty(OdsIcon, "styles", [colorAliases]);
   customElements.define('ods-icon', OdsIcon);
 
-  var _templateObject$g, _templateObject2$e, _templateObject3$b, _templateObject4$a, _templateObject5$7;
+  var _templateObject$h, _templateObject2$f, _templateObject3$c, _templateObject4$a, _templateObject5$7;
 
   /**
    * Service Now Avatar Component
@@ -1966,11 +1966,11 @@
         var size = "".concat(this.size);
         size = size.toLowerCase();
         if (this.image && this.image != "") {
-          return x(_templateObject$g || (_templateObject$g = _taggedTemplateLiteral(["\n        <img\n          class=", "\n          src=\"", "\"\n          alt=\"Avatar Image\"\n          aria-label=\"Image\"\n        />\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.image);
+          return x(_templateObject$h || (_templateObject$h = _taggedTemplateLiteral(["\n        <img\n          class=", "\n          src=\"", "\"\n          alt=\"Avatar Image\"\n          aria-label=\"Image\"\n        />\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.image);
         } else if (this.icon && this.icon != "") {
-          return x(_templateObject2$e || (_templateObject2$e = _taggedTemplateLiteral(["\n        <div\n          class=", "\n          aria-label=\"Icon\"\n        >\n          <ods-icon name=\"", "\" color=\"white\"></ods-icon>\n        </div>\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.icon);
+          return x(_templateObject2$f || (_templateObject2$f = _taggedTemplateLiteral(["\n        <div\n          class=", "\n          aria-label=\"Icon\"\n        >\n          <ods-icon name=\"", "\" color=\"white\"></ods-icon>\n        </div>\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.icon);
         } else if (this.name && this.name != "") {
-          return x(_templateObject3$b || (_templateObject3$b = _taggedTemplateLiteral(["\n        <div\n          class=", "\n          aria-label=\"", "\"\n        >\n          ", "\n        </div>\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.name, this.getAvatarText());
+          return x(_templateObject3$c || (_templateObject3$c = _taggedTemplateLiteral(["\n        <div\n          class=", "\n          aria-label=\"", "\"\n        >\n          ", "\n        </div>\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.name, this.getAvatarText());
         }
         return x(_templateObject4$a || (_templateObject4$a = _taggedTemplateLiteral(["\n      <div\n        class=", "\n        aria-label=\"Anonymous\"\n      >\n        <ods-icon name=\"user\" color=\"white\"></ods-icon>\n      </div>\n    "])), ["ods-avatar", "ods-avatar-" + size].join(" "));
       }
@@ -2019,13 +2019,13 @@
   }(s$2);
   customElements.define("ods-avatar", ODSAvatar);
 
-  var _templateObject$f, _templateObject2$d, _templateObject3$a, _templateObject4$9, _templateObject5$6, _templateObject6$6, _templateObject7$4, _templateObject8$1;
-  var hasLoadedMaterialSymbolsFont$4 = false;
-  var loadLatoFont$3 = function loadLatoFont() {
-    if (hasLoadedMaterialSymbolsFont$4) {
+  var _templateObject$g, _templateObject2$e, _templateObject3$b, _templateObject4$9, _templateObject5$6, _templateObject6$6, _templateObject7$4, _templateObject8$1;
+  var hasLoadedMaterialSymbolsFont$3 = false;
+  var loadLatoFont$2 = function loadLatoFont() {
+    if (hasLoadedMaterialSymbolsFont$3) {
       return;
     }
-    hasLoadedMaterialSymbolsFont$4 = true;
+    hasLoadedMaterialSymbolsFont$3 = true;
     var fontSheet = new CSSStyleSheet();
     fontSheet.replaceSync("\n    @font-face {\n      font-family: 'lato';\n      src: url(\n    https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff)\n    format('woff');\n    }");
     document.adoptedStyleSheets.push(fontSheet);
@@ -2034,7 +2034,7 @@
     function OdsButton() {
       var _this;
       _classCallCheck(this, OdsButton);
-      loadLatoFont$3();
+      loadLatoFont$2();
       _this = _callSuper(this, OdsButton);
       _this.disabled = false;
       _this["icon-position"] = 'before';
@@ -2065,7 +2065,7 @@
         }
         var icon = this.variant === 'ghost' && !this.icon ? 'arrow-right' : this.icon;
         var color = (colorMap[this.variant] || {}).hasOwnProperty(this.disabled) ? colorMap[this.variant][this.disabled] : "#515151";
-        return x(_templateObject$f || (_templateObject$f = _taggedTemplateLiteral(["\n  <ods-icon size=\"sm\" name=\"", "\" color=\"", "\"/>\n  "])), icon || 'placeholder', color);
+        return x(_templateObject$g || (_templateObject$g = _taggedTemplateLiteral(["\n  <ods-icon size=\"sm\" name=\"", "\" color=\"", "\"/>\n  "])), icon || 'placeholder', color);
       }
     }, {
       key: "getButton",
@@ -2076,7 +2076,7 @@
         var fullwidth = this["full-width"] ? 'full-width' : '';
         var tabindex = this.disabled ? -1 : 0;
         if (this.href) {
-          return x(_templateObject2$d || (_templateObject2$d = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", " ", "' href= \"", "\" target= \"", "\" tabindex= \"", "\" aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject3$a || (_templateObject3$a = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject4$9 || (_templateObject4$9 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
+          return x(_templateObject2$e || (_templateObject2$e = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", " ", "' href= \"", "\" target= \"", "\" tabindex= \"", "\" aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject3$b || (_templateObject3$b = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject4$9 || (_templateObject4$9 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
         } else {
           return x(_templateObject5$6 || (_templateObject5$6 = _taggedTemplateLiteral(["\n        <button @click=\"", "\" tabindex= \"", "\" class='btn-", " ", " ", "' aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </button>\n      "])), this.onClick, tabindex, this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject6$6 || (_templateObject6$6 = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject7$4 || (_templateObject7$4 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
         }
@@ -2135,7 +2135,7 @@
   }(s$2);
   customElements.define('ods-button', OdsButton);
 
-  var _templateObject$e, _templateObject2$c, _templateObject3$9;
+  var _templateObject$f, _templateObject2$d, _templateObject3$a;
   /**
    * Service Now ODS Chip Component
    * @input disabled, href, target
@@ -2207,15 +2207,15 @@
       value: function getChip() {
         var tabindex = this.disabled ? -1 : 0;
         if (this.href) {
-          return x(_templateObject$e || (_templateObject$e = _taggedTemplateLiteral(["\n      <a @click=", " class='ods-chip ", "' href= \"", "\" target= \"", "\"  tabindex= \"", "\" aria-disabled = \"", "\">\n      <slot name=\"start\"></slot>\n      <slot name=\"label\"></slot>\n      <slot name=\"end\"></slot>\n      </a>\n      "])), this.stateFocus, this.disabled ? 'disabled' : '', this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false');
+          return x(_templateObject$f || (_templateObject$f = _taggedTemplateLiteral(["\n      <a @click=", " class='ods-chip ", "' href= \"", "\" target= \"", "\"  tabindex= \"", "\" aria-disabled = \"", "\">\n      <slot name=\"start\"></slot>\n      <slot name=\"label\"></slot>\n      <slot name=\"end\"></slot>\n      </a>\n      "])), this.stateFocus, this.disabled ? 'disabled' : '', this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false');
         } else {
-          return x(_templateObject2$c || (_templateObject2$c = _taggedTemplateLiteral(["\n      <button @click=", " class='ods-chip ", "' tabindex= \"", "\" aria-disabled = \"", "\">\n      <slot name=\"start\"></slot>\n      <slot name=\"label\"></slot>\n      <slot name=\"end\"></slot>\n      </button>\n      "])), this.clickValidation, this.disabled ? 'disabled' : '', tabindex, this.disabled ? 'true' : 'false');
+          return x(_templateObject2$d || (_templateObject2$d = _taggedTemplateLiteral(["\n      <button @click=", " class='ods-chip ", "' tabindex= \"", "\" aria-disabled = \"", "\">\n      <slot name=\"start\"></slot>\n      <slot name=\"label\"></slot>\n      <slot name=\"end\"></slot>\n      </button>\n      "])), this.clickValidation, this.disabled ? 'disabled' : '', tabindex, this.disabled ? 'true' : 'false');
         }
       }
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject3$9 || (_templateObject3$9 = _taggedTemplateLiteral(["\n  \n    <style>\n    *{\n      --ods-utility-states-secundary-hover: rgba(162, 200, 219, 0.4);\n      --ods-utility-states-secundary-pressed: rgba(162, 200, 219, 0.64);\n      --ods-utility-states-disabled-container: #C5C5C5;\n      --ods-roles-primary-on-primary: #FFFFFF;\n      --ods-border-interactive-component: rgba(118, 118, 118, 1);\n      --ods-border-interactive-secundary-hover: #88979E;\n      --ods-border-interactive-secundary-pressed: #92ABB7;\n      --ods-ref-color-green-40:  #298319;\n      --ods-utility-states-disabled-content:   #515151;\n      --ods-sem-space-none:       0px;\n      --ods-sem-space-xsmall:     4px;\n      --ods-sem-space-small:      8px;\n      --ods-sem-space-medium:     16px;\n      --ods-sem-space-large:      24px;\n      --ods-radius-full:        9999px;\n    }\n\n    :host{\n      display: inline-flex;\n    }\n\n    .ods-chip{\n        border-radius: var(--ods-radius-full);\n        text-decoration: none;\n        border: var(--ods-sem-space-none);\n        background: var(--ods-roles-primary-on-primary);\n        cursor: pointer;\n        justify-content: center;\n        box-sizing: border-box;\n        display: inline-flex;\n        align-items: center;\n        padding: 4px 16px 4px 4px;\n        box-shadow:0 0 0 1px var(--ods-border-interactive-component);\n        gap: 8px;\n      }\n\n    .ods-chip.adjusted-padding{\n      padding: 4px 16px;\n    }\n    \n    .ods-chip:hover {\n     background: var(--ods-utility-states-secundary-hover);\n     box-shadow:0 0 0 1px var(--ods-border-interactive-secundary-hover);\n    }\n\n    .ods-chip:active {\n     background: var(--ods-utility-states-secundary-pressed);\n     box-shadow:0 0 0 1px var(--ods-border-interactive-secundary-pressed);\n    }\n\n    .ods-chip:focus {\n        outline: none;\n        box-shadow: 0 0 0 1px var(--ods-ref-color-green-40), 0 0 0 3px white, 0 0 0 5px var(--ods-ref-color-green-40);\n    }\n\n    .disabled {\n      color: var(--ods-utility-states-disabled-content);\n      opacity: 0.5;\n      background: var(--ods-utility-states-disabled-container);\n      cursor: not-allowed;\n      box-shadow:0 0 0 1px var(--ods-border-interactive-component);\n      pointer-events: none;\n    }\n\n\n    .disabled::slotted(ods-icon){\n     color: var(--ods-utility-states-disabled-content);\n    }\n\n    .chip-container:has(.disabled){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"chip-container\">", "\n    </div>\n      "])), this.getChip());
+        return x(_templateObject3$a || (_templateObject3$a = _taggedTemplateLiteral(["\n  \n    <style>\n    *{\n      --ods-utility-states-secundary-hover: rgba(162, 200, 219, 0.4);\n      --ods-utility-states-secundary-pressed: rgba(162, 200, 219, 0.64);\n      --ods-utility-states-disabled-container: #C5C5C5;\n      --ods-roles-primary-on-primary: #FFFFFF;\n      --ods-border-interactive-component: rgba(118, 118, 118, 1);\n      --ods-border-interactive-secundary-hover: #88979E;\n      --ods-border-interactive-secundary-pressed: #92ABB7;\n      --ods-ref-color-green-40:  #298319;\n      --ods-utility-states-disabled-content:   #515151;\n      --ods-sem-space-none:       0px;\n      --ods-sem-space-xsmall:     4px;\n      --ods-sem-space-small:      8px;\n      --ods-sem-space-medium:     16px;\n      --ods-sem-space-large:      24px;\n      --ods-radius-full:        9999px;\n    }\n\n    :host{\n      display: inline-flex;\n    }\n\n    .ods-chip{\n        border-radius: var(--ods-radius-full);\n        text-decoration: none;\n        border: var(--ods-sem-space-none);\n        background: var(--ods-roles-primary-on-primary);\n        cursor: pointer;\n        justify-content: center;\n        box-sizing: border-box;\n        display: inline-flex;\n        align-items: center;\n        padding: 4px 16px 4px 4px;\n        box-shadow:0 0 0 1px var(--ods-border-interactive-component);\n        gap: 8px;\n      }\n\n    .ods-chip.adjusted-padding{\n      padding: 4px 16px;\n    }\n    \n    .ods-chip:hover {\n     background: var(--ods-utility-states-secundary-hover);\n     box-shadow:0 0 0 1px var(--ods-border-interactive-secundary-hover);\n    }\n\n    .ods-chip:active {\n     background: var(--ods-utility-states-secundary-pressed);\n     box-shadow:0 0 0 1px var(--ods-border-interactive-secundary-pressed);\n    }\n\n    .ods-chip:focus {\n        outline: none;\n        box-shadow: 0 0 0 1px var(--ods-ref-color-green-40), 0 0 0 3px white, 0 0 0 5px var(--ods-ref-color-green-40);\n    }\n\n    .disabled {\n      color: var(--ods-utility-states-disabled-content);\n      opacity: 0.5;\n      background: var(--ods-utility-states-disabled-container);\n      cursor: not-allowed;\n      box-shadow:0 0 0 1px var(--ods-border-interactive-component);\n      pointer-events: none;\n    }\n\n\n    .disabled::slotted(ods-icon){\n     color: var(--ods-utility-states-disabled-content);\n    }\n\n    .chip-container:has(.disabled){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"chip-container\">", "\n    </div>\n      "])), this.getChip());
       }
     }], [{
       key: "properties",
@@ -2239,359 +2239,7 @@
   }(s$2);
   customElements.define('ods-chip', OdsChip);
 
-  /**
-   * @license
-   * Copyright 2020 Google LLC
-   * SPDX-License-Identifier: BSD-3-Clause
-   */
-  var e$2 = Symbol["for"](""),
-    o$2 = function o(t) {
-      if ((t === null || t === void 0 ? void 0 : t.r) === e$2) return t === null || t === void 0 ? void 0 : t._$litStatic$;
-    },
-    s$1 = function s(t) {
-      for (var _len = arguments.length, r = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-        r[_key - 1] = arguments[_key];
-      }
-      return {
-        _$litStatic$: r.reduce(function (r, e, o) {
-          return r + function (t) {
-            if (void 0 !== t._$litStatic$) return t._$litStatic$;
-            throw Error("Value passed to 'literal' function must be a 'literal' result: ".concat(t, ". Use 'unsafeStatic' to pass non-literal values, but\n            take care to ensure page security."));
-          }(e) + t[o + 1];
-        }, t[0]),
-        r: e$2
-      };
-    },
-    a = new Map(),
-    l = function l(t) {
-      return function (r) {
-        for (var _len2 = arguments.length, e = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-          e[_key2 - 1] = arguments[_key2];
-        }
-        var i = e.length;
-        var s, l;
-        var n = [],
-          u = [];
-        var c,
-          $ = 0,
-          f = !1;
-        for (; $ < i;) {
-          for (c = r[$]; $ < i && void 0 !== (l = e[$], s = o$2(l));) c += s + r[++$], f = !0;
-          $ !== i && u.push(l), n.push(c), $++;
-        }
-        if ($ === i && n.push(r[i]), f) {
-          var _t = n.join("$$lit$$");
-          void 0 === (r = a.get(_t)) && (n.raw = n, a.set(_t, r = n)), e = u;
-        }
-        return t.apply(void 0, [r].concat(_toConsumableArray(e)));
-      };
-    },
-    n$2 = l(x);
-
-  var _templateObject$d, _templateObject2$b, _templateObject3$8, _templateObject4$8, _templateObject5$5, _templateObject6$5;
-  // import './fonts/fonts.css';
-  /**
-   * Service Now Text Component
-   * @input html-tag, size, weight, color
-   * @output <ods-text> in dom
-   */
-
-  var hasLoadedMaterialSymbolsFont$3 = false;
-  var loadLatoFont$2 = function loadLatoFont() {
-    if (hasLoadedMaterialSymbolsFont$3) {
-      return;
-    }
-    hasLoadedMaterialSymbolsFont$3 = true;
-    var fontSheet = new CSSStyleSheet();
-    fontSheet.replaceSync("\n    @font-face {\n      font-family: 'lato';\n      src: url(https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff) format('woff');\n      font-weight: normal;\n    }\n    @font-face {\n      font-family: 'lato';\n      src: url(https://fonts.cdnfonts.com/s/14882/Lato-Bold.woff) format('woff');\n      font-weight: 700;\n    }\n    @font-face {\n      font-family: 'Roboto Mono';\n      font-style: normal;\n      font-weight: 400;\n      src: url('https://fonts.cdnfonts.com/s/16061/RobotoMono[wght].woff') format('woff');\n    }\n    @font-face {\n        font-family: 'Roboto Mono';\n        font-style: normal;\n        font-weight: 700;\n        src: url('https://fonts.cdnfonts.com/s/16061/RobotoMono-Bold.woff') format('woff');\n    }\n  ");
-    document.adoptedStyleSheets.push(fontSheet);
-  };
-  var ODSText = /*#__PURE__*/function (_LitElement) {
-    function ODSText() {
-      var _this;
-      _classCallCheck(this, ODSText);
-      _this = _callSuper(this, ODSText);
-      _this['html-tag'] = 'span';
-      _this.size = 'md';
-      _this.weight = 'regular';
-      _this.color = 'text-primary';
-      _this["for"] = '';
-      loadLatoFont$2();
-      return _this;
-    }
-    _inherits(ODSText, _LitElement);
-    return _createClass(ODSText, [{
-      key: "updated",
-      value: function updated() {
-        _get(_getPrototypeOf(ODSText.prototype), "updated", this).call(this);
-        var thisLabel = this.shadowRoot.querySelector(this['html-tag']);
-        if ((this["for"] || this["for"] !== '') && this['html-tag'] === 'label') thisLabel.setAttribute('for', this["for"]);else thisLabel.removeAttribute('for');
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var htmlTag = null;
-        var size = this.size.toLowerCase();
-        var weight = this.weight.toLowerCase();
-        switch (this["html-tag"]) {
-          case 'p':
-            htmlTag = s$1(_templateObject$d || (_templateObject$d = _taggedTemplateLiteral(["p"])));
-            break;
-          case 'div':
-            htmlTag = s$1(_templateObject2$b || (_templateObject2$b = _taggedTemplateLiteral(["div"])));
-            break;
-          case 'code':
-            htmlTag = s$1(_templateObject3$8 || (_templateObject3$8 = _taggedTemplateLiteral(["code"])));
-            break;
-          case 'label':
-            htmlTag = s$1(_templateObject4$8 || (_templateObject4$8 = _taggedTemplateLiteral(["label"])));
-            break;
-          case 'span':
-          default:
-            htmlTag = s$1(_templateObject5$5 || (_templateObject5$5 = _taggedTemplateLiteral(["span"])));
-            break;
-        }
-        return n$2(_templateObject6$5 || (_templateObject6$5 = _taggedTemplateLiteral(["\n    \n    <style>\n    *{\n      color: var(--", ");\n      color: ", ";\n      margin: 0;\n      padding: 0;\n    }\n    ::slotted(a){\n        color:var(--ods-ref-color-green-40);\n    }\n    span, code, label{\n      display: inline;\n    }\n    p, div{\n      display: block;\n    }\n    span, p, div, label{\n      font-family: lato, Helvetica, Arial, sans-serif;\n    }\n    code{\n      font-family: \"Roboto Mono\", monospace;\n    }\n    .ods-text--size-sm{\n      font-size: 14px;\n      line-height: 22px;\n    }\n    .ods-text--size-md{\n      font-size: 16px;\n      line-height: 24px;\n    }\n    .ods-text--size-lg{\n      font-size: 20px;\n      line-height: 28px;\n    }\n    .ods-text--weight-regular{\n      font-weight: 400;\n    }\n    .ods-text--weight-bold{\n     \n      font-weight: 700;\n    }\n    </style>\n    <", " \n      part='odsText' \n      class=\"ods-text--weight-", " ods-text--size-", " ", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, weight, size, this["html-tag"] === 'code' ? 'code' : '', this.color, htmlTag);
-      }
-    }], [{
-      key: "properties",
-      get: function get() {
-        return {
-          "html-tag": {
-            type: String
-          },
-          size: {
-            type: String
-          },
-          weight: {
-            type: String
-          },
-          color: {
-            type: String
-          },
-          "for": {
-            type: String
-          }
-        };
-      }
-    }]);
-  }(s$2);
-  _defineProperty(ODSText, "styles", [colorAliases]);
-  customElements.define("ods-text", ODSText);
-
-  var _templateObject$c, _templateObject2$a, _templateObject3$7, _templateObject4$7;
-  //import { ButtonClickEvent } from "./ButtonClickEvent";
-
-  /**
-   * Service Now Link Component
-   * @input label, type, onclick
-   * @output <sn-wc-link> in dom
-   * @args onClick, type, size, target, href
-   */
-  var hasLoadedMaterialSymbolsFont$2 = false;
-  var loadLatoFont$1 = function loadLatoFont() {
-    if (hasLoadedMaterialSymbolsFont$2) {
-      return;
-    }
-    hasLoadedMaterialSymbolsFont$2 = true;
-    var fontSheet = new CSSStyleSheet();
-    fontSheet.replaceSync("\n  @font-face{font-family:lato;font-style:normal;font-weight:700;src:local('Lato'),url(https://fonts.cdnfonts.com/s/14882/Lato-Bold.woff) format('woff')}");
-    document.adoptedStyleSheets.push(fontSheet);
-  };
-  var ODSLink = /*#__PURE__*/function (_LitElement) {
-    function ODSLink() {
-      var _this;
-      _classCallCheck(this, ODSLink);
-      _this = _callSuper(this, ODSLink);
-      loadLatoFont$1();
-      return _this;
-    }
-    _inherits(ODSLink, _LitElement);
-    return _createClass(ODSLink, [{
-      key: "handleButtonClick",
-      value: function handleButtonClick(e) {
-        this.dispatchEvent(new ButtonClickEvent({
-          message: "Link Button clicked"
-        }));
-      }
-    }, {
-      key: "getAnchorTag",
-      value: function getAnchorTag() {
-        var size = "";
-        var linkSize = "";
-        if (this.size == "Large") {
-          size = "btn-lg";
-          linkSize = "btn-link-lg";
-        } else if (this.size == "Medium") {
-          size = "btn-md";
-          linkSize = "btn-link-md";
-        }
-        if (this.type === "Outline" || this.type === "Solid") {
-          var btnClass = "btn";
-          if (this.type === "Outline") {
-            btnClass = btnClass + " btn-outline";
-          } else {
-            btnClass = btnClass + " btn-solid";
-          }
-          return x(_templateObject$c || (_templateObject$c = _taggedTemplateLiteral(["<button\n        type=\"button\"\n        part=\"sn-wc-link\"\n        @click=\"", "\"\n        class=", "\n      >\n        ", "\n      </button>"])), this.handleButtonClick, [btnClass, size, "btn-spacing"].join(" "), this.label);
-        } else {
-          return x(_templateObject2$a || (_templateObject2$a = _taggedTemplateLiteral(["\n        <a\n          part=\"sn-wc-link\"\n          href=\"", "\"\n          class=", "\n          style=\"--sn-wc-padding-y: 0px;\"\n          target=\"", "\"\n        >\n          ", "\n        </a>\n      "])), this.href, ["btn btn-link", linkSize, "btn-spacing"].join(" "), this.target, this.label);
-        }
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        return x(_templateObject3$7 || (_templateObject3$7 = _taggedTemplateLiteral(["\n      <style>\n        *{\n          padding:0;\n          margin:0;\n          box-sizing:border-box;\n        }\n          a,button {\n          font-family:'lato', sans-serif !important;\n          }\n            .btn {\n               --sn-btn-padding-x: 16px;\n               --sn-btn-padding-y: 4px;\n               --sn-btn-font-family: Lato;\n               --sn-btn-font-size: 16px;\n               --sn-btn-font-weight: 700;\n               --sn-btn-line-height: 1.5;\n               --sn-btn-color: #212529;\n               --sn-btn-bg: transparent;\n               --sn-btn-border-width: 1px;\n               --sn-btn-border-color: #298319;\n               --sn-btn-border-radius: 50rem;\n               --sn-btn-hover-border-color: transparent;\n               --sn-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),\n               --sn-btn-hover-color:  #1f6213;\n               --sn-link-hover-color: #1F6213;\n               --sn-link-color: #298319;\n               --sn-btn-disabled-opacity: 0.65;\n               --sn-btn-focus-box-shadow: 0 0 0 0.25rem\n                  rgba(var(--sn-btn-focus-shadow-rgb), 0.5);\n                display: inline-block;\n                padding: var(--sn-btn-padding-y) var(--sn-btn-padding-x);\n                font-family: var(--sn-btn-font-family);\n                font-size: var(--sn-btn-font-size);\n                font-weight: var(--sn-btn-font-weight);\n                line-height: 24px;\n                color: var(--sn-btn-color);\n                text-align: center;\n                text-decoration: none;\n                vertical-align: middle;\n                cursor: pointer;\n                user-select: none;\n                border: var(--sn-btn-border-width) solid var(--sn-btn-border-color);\n                border-radius: var(--sn-btn-border-radius);\n                background-color: var(--sn-btn-bg);\n                transition: color 0.15s ease-in-out,\n                  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,\n                  box-shadow 0.15s ease-in-out;\n              }\n              .btn:hover {\n                color: var(--sn-btn-hover-color);\n                background-color: var(--sn-btn-hover-bg);\n                border-color: var(--sn-btn-hover-border-color);\n\n              }\n              .btn:focus-visible {\n                color: var(--sn-btn-hover-color);\n                background-color: var(--sn-btn-hover-bg);\n                border-color: var(--sn-btn-hover-border-color);\n                outline: 0;\n                box-shadow: var(--sn-btn-focus-box-shadow);\n              }\n              .btn.active {\n                color: var(--sn-btn-active-color);\n                background-color: var(--sn-btn-active-bg);\n                border-color: var(--sn-btn-active-border-color);\n              }\n\n              .btn-solid {\n               --sn-btn-color: #fff;\n               --sn-btn-bg: #298319;\n               --sn-btn-border-color:var(--sn-btn-border-color);\n               --sn-btn-hover-color: #fff;\n               --sn-btn-hover-bg: #1f6213;\n               --sn-btn-hover-border-color: #1f6213;\n               --sn-btn-focus-shadow-rgb: 212, 38, 119;\n               --sn-btn-active-color: #fff;\n               --sn-btn-active-bg: #1f6213;\n               --sn-btn-active-border-color: #1f6213;\n               --sn-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n\n              }\n              .btn-outline {\n               --sn-btn-color: #298319;\n               --sn-btn-border-color: #298319;\n               --sn-btn-hover-color: #1f6213;\n               --sn-btn-hover-bg: #fffff;\n               --sn-btn-hover-border-color: #1f6213;\n               --sn-btn-focus-shadow-rgb: 25, 135, 84;\n               --sn-btn-active-color: #fff;\n               --sn-btn-active-bg: #fff;\n               --sn-btn-active-border-color: #198754;\n               --sn-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n               --sn-gradient: none;\n              }\n\n              .btn-link {\n               --sn-btn-font-weight: bold;\n               --sn-btn-color: var(--sn-link-color);\n               --sn-btn-bg: transparent;\n               --sn-btn-border-color: transparent;\n               --sn-btn-hover-color: var(--sn-link-hover-color);\n               --sn-btn-hover-border-color: transparent;\n               --sn-btn-active-color: var(--sn-link-hover-color);\n               --sn-btn-active-border-color: transparent;\n               --sn-btn-box-shadow: none;\n               --sn-btn-focus-shadow-rgb: 212, 38, 119;\n               --sn-btn-padding-x: 0;\n                text-decoration: none;\n              }\n              .btn-link:focus-visible {\n                color: var(--sn-btn-color);\n              }\n              .btn-link:hover {\n                color: var(--sn-btn-hover-color);\n              }\n\n              .btn-lg {\n               --sn-btn-padding-y: 8px;\n               --sn-btn-padding-x: 32px;\n               --sn-btn-font-size: 24px;\n               --sn-btn-border-radius: 50rem;\n              }\n\n              .btn-md {\n               --sn-btn-padding-y: 6px;\n               --sn-btn-padding-x: 28px;\n               --sn-btn-font-size: 18px;\n               --sn-btn-border-radius: 50rem;\n              }\n              .btn-link-md{\n               --sn-btn-font-size:18px;\n               --sn-btn-border-radius: 0.25rem;\n              }\n              .btn-link-lg{\n               --sn-btn-font-size: 32px;\n               --sn-btn-border-radius: 0.5rem;\n              }\n      </style>\n      ", "\n    "])), this.getAnchorTag());
-      }
-    }], [{
-      key: "properties",
-      get: function get() {
-        return {
-          label: {
-            type: String
-          },
-          type: {
-            type: String
-          },
-          onClick: {
-            type: Function
-          },
-          size: {
-            type: String
-          },
-          target: {
-            type: String
-          },
-          href: {
-            type: String
-          }
-        };
-      }
-    }]);
-  }(s$2);
-  _defineProperty(ODSLink, "styles", i$3(_templateObject4$7 || (_templateObject4$7 = _taggedTemplateLiteral([""]))));
-  customElements.define("ods-link", ODSLink);
-
-  var _templateObject$b, _templateObject2$9, _templateObject3$6, _templateObject4$6, _templateObject5$4, _templateObject6$4, _templateObject7$3;
-  /**
-   * Service Now Heading Component
-   * @input html-tag, size
-   * @output <ods-heading> in dom
-   */
-
-  var hasLoadedMaterialSymbolsFont$1 = false;
-  var loadGilroyFont = function loadGilroyFont() {
-    if (hasLoadedMaterialSymbolsFont$1) {
-      return;
-    }
-    hasLoadedMaterialSymbolsFont$1 = true;
-    var fontSheet = new CSSStyleSheet();
-    fontSheet.replaceSync("\n  @font-face {\n    font-family: 'gilroy';\n    src: url(https://cdn.jsdelivr.net/gh/RohitDogra777/gilroy-font@v1.0.0/Gilroy-Semibold.woff) format('woff');\n    font-weight: normal;\n  }");
-    document.adoptedStyleSheets.push(fontSheet);
-  };
-  var ODSHeading = /*#__PURE__*/function (_LitElement) {
-    function ODSHeading() {
-      var _this;
-      _classCallCheck(this, ODSHeading);
-      _this = _callSuper(this, ODSHeading);
-      _this["html-tag"] = 'h3';
-      _this.size = 'md';
-      _this.color = 'text-primary';
-      loadGilroyFont();
-      return _this;
-    }
-    _inherits(ODSHeading, _LitElement);
-    return _createClass(ODSHeading, [{
-      key: "render",
-      value: function render() {
-        var htmlTag = null;
-        switch (this["html-tag"]) {
-          case 'h1':
-            htmlTag = s$1(_templateObject$b || (_templateObject$b = _taggedTemplateLiteral(["h1"])));
-            break;
-          case 'h2':
-            htmlTag = s$1(_templateObject2$9 || (_templateObject2$9 = _taggedTemplateLiteral(["h2"])));
-            break;
-          case 'h4':
-            htmlTag = s$1(_templateObject3$6 || (_templateObject3$6 = _taggedTemplateLiteral(["h4"])));
-            break;
-          case 'h5':
-            htmlTag = s$1(_templateObject4$6 || (_templateObject4$6 = _taggedTemplateLiteral(["h5"])));
-            break;
-          case 'h6':
-            htmlTag = s$1(_templateObject5$4 || (_templateObject5$4 = _taggedTemplateLiteral(["h6"])));
-            break;
-          case 'h3':
-          default:
-            htmlTag = s$1(_templateObject6$4 || (_templateObject6$4 = _taggedTemplateLiteral(["h3"])));
-            break;
-        }
-        return n$2(_templateObject7$3 || (_templateObject7$3 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          font-family: \"gilroy\", sans-serif;\n          font-weight: 600;\n          color: var(--", ");\n          color: ", ";\n          margin: 0;\n          padding: 0;\n        }\n    \n        .ods-heading--size-xxs {\n          font-size: 16px;\n          line-height: 24px;\n        }\n        \n        .ods-heading--size-xs{\n          font-size: 20px;\n          line-height: 28px;\n        }\n    \n        .ods-heading--size-sm{\n          font-size: 24px;\n          line-height: 32px;\n        }\n    \n        .ods-heading--size-md{\n          font-size: 32px;\n          line-height: 40px;\n        }\n    \n        .ods-heading--size-lg{\n          font-size: 40px;\n          line-height: 48px;\n        }\n       \n      \n      </style>\n      <", " part='odsHeading' class=\"ods-heading--size-", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, this.size, this.color, htmlTag);
-      }
-    }], [{
-      key: "properties",
-      get: function get() {
-        return {
-          "html-tag": {
-            type: String
-          },
-          size: {
-            type: String
-          },
-          color: {
-            type: String
-          }
-        };
-      }
-    }]);
-  }(s$2);
-  _defineProperty(ODSHeading, "styles", [colorAliases]);
-  customElements.define("ods-heading", ODSHeading);
-
-  var _templateObject$a, _templateObject2$8;
-  /**
-   * Service Now Image Component
-   * @input label, type
-   * @output <sn-wc-image> in dom
-   */
-  var ODSImage = /*#__PURE__*/function (_LitElement) {
-    function ODSImage() {
-      _classCallCheck(this, ODSImage);
-      return _callSuper(this, ODSImage);
-    }
-    _inherits(ODSImage, _LitElement);
-    return _createClass(ODSImage, [{
-      key: "render",
-      value: function render() {
-        return x(_templateObject$a || (_templateObject$a = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin:0;\n          padding:0;\n          box-sizing:border-box;\n        }\n        .sn-wc-image{ \n          object-fit: var(--sn-wc-object-fit,cover);\n          max-width:100%;\n          height: var(--sn-wc-height,100%);\n          width: var(--sn-wc-width,100%);\n        }\n      </style>\n      <picture>\n         <source media=\"(min-width:768px)\" srcset=\"", "\">\n         <source media=\"(min-width:568px)\" srcset=\"", "\">\n         <source media=\"(min-width:320px)\" srcset=\"", "\">\n         <img class=\"sn-wc-image\" src=\"", "\" alt=\"", "\" loading=\"", "\">\n      </picture>\n    "])), this['src'], this['src-medium'], this['src-small'], this['src'], this.alt, this.loading);
-      }
-    }], [{
-      key: "properties",
-      get: function get() {
-        return {
-          "src": {
-            type: String
-          },
-          'src-medium': {
-            type: String
-          },
-          'src-small': {
-            type: String
-          },
-          "loading": {
-            type: String
-          },
-          "alt": {
-            type: String
-          }
-        };
-      }
-    }]);
-  }(s$2);
-  _defineProperty(ODSImage, "styles", i$3(_templateObject2$8 || (_templateObject2$8 = _taggedTemplateLiteral(["\n  "]))));
-  customElements.define("ods-image", ODSImage);
-
-  var _templateObject$9, _templateObject2$7;
+  var _templateObject$e, _templateObject2$c;
 
   /**
    * Service Now Text Component
@@ -2603,7 +2251,7 @@
       var _this;
       _classCallCheck(this, OdsContainer);
       _this = _callSuper(this, OdsContainer);
-      _this.padding = 'L';
+      _this.padding = 'lg';
       return _this;
     }
     _inherits(OdsContainer, _LitElement);
@@ -2611,7 +2259,7 @@
       key: "render",
       value: function render() {
         var padding = this.padding.toLowerCase();
-        return x(_templateObject$9 || (_templateObject$9 = _taggedTemplateLiteral([" \n    <div class=\"ods-container ods-container--padding-", " ", "\">\n        <slot></slot>\n    </div>"])), padding, this.shadow ? 'ods-container--shadow' : '');
+        return x(_templateObject$e || (_templateObject$e = _taggedTemplateLiteral([" \n    <div class=\"ods-container ods-container--padding-", " ", "\" part=\"odsContainer\">\n        <slot></slot>\n    </div>"])), padding, this.shadow ? 'ods-container--shadow' : '');
       }
     }]);
   }(s$2);
@@ -2623,10 +2271,10 @@
       type: Boolean
     }
   });
-  _defineProperty(OdsContainer, "styles", i$3(_templateObject2$7 || (_templateObject2$7 = _taggedTemplateLiteral(["\n    * {\n      --ods-sem-space-none:         0px;\n      --ods-sem-space-medium:       16px;\n      --ods-sem-space-large:        24px;\n      --ods-border-radius-large:    16px;\n      --ods-shadow-small-x:         0px;\n      --ods-shadow-small-y:         2px;\n      --ods-shadow-small-blur:      4px;\n      --ods-shadow-small-spread:    0px;\n      --ods-shadow-small-color:     rgba(59, 59, 59, 0.25);\n      --ods-ref-color-gray-80:      #C5C5C5;\n      --ods-ref-color-gray-100:     #FFF;\n    }\n    .ods-container{\n      display: flex;\n      padding: var(--ods-sem-space-medium);\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      border-radius: var(--ods-border-radius-large);\n      border: 1px solid var(--ods-ref-color-gray-80);\n      background: var(--ods-ref-color-gray-100);\n    }\n    \n    .ods-container--padding-m{\n      padding: var(--ods-sem-space-medium);\n    }\n    .ods-container--padding-l{\n      padding: var(--ods-sem-space-large);\n    }\n    .ods-container--padding-none{\n      padding: var(--ods-sem-space-none);\n      ::slotted(*) {\n        border-radius: var(--ods-border-radius-large);\n      }\n    }\n\n    .ods-container--shadow{\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--ods-shadow-small-blur) var(--ods-shadow-small-spread) var(--ods-shadow-small-color);\n    }\n\n  "]))));
+  _defineProperty(OdsContainer, "styles", i$3(_templateObject2$c || (_templateObject2$c = _taggedTemplateLiteral(["\n    * {\n      --ods-sem-space-none:         0px;\n      --ods-sem-space-medium:       16px;\n      --ods-sem-space-large:        24px;\n      --ods-border-radius-large:    16px;\n      --ods-shadow-small-x:         0px;\n      --ods-shadow-small-y:         2px;\n      --ods-shadow-small-blur:      4px;\n      --ods-shadow-small-spread:    0px;\n      --ods-shadow-small-color:     rgba(59, 59, 59, 0.25);\n      --ods-ref-color-gray-80:      #C5C5C5;\n      --ods-ref-color-gray-100:     #FFF;\n    }\n    .ods-container{\n      display: flex;\n      padding: var(--ods-sem-space-medium);\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      border-radius: var(--ods-border-radius-large);\n      border: 1px solid var(--ods-ref-color-gray-80);\n      background: var(--ods-ref-color-gray-100);\n      word-break: break-word;\n    }\n    \n    .ods-container--padding-md{\n      padding: var(--ods-sem-space-medium);\n    }\n    .ods-container--padding-lg{\n      padding: var(--ods-sem-space-large);\n    }\n    .ods-container--padding-none{\n      padding: var(--ods-sem-space-none);\n      ::slotted(*) {\n        border-radius: var(--ods-border-radius-large);\n      }\n    }\n\n    .ods-container--shadow{\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--ods-shadow-small-blur) var(--ods-shadow-small-spread) var(--ods-shadow-small-color);\n    }\n\n  "]))));
   customElements.define("ods-container", OdsContainer);
 
-  var _templateObject$8, _templateObject2$6;
+  var _templateObject$d, _templateObject2$b;
   /**
    * Service Now ODS Dialog Component
    * @input heading, max-width
@@ -2637,7 +2285,7 @@
       var _this;
       _classCallCheck(this, OdsDialog);
       _this = _callSuper(this, OdsDialog);
-      _this.sticky = false;
+      _this.fixed = false;
       _this._handleKeyESC = _this._handleKeyESC.bind(_this);
       _this._checkButtons = _this._checkButtons.bind(_this);
       _this._firstTimeLoaded = false;
@@ -2683,6 +2331,7 @@
       key: "closeModal",
       value: function closeModal() {
         this.open = false;
+        this.removeAttribute('open');
         this.clearElements();
       }
     }, {
@@ -2774,7 +2423,7 @@
         if (!this.heading) {
           return console.warn("Heading is required and cannot be omitted");
         }
-        return x(_templateObject$8 || (_templateObject$8 = _taggedTemplateLiteral(["\n    <div class=\"scrim\" @click=\"", "\">\n      <div Role=\"dialog\" arial-modal= \"true\" arial-label=\"", "\" class=\"modal\" @click=\"", "\">\n        <div class=\"header\">\n          <ods-heading html-tag= 'h2' size= 'sm'>", " </ods-heading>\n          <div class=\"icon-close\">\n            <ods-icon-button variant='ghost' shape='square' icon='close' color='text-primary' tooltip=\"Close dialog\" @click=\"", "\">&times;</ods-icon-button >\n          </div>\n        </div>\n        <div class=\"content\">\n          <slot></slot>\n        </div>\n        <div class=\"footer\">\n          <slot name=\"footer\"></slot>\n        </div>\n      </div>\n    </div>"])), this.closeModal, this.heading, function (e) {
+        return x(_templateObject$d || (_templateObject$d = _taggedTemplateLiteral(["\n    <div class=\"scrim\" @click=\"", "\">\n      <div Role=\"dialog\" arial-modal= \"true\" arial-label=\"", "\" class=\"modal\" @click=\"", "\">\n        <div class=\"header\">\n          <ods-heading html-tag= 'h2' size= 'sm'>", " </ods-heading>\n          <div class=\"icon-close\">\n            <ods-icon-button variant='ghost' shape='square' icon='close' color='text-primary' tooltip=\"Close dialog\" @click=\"", "\">&times;</ods-icon-button >\n          </div>\n        </div>\n        <div class=\"content\">\n          <slot></slot>\n        </div>\n        <div class=\"footer\">\n          <slot name=\"footer\"></slot>\n        </div>\n      </div>\n    </div>"])), this.closeModal, this.heading, function (e) {
           return e.stopPropagation();
         }, this.heading, this.closeModal);
       }
@@ -2782,8 +2431,8 @@
       key: "render",
       value: function render() {
         var maxWidth = this["max-width"];
-        this.open = !this._firstTimeLoaded ? false : this.open;
-        return x(_templateObject2$6 || (_templateObject2$6 = _taggedTemplateLiteral(["\n    <style>\n    *{\n      --ods-background-reverse-primary: rgba(3, 45, 66, 0.75);\n      --ods-sem-space-none:       0px;\n      --ods-sem-space-xsmall:     4px;\n      --ods-sem-space-small:      8px;\n      --ods-sem-space-medium:     16px;\n      --ods-sem-space-large:      24px;\n      --ods-sem-space-xlarge:     32px;\n    }\n    :host {\n        display: block;\n      }\n      .scrim {\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background-color: var(--ods-background-reverse-primary);\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        z-index:9999;\n      }\n      .modal {\n        padding: var(--ods-sem-space-large);\n        background: white;\n        border-radius: var(--ods-sem-space-small);\n        max-width: ", ";\n        width: 100%;\n        max-height:527px;\n        display: flex;\n        flex-direction: column;\n        overflow: hidden;\n        margin: var(--ods-sem-space-large);\n      }\n      \n      .header {\n        display: inline-flex;\n        justify-content: space-between;\n        align-items: center;\n        gap: var(--ods-sem-space-small);\n        margin-bottom: var( --ods-sem-space-small);\n        word-break: break-word;\n      }\n      \n      .icon-close{\n        align-self: flex-start;\n      }\n\n      .content {\n        margin-bottom: var(--ods-sem-space-xlarge);\n        overflow-y: auto;\n        flex-grow: 1;\n      }\n      .footer {\n        gap: var(--ods-sem-space-small);\n        display: flex;\n        justify-content: flex-end;\n        word-break: break-word;\n      }\n\n      .modal.small-width .footer{\n        flex-direction: column-reverse;\n        align-items: stretch;\n      }\n\n      @media screen and (max-width: 479px){\n       .footer {\n        flex-direction: column-reverse;\n        align-items: stretch;\n        }\n        }\n\n      ods-heading{\n        padding: 6px 0px;\n      }\n     \n    </style>\n      ", "\n    "])), maxWidth, this.open ? this.getDialog() : '');
+        //this.open = !this._firstTimeLoaded ? false : this.open;
+        return x(_templateObject2$b || (_templateObject2$b = _taggedTemplateLiteral(["\n    <style>\n    *{\n      --ods-background-reverse-primary: rgba(3, 45, 66, 0.75);\n      --ods-sem-space-none:       0px;\n      --ods-sem-space-xsmall:     4px;\n      --ods-sem-space-small:      8px;\n      --ods-sem-space-medium:     16px;\n      --ods-sem-space-large:      24px;\n      --ods-sem-space-xlarge:     32px;\n    }\n    :host {\n        display: block;\n      }\n      .scrim {\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background-color: var(--ods-background-reverse-primary);\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        z-index:9999;\n      }\n      .modal {\n        padding: var(--ods-sem-space-large);\n        background: white;\n        border-radius: var(--ods-sem-space-small);\n        max-width: ", ";\n        width: 100%;\n        max-height:527px;\n        display: flex;\n        flex-direction: column;\n        ", "\n        margin: var(--ods-sem-space-large);\n      }\n      \n      .header {\n        display: inline-flex;\n        justify-content: space-between;\n        align-items: center;\n        gap: var(--ods-sem-space-small);\n        margin-bottom: var( --ods-sem-space-small);\n        word-break: break-word;\n      }\n      \n      .icon-close{\n        align-self: flex-start;\n      }\n\n      .content {\n        margin-bottom: var(--ods-sem-space-xlarge);\n        ", "\n      }\n\n      .content::-webkit-scrollbar {\n        width: 10px;\n      }\n      \n      .content::-webkit-scrollbar-track {\n        background-color: #FFFFFF;\n        border-radius: 100px;\n      }\n      \n      .content::-webkit-scrollbar-thumb {\n        background-color: #c5c5c5;\n        border-radius: 100px;\n        height:30px;\n      }\n\n      .footer {\n        gap: var(--ods-sem-space-small);\n        display: flex;\n        justify-content: flex-end;\n        word-break: break-word;\n      }\n\n      .modal.small-width .footer{\n        flex-direction: column-reverse;\n        align-items: stretch;\n      }\n\n      @media screen and (max-width: 479px){\n       .footer {\n        flex-direction: column-reverse;\n        align-items: stretch;\n        }\n        }\n\n      ods-heading{\n        padding: 6px 0px;\n      }\n\n     \n    </style>\n      ", "\n    "])), maxWidth, this.fixed ? '' : 'overflow-y: auto;', this.fixed ? 'overflow-y: auto;' : '', this.open ? this.getDialog() : '');
       }
     }], [{
       key: "properties",
@@ -2792,7 +2441,7 @@
           open: {
             type: Boolean
           },
-          sticky: {
+          fixed: {
             type: Boolean
           },
           heading: {
@@ -2806,6 +2455,131 @@
     }]);
   }(s$2);
   customElements.define('ods-dialog', OdsDialog);
+
+  /**
+   * @license
+   * Copyright 2020 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
+   */
+  var e$2 = Symbol["for"](""),
+    o$2 = function o(t) {
+      if ((t === null || t === void 0 ? void 0 : t.r) === e$2) return t === null || t === void 0 ? void 0 : t._$litStatic$;
+    },
+    s$1 = function s(t) {
+      for (var _len = arguments.length, r = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        r[_key - 1] = arguments[_key];
+      }
+      return {
+        _$litStatic$: r.reduce(function (r, e, o) {
+          return r + function (t) {
+            if (void 0 !== t._$litStatic$) return t._$litStatic$;
+            throw Error("Value passed to 'literal' function must be a 'literal' result: ".concat(t, ". Use 'unsafeStatic' to pass non-literal values, but\n            take care to ensure page security."));
+          }(e) + t[o + 1];
+        }, t[0]),
+        r: e$2
+      };
+    },
+    a = new Map(),
+    l = function l(t) {
+      return function (r) {
+        for (var _len2 = arguments.length, e = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+          e[_key2 - 1] = arguments[_key2];
+        }
+        var i = e.length;
+        var s, l;
+        var n = [],
+          u = [];
+        var c,
+          $ = 0,
+          f = !1;
+        for (; $ < i;) {
+          for (c = r[$]; $ < i && void 0 !== (l = e[$], s = o$2(l));) c += s + r[++$], f = !0;
+          $ !== i && u.push(l), n.push(c), $++;
+        }
+        if ($ === i && n.push(r[i]), f) {
+          var _t = n.join("$$lit$$");
+          void 0 === (r = a.get(_t)) && (n.raw = n, a.set(_t, r = n)), e = u;
+        }
+        return t.apply(void 0, [r].concat(_toConsumableArray(e)));
+      };
+    },
+    n$2 = l(x);
+
+  var _templateObject$c, _templateObject2$a, _templateObject3$9, _templateObject4$8, _templateObject5$5, _templateObject6$5, _templateObject7$3;
+  /**
+   * Service Now Heading Component
+   * @input html-tag, size
+   * @output <ods-heading> in dom
+   */
+
+  var hasLoadedMaterialSymbolsFont$2 = false;
+  var loadGilroyFont = function loadGilroyFont() {
+    if (hasLoadedMaterialSymbolsFont$2) {
+      return;
+    }
+    hasLoadedMaterialSymbolsFont$2 = true;
+    var fontSheet = new CSSStyleSheet();
+    fontSheet.replaceSync("\n  @font-face {\n    font-family: 'gilroy';\n    src: url(https://cdn.jsdelivr.net/gh/RohitDogra777/gilroy-font@v1.0.0/Gilroy-Semibold.woff) format('woff');\n    font-weight: normal;\n  }");
+    document.adoptedStyleSheets.push(fontSheet);
+  };
+  var ODSHeading = /*#__PURE__*/function (_LitElement) {
+    function ODSHeading() {
+      var _this;
+      _classCallCheck(this, ODSHeading);
+      _this = _callSuper(this, ODSHeading);
+      _this["html-tag"] = 'h3';
+      _this.size = 'md';
+      _this.color = 'text-primary';
+      loadGilroyFont();
+      return _this;
+    }
+    _inherits(ODSHeading, _LitElement);
+    return _createClass(ODSHeading, [{
+      key: "render",
+      value: function render() {
+        var htmlTag = null;
+        switch (this["html-tag"]) {
+          case 'h1':
+            htmlTag = s$1(_templateObject$c || (_templateObject$c = _taggedTemplateLiteral(["h1"])));
+            break;
+          case 'h2':
+            htmlTag = s$1(_templateObject2$a || (_templateObject2$a = _taggedTemplateLiteral(["h2"])));
+            break;
+          case 'h4':
+            htmlTag = s$1(_templateObject3$9 || (_templateObject3$9 = _taggedTemplateLiteral(["h4"])));
+            break;
+          case 'h5':
+            htmlTag = s$1(_templateObject4$8 || (_templateObject4$8 = _taggedTemplateLiteral(["h5"])));
+            break;
+          case 'h6':
+            htmlTag = s$1(_templateObject5$5 || (_templateObject5$5 = _taggedTemplateLiteral(["h6"])));
+            break;
+          case 'h3':
+          default:
+            htmlTag = s$1(_templateObject6$5 || (_templateObject6$5 = _taggedTemplateLiteral(["h3"])));
+            break;
+        }
+        return n$2(_templateObject7$3 || (_templateObject7$3 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          font-family: \"gilroy\", sans-serif;\n          font-weight: 600;\n          color: var(--", ");\n          color: ", ";\n          margin: 0;\n          padding: 0;\n        }\n    \n        .ods-heading--size-xxs {\n          font-size: 16px;\n          line-height: 24px;\n        }\n        \n        .ods-heading--size-xs{\n          font-size: 20px;\n          line-height: 28px;\n        }\n    \n        .ods-heading--size-sm{\n          font-size: 24px;\n          line-height: 32px;\n        }\n    \n        .ods-heading--size-md{\n          font-size: 32px;\n          line-height: 40px;\n        }\n    \n        .ods-heading--size-lg{\n          font-size: 40px;\n          line-height: 48px;\n        }\n       \n      \n      </style>\n      <", " part='odsHeading' class=\"ods-heading--size-", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, this.size, this.color, htmlTag);
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return {
+          "html-tag": {
+            type: String
+          },
+          size: {
+            type: String
+          },
+          color: {
+            type: String
+          }
+        };
+      }
+    }]);
+  }(s$2);
+  _defineProperty(ODSHeading, "styles", [colorAliases]);
+  customElements.define("ods-heading", ODSHeading);
 
   var min = Math.min;
   var max = Math.max;
@@ -4306,7 +4080,98 @@
     }));
   };
 
-  var _templateObject$7;
+  var _templateObject$b, _templateObject2$9, _templateObject3$8, _templateObject4$7, _templateObject5$4, _templateObject6$4;
+  // import './fonts/fonts.css';
+  /**
+   * Service Now Text Component
+   * @input html-tag, size, weight, color
+   * @output <ods-text> in dom
+   */
+
+  var hasLoadedMaterialSymbolsFont$1 = false;
+  var loadLatoFont$1 = function loadLatoFont() {
+    if (hasLoadedMaterialSymbolsFont$1) {
+      return;
+    }
+    hasLoadedMaterialSymbolsFont$1 = true;
+    var fontSheet = new CSSStyleSheet();
+    fontSheet.replaceSync("\n    @font-face {\n      font-family: 'lato';\n      src: url(https://fonts.cdnfonts.com/s/14882/Lato-Regular.woff) format('woff');\n      font-weight: normal;\n    }\n    @font-face {\n      font-family: 'lato';\n      src: url(https://fonts.cdnfonts.com/s/14882/Lato-Bold.woff) format('woff');\n      font-weight: 700;\n    }\n    @font-face {\n      font-family: 'Roboto Mono';\n      font-style: normal;\n      font-weight: 400;\n      src: url('https://fonts.cdnfonts.com/s/16061/RobotoMono[wght].woff') format('woff');\n    }\n    @font-face {\n        font-family: 'Roboto Mono';\n        font-style: normal;\n        font-weight: 700;\n        src: url('https://fonts.cdnfonts.com/s/16061/RobotoMono-Bold.woff') format('woff');\n    }\n  ");
+    document.adoptedStyleSheets.push(fontSheet);
+  };
+  var ODSText = /*#__PURE__*/function (_LitElement) {
+    function ODSText() {
+      var _this;
+      _classCallCheck(this, ODSText);
+      _this = _callSuper(this, ODSText);
+      _this['html-tag'] = 'span';
+      _this.size = 'md';
+      _this.weight = 'regular';
+      _this.color = 'text-primary';
+      _this["for"] = '';
+      loadLatoFont$1();
+      return _this;
+    }
+    _inherits(ODSText, _LitElement);
+    return _createClass(ODSText, [{
+      key: "updated",
+      value: function updated() {
+        _get(_getPrototypeOf(ODSText.prototype), "updated", this).call(this);
+        var thisLabel = this.shadowRoot.querySelector(this['html-tag']);
+        if ((this["for"] || this["for"] !== '') && this['html-tag'] === 'label') thisLabel.setAttribute('for', this["for"]);else thisLabel.removeAttribute('for');
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var htmlTag = null;
+        var size = this.size.toLowerCase();
+        var weight = this.weight.toLowerCase();
+        switch (this["html-tag"]) {
+          case 'p':
+            htmlTag = s$1(_templateObject$b || (_templateObject$b = _taggedTemplateLiteral(["p"])));
+            break;
+          case 'div':
+            htmlTag = s$1(_templateObject2$9 || (_templateObject2$9 = _taggedTemplateLiteral(["div"])));
+            break;
+          case 'code':
+            htmlTag = s$1(_templateObject3$8 || (_templateObject3$8 = _taggedTemplateLiteral(["code"])));
+            break;
+          case 'label':
+            htmlTag = s$1(_templateObject4$7 || (_templateObject4$7 = _taggedTemplateLiteral(["label"])));
+            break;
+          case 'span':
+          default:
+            htmlTag = s$1(_templateObject5$4 || (_templateObject5$4 = _taggedTemplateLiteral(["span"])));
+            break;
+        }
+        return n$2(_templateObject6$4 || (_templateObject6$4 = _taggedTemplateLiteral(["\n    \n    <style>\n    *{\n      color: var(--", ");\n      color: ", ";\n      margin: 0;\n      padding: 0;\n    }\n    ::slotted(a){\n        color:var(--ods-ref-color-green-40);\n    }\n    span, code, label{\n      display: inline;\n    }\n    p, div{\n      display: block;\n    }\n    span, p, div, label{\n      font-family: lato, Helvetica, Arial, sans-serif;\n    }\n    code{\n      font-family: \"Roboto Mono\", monospace;\n    }\n    .ods-text--size-sm{\n      font-size: 14px;\n      line-height: 22px;\n    }\n    .ods-text--size-md{\n      font-size: 16px;\n      line-height: 24px;\n    }\n    .ods-text--size-lg{\n      font-size: 20px;\n      line-height: 28px;\n    }\n    .ods-text--weight-regular{\n      font-weight: 400;\n    }\n    .ods-text--weight-bold{\n     \n      font-weight: 700;\n    }\n    </style>\n    <", " \n      part='odsText' \n      class=\"ods-text--weight-", " ods-text--size-", " ", " ", "\">\n      <slot></slot>\n    </", ">\n    "])), this.color, this.color, htmlTag, weight, size, this["html-tag"] === 'code' ? 'code' : '', this.color, htmlTag);
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return {
+          "html-tag": {
+            type: String
+          },
+          size: {
+            type: String
+          },
+          weight: {
+            type: String
+          },
+          color: {
+            type: String
+          },
+          "for": {
+            type: String
+          }
+        };
+      }
+    }]);
+  }(s$2);
+  _defineProperty(ODSText, "styles", [colorAliases]);
+  customElements.define("ods-text", ODSText);
+
+  var _templateObject$a;
 
   /**
    * Service Now Ods Tooltip component
@@ -4446,7 +4311,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject$7 || (_templateObject$7 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-background-primary:         #FFF;\n      --ods-border-decorative-primary:  #C5C5C5;\n      --ods-sem-text-primary:           #1B1B1B;\n      --ods-sem-space-none:             0;\n      --ods-sem-space-xsmall:           4px;\n      --ods-sem-space-small:            8px;\n      --ods-border-radius-xsmall:       4px;\n      --ods-shadow-small-x:         0px;\n      --ods-shadow-small-y:         2px;\n      --ods-shadow-small-blur:      4px;\n      --ods-shadow-small-spread:    0px;\n      --ods-shadow-small-color:     rgba(59, 59, 59, 0.25);\n\n    }\n    :host {\n      visibility:hidden;\n      width: max-content;\n      position: absolute;\n      z-index: 999;\n      top: var(--ods-sem-space-none);\n      left: var(--ods-sem-space-none);\n      background: var(--ods-background-primary);\n      color: var(--ods-sem-text-primary);\n      border-radius: var(--ods-border-radius-xsmall);\n      max-width: 240px;\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--Shadow-Small-Blur, 4px) var(--ods-shadow-small-spread) var(--Shadow-Small-Color, var(--ods-shadow-small-color)); \n    }\n    .tooltip{\n      padding: var(--ods-sem-space-xsmall) var(--ods-sem-space-small);\n      border-radius: var(--ods-border-radius-xsmall);\n      box-shadow: 0 0 0 0 white, 0 0 0 1px var(--ods-border-decorative-primary);\n      overflow-wrap: break-word;\n      hyphens: auto;\n    }\n    #arrow {\n      position: absolute;\n      background: var(--ods-border-decorative-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    #indicator {\n      position: absolute;\n      background: var(--ods-background-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    </style>\n    <div role=\"tooltip\" class='tooltip'>\n      <ods-text tag='span' size='sm'>", "</ods-text>\n      <div id='arrow'><div id='indicator'></div>\n    </div>                        \n    "])), this.label);
+        return x(_templateObject$a || (_templateObject$a = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-background-primary:         #FFF;\n      --ods-border-decorative-primary:  #C5C5C5;\n      --ods-sem-text-primary:           #1B1B1B;\n      --ods-sem-space-none:             0;\n      --ods-sem-space-xsmall:           4px;\n      --ods-sem-space-small:            8px;\n      --ods-border-radius-xsmall:       4px;\n      --ods-shadow-small-x:         0px;\n      --ods-shadow-small-y:         2px;\n      --ods-shadow-small-blur:      4px;\n      --ods-shadow-small-spread:    0px;\n      --ods-shadow-small-color:     rgba(59, 59, 59, 0.25);\n\n    }\n    :host {\n      visibility:hidden;\n      width: max-content;\n      position: absolute;\n      z-index: 999;\n      top: var(--ods-sem-space-none);\n      left: var(--ods-sem-space-none);\n      background: var(--ods-background-primary);\n      color: var(--ods-sem-text-primary);\n      border-radius: var(--ods-border-radius-xsmall);\n      max-width: 240px;\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--Shadow-Small-Blur, 4px) var(--ods-shadow-small-spread) var(--Shadow-Small-Color, var(--ods-shadow-small-color)); \n    }\n    .tooltip{\n      padding: var(--ods-sem-space-xsmall) var(--ods-sem-space-small);\n      border-radius: var(--ods-border-radius-xsmall);\n      box-shadow: 0 0 0 0 white, 0 0 0 1px var(--ods-border-decorative-primary);\n      overflow-wrap: break-word;\n      hyphens: auto;\n    }\n    #arrow {\n      position: absolute;\n      background: var(--ods-border-decorative-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    #indicator {\n      position: absolute;\n      background: var(--ods-background-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    </style>\n    <div role=\"tooltip\" class='tooltip'>\n      <ods-text tag='span' size='sm'>", "</ods-text>\n      <div id='arrow'><div id='indicator'></div>\n    </div>                        \n    "])), this.label);
       }
     }]);
   }(s$2);
@@ -4460,7 +4325,7 @@
   });
   customElements.define("ods-tooltip", OdsTooltip);
 
-  var _templateObject$6, _templateObject2$5, _templateObject3$5, _templateObject4$5;
+  var _templateObject$9, _templateObject2$8, _templateObject3$7, _templateObject4$6;
   var OdsIconButton = /*#__PURE__*/function (_LitElement) {
     function OdsIconButton() {
       var _this;
@@ -4487,7 +4352,7 @@
           }
         };
         var color = (colorMap[this.variant] || {}).hasOwnProperty(this.disabled) ? colorMap[this.variant][this.disabled] : "#515151";
-        return x(_templateObject$6 || (_templateObject$6 = _taggedTemplateLiteral(["\n  <ods-icon size=\"sm\" name=\"", "\" color=\"", "\" />\n  "])), this.icon || 'placeholder', color);
+        return x(_templateObject$9 || (_templateObject$9 = _taggedTemplateLiteral(["\n  <ods-icon size=\"sm\" name=\"", "\" color=\"", "\" />\n  "])), this.icon || 'placeholder', color);
       }
     }, {
       key: "setActiveMenu",
@@ -4509,9 +4374,9 @@
       value: function getButton() {
         var tabindex = this.disabled ? -1 : 0;
         if (this.href) {
-          return x(_templateObject2$5 || (_templateObject2$5 = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", "' href= \"", "\" target= \"", "\"  tabindex= \"", "\" aria-disabled = \"", "\"  aria-describedby='tooltip_", "' >\n      <i class='icon'> ", " </i>\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false', this.tooltipId, this.getIcon());
+          return x(_templateObject2$8 || (_templateObject2$8 = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", "' href= \"", "\" target= \"", "\"  tabindex= \"", "\" aria-disabled = \"", "\"  aria-describedby='tooltip_", "' >\n      <i class='icon'> ", " </i>\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false', this.tooltipId, this.getIcon());
         } else {
-          return x(_templateObject3$5 || (_templateObject3$5 = _taggedTemplateLiteral(["\n      <button @click=\"", "\" class='btn-", " ", "' tabindex= \"", "\" aria-disabled = \"", "\" aria-describedby='tooltip_", "'>\n     <i class='icon'> ", " </i>\n      </button>\n      "])), this.onClick, this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', tabindex, this.disabled ? 'true' : 'false', this.tooltipId, this.getIcon());
+          return x(_templateObject3$7 || (_templateObject3$7 = _taggedTemplateLiteral(["\n      <button @click=\"", "\" class='btn-", " ", "' tabindex= \"", "\" aria-disabled = \"", "\" aria-describedby='tooltip_", "'>\n     <i class='icon'> ", " </i>\n      </button>\n      "])), this.onClick, this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', tabindex, this.disabled ? 'true' : 'false', this.tooltipId, this.getIcon());
         }
       }
     }, {
@@ -4531,7 +4396,7 @@
       key: "render",
       value: function render() {
         var borderRadius = this.shape === 'round' ? '9999px' : 'var( --ods-sem-space-small)';
-        return x(_templateObject4$5 || (_templateObject4$5 = _taggedTemplateLiteral(["\n  \n    <style>\n    *{\n      --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.40);\n      --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n      --ods-utility-states-disabled-container: #C5C5C5;\n      --ods-ref-color-green-100: #FFFFFF;\n      --ods-ref-color-green-40:  #298319;\n      --ods-ref-color-gray-35:   #515151;\n      --ods-sem-space-none:       0rem;\n      --ods-sem-space-xsmall:     0.25rem;\n      --ods-sem-space-small:      0.5rem;\n      --ods-sem-space-medium:     1rem;\n      --ods-sem-space-large:      1.5rem;\n    }\n\n    :host{\n      display: inline-flex;\n    }\n    \n    a, button {\n        border-radius: ", ";\n        height:var(--ods-icon-button-height,44px);\n        width:var(--ods-icon-button-width,44px);\n        text-decoration: none;\n        border: var(--ods-sem-space-none);\n        cursor: pointer;\n        justify-content: center;\n        box-sizing: border-box;\n        display: inline-flex;\n        align-items: center;\n        padding: 0;\n      }\n\n    .btn-outline {\n        color: var(--ods-ref-color-green-40);\n        background-color: var(--ods-ref-color-green-100) ;\n        box-shadow:0 0 0 1px ;\n    }\n\n    .btn-outline:hover {\n      background: var(--ods-utility-states-primary-hover);\n    }\n\n    .btn-outline:active, .btn-outline[active-menu]{\n      background: var(--ods-utility-states-primary-pressed);\n    }\n\n    :host(:focus-within) .btn-outline{\n     outline: none;\n     box-shadow: 0 0 0 1px var(--ods-ref-color-green-40), 0 0 0 0.188rem white, 0 0 0 0.35rem var(--ods-ref-color-green-40);\n    }\n   \n    .btn-ghost {\n    color: var(--ods-ref-color-green-40);\n    background: transparent;\n    }\n\n    .btn-ghost:hover {\n    background: var(--ods-utility-states-primary-hover);\n    }\n\n    .btn-ghost:active, .btn-ghost[active-menu]{\n    background: var(--ods-utility-states-primary-pressed);\n    }\n\n    :host(:focus-within) .btn-ghost{\n      outline: none;\n      box-shadow: 0 0 0 2px var(--ods-ref-color-green-40);\n    }\n\n\n    .disabled-outline, .disabled-outline:hover, :host(:focus-within) .disabled-outline {\n      color: var(--ods-ref-color-gray-35);\n      opacity: 0.5;\n      background: var(--ods-utility-states-disabled-container);\n      box-shadow: 0 0 0  1px !important;\n      cursor: not-allowed;\n      pointer-events: none;\n\n    }\n\n    .disabled-ghost, .disabled-ghost:hover, .disabled-ghost:focus{\n      border-radius: ", ";\n      color: var(--ods-ref-color-gray-35);\n      background: var(--ods-utility-states-disabled-container);\n      opacity: 0.5;\n      cursor: not-allowed;\n      pointer-events: none;\n      box-shadow: none !important;    \n    }\n\n    .icon {\n        display: inline-flex;\n        align-items: center;\n        }\n \n    .iconbutton-container:has(.disabled-outline, .disabled-ghost){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"iconbutton-container\">", "\n    <ods-tooltip id='tooltip_", "' label=\"", "\" ></ods-tooltip> \n    </div>\n      "])), borderRadius, borderRadius, this.getButton(), this.tooltipId, this.tooltip);
+        return x(_templateObject4$6 || (_templateObject4$6 = _taggedTemplateLiteral(["\n  \n    <style>\n    *{\n      --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.40);\n      --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n      --ods-utility-states-disabled-container: #C5C5C5;\n      --ods-ref-color-green-100: #FFFFFF;\n      --ods-ref-color-green-40:  #298319;\n      --ods-ref-color-gray-35:   #515151;\n      --ods-sem-space-none:       0rem;\n      --ods-sem-space-xsmall:     0.25rem;\n      --ods-sem-space-small:      0.5rem;\n      --ods-sem-space-medium:     1rem;\n      --ods-sem-space-large:      1.5rem;\n    }\n\n    :host{\n      display: inline-flex;\n    }\n    \n    a, button {\n        border-radius: ", ";\n        height:var(--ods-icon-button-height,44px);\n        width:var(--ods-icon-button-width,44px);\n        text-decoration: none;\n        border: var(--ods-sem-space-none);\n        cursor: pointer;\n        justify-content: center;\n        box-sizing: border-box;\n        display: inline-flex;\n        align-items: center;\n        padding: 0;\n      }\n\n    .btn-outline {\n        color: var(--ods-ref-color-green-40);\n        background-color: var(--ods-ref-color-green-100) ;\n        box-shadow:0 0 0 1px ;\n    }\n\n    .btn-outline:hover {\n      background: var(--ods-utility-states-primary-hover);\n    }\n\n    .btn-outline:active, .btn-outline[active-menu]{\n      background: var(--ods-utility-states-primary-pressed);\n    }\n\n    :host(:focus-within) .btn-outline{\n     outline: none;\n     box-shadow: 0 0 0 1px var(--ods-ref-color-green-40), 0 0 0 0.188rem white, 0 0 0 0.35rem var(--ods-ref-color-green-40);\n    }\n   \n    .btn-ghost {\n    color: var(--ods-ref-color-green-40);\n    background: transparent;\n    }\n\n    .btn-ghost:hover {\n    background: var(--ods-utility-states-primary-hover);\n    }\n\n    .btn-ghost:active, .btn-ghost[active-menu]{\n    background: var(--ods-utility-states-primary-pressed);\n    }\n\n    :host(:focus-within) .btn-ghost{\n      outline: none;\n      box-shadow: 0 0 0 2px var(--ods-ref-color-green-40);\n    }\n\n\n    .disabled-outline, .disabled-outline:hover, :host(:focus-within) .disabled-outline {\n      color: var(--ods-ref-color-gray-35);\n      opacity: 0.5;\n      background: var(--ods-utility-states-disabled-container);\n      box-shadow: 0 0 0  1px !important;\n      cursor: not-allowed;\n      pointer-events: none;\n\n    }\n\n    .disabled-ghost, .disabled-ghost:hover, .disabled-ghost:focus{\n      border-radius: ", ";\n      color: var(--ods-ref-color-gray-35);\n      background: var(--ods-utility-states-disabled-container);\n      opacity: 0.5;\n      cursor: not-allowed;\n      pointer-events: none;\n      box-shadow: none !important;    \n    }\n\n    .icon {\n        display: inline-flex;\n        align-items: center;\n        }\n \n    .iconbutton-container:has(.disabled-outline, .disabled-ghost){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"iconbutton-container\">", "\n    <ods-tooltip id='tooltip_", "' label=\"", "\" ></ods-tooltip> \n    </div>\n      "])), borderRadius, borderRadius, this.getButton(), this.tooltipId, this.tooltip);
       }
     }], [{
       key: "properties",
@@ -4654,8 +4519,36 @@
     _inherits(OdsActiveMenuEvent, _Event8);
     return _createClass(OdsActiveMenuEvent);
   }( /*#__PURE__*/_wrapNativeSuper(Event));
+  var TabClickCustomEvent = /*#__PURE__*/function (_Event9) {
+    function TabClickCustomEvent(detail) {
+      var _this9;
+      _classCallCheck(this, TabClickCustomEvent);
+      _this9 = _callSuper(this, TabClickCustomEvent, ['tab-selected', {
+        bubbles: true,
+        composed: true
+      }]);
+      _this9.detail = detail;
+      return _this9;
+    }
+    _inherits(TabClickCustomEvent, _Event9);
+    return _createClass(TabClickCustomEvent);
+  }( /*#__PURE__*/_wrapNativeSuper(Event));
+  var TabLoadedCustomEvent = /*#__PURE__*/function (_Event10) {
+    function TabLoadedCustomEvent(detail) {
+      var _this10;
+      _classCallCheck(this, TabLoadedCustomEvent);
+      _this10 = _callSuper(this, TabLoadedCustomEvent, ['tab-loaded', {
+        bubbles: true,
+        composed: true
+      }]);
+      _this10.detail = detail;
+      return _this10;
+    }
+    _inherits(TabLoadedCustomEvent, _Event10);
+    return _createClass(TabLoadedCustomEvent);
+  }( /*#__PURE__*/_wrapNativeSuper(Event));
 
-  var _templateObject$5, _templateObject2$4, _templateObject3$4, _templateObject4$4, _templateObject5$3, _templateObject6$3;
+  var _templateObject$8, _templateObject2$7, _templateObject3$6, _templateObject4$5, _templateObject5$3, _templateObject6$3;
 
   /**
    * Service Now Ods Menu Item component
@@ -4682,13 +4575,22 @@
         return this._parent['single-select'];
       }
     }, {
+      key: "isSelectable",
+      value: function isSelectable() {
+        return this._parent.selectable;
+      }
+    }, {
       key: "updated",
       value: function updated() {
-        var _this2 = this;
         _get(_getPrototypeOf(OdsMenuItem.prototype), "updated", this).call(this);
         this.setAvatarToSmall();
         this._parent = this.shadowRoot.host.parentElement;
         this._selectable = this._parent.selectable;
+      }
+    }, {
+      key: "firstUpdated",
+      value: function firstUpdated() {
+        var _this2 = this;
         this.addEventListener('keydown', this.handleKeyEvent);
         this.addEventListener('blur', function (e) {
           _this2._handleBlur(e, _this2);
@@ -4697,7 +4599,11 @@
     }, {
       key: "disconnectedCallback",
       value: function disconnectedCallback() {
+        var _this3 = this;
         this.removeEventListener('keydown', this.handleKeyEvent);
+        this.removeEventListener('blur', function (e) {
+          _this3._handleBlur(e, _this3);
+        });
       }
     }, {
       key: "_handleBlur",
@@ -4728,21 +4634,35 @@
         }));
         this._noclose = this.shadowRoot.host.parentElement['no-close-on-select'];
         if (this.hasOnclickFunction()) this.onClick();
-        if (this.isSingleSelect()) {
-          this.selected = true;
-          this.dispatchEvent(new MenuSingleItemClickEvent({
-            menuItem: this,
-            menu: this._parent
-          }));
-        } else {
-          this.selected = !this.selected;
+        if (this.isSelectable()) {
+          if (this.isSingleSelect()) {
+            this.selected = true;
+            this.dispatchEvent(new MenuSingleItemClickEvent({
+              menuItem: this,
+              menu: this._parent
+            }));
+          } else {
+            this.selected = !this.selected;
+          }
+          this.handleSelectedArrayOwnPosition();
         }
         if (!this._noclose) this._parent.closeMenu();
       }
     }, {
+      key: "handleSelectedArrayOwnPosition",
+      value: function handleSelectedArrayOwnPosition() {
+        var ownIndex = this._parent._selectedItems.indexOf(this);
+        if (ownIndex === -1 && this.selected) this._parent._selectedItems.push(this);
+        if (ownIndex > -1 && !this.selected) this._parent._selectedItems.splice(ownIndex, 1);
+        if (ownIndex > -1 && this.selected) {
+          this._parent._selectedItems.splice(ownIndex, 1);
+          this._parent._selectedItems.push(this);
+        }
+      }
+    }, {
       key: "getContent",
       value: function getContent() {
-        return x(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n      <a class='menu-item' part='ods-menu-item'\n          target='", "'\n          @click=\"", "\"\n          href='", "' tabindex=\"-1\">\n          ", "\n      </a>"])), this.target, this.handleClick, this.href || 'javascript:void(0);', this.getSlots());
+        return x(_templateObject$8 || (_templateObject$8 = _taggedTemplateLiteral(["\n      <a class='menu-item' part='ods-menu-item'\n          target='", "'\n          @click=\"", "\"\n          href='", "' tabindex=\"-1\">\n          ", "\n      </a>"])), this.target, this.handleClick, this.href || 'javascript:void(0);', this.getSlots());
       }
     }, {
       key: "getUsedSlots",
@@ -4764,13 +4684,16 @@
     }, {
       key: "handleKeyEvent",
       value: function handleKeyEvent(e) {
-        if (e.key !== 'Tab' && e.key !== 'Enter' && e.key !== 'Space' && e.key !== ' ') {
+        if (e.key !== 'Tab' && e.key !== 'Enter' && e.key !== 'Space') {
           e.preventDefault();
         }
         this.dispatchEvent(new MenuItemKeyEvent({
           key: e.key,
           menuItem: this
         }));
+        if (e.key === 'Tab' && e.shiftKey) {
+          this._parent.closeMenu();
+        }
       }
     }, {
       key: "IsEmpty",
@@ -4780,7 +4703,7 @@
     }, {
       key: "getSlots",
       value: function getSlots() {
-        return x(_templateObject2$4 || (_templateObject2$4 = _taggedTemplateLiteral(["\n    ", "\n    <div class='start-container'>\n      <slot name='start' @slotchange=\"", "\" /></slot>\n    </div>\n    <div class='text-container'>\n      <div class='maintext-container'>\n      <slot name='label'></slot>\n      </div>\n      <div class='subtext-container'>\n        <slot name='sub-label'></slot>\n      </div>\n      </div>\n      <div class='end-container'>\n        <slot name='end' @slotchange=\"", "\" /></slot>\n      </div>\n    "])), this._selectable ? x(_templateObject3$4 || (_templateObject3$4 = _taggedTemplateLiteral(["\n    <div class='check-container'>\n        ", "\n        ", "\n    </div>"])), this.selected ? x(_templateObject4$4 || (_templateObject4$4 = _taggedTemplateLiteral(["<ods-icon size='sm' name='check'></ods-icon>"]))) : '', !this.selected ? x(_templateObject5$3 || (_templateObject5$3 = _taggedTemplateLiteral(["<div class='no-icon'></div>"]))) : '') : '', this.handleSlotChange, this.handleSlotChange);
+        return x(_templateObject2$7 || (_templateObject2$7 = _taggedTemplateLiteral(["\n    ", "\n    <div class='start-container'>\n      <slot name='start' @slotchange=\"", "\" /></slot>\n    </div>\n    <div class='text-container'>\n      <div class='maintext-container'>\n      <slot name='label'></slot>\n      </div>\n      <div class='subtext-container'>\n        <slot name='sub-label'></slot>\n      </div>\n      </div>\n      <div class='end-container'>\n        <slot name='end' @slotchange=\"", "\" /></slot>\n      </div>\n    "])), this._selectable ? x(_templateObject3$6 || (_templateObject3$6 = _taggedTemplateLiteral(["\n    <div class='check-container'>\n        ", "\n        ", "\n    </div>"])), this.selected ? x(_templateObject4$5 || (_templateObject4$5 = _taggedTemplateLiteral(["<ods-icon size='sm' name='check'></ods-icon>"]))) : '', !this.selected ? x(_templateObject5$3 || (_templateObject5$3 = _taggedTemplateLiteral(["<div class='no-icon'></div>"]))) : '') : '', this.handleSlotChange, this.handleSlotChange);
       }
     }, {
       key: "createRenderRoot",
@@ -4831,7 +4754,7 @@
   });
   customElements.define("ods-menu-item", OdsMenuItem);
 
-  var _templateObject$4, _templateObject2$3, _templateObject3$3, _templateObject4$3;
+  var _templateObject$7, _templateObject2$6, _templateObject3$5, _templateObject4$4;
 
   /**
    * Service Now Ods Menu Divider component
@@ -4850,14 +4773,14 @@
     return _createClass(OdsMenuDivider, [{
       key: "getDivider",
       value: function getDivider() {
-        return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n      ", "\n      ", "\n    "])), !this["hide-divider"] && this.label || !this.label ? x(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["<div class='divider' part='ods-menu-divider'></div>"]))) : '', this.label ? x(_templateObject3$3 || (_templateObject3$3 = _taggedTemplateLiteral(["<div class=\"label\" part='ods-menu-divider-label'><ods-text size=\"sm\" weight='bold' color=\"text-tertiary\">", "</ods-text></div>"])), this.label) : '');
+        return x(_templateObject$7 || (_templateObject$7 = _taggedTemplateLiteral(["\n      ", "\n      ", "\n    "])), !this["hide-divider"] && this.label || !this.label ? x(_templateObject2$6 || (_templateObject2$6 = _taggedTemplateLiteral(["<div class='divider' part='ods-menu-divider'></div>"]))) : '', this.label ? x(_templateObject3$5 || (_templateObject3$5 = _taggedTemplateLiteral(["<div class=\"label\" part='ods-menu-divider-label'><ods-text size=\"sm\" weight='bold' color=\"text-tertiary\">", "</ods-text></div>"])), this.label) : '');
       }
     }, {
       key: "render",
       value: function render() {
         this._parent = this.shadowRoot.host.parentElement;
         if (!this._parent.selectable) {
-          return x(_templateObject4$3 || (_templateObject4$3 = _taggedTemplateLiteral([" \n        <style>\n        .divider{\n          display: flex;\n          /*margin: var(--ods-sem-space-none) var(--ods-sem-space-medium);*/\n          margin: var(--Space-Small, 8px) var(--Space-Medium, 16px);\n          flex-direction: column;\n          align-items: flex-start;\n          gap: var(--ods-sem-space-none);\n          flex-shrink: 0;\n          border-color: var(--ods-border-decorative-primary);\n          background-color: var(--ods-border-decorative-primary);\n          border: 0;\n          height: 1px;\n          margin: 0;\n        }\n        .label{\n          line-height: 24px;\n          cursor: default;\n          padding-top:8px;\n          padding-bottom:8px;\n        }\n        \n        .divider ~ .label{\n          \n          line-height: 23px;\n        }\n\n        </style>\n        ", "\n        "])), this.getDivider());
+          return x(_templateObject4$4 || (_templateObject4$4 = _taggedTemplateLiteral([" \n        <style>\n        .divider{\n          display: flex;\n          /*margin: var(--ods-sem-space-none) var(--ods-sem-space-medium);*/\n          margin: var(--Space-Small, 8px) var(--Space-Medium, 16px);\n          flex-direction: column;\n          align-items: flex-start;\n          gap: var(--ods-sem-space-none);\n          flex-shrink: 0;\n          border-color: var(--ods-border-decorative-primary);\n          background-color: var(--ods-border-decorative-primary);\n          border: 0;\n          height: 1px;\n          margin: 0;\n        }\n        .label{\n          line-height: 24px;\n          cursor: default;\n          padding-top:8px;\n          padding-bottom:8px;\n        }\n        \n        .divider ~ .label{\n          \n          line-height: 23px;\n        }\n\n        </style>\n        ", "\n        "])), this.getDivider());
         }
       }
     }]);
@@ -4872,7 +4795,7 @@
   });
   customElements.define("ods-menu-divider", OdsMenuDivider);
 
-  var _templateObject$3, _defineProperty2;
+  var _templateObject$6, _templateObject2$5, _defineProperty2;
 
   /**
    * Service Now Ods Menu component
@@ -4922,6 +4845,8 @@
       _this._lastMenuItem = null;
       _this._firstChars = [];
       _this._currentSelectedItem = null;
+      _this._selectedItems = [];
+      _this._empty = false;
       return _this;
     }
     _inherits(OdsMenu, _LitElement);
@@ -4956,6 +4881,7 @@
     }, {
       key: "firstUpdated",
       value: function firstUpdated() {
+        this.initializeMenu();
         if (this._isValid) {
           this.checkMobile();
           this.setMenuPosition();
@@ -4967,14 +4893,30 @@
       value: function updated(changedProperties) {
         _get(_getPrototypeOf(OdsMenu.prototype), "updated", this).call(this);
         var oldSelectableValue = changedProperties.get('selectable');
+        var oldOpenValue = changedProperties.get('_isOpen');
         if (oldSelectableValue !== this.selectable && typeof oldSelectableValue !== 'undefined') {
           this.processSlots();
+        }
+        if (oldOpenValue !== this._isOpen && typeof oldOpenValue !== 'undefined' && this._isOpen) {
+          this.checkMenuFinalPosition();
         }
       }
     }, {
       key: "setAllMenuItems",
       value: function setAllMenuItems() {
         this._allMenuItems = Array.from(this.shadowRoot.host.querySelectorAll('ods-menu-item, ods-menu-divider'));
+      }
+    }, {
+      key: "checkMenuFinalPosition",
+      value: function checkMenuFinalPosition() {
+        var windowSize = window.innerWidth;
+        var menuSize = this.offsetLeft + this.offsetWidth;
+        if (windowSize < menuSize) {
+          var newPos = (this.offsetWidth - this._anchored.offsetWidth) * -1;
+          Object.assign(this.style, {
+            'margin-left': "".concat(newPos, "px")
+          });
+        }
       }
     }, {
       key: "setDataMenuItems",
@@ -5060,11 +5002,7 @@
     }, {
       key: "setEmptySlots",
       value: function setEmptySlots() {
-        var e = document.createElement('div');
-        e.className = 'no-items';
-        e.innerHTML = this['no-items-label'];
-        this.shadowRoot.querySelector('.menu-container').innerHTML = '';
-        this.shadowRoot.querySelector('.menu-container').appendChild(e);
+        this._empty = true;
       }
     }, {
       key: "setMenuPosition",
@@ -5148,14 +5086,7 @@
         var odsMenuItems = childNodes.filter(function (node) {
           return node.localName === 'ods-menu-item';
         });
-        // Confirm if preserve avoid render when 2 items or less
-        // if(odsMenuItems.length <= 2 && odsMenuItems.length !== 0 )
-        // {
-        //   this.setInvalidMenu('Must have over two Menu Items');
-        // }
-        if (odsMenuItems.length === 0) {
-          this.setEmptySlots();
-        }
+        this._empty = odsMenuItems.length === 0;
       }
     }, {
       key: "toggleMenu",
@@ -5163,13 +5094,29 @@
         if (this._isValid) {
           this.shadowRoot.querySelector('.menu-container').classList.remove('invalid-menu');
         }
+        Object.assign(this.style, {
+          'margin-left': ""
+        });
         this._isOpen = !this._isOpen;
         this.triggerDispatchEvent(this._isOpen);
         this.setAnchoredWidth();
         this.setMenuPosition();
         this.shadowRoot.querySelector('.menu-container').classList.toggle('hide-menu');
         this.dispatchActiveMenuEvent();
+        this.processSlots();
         if (!this._isOpen) this._anchored.focus();
+      }
+    }, {
+      key: "setFocusOnMenuOpen",
+      value: function setFocusOnMenuOpen() {
+        if (this._selectedItems.length > 0 && !this['single-select']) {
+          this._selectedItems[this._selectedItems.length - 1].focus();
+          return;
+        }
+        var selectedItems = this.getSelectedMenuItems();
+        if (this['single-select'] && selectedItems.length > 0) {
+          selectedItems[0].focus();
+        }
       }
     }, {
       key: "dispatchActiveMenuEvent",
@@ -5193,12 +5140,6 @@
           this.dispatchActiveMenuEvent();
           if (focusAnchor) this._anchored.focus();
         }
-      }
-    }, {
-      key: "connectedCallback",
-      value: function connectedCallback() {
-        _get(_getPrototypeOf(OdsMenu.prototype), "connectedCallback", this).call(this);
-        this.initializeMenu();
       }
     }, {
       key: "disconnectedCallback",
@@ -5254,11 +5195,13 @@
               this.toggleMenu();
             }
             this._setKeyEvents(key, this._lastMenuItem);
+            this.setFocusOnMenuOpen();
             break;
           case 'Enter':
             event.preventDefault();
             this.toggleMenu();
             this.setFocusToNextMenuitem(this._lastMenuItem);
+            this.setFocusOnMenuOpen();
             break;
           case 'ArrowRight':
           case 'Right':
@@ -5276,6 +5219,7 @@
             event.preventDefault();
             event.target.click();
             this.setFocusToNextMenuitem(this._lastMenuItem);
+            this.setFocusOnMenuOpen();
           default:
             this._setKeyEvents(key, this._currentSelectedItem, event);
             event.preventDefault();
@@ -5481,7 +5425,7 @@
       key: "render",
       value: function render() {
         var height = this['max-height'] && this['max-height'] !== '' ? this['max-height'] : this._defaultHeight;
-        return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-background-primary:         #FFF;\n      --ods-border-decorative-primary:  #C5C5C5;\n      --ods-sem-text-primary:           #1B1B1B;\n      --ods-sem-space-none:             0;\n      --ods-sem-space-xsmall:           4px;\n      --ods-sem-space-small:            8px;\n      --ods-sem-space-medium:           16px;\n      --ods-sem-space-large:            24px;\n      --ods-border-radius-xsmall:       4px;\n      --ods-shadow-small-x:             0px;\n      --ods-shadow-small-y:             2px;\n      --ods-shadow-small-blur:          4px;\n      --ods-shadow-small-spread:        0px;\n      --ods-shadow-small-color:         rgba(59, 59, 59, 0.25);\n      --ods-sem-text-tertiary:          #5E5E5E;\n      font-size: 14px;\n    }\n    :host{\n      position: absolute;\n      /* Shadow/Small */\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--ods-shadow-small-blur) var(--ods-shadow-small-spread) var(--ods-shadow-small-color);\n      border-radius: var(--ods-border-radius-xsmall);\n      outline: 0;\n      z-index: 998;\n    }\n    .menu-container{\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-family: lato;\n      background: var(--ods-background-primary);\n      ", "\n      ", "\n      ", "\n      min-height: min-content;\n      max-height: ", ";\n      overflow-x: clip;\n      text-wrap: wrap;\n      word-wrap: break-word;\n      overflow-y: auto;\n      position: relative;\n      border-radius: var(--ods-border-radius-xsmall);\n      outline: 0;\n     \n    }\n      nav{\n      outline: 0;\n      }\n    \n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    .check-container, .icon-container{\n      width: 24px;\n      height: 24px;\n    }\n\n    .hide-menu, .invalid-menu{\n      display: none;\n    }\n\n    .no-items{\n      display: flex;\n      padding: var(--Space-Small, 8px) var(--Space-Medium, 16px) !important;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--Space-None, 0px);\n      flex-shrink: 0;\n      font-size: 14px;\n      line-height: 22px;\n      color: var(--ods-sem-text-tertiary);\n    }\n    .menu-container::-webkit-scrollbar {\n      width: 10px;\n    }\n    \n    .menu-container::-webkit-scrollbar-track {\n      background-color: #FFFFFF;\n      border-radius: 100px;\n    }\n    \n    .menu-container::-webkit-scrollbar-thumb {\n      background-color: #c5c5c5;\n      border-radius: 100px;\n      height:30px;\n    }\n      ul{\n      padding: 0; margin:0;}\n    </style>\n    <nav>\n    <ul tabindex=\"0\" class='menu-container hide-menu' part='ods-menu' \n      @menu-item-single-event=", " \n      @menu-item-slot-change-event=", " \n      @menu-item-key-event=", ">\n      <slot @slotchange=\"", "\"></slot>    \n    </ul>\n    </nav>\n    "])), !this['match-width'] ? "width: ".concat(this['max-width'], "; max-width: ").concat(this['max-width'], ";") : '', this['match-width'] ? "width: ".concat(this._anchoredWidth, "px;") : '', this._isMobile ? "width: ".concat(this._anchoredWidth, "px; max-width: unset;") : '', height, this._handleSingleClick, this._handleItemSlotChanges, this._handleKeyMenuItemEvents, this.handleSlotChange);
+        return x(_templateObject$6 || (_templateObject$6 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      --ods-background-primary:         #FFF;\n      --ods-border-decorative-primary:  #C5C5C5;\n      --ods-sem-text-primary:           #1B1B1B;\n      --ods-sem-space-none:             0;\n      --ods-sem-space-xsmall:           4px;\n      --ods-sem-space-small:            8px;\n      --ods-sem-space-medium:           16px;\n      --ods-sem-space-large:            24px;\n      --ods-border-radius-xsmall:       4px;\n      --ods-shadow-small-x:             0px;\n      --ods-shadow-small-y:             2px;\n      --ods-shadow-small-blur:          4px;\n      --ods-shadow-small-spread:        0px;\n      --ods-shadow-small-color:         rgba(59, 59, 59, 0.25);\n      --ods-sem-text-tertiary:          #5E5E5E;\n      font-size: 14px;\n    }\n    :host{\n      position: absolute;\n      /* Shadow/Small */\n      box-shadow: var(--ods-shadow-small-x) var(--ods-shadow-small-y) var(--ods-shadow-small-blur) var(--ods-shadow-small-spread) var(--ods-shadow-small-color);\n      border-radius: var(--ods-border-radius-xsmall);\n      outline: 0;\n      z-index: 998;\n    }\n    .menu-container{\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-family: lato;\n      background: var(--ods-background-primary);\n      min-width: 184px;\n      ", "\n      ", "\n      ", "\n      min-height: min-content;\n      max-height: ", ";\n      overflow-x: clip;\n      text-wrap: wrap;\n      word-wrap: break-word;\n      overflow-y: auto;\n      position: relative;\n      border-radius: var(--ods-border-radius-xsmall);\n      outline: 0;\n     \n    }\n      nav{\n      outline: 0;\n      }\n    \n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    .check-container, .icon-container{\n      width: 24px;\n      height: 24px;\n    }\n\n    .hide-menu, .invalid-menu{\n      display: none;\n    }\n\n    .no-items{\n      display: flex;\n      padding: var(--Space-Small, 8px) var(--Space-Medium, 16px) !important;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--Space-None, 0px);\n      flex-shrink: 0;\n      font-size: 14px;\n      line-height: 22px;\n      color: var(--ods-sem-text-tertiary);\n    }\n    .menu-container::-webkit-scrollbar {\n      width: 10px;\n    }\n    \n    .menu-container::-webkit-scrollbar-track {\n      background-color: #FFFFFF;\n      border-radius: 100px;\n    }\n    \n    .menu-container::-webkit-scrollbar-thumb {\n      background-color: #c5c5c5;\n      border-radius: 100px;\n      height:30px;\n    }\n      ul{\n      padding: 0; margin:0;}\n    </style>\n    <nav>\n    <ul tabindex=\"0\" class='menu-container hide-menu' part='ods-menu' \n      @menu-item-single-event=", " \n      @menu-item-slot-change-event=", " \n      @menu-item-key-event=", ">\n      <slot @slotchange=\"", "\"></slot>    \n      ", "\n    </ul>\n    </nav>\n    "])), !this['match-width'] ? "max-width: ".concat(this['max-width'], ";") : '', this['match-width'] ? "width: ".concat(this._anchoredWidth, "px;") : '', this._isMobile ? "width: ".concat(this._anchoredWidth, "px; max-width: unset;") : '', height, this._handleSingleClick, this._handleItemSlotChanges, this._handleKeyMenuItemEvents, this.handleSlotChange, this._empty ? x(_templateObject2$5 || (_templateObject2$5 = _taggedTemplateLiteral(["<div class='no-items'>", "</div>"])), this['no-items-label']) : null);
       }
     }]);
   }(s$2);
@@ -5505,7 +5449,7 @@
     state: true
   }), "_isMobile", {
     state: true
-  }), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty2, "_isOpen", {
+  }), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty2, "_isOpen", {
     state: true
   }), "_anchored", {
     state: true
@@ -5514,6 +5458,8 @@
   }), 'single-select', {
     type: Boolean
   }), "_currentSelectedItem", {
+    state: true
+  }), "_empty", {
     state: true
   })));
   customElements.define("ods-menu", OdsMenu);
@@ -5730,7 +5676,7 @@
       }]);
     }(f));
 
-  var _templateObject$2, _templateObject2$2, _templateObject3$2, _templateObject4$2, _templateObject5$2, _templateObject6$2, _templateObject7$2, _templateObject8, _templateObject9, _templateObject10;
+  var _templateObject$5, _templateObject2$4, _templateObject3$4, _templateObject4$3, _templateObject5$2, _templateObject6$2, _templateObject7$2, _templateObject8, _templateObject9, _templateObject10;
   var OdsSelectField = /*#__PURE__*/function (_LitElement) {
     function OdsSelectField() {
       var _this;
@@ -5767,6 +5713,13 @@
         if (event.key === ' ' || event.key === '' || event.key === 'Space') event.preventDefault();
       }
     }, {
+      key: "selectClear",
+      value: function selectClear() {
+        this.inputRef.value.value = '';
+        this.shadowRoot.getElementById("".concat(this.name)).setAttribute("value", '');
+        this.shadowRoot.querySelector('ods-menu').selectClear();
+      }
+    }, {
       key: "getInputField",
       value: function getInputField() {
         var isRequired = this.required == "true" ? true : false;
@@ -5778,7 +5731,7 @@
         if (this.error != "") {
           errorAlert = true;
         }
-        return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n      <input\n        readonly\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n        anchor=\"", "\"\n        ", "\n        @ods-active-menu-event=", "\n      />\n    "])), this.type, ["ods-form-control", "ods-input-select"].join(" "), this.name, this.name, this.placeholder, this.error, this.name, this.value, this.isDisabled, isRequired, isOptional, errorAlert, this.name, n(this.inputRef), this._handleSetActiveMenu);
+        return x(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n      <input\n        readonly\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n        anchor=\"", "\"\n        ", "\n        @ods-active-menu-event=", "\n      />\n    "])), this.type, ["ods-form-control", "ods-input-select"].join(" "), this.name, this.name, this.placeholder, this.error, this.name, this.value, this.isDisabled, isRequired, isOptional, errorAlert, this.name, n(this.inputRef), this._handleSetActiveMenu);
       }
     }, {
       key: "handleKeyPress",
@@ -5801,7 +5754,7 @@
       key: "getErrorMessage",
       value: function getErrorMessage() {
         if (this.error && this.error != "" && !this.isOpened) {
-          return x(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"#AB2D25\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"#AB2D25\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
+          return x(_templateObject2$4 || (_templateObject2$4 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"#AB2D25\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"#AB2D25\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
         }
         return "";
       }
@@ -5809,14 +5762,14 @@
       key: "getInfoIcon",
       value: function getInfoIcon() {
         if (this.tooltip != "") {
-          return x(_templateObject3$2 || (_templateObject3$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-button\">\n          <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n            <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n          </button>\n          <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n        </div>\n      "])), this.tooltip);
+          return x(_templateObject3$4 || (_templateObject3$4 = _taggedTemplateLiteral(["\n        <div class=\"ods-button\">\n          <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n            <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n          </button>\n          <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n        </div>\n      "])), this.tooltip);
         }
       }
     }, {
       key: "getLabelField",
       value: function getLabelField() {
         if (this.label != "") {
-          return x(_templateObject4$2 || (_templateObject4$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-label-container\">\n          <ods-text\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n            <label for=\"", "\"> ", "</label>\n          </ods-text>\n          ", "\n        </div>\n      "])), this.name, this.getLabelText(), this.getInfoIcon());
+          return x(_templateObject4$3 || (_templateObject4$3 = _taggedTemplateLiteral(["\n        <div class=\"ods-label-container\">\n          <ods-text\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n            <label for=\"", "\"> ", "</label>\n          </ods-text>\n          ", "\n        </div>\n      "])), this.name, this.getLabelText(), this.getInfoIcon());
         }
         return "";
       }
@@ -5926,7 +5879,6 @@
     }, {
       key: "render",
       value: function render() {
-        console.log("Typeof passed function is", _typeof(this.customFunction));
         this.handleWidth();
         var isReadOnly = this.isDisabled == "true" ? "readonly" : "";
         var isError = this.error != "" ? "error-state" : "";
@@ -6007,7 +5959,7 @@
   }(s$2);
   customElements.define("ods-select-field", OdsSelectField);
 
-  var _templateObject$1, _templateObject2$1, _templateObject3$1, _templateObject4$1, _templateObject5$1, _templateObject6$1, _templateObject7$1;
+  var _templateObject$4, _templateObject2$3, _templateObject3$3, _templateObject4$2, _templateObject5$1, _templateObject6$1, _templateObject7$1;
   var ODSTextArea = /*#__PURE__*/function (_LitElement) {
     function ODSTextArea() {
       var _this;
@@ -6056,13 +6008,13 @@
         if (this.error != '') {
           errorAlert = true;
         }
-        return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["\n    <textarea\n    tabindex=\"2\"\n    class=", "\n    id=\"", "\"\n    name=\"", "\"\n    resize=\"", "\"\n    placeholder=\"", "\"\n    error=\"", "\"\n    aria-describedby=\"", "\"\n    aria-disabled=\"", "\"\n    .value=\"", "\"\n    ?required=\"", "\"\n    ?optional=\"", "\"\n    aria-invalid=\"", "\"\n    @resize=\"", "\"\n    \n    \n  ></textarea>\n    "])), ["ods-form-control"].join(" "), this.name, this.name, this.resize, this.placeholder, this.error, this.name, this.disabled, this.value, isRequired, isOptional, errorAlert, this.handletextsize);
+        return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n    <textarea\n    tabindex=\"2\"\n    class=", "\n    id=\"", "\"\n    name=\"", "\"\n    resize=\"", "\"\n    placeholder=\"", "\"\n    error=\"", "\"\n    aria-describedby=\"", "\"\n    aria-disabled=\"", "\"\n    .value=\"", "\"\n    ?required=\"", "\"\n    ?optional=\"", "\"\n    aria-invalid=\"", "\"\n    @resize=\"", "\"\n    \n    \n  ></textarea>\n    "])), ["ods-form-control"].join(" "), this.name, this.name, this.resize, this.placeholder, this.error, this.name, this.disabled, this.value, isRequired, isOptional, errorAlert, this.handletextsize);
       }
     }, {
       key: "getErrorMessage",
       value: function getErrorMessage() {
         if (this.error && this.error != "") {
-          return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"#AB2D25\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"#AB2D25\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
+          return x(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"#AB2D25\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"#AB2D25\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
         }
         return "";
       }
@@ -6070,14 +6022,14 @@
       key: "getInfoIcon",
       value: function getInfoIcon() {
         if (this.tooltip != "") {
-          return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n      <div class=\"ods-button\">\n      <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n        <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n      </button>\n      <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n    </div>\n      "])), this.tooltip);
+          return x(_templateObject3$3 || (_templateObject3$3 = _taggedTemplateLiteral(["\n      <div class=\"ods-button\">\n      <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n        <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n      </button>\n      <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n    </div>\n      "])), this.tooltip);
         }
       }
     }, {
       key: "getLabelField",
       value: function getLabelField() {
         if (this.label != "") {
-          return x(_templateObject4$1 || (_templateObject4$1 = _taggedTemplateLiteral(["\n        <div class=\"ods-label-container\">\n          <ods-text\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n          <label for=\"", "\"> ", "</label>\n          </ods-text>\n          ", "\n        </div>\n      "])), this.name, this.getLabelText(), this.getInfoIcon());
+          return x(_templateObject4$2 || (_templateObject4$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-label-container\">\n          <ods-text\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n          <label for=\"", "\"> ", "</label>\n          </ods-text>\n          ", "\n        </div>\n      "])), this.name, this.getLabelText(), this.getInfoIcon());
         }
         return "";
       }
@@ -6175,7 +6127,1171 @@
   }(s$2);
   customElements.define("ods-text-area", ODSTextArea);
 
-  var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
+  /** Detect free variable `global` from Node.js. */
+  var freeGlobal = (typeof global === "undefined" ? "undefined" : _typeof(global)) == 'object' && global && global.Object === Object && global;
+
+  /** Detect free variable `self`. */
+  var freeSelf = (typeof self === "undefined" ? "undefined" : _typeof(self)) == 'object' && self && self.Object === Object && self;
+
+  /** Used as a reference to the global object. */
+  var root = freeGlobal || freeSelf || Function('return this')();
+
+  /** Built-in value references. */
+  var _Symbol = root.Symbol;
+
+  /** Used for built-in method references. */
+  var objectProto$4 = Object.prototype;
+
+  /** Used to check objects for own properties. */
+  var hasOwnProperty$3 = objectProto$4.hasOwnProperty;
+
+  /**
+   * Used to resolve the
+   * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+   * of values.
+   */
+  var nativeObjectToString$1 = objectProto$4.toString;
+
+  /** Built-in value references. */
+  var symToStringTag$1 = _Symbol ? _Symbol.toStringTag : undefined;
+
+  /**
+   * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+   *
+   * @private
+   * @param {*} value The value to query.
+   * @returns {string} Returns the raw `toStringTag`.
+   */
+  function getRawTag(value) {
+    var isOwn = hasOwnProperty$3.call(value, symToStringTag$1),
+      tag = value[symToStringTag$1];
+    try {
+      value[symToStringTag$1] = undefined;
+      var unmasked = true;
+    } catch (e) {}
+    var result = nativeObjectToString$1.call(value);
+    if (unmasked) {
+      if (isOwn) {
+        value[symToStringTag$1] = tag;
+      } else {
+        delete value[symToStringTag$1];
+      }
+    }
+    return result;
+  }
+
+  /** Used for built-in method references. */
+  var objectProto$3 = Object.prototype;
+
+  /**
+   * Used to resolve the
+   * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+   * of values.
+   */
+  var nativeObjectToString = objectProto$3.toString;
+
+  /**
+   * Converts `value` to a string using `Object.prototype.toString`.
+   *
+   * @private
+   * @param {*} value The value to convert.
+   * @returns {string} Returns the converted string.
+   */
+  function objectToString(value) {
+    return nativeObjectToString.call(value);
+  }
+
+  /** `Object#toString` result references. */
+  var nullTag = '[object Null]',
+    undefinedTag = '[object Undefined]';
+
+  /** Built-in value references. */
+  var symToStringTag = _Symbol ? _Symbol.toStringTag : undefined;
+
+  /**
+   * The base implementation of `getTag` without fallbacks for buggy environments.
+   *
+   * @private
+   * @param {*} value The value to query.
+   * @returns {string} Returns the `toStringTag`.
+   */
+  function baseGetTag(value) {
+    if (value == null) {
+      return value === undefined ? undefinedTag : nullTag;
+    }
+    return symToStringTag && symToStringTag in Object(value) ? getRawTag(value) : objectToString(value);
+  }
+
+  /**
+   * Checks if `value` is object-like. A value is object-like if it's not `null`
+   * and has a `typeof` result of "object".
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+   * @example
+   *
+   * _.isObjectLike({});
+   * // => true
+   *
+   * _.isObjectLike([1, 2, 3]);
+   * // => true
+   *
+   * _.isObjectLike(_.noop);
+   * // => false
+   *
+   * _.isObjectLike(null);
+   * // => false
+   */
+  function isObjectLike(value) {
+    return value != null && _typeof(value) == 'object';
+  }
+
+  /** `Object#toString` result references. */
+  var symbolTag = '[object Symbol]';
+
+  /**
+   * Checks if `value` is classified as a `Symbol` primitive or object.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+   * @example
+   *
+   * _.isSymbol(Symbol.iterator);
+   * // => true
+   *
+   * _.isSymbol('abc');
+   * // => false
+   */
+  function isSymbol(value) {
+    return _typeof(value) == 'symbol' || isObjectLike(value) && baseGetTag(value) == symbolTag;
+  }
+
+  /**
+   * A specialized version of `_.map` for arrays without support for iteratee
+   * shorthands.
+   *
+   * @private
+   * @param {Array} [array] The array to iterate over.
+   * @param {Function} iteratee The function invoked per iteration.
+   * @returns {Array} Returns the new mapped array.
+   */
+  function arrayMap(array, iteratee) {
+    var index = -1,
+      length = array == null ? 0 : array.length,
+      result = Array(length);
+    while (++index < length) {
+      result[index] = iteratee(array[index], index, array);
+    }
+    return result;
+  }
+
+  /**
+   * Checks if `value` is classified as an `Array` object.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+   * @example
+   *
+   * _.isArray([1, 2, 3]);
+   * // => true
+   *
+   * _.isArray(document.body.children);
+   * // => false
+   *
+   * _.isArray('abc');
+   * // => false
+   *
+   * _.isArray(_.noop);
+   * // => false
+   */
+  var isArray = Array.isArray;
+
+  /** Used as references for various `Number` constants. */
+  var INFINITY$1 = 1 / 0;
+
+  /** Used to convert symbols to primitives and strings. */
+  var symbolProto = _Symbol ? _Symbol.prototype : undefined,
+    symbolToString = symbolProto ? symbolProto.toString : undefined;
+
+  /**
+   * The base implementation of `_.toString` which doesn't convert nullish
+   * values to empty strings.
+   *
+   * @private
+   * @param {*} value The value to process.
+   * @returns {string} Returns the string.
+   */
+  function baseToString(value) {
+    // Exit early for strings to avoid a performance hit in some environments.
+    if (typeof value == 'string') {
+      return value;
+    }
+    if (isArray(value)) {
+      // Recursively convert values (susceptible to call stack limits).
+      return arrayMap(value, baseToString) + '';
+    }
+    if (isSymbol(value)) {
+      return symbolToString ? symbolToString.call(value) : '';
+    }
+    var result = value + '';
+    return result == '0' && 1 / value == -INFINITY$1 ? '-0' : result;
+  }
+
+  /**
+   * Checks if `value` is the
+   * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+   * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+   * @example
+   *
+   * _.isObject({});
+   * // => true
+   *
+   * _.isObject([1, 2, 3]);
+   * // => true
+   *
+   * _.isObject(_.noop);
+   * // => true
+   *
+   * _.isObject(null);
+   * // => false
+   */
+  function isObject(value) {
+    var type = _typeof(value);
+    return value != null && (type == 'object' || type == 'function');
+  }
+
+  /** `Object#toString` result references. */
+  var asyncTag = '[object AsyncFunction]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]',
+    proxyTag = '[object Proxy]';
+
+  /**
+   * Checks if `value` is classified as a `Function` object.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Lang
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+   * @example
+   *
+   * _.isFunction(_);
+   * // => true
+   *
+   * _.isFunction(/abc/);
+   * // => false
+   */
+  function isFunction(value) {
+    if (!isObject(value)) {
+      return false;
+    }
+    // The use of `Object#toString` avoids issues with the `typeof` operator
+    // in Safari 9 which returns 'object' for typed arrays and other constructors.
+    var tag = baseGetTag(value);
+    return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+  }
+
+  /** Used to detect overreaching core-js shims. */
+  var coreJsData = root['__core-js_shared__'];
+
+  /** Used to detect methods masquerading as native. */
+  var maskSrcKey = function () {
+    var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+    return uid ? 'Symbol(src)_1.' + uid : '';
+  }();
+
+  /**
+   * Checks if `func` has its source masked.
+   *
+   * @private
+   * @param {Function} func The function to check.
+   * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+   */
+  function isMasked(func) {
+    return !!maskSrcKey && maskSrcKey in func;
+  }
+
+  /** Used for built-in method references. */
+  var funcProto$1 = Function.prototype;
+
+  /** Used to resolve the decompiled source of functions. */
+  var funcToString$1 = funcProto$1.toString;
+
+  /**
+   * Converts `func` to its source code.
+   *
+   * @private
+   * @param {Function} func The function to convert.
+   * @returns {string} Returns the source code.
+   */
+  function toSource(func) {
+    if (func != null) {
+      try {
+        return funcToString$1.call(func);
+      } catch (e) {}
+      try {
+        return func + '';
+      } catch (e) {}
+    }
+    return '';
+  }
+
+  /**
+   * Used to match `RegExp`
+   * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+   */
+  var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+
+  /** Used to detect host constructors (Safari). */
+  var reIsHostCtor = /^\[object .+?Constructor\]$/;
+
+  /** Used for built-in method references. */
+  var funcProto = Function.prototype,
+    objectProto$2 = Object.prototype;
+
+  /** Used to resolve the decompiled source of functions. */
+  var funcToString = funcProto.toString;
+
+  /** Used to check objects for own properties. */
+  var hasOwnProperty$2 = objectProto$2.hasOwnProperty;
+
+  /** Used to detect if a method is native. */
+  var reIsNative = RegExp('^' + funcToString.call(hasOwnProperty$2).replace(reRegExpChar, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+
+  /**
+   * The base implementation of `_.isNative` without bad shim checks.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is a native function,
+   *  else `false`.
+   */
+  function baseIsNative(value) {
+    if (!isObject(value) || isMasked(value)) {
+      return false;
+    }
+    var pattern = isFunction(value) ? reIsNative : reIsHostCtor;
+    return pattern.test(toSource(value));
+  }
+
+  /**
+   * Gets the value at `key` of `object`.
+   *
+   * @private
+   * @param {Object} [object] The object to query.
+   * @param {string} key The key of the property to get.
+   * @returns {*} Returns the property value.
+   */
+  function getValue(object, key) {
+    return object == null ? undefined : object[key];
+  }
+
+  /**
+   * Gets the native function at `key` of `object`.
+   *
+   * @private
+   * @param {Object} object The object to query.
+   * @param {string} key The key of the method to get.
+   * @returns {*} Returns the function if it's native, else `undefined`.
+   */
+  function getNative(object, key) {
+    var value = getValue(object, key);
+    return baseIsNative(value) ? value : undefined;
+  }
+
+  /**
+   * Performs a
+   * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+   * comparison between two values to determine if they are equivalent.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to compare.
+   * @param {*} other The other value to compare.
+   * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+   * @example
+   *
+   * var object = { 'a': 1 };
+   * var other = { 'a': 1 };
+   *
+   * _.eq(object, object);
+   * // => true
+   *
+   * _.eq(object, other);
+   * // => false
+   *
+   * _.eq('a', 'a');
+   * // => true
+   *
+   * _.eq('a', Object('a'));
+   * // => false
+   *
+   * _.eq(NaN, NaN);
+   * // => true
+   */
+  function eq(value, other) {
+    return value === other || value !== value && other !== other;
+  }
+
+  /** Used to match property names within property paths. */
+  var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+    reIsPlainProp = /^\w*$/;
+
+  /**
+   * Checks if `value` is a property name and not a property path.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @param {Object} [object] The object to query keys on.
+   * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+   */
+  function isKey(value, object) {
+    if (isArray(value)) {
+      return false;
+    }
+    var type = _typeof(value);
+    if (type == 'number' || type == 'symbol' || type == 'boolean' || value == null || isSymbol(value)) {
+      return true;
+    }
+    return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || object != null && value in Object(object);
+  }
+
+  /* Built-in method references that are verified to be native. */
+  var nativeCreate = getNative(Object, 'create');
+
+  /**
+   * Removes all key-value entries from the hash.
+   *
+   * @private
+   * @name clear
+   * @memberOf Hash
+   */
+  function hashClear() {
+    this.__data__ = nativeCreate ? nativeCreate(null) : {};
+    this.size = 0;
+  }
+
+  /**
+   * Removes `key` and its value from the hash.
+   *
+   * @private
+   * @name delete
+   * @memberOf Hash
+   * @param {Object} hash The hash to modify.
+   * @param {string} key The key of the value to remove.
+   * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+   */
+  function hashDelete(key) {
+    var result = this.has(key) && delete this.__data__[key];
+    this.size -= result ? 1 : 0;
+    return result;
+  }
+
+  /** Used to stand-in for `undefined` hash values. */
+  var HASH_UNDEFINED$1 = '__lodash_hash_undefined__';
+
+  /** Used for built-in method references. */
+  var objectProto$1 = Object.prototype;
+
+  /** Used to check objects for own properties. */
+  var hasOwnProperty$1 = objectProto$1.hasOwnProperty;
+
+  /**
+   * Gets the hash value for `key`.
+   *
+   * @private
+   * @name get
+   * @memberOf Hash
+   * @param {string} key The key of the value to get.
+   * @returns {*} Returns the entry value.
+   */
+  function hashGet(key) {
+    var data = this.__data__;
+    if (nativeCreate) {
+      var result = data[key];
+      return result === HASH_UNDEFINED$1 ? undefined : result;
+    }
+    return hasOwnProperty$1.call(data, key) ? data[key] : undefined;
+  }
+
+  /** Used for built-in method references. */
+  var objectProto = Object.prototype;
+
+  /** Used to check objects for own properties. */
+  var hasOwnProperty = objectProto.hasOwnProperty;
+
+  /**
+   * Checks if a hash value for `key` exists.
+   *
+   * @private
+   * @name has
+   * @memberOf Hash
+   * @param {string} key The key of the entry to check.
+   * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+   */
+  function hashHas(key) {
+    var data = this.__data__;
+    return nativeCreate ? data[key] !== undefined : hasOwnProperty.call(data, key);
+  }
+
+  /** Used to stand-in for `undefined` hash values. */
+  var HASH_UNDEFINED = '__lodash_hash_undefined__';
+
+  /**
+   * Sets the hash `key` to `value`.
+   *
+   * @private
+   * @name set
+   * @memberOf Hash
+   * @param {string} key The key of the value to set.
+   * @param {*} value The value to set.
+   * @returns {Object} Returns the hash instance.
+   */
+  function hashSet(key, value) {
+    var data = this.__data__;
+    this.size += this.has(key) ? 0 : 1;
+    data[key] = nativeCreate && value === undefined ? HASH_UNDEFINED : value;
+    return this;
+  }
+
+  /**
+   * Creates a hash object.
+   *
+   * @private
+   * @constructor
+   * @param {Array} [entries] The key-value pairs to cache.
+   */
+  function Hash(entries) {
+    var index = -1,
+      length = entries == null ? 0 : entries.length;
+    this.clear();
+    while (++index < length) {
+      var entry = entries[index];
+      this.set(entry[0], entry[1]);
+    }
+  }
+
+  // Add methods to `Hash`.
+  Hash.prototype.clear = hashClear;
+  Hash.prototype['delete'] = hashDelete;
+  Hash.prototype.get = hashGet;
+  Hash.prototype.has = hashHas;
+  Hash.prototype.set = hashSet;
+
+  /**
+   * Removes all key-value entries from the list cache.
+   *
+   * @private
+   * @name clear
+   * @memberOf ListCache
+   */
+  function listCacheClear() {
+    this.__data__ = [];
+    this.size = 0;
+  }
+
+  /**
+   * Gets the index at which the `key` is found in `array` of key-value pairs.
+   *
+   * @private
+   * @param {Array} array The array to inspect.
+   * @param {*} key The key to search for.
+   * @returns {number} Returns the index of the matched value, else `-1`.
+   */
+  function assocIndexOf(array, key) {
+    var length = array.length;
+    while (length--) {
+      if (eq(array[length][0], key)) {
+        return length;
+      }
+    }
+    return -1;
+  }
+
+  /** Used for built-in method references. */
+  var arrayProto = Array.prototype;
+
+  /** Built-in value references. */
+  var splice = arrayProto.splice;
+
+  /**
+   * Removes `key` and its value from the list cache.
+   *
+   * @private
+   * @name delete
+   * @memberOf ListCache
+   * @param {string} key The key of the value to remove.
+   * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+   */
+  function listCacheDelete(key) {
+    var data = this.__data__,
+      index = assocIndexOf(data, key);
+    if (index < 0) {
+      return false;
+    }
+    var lastIndex = data.length - 1;
+    if (index == lastIndex) {
+      data.pop();
+    } else {
+      splice.call(data, index, 1);
+    }
+    --this.size;
+    return true;
+  }
+
+  /**
+   * Gets the list cache value for `key`.
+   *
+   * @private
+   * @name get
+   * @memberOf ListCache
+   * @param {string} key The key of the value to get.
+   * @returns {*} Returns the entry value.
+   */
+  function listCacheGet(key) {
+    var data = this.__data__,
+      index = assocIndexOf(data, key);
+    return index < 0 ? undefined : data[index][1];
+  }
+
+  /**
+   * Checks if a list cache value for `key` exists.
+   *
+   * @private
+   * @name has
+   * @memberOf ListCache
+   * @param {string} key The key of the entry to check.
+   * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+   */
+  function listCacheHas(key) {
+    return assocIndexOf(this.__data__, key) > -1;
+  }
+
+  /**
+   * Sets the list cache `key` to `value`.
+   *
+   * @private
+   * @name set
+   * @memberOf ListCache
+   * @param {string} key The key of the value to set.
+   * @param {*} value The value to set.
+   * @returns {Object} Returns the list cache instance.
+   */
+  function listCacheSet(key, value) {
+    var data = this.__data__,
+      index = assocIndexOf(data, key);
+    if (index < 0) {
+      ++this.size;
+      data.push([key, value]);
+    } else {
+      data[index][1] = value;
+    }
+    return this;
+  }
+
+  /**
+   * Creates an list cache object.
+   *
+   * @private
+   * @constructor
+   * @param {Array} [entries] The key-value pairs to cache.
+   */
+  function ListCache(entries) {
+    var index = -1,
+      length = entries == null ? 0 : entries.length;
+    this.clear();
+    while (++index < length) {
+      var entry = entries[index];
+      this.set(entry[0], entry[1]);
+    }
+  }
+
+  // Add methods to `ListCache`.
+  ListCache.prototype.clear = listCacheClear;
+  ListCache.prototype['delete'] = listCacheDelete;
+  ListCache.prototype.get = listCacheGet;
+  ListCache.prototype.has = listCacheHas;
+  ListCache.prototype.set = listCacheSet;
+
+  /* Built-in method references that are verified to be native. */
+  var Map$1 = getNative(root, 'Map');
+
+  /**
+   * Removes all key-value entries from the map.
+   *
+   * @private
+   * @name clear
+   * @memberOf MapCache
+   */
+  function mapCacheClear() {
+    this.size = 0;
+    this.__data__ = {
+      'hash': new Hash(),
+      'map': new (Map$1 || ListCache)(),
+      'string': new Hash()
+    };
+  }
+
+  /**
+   * Checks if `value` is suitable for use as unique object key.
+   *
+   * @private
+   * @param {*} value The value to check.
+   * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+   */
+  function isKeyable(value) {
+    var type = _typeof(value);
+    return type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean' ? value !== '__proto__' : value === null;
+  }
+
+  /**
+   * Gets the data for `map`.
+   *
+   * @private
+   * @param {Object} map The map to query.
+   * @param {string} key The reference key.
+   * @returns {*} Returns the map data.
+   */
+  function getMapData(map, key) {
+    var data = map.__data__;
+    return isKeyable(key) ? data[typeof key == 'string' ? 'string' : 'hash'] : data.map;
+  }
+
+  /**
+   * Removes `key` and its value from the map.
+   *
+   * @private
+   * @name delete
+   * @memberOf MapCache
+   * @param {string} key The key of the value to remove.
+   * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+   */
+  function mapCacheDelete(key) {
+    var result = getMapData(this, key)['delete'](key);
+    this.size -= result ? 1 : 0;
+    return result;
+  }
+
+  /**
+   * Gets the map value for `key`.
+   *
+   * @private
+   * @name get
+   * @memberOf MapCache
+   * @param {string} key The key of the value to get.
+   * @returns {*} Returns the entry value.
+   */
+  function mapCacheGet(key) {
+    return getMapData(this, key).get(key);
+  }
+
+  /**
+   * Checks if a map value for `key` exists.
+   *
+   * @private
+   * @name has
+   * @memberOf MapCache
+   * @param {string} key The key of the entry to check.
+   * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+   */
+  function mapCacheHas(key) {
+    return getMapData(this, key).has(key);
+  }
+
+  /**
+   * Sets the map `key` to `value`.
+   *
+   * @private
+   * @name set
+   * @memberOf MapCache
+   * @param {string} key The key of the value to set.
+   * @param {*} value The value to set.
+   * @returns {Object} Returns the map cache instance.
+   */
+  function mapCacheSet(key, value) {
+    var data = getMapData(this, key),
+      size = data.size;
+    data.set(key, value);
+    this.size += data.size == size ? 0 : 1;
+    return this;
+  }
+
+  /**
+   * Creates a map cache object to store key-value pairs.
+   *
+   * @private
+   * @constructor
+   * @param {Array} [entries] The key-value pairs to cache.
+   */
+  function MapCache(entries) {
+    var index = -1,
+      length = entries == null ? 0 : entries.length;
+    this.clear();
+    while (++index < length) {
+      var entry = entries[index];
+      this.set(entry[0], entry[1]);
+    }
+  }
+
+  // Add methods to `MapCache`.
+  MapCache.prototype.clear = mapCacheClear;
+  MapCache.prototype['delete'] = mapCacheDelete;
+  MapCache.prototype.get = mapCacheGet;
+  MapCache.prototype.has = mapCacheHas;
+  MapCache.prototype.set = mapCacheSet;
+
+  /** Error message constants. */
+  var FUNC_ERROR_TEXT = 'Expected a function';
+
+  /**
+   * Creates a function that memoizes the result of `func`. If `resolver` is
+   * provided, it determines the cache key for storing the result based on the
+   * arguments provided to the memoized function. By default, the first argument
+   * provided to the memoized function is used as the map cache key. The `func`
+   * is invoked with the `this` binding of the memoized function.
+   *
+   * **Note:** The cache is exposed as the `cache` property on the memoized
+   * function. Its creation may be customized by replacing the `_.memoize.Cache`
+   * constructor with one whose instances implement the
+   * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+   * method interface of `clear`, `delete`, `get`, `has`, and `set`.
+   *
+   * @static
+   * @memberOf _
+   * @since 0.1.0
+   * @category Function
+   * @param {Function} func The function to have its output memoized.
+   * @param {Function} [resolver] The function to resolve the cache key.
+   * @returns {Function} Returns the new memoized function.
+   * @example
+   *
+   * var object = { 'a': 1, 'b': 2 };
+   * var other = { 'c': 3, 'd': 4 };
+   *
+   * var values = _.memoize(_.values);
+   * values(object);
+   * // => [1, 2]
+   *
+   * values(other);
+   * // => [3, 4]
+   *
+   * object.a = 2;
+   * values(object);
+   * // => [1, 2]
+   *
+   * // Modify the result cache.
+   * values.cache.set(object, ['a', 'b']);
+   * values(object);
+   * // => ['a', 'b']
+   *
+   * // Replace `_.memoize.Cache`.
+   * _.memoize.Cache = WeakMap;
+   */
+  function memoize(func, resolver) {
+    if (typeof func != 'function' || resolver != null && typeof resolver != 'function') {
+      throw new TypeError(FUNC_ERROR_TEXT);
+    }
+    var memoized = function memoized() {
+      var args = arguments,
+        key = resolver ? resolver.apply(this, args) : args[0],
+        cache = memoized.cache;
+      if (cache.has(key)) {
+        return cache.get(key);
+      }
+      var result = func.apply(this, args);
+      memoized.cache = cache.set(key, result) || cache;
+      return result;
+    };
+    memoized.cache = new (memoize.Cache || MapCache)();
+    return memoized;
+  }
+
+  // Expose `MapCache`.
+  memoize.Cache = MapCache;
+
+  /** Used as the maximum memoize cache size. */
+  var MAX_MEMOIZE_SIZE = 500;
+
+  /**
+   * A specialized version of `_.memoize` which clears the memoized function's
+   * cache when it exceeds `MAX_MEMOIZE_SIZE`.
+   *
+   * @private
+   * @param {Function} func The function to have its output memoized.
+   * @returns {Function} Returns the new memoized function.
+   */
+  function memoizeCapped(func) {
+    var result = memoize(func, function (key) {
+      if (cache.size === MAX_MEMOIZE_SIZE) {
+        cache.clear();
+      }
+      return key;
+    });
+    var cache = result.cache;
+    return result;
+  }
+
+  /** Used to match property names within property paths. */
+  var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+
+  /** Used to match backslashes in property paths. */
+  var reEscapeChar = /\\(\\)?/g;
+
+  /**
+   * Converts `string` to a property path array.
+   *
+   * @private
+   * @param {string} string The string to convert.
+   * @returns {Array} Returns the property path array.
+   */
+  var stringToPath = memoizeCapped(function (string) {
+    var result = [];
+    if (string.charCodeAt(0) === 46 /* . */) {
+      result.push('');
+    }
+    string.replace(rePropName, function (match, number, quote, subString) {
+      result.push(quote ? subString.replace(reEscapeChar, '$1') : number || match);
+    });
+    return result;
+  });
+
+  /**
+   * Converts `value` to a string. An empty string is returned for `null`
+   * and `undefined` values. The sign of `-0` is preserved.
+   *
+   * @static
+   * @memberOf _
+   * @since 4.0.0
+   * @category Lang
+   * @param {*} value The value to convert.
+   * @returns {string} Returns the converted string.
+   * @example
+   *
+   * _.toString(null);
+   * // => ''
+   *
+   * _.toString(-0);
+   * // => '-0'
+   *
+   * _.toString([1, 2, 3]);
+   * // => '1,2,3'
+   */
+  function toString(value) {
+    return value == null ? '' : baseToString(value);
+  }
+
+  /**
+   * Casts `value` to a path array if it's not one.
+   *
+   * @private
+   * @param {*} value The value to inspect.
+   * @param {Object} [object] The object to query keys on.
+   * @returns {Array} Returns the cast property path array.
+   */
+  function castPath(value, object) {
+    if (isArray(value)) {
+      return value;
+    }
+    return isKey(value, object) ? [value] : stringToPath(toString(value));
+  }
+
+  /** Used as references for various `Number` constants. */
+  var INFINITY = 1 / 0;
+
+  /**
+   * Converts `value` to a string key if it's not a string or symbol.
+   *
+   * @private
+   * @param {*} value The value to inspect.
+   * @returns {string|symbol} Returns the key.
+   */
+  function toKey(value) {
+    if (typeof value == 'string' || isSymbol(value)) {
+      return value;
+    }
+    var result = value + '';
+    return result == '0' && 1 / value == -INFINITY ? '-0' : result;
+  }
+
+  /**
+   * The base implementation of `_.get` without support for default values.
+   *
+   * @private
+   * @param {Object} object The object to query.
+   * @param {Array|string} path The path of the property to get.
+   * @returns {*} Returns the resolved value.
+   */
+  function baseGet(object, path) {
+    path = castPath(path, object);
+    var index = 0,
+      length = path.length;
+    while (object != null && index < length) {
+      object = object[toKey(path[index++])];
+    }
+    return index && index == length ? object : undefined;
+  }
+
+  /**
+   * Gets the value at `path` of `object`. If the resolved value is
+   * `undefined`, the `defaultValue` is returned in its place.
+   *
+   * @static
+   * @memberOf _
+   * @since 3.7.0
+   * @category Object
+   * @param {Object} object The object to query.
+   * @param {Array|string} path The path of the property to get.
+   * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+   * @returns {*} Returns the resolved value.
+   * @example
+   *
+   * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+   *
+   * _.get(object, 'a[0].b.c');
+   * // => 3
+   *
+   * _.get(object, ['a', '0', 'b', 'c']);
+   * // => 3
+   *
+   * _.get(object, 'a.b.c', 'default');
+   * // => 'default'
+   */
+  function get(object, path, defaultValue) {
+    var result = object == null ? undefined : baseGet(object, path);
+    return result === undefined ? defaultValue : result;
+  }
+
+  /**
+   * Empty Object
+   */
+  function isObjEmpty(obj) {
+    return Object.keys(obj).length === 0;
+  }
+
+  /**
+   * Get fnName
+   */
+  function getFnName(str) {
+    return str.slice(0, str.indexOf("("));
+  }
+  var OdsBridgeApi = /*#__PURE__*/function () {
+    function OdsBridgeApi(elRef, elValue) {
+      _classCallCheck(this, OdsBridgeApi);
+      this.elRef = elRef;
+      this.elValue = elValue;
+      this.attributeNg = this.getNgAttributes();
+    }
+    return _createClass(OdsBridgeApi, [{
+      key: "checkNgCompatibility",
+      value: function checkNgCompatibility() {
+        var _window = window,
+          angular = _window.angular;
+        return angular == undefined || angular == null ? false : true;
+      }
+    }, {
+      key: "getNgAttributes",
+      value: function getNgAttributes() {
+        try {
+          var obj = {};
+          if (this.checkNgCompatibility()) {
+            if (this.elRef.getAttribute("ng-model")) {
+              obj["ng-model"] = this.elRef.getAttribute("ng-model");
+            }
+            if (this.elRef.getAttribute("ng-change")) {
+              obj["ng-change"] = this.elRef.getAttribute("ng-change");
+            }
+          }
+          return isObjEmpty(obj) ? null : obj;
+        } catch (err) {
+          console.log(err);
+          return null;
+        }
+      }
+    }, {
+      key: "getNgScope",
+      value: function getNgScope() {
+        var _window2 = window,
+          angular = _window2.angular;
+        var scope = angular.element(this.elRef).scope();
+        return scope;
+      }
+    }, {
+      key: "getNgModelValue",
+      value: function getNgModelValue() {
+        if (this.checkNgCompatibility()) {
+          var ngScope = this.getNgScope();
+          if (ngScope) {
+            return ngScope[this.attributeNg["ng-model"]];
+          }
+          return "";
+        } else {
+          return "";
+        }
+      }
+    }, {
+      key: "updateNgScope",
+      value: function updateNgScope(ngScope, value) {
+        var _this = this;
+        ngScope.$applyAsync(function () {
+          for (var obj in _this.attributeNg) {
+            if (obj == "ng-model") {
+              ngScope[_this.attributeNg[obj]] = value;
+            }
+            if (obj == "ng-change") {
+              var fnPath = getFnName(_this.attributeNg[obj]);
+              var func = get(ngScope, fnPath);
+              if (isFunction(func)) {
+                func();
+              } else {
+                console.warn("Function name not found!");
+              }
+            }
+          }
+        });
+      }
+    }, {
+      key: "triggerNg",
+      value: function triggerNg(value) {
+        var _this2 = this;
+        return new Promise(function (resolve, reject) {
+          if (_this2.checkNgCompatibility()) {
+            var ngScope = _this2.getNgScope();
+            if (ngScope != null && _this2.attributeNg != null) {
+              _this2.updateNgScope(ngScope, value);
+              resolve();
+            }
+          } else {
+            reject("!Angular JS");
+          }
+        });
+      }
+    }]);
+  }();
+
+  var _templateObject$3, _templateObject2$2, _templateObject3$2, _templateObject4$1, _templateObject5, _templateObject6, _templateObject7;
 
   /**
    * Service Now ODSTextField Component
@@ -6191,30 +7307,19 @@
       _this.error = "";
       _this.tooltip = "";
       _this.value = "";
+      _this.NgApi = null;
       return _this;
     }
     _inherits(ODSTextField, _LitElement);
     return _createClass(ODSTextField, [{
       key: "onBlur",
       value: function onBlur(e) {
-        var eventName = "ods-".concat(this.name, "-on-blur");
-        var event = new CustomEvent(eventName, {
-          detail: e.target.value,
-          bubbles: true,
-          composed: true
-        });
-        this.dispatchEvent(event);
+        this.NgApi.triggerNg(e.target.value);
       }
     }, {
       key: "onInput",
       value: function onInput(e) {
-        var eventName = "ods-".concat(this.name, "-on-input");
-        var event = new CustomEvent(eventName, {
-          detail: e.target.value,
-          bubbles: true,
-          composed: true
-        });
-        this.dispatchEvent(event);
+        this.NgApi.triggerNg(e.target.value);
       }
     }, {
       key: "getInputField",
@@ -6228,13 +7333,13 @@
         if (this.error != "") {
           errorAlert = true;
         }
-        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <input\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        @input=\"", "\"\n        @blur=\"", "\"\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n      />\n    "])), this.type, ["ods-form-control"].join(" "), this.onInput, this.onBlur, this.name, this.name, this.placeholder, this.error, this.name, this.value, this.isDisabled, isRequired, isOptional, errorAlert);
+        return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["\n      <input\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        @input=\"", "\"\n        @blur=\"", "\"\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        aria-disabled=\"", "\"\n        .value=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n      />\n    "])), this.type, ["ods-form-control"].join(" "), this.onInput, this.onBlur, this.name, this.name, this.placeholder, this.error, this.name, this.isDisabled, this.value, isRequired, isOptional, errorAlert);
       }
     }, {
       key: "getErrorMessage",
       value: function getErrorMessage() {
         if (this.error && this.error != "") {
-          return x(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"#AB2D25\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"#AB2D25\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
+          return x(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"#AB2D25\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"#AB2D25\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
         }
         return "";
       }
@@ -6242,14 +7347,14 @@
       key: "getInfoIcon",
       value: function getInfoIcon() {
         if (this.tooltip != "") {
-          return x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n        <div class=\"ods-button\">\n          <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n            <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n          </button>\n          <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n        </div>\n      "])), this.tooltip);
+          return x(_templateObject3$2 || (_templateObject3$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-button\">\n          <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n            <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n          </button>\n          <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n        </div>\n      "])), this.tooltip);
         }
       }
     }, {
       key: "getLabelField",
       value: function getLabelField() {
         if (this.label != "") {
-          return x(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n        <div class=\"ods-label-container\">\n          <ods-text\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n            <label for=\"", "\"> ", "</label>\n          </ods-text>\n          ", "\n        </div>\n      "])), this.name, this.getLabelText(), this.getInfoIcon());
+          return x(_templateObject4$1 || (_templateObject4$1 = _taggedTemplateLiteral(["\n        <div class=\"ods-label-container\">\n          <ods-text\n            html-tag=\"span\"\n            size=\"sm\"\n            weight=\"regular\"\n            color=\"text-primary\"\n          >\n            <label for=\"", "\"> ", "</label>\n          </ods-text>\n          ", "\n        </div>\n      "])), this.name, this.getLabelText(), this.getInfoIcon());
         }
         return "";
       }
@@ -6275,6 +7380,21 @@
         }
       }
     }, {
+      key: "firstUpdated",
+      value: function firstUpdated() {
+        var elValue = this.NgApi.getNgModelValue();
+        if (elValue) {
+          this.value = elValue;
+        }
+      }
+    }, {
+      key: "connectedCallback",
+      value: function connectedCallback() {
+        console.log("Connected  Updated!");
+        _get(_getPrototypeOf(ODSTextField.prototype), "connectedCallback", this).call(this);
+        this.NgApi = new OdsBridgeApi(this);
+      }
+    }, {
       key: "render",
       value: function render() {
         this.handleWidth();
@@ -6284,7 +7404,7 @@
           isError = "";
           this.error = "";
         }
-        return x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          box-sizng: border-box;\n          margin: 0;\n          padding: 0;\n          --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.4);\n          --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n          --ods-ref-color-green-100: #ffffff;\n          --ods-ref-color-green-40: #298319;\n          --ods-ref-color-gray-35: #515151;\n        }\n        .ods-form-control {\n          display: block;\n          padding: var(\n            --ods-input-padding,\n            10px ", "\n          );\n          font-size: var(--ods-input-font-size, 16px);\n          font-family: lato, Helvetica, Arial, sans-serif;\n          font-weight: var(--ods-input-font-weight, 400);\n          line-height: var(--ods-input-line-height, 24px);\n          color: var(\n            --ods-sem-color-text-primary,\n            ", "\n          );\n          background-color: var(\n            --ods-sem-color-background-primary,\n            ", "\n          );\n          background-clip: padding-box;\n          box-shadow: 0 0 0 1px\n            var(\n              --ods-sem-color-border-interactive-component,\n              ", "\n            );\n          border-width: 0;\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          appearance: none;\n          border-radius: var(\n            --ods-ref-radius-small,\n            ", "\n          );\n        }\n        @media (prefers-reduced-motion: reduce) {\n          .ods-form-control {\n            transition: none;\n          }\n        }\n        .ods-form-control::-moz-placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-form-control::placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-field-container {\n          width: ", ";\n          display: flex;\n          position: relative;\n          flex-direction: column-reverse;\n          gap: var(--ods-content-gap, 4px);\n          box-sizing: border-box;\n        }\n        .ods-label-container {\n          display: flex;\n          align-items: flex-start;\n          gap: 4px;\n        }\n        .ods-label-container ods-icon-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        .ods-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        ods-icon-button ods-icon::part(odsIcon) {\n          width: 16px;\n          height: 16px;\n        }\n        .ods-error-container {\n          margin-top: 4px;\n          width: ", ";\n          display: flex;\n          justify-content: flex-start;\n          gap: 8px;\n        }\n        .ods-error-container ods-icon {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          height: 16px;\n          width: 16px;\n          padding: 4px 0px;\n        }\n\n        .ods-field-container {\n          input {\n            &:hover {\n              border-width: 0;\n              box-shadow: 0 0 0 1px rgba(31, 100, 19, 1);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #1f6413;\n              }\n              ~ .ods-label-container label {\n                cursor: pointer;\n              }\n            }\n            &:focus {\n              color: var(\n                --ods-sem-color-text-primary,\n                ", "\n              );\n              background-color: var(\n                --ods-sem-color-background-primary,\n                ", "\n              );\n              box-shadow: 0 0 0 2px\n                var(\n                  --ods-sem-color-utility-states-primary-focus,\n                  ", "\n                );\n              border-width: 0;\n              outline: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(\n                  --ods-sem-color-utility-states-primary-focus,\n                  ", "\n                );\n              }\n            }\n            &:active {\n              box-shadow: 0 0 0 1px\n                var(\n                  --ods-sem-color-utility-states-primary-pressed,\n                  ", "\n                );\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(\n                  --ods-sem-color-utility-states-primary-pressed,\n                  ", "\n                );\n              }\n            }\n          }\n          &.readonly {\n            opacity: 0.5;\n            cursor: not-allowed;\n            input {\n              pointer-events: none;\n              color: var(\n                --ods-sem-color-utility-states-disabled-content,\n                ", "\n              );\n              background-color: var(\n                --ods-sem-color-utility-states-disabled-container,\n                ", "\n              );\n              background-clip: padding-box;\n              box-shadow: 0 0 0 1px\n                var(\n                  --ods-sem-color-utility-states-disabled-content,\n                  ", "\n                );\n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n            }\n            .ods-label-container ods-text::part(odsText) {\n              pointer-events: none;\n            }\n            .ods-button {\n              pointer-events: none;\n            }\n          }\n          &.error-state {\n            input {\n              box-shadow: 0 0 0 1px\n                var(\n                  --ods-sem-color-status-roles-error-error,\n                  ", "\n                );\n              border-width: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(\n                  --ods-sem-color-status-roles-error-error,\n                  ", "\n                );\n              }\n              &:hover {\n                box-shadow: 0 0 0 1px\n                  var(\n                    --ods-sem-color-utility-states-error-hover,\n                    ", "\n                  );\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(\n                    --ods-sem-color-utility-states-error-hover,\n                    ", "\n                  );\n                }\n              }\n              &:focus {\n                border-color: var(\n                  --ods-sem-color-status-roles-error-error,\n                  ", "\n                );\n                box-shadow: 0 0 0 2px\n                  var(\n                    --ods-sem-color-status-roles-error-error,\n                    ", "\n                  );\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(\n                    --ods-sem-color-status-roles-error-error,\n                    ", "\n                  );\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px\n                  var(\n                    --ods-sem-color-utility-states-error-pressed,\n                    ", "\n                  );\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(\n                    --ods-sem-color-utility-states-error-pressed,\n                    ", "\n                  );\n                }\n              }\n            }\n          }\n        }\n        ods-text::part(odsText) {\n          line-height: 24px;\n          word-break: break-word;\n        }\n        ods-text.left-spacing {\n          margin-left: 4px;\n        }\n        ods-text {\n          display: inline-block;\n        }\n        button {\n          border-radius: 9999px;\n          height: var(--ods-icon-button-height, 44px);\n          width: var(--ods-icon-button-width, 44px);\n          text-decoration: none;\n          border: var(--ods-sem-space-none);\n          cursor: pointer;\n          justify-content: center;\n          box-sizing: border-box;\n          display: inline-flex;\n          align-items: center;\n          padding: 0;\n        }\n        .btn-ghost {\n          color: var(--ods-ref-color-green-40);\n          background: transparent;\n        }\n        .btn-ghost:hover {\n          background: var(--ods-utility-states-primary-hover);\n        }\n        .btn-ghost:focus {\n          outline: none;\n          box-shadow: 0 0 0 0.125rem var(--ods-ref-color-green-40);\n        }\n        .btn-ghost:active {\n          background: var(--ods-utility-states-primary-pressed);\n          box-shadow: none;\n        }\n      </style>\n      <div class=", ">\n        ", " ", "\n      </div>\n      ", "\n    "])), spacing["--ods-ref-spacing-medium"], color["--ods-sem-color-text-primary"], color["--ods-sem-color-background-primary"], color["--ods-sem-color-border-interactive-component"], radius["--ods-ref-radius-small"], this.width, this.width, color["--ods-sem-color-text-primary"], color["--ods-sem-color-background-primary"], color["--ods-sem-color-utility-states-primary-focus"], color["--ods-sem-color-utility-states-primary-focus"], color["--ods-sem-color-utility-states-primary-pressed"], color["--ods-sem-color-utility-states-primary-pressed"], color["--ods-sem-color-utility-states-disabled-content"], color["--ods-sem-color-utility-states-disabled-container"], color["--ods-sem-color-utility-states-disabled-content"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-utility-states-error-hover"], color["--ods-sem-color-utility-states-error-hover"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-utility-states-error-pressed"], color["--ods-sem-color-utility-states-error-pressed"], ["ods-field-container", isReadOnly, isError].join(" "), this.getInputField(), this.getLabelField(), this.getErrorMessage());
+        return x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          box-sizng: border-box;\n          margin: 0;\n          padding: 0;\n          --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.4);\n          --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n          --ods-ref-color-green-100: #ffffff;\n          --ods-ref-color-green-40: #298319;\n          --ods-ref-color-gray-35: #515151;\n        }\n        .ods-form-control {\n          display: block;\n          padding: var(\n            --ods-input-padding,\n            10px ", "\n          );\n          font-size: var(--ods-input-font-size, 16px);\n          font-family: lato, Helvetica, Arial, sans-serif;\n          font-weight: var(--ods-input-font-weight, 400);\n          line-height: var(--ods-input-line-height, 24px);\n          color: var(\n            --ods-sem-color-text-primary,\n            ", "\n          );\n          background-color: var(\n            --ods-sem-color-background-primary,\n            ", "\n          );\n          background-clip: padding-box;\n          box-shadow: 0 0 0 1px\n            var(\n              --ods-sem-color-border-interactive-component,\n              ", "\n            );\n          border-width: 0;\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          appearance: none;\n          border-radius: var(\n            --ods-ref-radius-small,\n            ", "\n          );\n        }\n        @media (prefers-reduced-motion: reduce) {\n          .ods-form-control {\n            transition: none;\n          }\n        }\n        .ods-form-control::-moz-placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-form-control::placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-field-container {\n          width: ", ";\n          display: flex;\n          position: relative;\n          flex-direction: column-reverse;\n          gap: var(--ods-content-gap, 4px);\n          box-sizing: border-box;\n        }\n        .ods-label-container {\n          display: flex;\n          align-items: flex-start;\n          gap: 4px;\n        }\n        .ods-label-container ods-icon-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        .ods-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        ods-icon-button ods-icon::part(odsIcon) {\n          width: 16px;\n          height: 16px;\n        }\n        .ods-error-container {\n          margin-top: 4px;\n          width: ", ";\n          display: flex;\n          justify-content: flex-start;\n          gap: 8px;\n        }\n        .ods-error-container ods-icon {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          height: 16px;\n          width: 16px;\n          padding: 4px 0px;\n        }\n\n        .ods-field-container {\n          input {\n            &:hover {\n              border-width: 0;\n              box-shadow: 0 0 0 1px rgba(31, 100, 19, 1);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: #1f6413;\n              }\n              ~ .ods-label-container label {\n                cursor: pointer;\n              }\n            }\n            &:focus {\n              color: var(\n                --ods-sem-color-text-primary,\n                ", "\n              );\n              background-color: var(\n                --ods-sem-color-background-primary,\n                ", "\n              );\n              box-shadow: 0 0 0 3px\n                var(\n                  --ods-sem-color-utility-states-primary-focus,\n                  ", "\n                );\n              border-width: 0;\n              outline: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(\n                  --ods-sem-color-utility-states-primary-focus,\n                  ", "\n                );\n              }\n            }\n            &:active {\n              box-shadow: 0 0 0 1px\n                var(\n                  --ods-sem-color-utility-states-primary-pressed,\n                  ", "\n                );\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(\n                  --ods-sem-color-utility-states-primary-pressed,\n                  ", "\n                );\n              }\n            }\n          }\n          &.readonly {\n            opacity: 0.5;\n            cursor: not-allowed;\n            input {\n              pointer-events: none;\n              color: var(\n                --ods-sem-color-utility-states-disabled-content,\n                ", "\n              );\n              background-color: var(\n                --ods-sem-color-utility-states-disabled-container,\n                ", "\n              );\n              background-clip: padding-box;\n              box-shadow: 0 0 0 1px\n                var(\n                  --ods-sem-color-utility-states-disabled-content,\n                  ", "\n                );\n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n            }\n            .ods-label-container ods-text::part(odsText) {\n              pointer-events: none;\n            }\n            .ods-button {\n              pointer-events: none;\n            }\n          }\n          &.error-state {\n            input {\n              box-shadow: 0 0 0 1px\n                var(\n                  --ods-sem-color-status-roles-error-error,\n                  ", "\n                );\n              border-width: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(\n                  --ods-sem-color-status-roles-error-error,\n                  ", "\n                );\n              }\n              &:hover {\n                box-shadow: 0 0 0 1px\n                  var(\n                    --ods-sem-color-utility-states-error-hover,\n                    ", "\n                  );\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(\n                    --ods-sem-color-utility-states-error-hover,\n                    ", "\n                  );\n                }\n              }\n              &:focus {\n                border-color: var(\n                  --ods-sem-color-status-roles-error-error,\n                  ", "\n                );\n                box-shadow: 0 0 0 3px\n                  var(\n                    --ods-sem-color-status-roles-error-error,\n                    ", "\n                  );\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(\n                    --ods-sem-color-status-roles-error-error,\n                    ", "\n                  );\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px\n                  var(\n                    --ods-sem-color-utility-states-error-pressed,\n                    ", "\n                  );\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(\n                    --ods-sem-color-utility-states-error-pressed,\n                    ", "\n                  );\n                }\n              }\n            }\n          }\n        }\n        ods-text::part(odsText) {\n          line-height: 24px;\n          word-break: break-word;\n        }\n        ods-text.left-spacing {\n          margin-left: 4px;\n        }\n        ods-text {\n          display: inline-block;\n        }\n        button {\n          border-radius: 9999px;\n          height: var(--ods-icon-button-height, 44px);\n          width: var(--ods-icon-button-width, 44px);\n          text-decoration: none;\n          border: var(--ods-sem-space-none);\n          cursor: pointer;\n          justify-content: center;\n          box-sizing: border-box;\n          display: inline-flex;\n          align-items: center;\n          padding: 0;\n        }\n        .btn-ghost {\n          color: var(--ods-ref-color-green-40);\n          background: transparent;\n        }\n        .btn-ghost:hover {\n          background: var(--ods-utility-states-primary-hover);\n        }\n        .btn-ghost:focus {\n          outline: none;\n          box-shadow: 0 0 0 0.125rem var(--ods-ref-color-green-40);\n        }\n        .btn-ghost:active {\n          background: var(--ods-utility-states-primary-pressed);\n          box-shadow: none;\n        }\n      </style>\n      <div class=", ">\n        ", " ", "\n      </div>\n      ", "\n    "])), spacing["--ods-ref-spacing-medium"], color["--ods-sem-color-text-primary"], color["--ods-sem-color-background-primary"], color["--ods-sem-color-border-interactive-component"], radius["--ods-ref-radius-small"], this.width, this.width, color["--ods-sem-color-text-primary"], color["--ods-sem-color-background-primary"], color["--ods-sem-color-utility-states-primary-focus"], color["--ods-sem-color-utility-states-primary-focus"], color["--ods-sem-color-utility-states-primary-pressed"], color["--ods-sem-color-utility-states-primary-pressed"], color["--ods-sem-color-utility-states-disabled-content"], color["--ods-sem-color-utility-states-disabled-container"], color["--ods-sem-color-utility-states-disabled-content"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-utility-states-error-hover"], color["--ods-sem-color-utility-states-error-hover"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-status-roles-error-error"], color["--ods-sem-color-utility-states-error-pressed"], color["--ods-sem-color-utility-states-error-pressed"], ["ods-field-container", isReadOnly, isError].join(" "), this.getInputField(), this.getLabelField(), this.getErrorMessage());
       }
     }], [{
       key: "properties",
@@ -6322,11 +7442,609 @@
           },
           value: {
             type: String
+          },
+          "ng-model": {
+            type: String
           }
         };
       }
     }]);
   }(s$2);
   customElements.define("ods-text-field", ODSTextField);
+
+  var _templateObject$2, _templateObject2$1, _templateObject3$1;
+
+  /**
+   * Service Now Tab Component
+   * @input html-tag, size, weight, color
+   * @output <ods-tab-group> in dom
+   */
+  var Tab = /*#__PURE__*/function (_LitElement) {
+    function Tab() {
+      var _this;
+      _classCallCheck(this, Tab);
+      _this = _callSuper(this, Tab);
+      _this.selected = false;
+      _this.href = '';
+      _this.target = "_blank";
+      _this.slot = 'tab';
+      _this.tabId = _this.makeId(10);
+      _this._parent = null;
+      _this['more-tab'] = false;
+      _this['show-more-tab'] = false;
+      _this['first-tab'] = false;
+      _this.isFullWidth = false;
+      _this.hide = false;
+      _this._focusWidth = _this.offsetWidth;
+      _this._focusHeight = _this.offsetHeight;
+      _this._observer = null;
+      return _this;
+    }
+    _inherits(Tab, _LitElement);
+    return _createClass(Tab, [{
+      key: "updateFocusValues",
+      value: function updateFocusValues() {
+        this._focusWidth = this.offsetWidth;
+        this._focusHeight = this.offsetHeight;
+      }
+    }, {
+      key: "getVisibleTabs",
+      value: function getVisibleTabs() {
+        return this._parent._availableTabs.filter(function (tab) {
+          return !tab.hide;
+        });
+      }
+    }, {
+      key: "firstUpdated",
+      value: function firstUpdated() {
+        var _this2 = this;
+        if (!this["more-tab"]) this._parent = this.shadowRoot.host.parentElement;else if (this.getRootNode()) this._parent = this.getRootNode().host;
+        this.isFullWidth = this._parent['full-width'] || this._parent.isMobile;
+        this.addEventListener('keydown', this._handleKeyDown);
+        this.dispatchEvent(new TabLoadedCustomEvent({
+          tab: this
+        }));
+        this._observer = new ResizeObserver(function (data) {
+          _this2.updateFocusValues();
+        });
+        if (this.selected) this._observer.observe(this);
+      }
+    }, {
+      key: "updated",
+      value: function updated() {
+        _get(_getPrototypeOf(Tab.prototype), "updated", this).call(this);
+        this.isFullWidth = this._parent['full-width'] || this._parent.isMobile;
+        if (this.selected) this._observer.observe(this);else this._observer.unobserve(this);
+      }
+    }, {
+      key: "disconnectedCallback",
+      value: function disconnectedCallback() {
+        _get(_getPrototypeOf(Tab.prototype), "disconnectedCallback", this).call(this);
+        this.removeEventListener('keydown', this._handleKeyDown);
+      }
+    }, {
+      key: "_handleKeyDown",
+      value: function _handleKeyDown(e) {
+        var tabs = this.getVisibleTabs();
+        var currentIndex = tabs.indexOf(this);
+        if (e.key === ' ') e.preventDefault();
+        switch (e.key) {
+          case 'ArrowRight':
+            e.preventDefault();
+            var nextIndex = (currentIndex + 1) % tabs.length;
+            tabs[nextIndex].shadowRoot.querySelector('.ods-tab:not([hide])').focus();
+            break;
+          case 'ArrowLeft':
+            e.preventDefault();
+            var prevIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+            tabs[prevIndex].shadowRoot.querySelector('.ods-tab:not([hide])').focus();
+            break;
+          case 'Home':
+            tabs[0].shadowRoot.querySelector('.ods-tab').focus();
+            break;
+          case ' ':
+          case 'Enter':
+            this._activateTab();
+            break;
+        }
+      }
+    }, {
+      key: "_activateTab",
+      value: function _activateTab() {
+        if (!this.selected) {
+          this.handleTabSelected(new Event('tab-selected', {
+            bubbles: true,
+            composed: true
+          }));
+        }
+      }
+    }, {
+      key: "handleTabSelected",
+      value: function handleTabSelected(e) {
+        if (!this["more-tab"]) {
+          e.stopPropagation();
+          var previouslySelected = document.querySelector('ods-tab[selected]');
+          if (previouslySelected) {
+            previouslySelected.selected = false;
+          }
+          if (this.href) {
+            window.open(this.href, this.target);
+          }
+          if (!this.selected) {
+            this.selected = true;
+            this.requestUpdate();
+          }
+          this.dispatchEvent(new TabClickCustomEvent({
+            selected: this.selected,
+            tabId: this.tabId
+          }));
+        }
+      }
+    }, {
+      key: "handleLinkClick",
+      value: function handleLinkClick(e) {
+        e.stopPropagation();
+        this.handleTabSelected(e);
+        this.updateFocusValues();
+      }
+    }, {
+      key: "handleFocus",
+      value: function handleFocus(e) {
+        var tab = this.shadowRoot.querySelector('.ods-tab');
+        if (tab) {
+          this.updateFocusValues();
+          tab.focus();
+        }
+      }
+    }, {
+      key: "clickValidation",
+      value: function clickValidation(e) {
+        this.stateFocus();
+        if (this.onClick) {
+          this.onClick(e);
+        }
+      }
+    }, {
+      key: "stateFocus",
+      value: function stateFocus() {
+        this.shadowRoot.querySelector('.ods-tab').focus();
+      }
+    }, {
+      key: "makeId",
+      value: function makeId(length) {
+        var result = '';
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var charactersLength = characters.length;
+        var counter = 0;
+        while (counter < length) {
+          result += characters.charAt(Math.floor(Math.random() * charactersLength));
+          counter += 1;
+        }
+        return result;
+      }
+    }, {
+      key: "getTab",
+      value: function getTab() {
+        if (this.href) {
+          return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n    <li class=\"ods-tab ", "\"  @click=\"", "\" @focus=\"", "\" tabindex= \"", "\">\n    <a tabindex=\"-1\" href=\"", "\" target= \"", "\" @click=", " role= \"", "\" aria-selected = \"", "\" aria-controls='tab_", "' >\n    <ods-text size='md' weight='regular' color=\"white\" for=\"\" ><slot></slot></ods-text>\n    <div class='chevron-container'><slot name='more-icon'></slot></div>\n    </a>\n    <div class=\"highlight ", " \"> </div>\n    \n  </li>\n  \n  "])), this.selected ? 'selected' : '', this.handleTabSelected, this.handleFocus, this.selected ? '0' : '-1', this.href, this.target, this.stateFocus, this.slot, this.selected ? 'true' : 'false', this.tabId, this.selected ? '' : 'hidden');
+        } else {
+          return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n    <li class=\"ods-tab ", "\"  @click=\"", "\" @focus=\"", "\" tabindex=\"", "\">\n    <button @click=", " tabindex= \"-1\" role= \"", "\" aria-selected = \"", "\" aria-controls='tab_", "' >\n     <ods-text size='md' weight='regular' color=\"white\" for=\"\" ><slot></slot></ods-text>\n     <div class='chevron-container'><slot name='more-icon'></slot></div>\n    </button>\n    \n    <div class=\"highlight ", " \"> </div>\n  </li>\n  \n  "])), this.selected ? 'selected' : '', this.handleTabSelected, this.handleFocus, this.selected ? '0' : '-1', this.clickValidation, this.slot, this.selected ? 'true' : 'false', this.tabId, this.selected ? '' : 'hidden');
+        }
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var parent = this.parentElement;
+        var cutLongLabels = this.textContent.trim().length > 20;
+        var userLang = navigator.language || navigator.userLanguage;
+        //console.log(this.textContent.trim().length)
+        if (parent.classList && parent.classList.contains('ods-tab-nav-list') || parent.nodeName.toLowerCase() === 'ods-tab-group') {
+          return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n    <style>\n    :host{\n      --ods-utility-states-primary-hover: rgba(143, 218, 131, 0.40);\n      --ods-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);\n      --ods-utility-states-on-color-hover: rgba(31, 100, 19, 1);\n      --ods-utility-states-on-color-pressed: rgba(23, 58, 11, 1);\n      --ods-utility-states-destructive-solid-hover: rgba(130, 34, 28, 1);\n      --ods-utility-states-destructive-solid-pressed: rgba(75, 20, 28, 1);\n      --ods-utility-states-error-hover: rgba(245, 183, 174, 0.40);\n      --ods-utility-states-error-pressed: rgba(245, 183, 174, 0.64);\n      --ods-background-reverse-primary: #032D42;\n      --ods-background-reverse-tertiary: #244A5D;\n      --ods-brand-wasabi:        #62D84E;\n      --ods-ref-color-green-100: #FFFFFF;\n      --ods-ref-color-green-80:  #8fda83;\n      --ods-ref-color-green-70:  #6FBD62;\n      --ods-ref-color-green-40:  #298319;\n      --ods-ref-color-green-25:  #216b14;\n      --ods-ref-color-green-10:  #0C2708;\n      --ods-ref-color-red-100:   #FFFFFF;\n      --ods-ref-color-red-80:    #F5B7AE;\n      --ods-ref-color-red-70:    #F08F82;\n      --ods-ref-color-red-40:    #AB2D25;\n      --ods-ref-color-red-30:    #871915;\n      --ods-ref-color-red-20:    #600E0C;\n      --ods-ref-color-gray-80:   #C5C5C5;\n      --ods-ref-color-gray-35:   #515151;\n      --ods-sem-space-none:       0px;\n      --ods-sem-space-xsmall:     4px;\n      --ods-sem-space-small:      8px;\n      --ods-sem-space-medium:     16px;\n      --ods-sem-space-large:      24px;\n\n\n    }\n\n   .ods-tab{\n        outline: none;\n        display: flex;\n        justify-content: center;\n        width: 100%;\n        position: relative;\n    }\n\n    :host{\n      min-width: 60px;\n      align-self: stretch;\n      ", "\n      ", "\n      position: relative;\n      }\n      :host([more-tab]){\n        min-width: 95px;\n      } \n      :host .focus-ring{\n        display: none;\n        pointer-events: none;\n      }\n\n       :host(:focus-within) .focus-ring{\n        outline: none;\n        z-index: 2;\n        position: absolute;\n        display:block;\n        top: 0px;\n        left: 0px;\n      }\n\n      :host(:focus-within) .focus-ring::after{\n        content: \"\";\n        position: fixed;\n        display:block;\n        width:", "px;\n        height:", "px;\n        border-radius: var(--ods-sem-space-small);\n        box-shadow: 0 0 0 2px white, 0 0 0 var(--ods-sem-space-xsmall) var(--ods-ref-color-green-40);\n      }\n\n    \n    :host {\n      text-decoration: none;\n      line-height: var(--ods-sem-space-large);\n      border: var(--ods-sem-space-none);\n      cursor: pointer;\n      display: inline-flex;\n      justify-content: center;\n      box-sizing: border-box;\n      background: var(--ods-background-reverse-primary);\n      overflow: hidden;\n      margin: 0;\n    }\n\n    :host(:hover) {\n      background: var(--ods-background-reverse-tertiary);\n    }\n\n    :host:active {\n      background: var(--ods-background-reverse-tertiary);\n    }\n\n    :host([active-menu]) .ods-tab {\n      background: var(--ods-background-reverse-tertiary);\n    }\n\n    :host .chevron-container{\n      display: none;\n    }\n    :host([more-tab]) .chevron-container{\n      display: flex;\n      transition: transform 0.2s ease-in-out;  \n    }\n    :host([active-menu]) .chevron-container{\n      transform: rotateZ(180deg);\n    }\n\n    :host([hide]){\n      display:none;\n    }\n\n      :host .selected{\n      background: var(--ods-background-reverse-tertiary);\n    }\n    \n    :host .selected ods-text::part(odsText){\n        text-shadow: 0 0 1px currentColor;\n    }\n\n    :host button{\n      display: inline-flex;\n      background: none;\n      align-items: center;\n      border: none;\n      color: inherit;\n      font; inherit;\n      line-height: inherit;\n      margin: 0;\n      cursor:pointer;\n      display: inline-flex;\n      justify-content: center;\n      width: 100%;\n      text-decoration: none;\n      outline: none;\n      gap: var(--ods-sem-space-small);\n    }\n\n    :host a {\n      display: inline-flex;\n      align-items: center;\n      width: 100%;\n      height: 100%;\n      color: inherit;\n      text-decoration: none;\n      outline: none;\n      gap: var(--ods-sem-space-small);\n    }\n\n    .tab-container{\n      display:flex;\n      width: 100%;\n    }\n    \n\n   .highlight {\n      position: absolute;\n      bottom: 0;\n      left: 0;\n      width: 100%;\n      height: var(--ods-sem-space-xsmall);\n      background-color: var(--ods-brand-wasabi);\n   }\n   \n   .highlight.hidden {\n      display: none;\n   }\n\n  .icon {\n    display: inline-flex;\n    align-items: center;\n    gap: var(--ods-sem-space-small);\n  }   \n\n  .ods-tab a, .ods-tab button {\n      padding: 12px var(--ods-sem-space-medium) var(--ods-sem-space-medium) var(--ods-sem-space-medium);\n       ", "\n    }\n\n    </style>\n    <div class=\"tab-container\" part=\"odsTab\" lang=", ">", "</div>\n    <div class=\"focus-ring\"></div>\n    \n    "])), !this.isFullWidth ? 'max-width: 220px;' : '', this.isFullWidth ? 'flex: 1;' : '', this._focusWidth, this._focusHeight, cutLongLabels ? "overflow-wrap: anywhere;\n      hyphens: auto;" : '', userLang, this.getTab());
+        }
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return {
+          selected: {
+            type: Boolean,
+            state: true
+          },
+          href: {
+            type: String
+          },
+          target: {
+            type: String
+          },
+          onClick: {
+            type: Function
+          },
+          'more-tab': {
+            type: Boolean
+          },
+          'show-more-tab': {
+            type: Boolean,
+            state: true
+          },
+          isFullWidth: {
+            state: true
+          },
+          'first-tab': {
+            type: Boolean
+          },
+          hide: {
+            type: Boolean
+          },
+          _focusHeight: {
+            state: true
+          },
+          _focusWidth: {
+            state: true
+          }
+        };
+      }
+    }]);
+  }(s$2);
+  customElements.define("ods-tab", Tab);
+
+  var _templateObject$1;
+  /**
+   * Service Now Text Component
+   * @input html-tag, size, weight, color
+   * @output <ods-tab-group> in dom
+   */
+  var TabPanel = /*#__PURE__*/function (_LitElement) {
+    function TabPanel() {
+      var _this;
+      _classCallCheck(this, TabPanel);
+      _this = _callSuper(this, TabPanel);
+      _this.slot = 'tabpanel';
+      _this.tabId = '';
+      return _this;
+    }
+    _inherits(TabPanel, _LitElement);
+    return _createClass(TabPanel, [{
+      key: "connectedCallback",
+      value: function connectedCallback() {
+        _get(_getPrototypeOf(TabPanel.prototype), "connectedCallback", this).call(this);
+        window.addEventListener('tab-selected', this._handleTabSelected.bind(this));
+      }
+    }, {
+      key: "disconnectedCallback",
+      value: function disconnectedCallback() {
+        _get(_getPrototypeOf(TabPanel.prototype), "disconnectedCallback", this).call(this);
+        window.removeEventListener('tab-selected', this._handleTabSelected.bind(this));
+      }
+    }, {
+      key: "_handleTabSelected",
+      value: function _handleTabSelected(e) {
+        this.tabId = e.detail.tabId;
+        this.requestUpdate();
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["\n    <style>\n    :host{\n      display: none;\n    }\n    </style>\n    <div class=\"ods-tab-panel\" role=\"", "\" aria-labelledby='tab_", "' part=\"odsTabPanel\" > \n      <slot></slot>\n    </div>\n    "])), this.slot, this.tabId);
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return {
+          tabId: {
+            type: String
+          }
+        };
+      }
+    }]);
+  }(s$2);
+  customElements.define("ods-tab-panel", TabPanel);
+
+  var _templateObject, _templateObject2, _templateObject3, _templateObject4;
+  var TabGroup = /*#__PURE__*/function (_LitElement) {
+    function TabGroup() {
+      var _this;
+      _classCallCheck(this, TabGroup);
+      _this = _callSuper(this, TabGroup);
+      _defineProperty(_this, "moreButtonRef", e());
+      _this['full-width'] = false;
+      _this['remove-side-padding'] = false;
+      _this._availableTabs = [];
+      _this['more-label'] = 'More';
+      _this.activeTabIndex = 0;
+      _this._handleTabKeyEvent = _this._handleTabKeyEvent.bind(_this);
+      _this._observer = null;
+      _this._currentBodySize = 0;
+      _this.isMobile = false;
+      return _this;
+    }
+    _inherits(TabGroup, _LitElement);
+    return _createClass(TabGroup, [{
+      key: "_handleTabKeyEvent",
+      value: function _handleTabKeyEvent(e) {
+        if (e.key === 'Tab') {
+          e.preventDefault();
+          e.stopPropagation();
+          this.querySelectorAll('ods-tab')[this.activeTabIndex].shadowRoot.querySelector('.ods-tab').focus();
+          //
+        }
+      }
+    }, {
+      key: "_handleTabLoaded",
+      value: function _handleTabLoaded(e) {
+        this._availableTabs.push(e.detail.tab);
+      }
+    }, {
+      key: "firstUpdated",
+      value: function firstUpdated() {
+        var _this2 = this;
+        _get(_getPrototypeOf(TabGroup.prototype), "firstUpdated", this).call(this);
+        var tabs = this.querySelectorAll('ods-tab');
+        var panels = this.querySelectorAll('ods-tab-panel');
+        if (tabs.length === 1 || panels.length === 1) {
+          console.error('Tab list requires at least two tabs to render');
+          this.style.display = 'none';
+        }
+        if (tabs.length !== panels.length) {
+          console.error('number of tabs must match number of tab panels');
+          this.style.display = 'none';
+        }
+        this.addEventListener('tab-selected', this.handleTabClick);
+        this.waitForLoadedTabs();
+        this._observer = new ResizeObserver(function (data) {
+          var limit = 20;
+          _this2.isMobile = window.innerWidth <= 479;
+          if (_this2._currentBodySize < document.body.offsetWidth - limit || _this2._currentBodySize > document.body.offsetWidth + limit) {
+            _this2.calculateLabelSize();
+          }
+        });
+        this._observer.observe(this);
+      }
+    }, {
+      key: "updated",
+      value: function updated(changedProperties) {
+        _get(_getPrototypeOf(TabGroup.prototype), "updated", this).call(this);
+        var oldFullWidthValue = changedProperties.get('full-width');
+        if (oldFullWidthValue !== this['full-width'] && typeof oldFullWidthValue !== 'undefined') {
+          this.reprocessTabs();
+        }
+      }
+    }, {
+      key: "reprocessTabs",
+      value: function () {
+        var _reprocessTabs = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+          var tabArray;
+          return _regeneratorRuntime().wrap(function _callee$(_context) {
+            while (1) switch (_context.prev = _context.next) {
+              case 0:
+                tabArray = Array.from(this.shadowRoot.host.querySelectorAll('ods-tab'));
+                _context.next = 3;
+                return Promise.all(tabArray.map(function (c) {
+                  c.requestUpdate();
+                  return c.updateComplete;
+                }));
+              case 3:
+                this.onLoadedTabs();
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }, _callee, this);
+        }));
+        function reprocessTabs() {
+          return _reprocessTabs.apply(this, arguments);
+        }
+        return reprocessTabs;
+      }()
+    }, {
+      key: "waitForLoadedTabs",
+      value: function () {
+        var _waitForLoadedTabs = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+          var tabArray;
+          return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+            while (1) switch (_context2.prev = _context2.next) {
+              case 0:
+                tabArray = Array.from(this.shadowRoot.host.querySelectorAll('ods-tab'));
+                _context2.next = 3;
+                return Promise.all(tabArray.map(function (c) {
+                  return c.updateComplete;
+                }));
+              case 3:
+                this.onLoadedTabs();
+              case 4:
+              case "end":
+                return _context2.stop();
+            }
+          }, _callee2, this);
+        }));
+        function waitForLoadedTabs() {
+          return _waitForLoadedTabs.apply(this, arguments);
+        }
+        return waitForLoadedTabs;
+      }()
+    }, {
+      key: "onLoadedTabs",
+      value: function onLoadedTabs() {
+        if (this._availableTabs && this._availableTabs.length > 0) {
+          this._availableTabs[0].setAttribute('first-tab', '');
+          this._availableTabs[0].selected = true;
+          this.updateActiveTab();
+        }
+      }
+    }, {
+      key: "updateActiveTab",
+      value: function updateActiveTab() {
+        var _this3 = this;
+        var panels = this.querySelectorAll('ods-tab-panel');
+        var isMenu = false;
+        this._availableTabs.forEach(function (tab, index) {
+          tab.selected = index === _this3.activeTabIndex;
+          isMenu = tab.getAttribute('more-tab') !== null;
+        });
+        if (isMenu) {
+          panels.forEach(function (panel, index) {
+            panel.style.display = index === _this3.activeTabIndex ? 'block' : 'none';
+          });
+        }
+      }
+    }, {
+      key: "handleTabClick",
+      value: function handleTabClick(event) {
+        this.activeTabIndex = this._availableTabs.indexOf(event.target);
+        this.updateActiveTab();
+      }
+    }, {
+      key: "disconnectedCallback",
+      value: function disconnectedCallback() {
+        this.removeEventListener('tab-selected', this.handleTabClick);
+        this._observer.unobserve(this);
+      }
+    }, {
+      key: "handleItemClick",
+      value: function handleItemClick(event) {
+        var tabInfo = JSON.parse(event.detail.value);
+        this.swapTabs(tabInfo.index);
+        this.activeTabIndex = tabInfo.index;
+        this.updateActiveTab();
+        var moreTab = this.shadowRoot.querySelector('[more-tab]');
+        moreTab.shadowRoot.querySelector('.ods-tab').focus();
+        moreTab.selected = false;
+      }
+    }, {
+      key: "swapTabs",
+      value: function swapTabs(showIndex) {
+        var visibleTabs = this._availableTabs.filter(function (tab) {
+          return !tab.hide;
+        });
+        var lastTabIndex = visibleTabs.length - 2;
+        var lastTab = visibleTabs[lastTabIndex];
+        lastTab.setAttribute('hide', '');
+        this._availableTabs[showIndex].removeAttribute('hide');
+        var hiddenTabs = this._availableTabs.filter(function (tab) {
+          return tab.hide;
+        });
+        this.getDropdownMenu(hiddenTabs);
+      }
+    }, {
+      key: "_handleSetActiveMenu",
+      value: function _handleSetActiveMenu(event) {
+        event.target.toggleAttribute('active-menu', event.detail.setActiveMenu);
+        var moreTab = this.shadowRoot.querySelector('[more-tab]');
+        moreTab.selected = true;
+      }
+    }, {
+      key: "getMoreTabItem",
+      value: function getMoreTabItem() {
+        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["<ods-tab more-tab ", " hide\n   @ods-active-menu-event=", ">\n      ", "\n        <ods-icon name='chevron-up' color='#fff' size=\"sm\" slot='more-icon'></ods-icon>    \n    </ods-tab>"])), n(this.moreButtonRef), this._handleSetActiveMenu, this['more-label']);
+      }
+    }, {
+      key: "calculateLabelSize",
+      value: function () {
+        var _calculateLabelSize = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+          var _containerSize$offset, _firstTab$offsetWidth;
+          var firstTab, containerSize, navSize, tabGroupSize, moreButtonSize, firstTabSize, minSize, tabSizes, hiddenTabs;
+          return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+            while (1) switch (_context3.prev = _context3.next) {
+              case 0:
+                firstTab = this.querySelector('ods-tab');
+                containerSize = this.shadowRoot.host.parentElement;
+                navSize = this.shadowRoot.querySelector('nav').offsetWidth;
+                tabGroupSize = (_containerSize$offset = containerSize === null || containerSize === void 0 ? void 0 : containerSize.offsetWidth) !== null && _containerSize$offset !== void 0 ? _containerSize$offset : navSize;
+                moreButtonSize = 110;
+                firstTabSize = (_firstTab$offsetWidth = firstTab === null || firstTab === void 0 ? void 0 : firstTab.offsetWidth) !== null && _firstTab$offsetWidth !== void 0 ? _firstTab$offsetWidth : 110;
+                minSize = moreButtonSize + firstTabSize;
+                tabSizes = 0;
+                hiddenTabs = [];
+                this._availableTabs.forEach(function (tab) {
+                  if (tabSizes > tabGroupSize - minSize) {
+                    if (!tab['first-tab'] && !tab['more-tab']) {
+                      tab.setAttribute('hide', '');
+                      hiddenTabs.push(tab);
+                    }
+                    if (tab['more-tab'] && hiddenTabs.length > 1) tab.removeAttribute('hide');
+                  } else if (!tab['more-tab']) tab.removeAttribute('hide');else tab.setAttribute('hide', '');
+                  tabSizes += tab.offsetWidth;
+                });
+                if (hiddenTabs.length === 1) {
+                  hiddenTabs[0].removeAttribute('hide');
+                  hiddenTabs.slice(0, 1);
+                }
+                this._currentBodySize = document.body.offsetWidth;
+                if (hiddenTabs && hiddenTabs.length > 1) this.getDropdownMenu(hiddenTabs);
+              case 13:
+              case "end":
+                return _context3.stop();
+            }
+          }, _callee3, this);
+        }));
+        function calculateLabelSize() {
+          return _calculateLabelSize.apply(this, arguments);
+        }
+        return calculateLabelSize;
+      }()
+    }, {
+      key: "getTabOptions",
+      value: function getTabOptions(tabs) {
+        var _this4 = this;
+        var items = "";
+        //const startingIndex = (this._availableTabs.length - tabs.length) - 1;
+        var tabMenu = tabs.map(function (tab, index) {
+          if (!tab['more-tab']) return {
+            label: tab.textContent.trim(),
+            index: _this4._availableTabs.indexOf(tab)
+          };
+        }).filter(function (tab) {
+          return typeof tab !== 'undefined';
+        });
+        if (tabMenu && tabMenu.length > 0) {
+          items = tabMenu.map(function (option) {
+            return x(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n          <ods-menu-item\n            value=\"", "\"\n            @menu-item-click-event=\"", "\"\n          >\n            <ods-text size=\"sm\" color=\"text-primary\" slot=\"label\"\n              >", "</ods-text\n            >\n          </ods-menu-item>\n        "])), JSON.stringify(option), _this4.handleItemClick, option.label);
+          });
+        }
+        return items;
+      }
+    }, {
+      key: "getDropdownMenu",
+      value: function getDropdownMenu(tabs) {
+        this._menu = null;
+        if (tabs && tabs.length > 0) {
+          this._menu = x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<ods-menu\n      @menu-toggle-event=\"", "\"\n      max-width=\"184px\"\n      max-height=\"266px\"\n      anchor=\"buttonWithStart\"\n      .elRef=\"", "\"\n    >\n       ", "\n    </ods-menu>"])), this.handleMenuToggle, this.moreButtonRef.value, this.getTabOptions(tabs));
+        }
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        this.isMobile = window.innerWidth <= 479;
+        return x(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    <style>\n    :host {\n      display: inline-flex;\n      width: 100%;\n      justify-content: stretch;\n      \n    }\n\n    .ods-tab-group-container {\n      display:inline-flex;\n      flex-direction: column;\n      max-width: 100%;\n      ", "\n        \n    }\n\n    nav{\n        padding: ", "\n      background-color: #032D42;\n      \n        \n    }\n    \n    .ods-tab-nav-list {\n      display: inline-flex;\n      position:relative;\n      list-style: none;\n      padding: 0;\n      margin: 0;\n      width: 100%;\n       ", "\n    }\n\n    @media (max-width: 320px){\n      .ods-tab-nav-list li:first-child, .ods-tab-nav-list li:last-child\n    }\n      padding-left: 0;\n      padding-right: 0;\n\n    }\n\n    </style>\n    <div @tab-loaded=", "  class='ods-tab-group-container'>\n      <nav> \n        <ul class='ods-tab-nav-list' part=\"odsTabGroup\">\n          <slot name=\"tab\">\n          </slot>\n          ", "\n          ", "\n        </ul>\n      </nav>\n      <div class='ods-tab-panel-group'>\n        <slot name=\"tabpanel\">\n        </slot>\n      </div>\n    </div>\n    \n    "])), this["full-width"] || this.isMobile ? 'width: 100%;' : '', this["remove-side-padding"] || this.isMobile ? ' 0px;' : '0 24px;', this["full-width"] ? 'flex:1;' : '', this._handleTabLoaded, this.getMoreTabItem(), this._menu);
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return _defineProperty(_defineProperty({
+          'full-width': {
+            type: Boolean,
+            state: true
+          },
+          'remove-side-padding': {
+            type: Boolean
+          },
+          _menu: {
+            state: true
+          },
+          _moreButton: {
+            state: true
+          },
+          activeTabIndex: {
+            state: true
+          }
+        }, 'more-label', {
+          state: true
+        }), "isMobile", {
+          state: true
+        });
+      }
+    }]);
+  }(s$2);
+  _defineProperty(TabGroup, "styles", [colorAliases]);
+  customElements.define("ods-tab-group", TabGroup);
 
 }));
