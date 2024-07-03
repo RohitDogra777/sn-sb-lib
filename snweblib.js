@@ -7111,6 +7111,8 @@
         return new Promise(function (resolve, reject) {
           if (_this2.checkNgCompatibility()) {
             var ngScope = _this2.getNgScope();
+            console.log("Text Area Scope", ngScope);
+            console.log("Text Area Attributes", _this2.attributeNg);
             if (ngScope != null && _this2.attributeNg != null) {
               _this2.updateNgScope(ngScope, value);
               resolve();
