@@ -6795,7 +6795,7 @@
       value: function getNgModelValue() {
         if (this.checkNgCompatibility()) {
           var ngScope = this.getNgScope();
-          if (ngScope) {
+          if (ngScope && this.attributeNg["ng-model"]) {
             return ngScope[this.attributeNg["ng-model"]];
           }
           return "";
