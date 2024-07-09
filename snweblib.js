@@ -6794,11 +6794,15 @@
       key: "getNgModelValue",
       value: function getNgModelValue() {
         if (this.checkNgCompatibility()) {
-          var ngScope = this.getNgScope();
-          if (ngScope && this.attributeNg["ng-model"]) {
-            return ngScope[this.attributeNg["ng-model"]];
+          try {
+            var ngScope = this.getNgScope();
+            if (ngScope && this.attributeNg["ng-model"]) {
+              return ngScope[this.attributeNg["ng-model"]];
+            }
+            return '';
+          } catch (err) {
+            return "";
           }
-          return "";
         } else {
           return "";
         }
