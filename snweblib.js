@@ -1866,48 +1866,40 @@
       });
       _defineProperty(this, "spacing", {
         "--ods-sem-space-none": "0",
-        "--ods-sem-space-xsmall": "4px",
-        "--ods-sem-space-small": "8px",
-        "--ods-sem-space-medium": "16px",
-        "--ods-sem-space-large": "24px",
-        "--ods-sem-space-xlarge": "32px",
-        "--ods-sem-space-xxlarge": "40px",
-        "--ods-sem-space-xxxlarge": "48px",
-        "--ods-sem-avatar-size-xxl": "180px",
-        "--ods-sem-avatar-size-xl": "84px",
-        "--ods-sem-avatar-size-lg": "48px",
-        "--ods-sem-avatar-size-md": "32px",
-        "--ods-sem-avatar-size-sm": "24px",
-        "--ods-sem-icon-button-height": "44px",
-        "--ods-sem-icon-button-width": "44px",
-        "--ods-sem-input-padding": "6px 16px"
+        "--ods-sem-space-xs": "4px",
+        "--ods-sem-space-sm": "8px",
+        "--ods-sem-space-md": "16px",
+        "--ods-sem-space-lg": "24px",
+        "--ods-sem-space-xl": "32px",
+        "--ods-sem-space-xxl": "40px",
+        "--ods-sem-space-xxxl": "48px"
       });
       _defineProperty(this, "radius", {
         "--ods-sem-radius-none": "0",
-        "--ods-sem-radius-small": "4px",
-        "--ods-sem-radius-medium": "8px",
-        "--ods-sem-radius-large": "16px",
-        "--ods-sem-radius-xlarge": "24px",
-        "--ods-sem-radius-full": "100%"
+        "--ods-sem-radius-sm": "4px",
+        "--ods-sem-radius-md": "8px",
+        "--ods-sem-radius-lg": "16px",
+        "--ods-sem-radius-xl": "24px",
+        "--ods-sem-radius-full": "999px"
       });
       _defineProperty(this, "shadow", {
         "--ods-sem-shadow-color": this.setColorOpacity(this.colors["--ods-ref-color-gray-25"], 0.2),
-        "--ods-sem-shadow-small-x": "0",
-        "--ods-sem-shadow-small-y": "2px",
-        "--ods-sem-shadow-small-blur": "4px",
-        "--ods-sem-shadow-small-spread": "0",
-        "--ods-sem-shadow-medium-x": "0",
-        "--ods-sem-shadow-medium-y": "4px",
-        "--ods-sem-shadow-medium-blur": "8px",
-        "--ods-sem-shadow-medium-spread": "0",
-        "--ods-sem-shadow-large-x": "0",
-        "--ods-sem-shadow-large-y": "8px",
-        "--ods-sem-shadow-large-blur": "12px",
-        "--ods-sem-shadow-large-spread": "0",
-        "--ods-sem-shadow-xlarge-x": "0",
-        "--ods-sem-shadow-xlarge-y": "12px",
-        "--ods-sem-shadow-xlarge-blur": "16px",
-        "--ods-sem-shadow-xlarge-spread": "0"
+        "--ods-sem-shadow-sm-x": "0",
+        "--ods-sem-shadow-sm-y": "2px",
+        "--ods-sem-shadow-sm-blur": "4px",
+        "--ods-sem-shadow-sm-spread": "0",
+        "--ods-sem-shadow-md-x": "0",
+        "--ods-sem-shadow-md-y": "4px",
+        "--ods-sem-shadow-md-blur": "8px",
+        "--ods-sem-shadow-md-spread": "0",
+        "--ods-sem-shadow-lg-x": "0",
+        "--ods-sem-shadow-lg-y": "8px",
+        "--ods-sem-shadow-lg-blur": "12px",
+        "--ods-sem-shadow-lg-spread": "0",
+        "--ods-sem-shadow-xl-x": "0",
+        "--ods-sem-shadow-xl-y": "12px",
+        "--ods-sem-shadow-xl-blur": "16px",
+        "--ods-sem-shadow-xl-spread": "0"
       });
       _defineProperty(this, "statusConstants", {
         hover: 0.4,
@@ -1915,99 +1907,10 @@
         onColorHover: "24%",
         onColorPressed: "56%"
       });
-      _defineProperty(this, "semanticColors", {
-        "--ods-sem-color-roles-primary": this.colors["--ods-ref-color-green-40"],
-        "--ods-sem-color-roles-primary-on-primary": this.colors["--ods-ref-color-green-100"],
-        "--ods-sem-color-roles-primary-primary-container": this.colors["--ods-ref-color-green-90"],
-        "--ods-sem-color-roles-primary-on-primary-container": this.colors["--ods-ref-color-green-10"],
-        "--ods-sem-color-roles-secondary": this.colors["--ods-ref-color-blue-40"],
-        "--ods-sem-color-roles-secondary-on-secondary": this.colors["--ods-ref-color-blue-100"],
-        "--ods-sem-color-roles-secondary-secondary-container": this.colors["--ods-ref-color-blue-90"],
-        "--ods-sem-color-roles-secondary-on-secondary-container": this.colors["--ods-ref-color-blue-10"],
-        "--ods-sem-color-roles-neutral": this.colors["--ods-ref-color-gray-40"],
-        "--ods-sem-color-roles-neutral-on-neutral": this.colors["--ods-ref-color-gray-100"],
-        "--ods-sem-color-roles-neutral-neutral-container": this.colors["--ods-ref-color-gray-90"],
-        "--ods-sem-color-roles-neutral-on-neutral-container": this.colors["--ods-ref-color-gray-10"],
-        "--ods-sem-color-roles-accent": this.colors["--ods-ref-color-purple-40"],
-        "--ods-sem-color-roles-accent-on-accent": this.colors["--ods-ref-color-purple-100"],
-        "--ods-sem-color-roles-accent-accent-container": this.colors["--ods-ref-color-purple-90"],
-        "--ods-sem-color-roles-accent-on-accent-container": this.colors["--ods-ref-color-purple-10"],
-        "--ods-sem-color-text-primary": this.colors["--ods-ref-color-gray-10"],
-        "--ods-sem-color-text-secondary": this.colors["--ods-ref-color-gray-25"],
-        "--ods-sem-color-text-tertiary": this.colors["--ods-ref-color-gray-40"],
-        "--ods-sem-color-text-inverse": this.colors["--ods-ref-color-gray-100"],
-        "--ods-sem-color-icon-primary": this.colors["--ods-ref-color-gray-10"],
-        "--ods-sem-color-icon-secondary": this.colors["--ods-ref-color-gray-25"],
-        "--ods-sem-color-icon-tertiary": this.colors["--ods-ref-color-gray-40"],
-        "--ods-sem-color-icon-inverse": this.colors["--ods-ref-color-gray-100"],
-        "--ods-sem-color-status-roles-error": this.colors["--ods-ref-color-red-40"],
-        "--ods-sem-color-status-roles-error-on-error": this.colors["--ods-ref-color-red-100"],
-        "--ods-sem-color-status-roles-error-error-container": this.colors["--ods-ref-color-red-90"],
-        "--ods-sem-color-status-roles-error-on-error-container": this.colors["--ods-ref-color-red-10"],
-        "--ods-sem-color-status-roles-warning": this.colors["--ods-ref-color-orange-40"],
-        "--ods-sem-color-status-roles-warning-on-warning": this.colors["--ods-ref-color-orange-100"],
-        "--ods-sem-color-status-roles-warning-warning-container": this.colors["--ods-ref-color-orange-90"],
-        "--ods-sem-color-status-roles-warning-on-warning-container": this.colors["--ods-ref-color-orange-10"],
-        "--ods-sem-color-status-roles-success": this.colors["--ods-ref-color-green-40"],
-        "--ods-sem-color-status-roles-success-on-success": this.colors["--ods-ref-color-green-100"],
-        "--ods-sem-color-status-roles-success-success-container": this.colors["--ods-ref-color-green-90"],
-        "--ods-sem-color-status-roles-success-on-success-container": this.colors["--ods-ref-color-green-10"],
-        "--ods-sem-color-status-roles-info": this.colors["--ods-ref-color-blue-40"],
-        "--ods-sem-color-status-roles-info-on-info": this.colors["--ods-ref-color-blue-100"],
-        "--ods-sem-color-status-roles-info-info-container": this.colors["--ods-ref-color-blue-90"],
-        "--ods-sem-color-status-roles-info-on-info-container": this.colors["--ods-ref-color-blue-10"],
-        "--ods-sem-color-background-primary": this.colors["--ods-ref-color-blue-100"],
-        "--ods-sem-color-background-secondary": this.colors["--ods-ref-color-blue-98"],
-        "--ods-sem-color-background-tertiary": this.colors["--ods-ref-color-blue-99"],
-        "--ods-sem-color-background-reverse-primary": this.colors["--ods-ref-color-blue-20"],
-        "--ods-sem-color-background-reverse-secondary": this.colors["--ods-ref-color-blue-25"],
-        "--ods-sem-color-background-reverse-tertiary": this.colors["--ods-ref-color-blue-30"],
-        "--ods-sem-color-border-interactive-component": this.colors["--ods-ref-color-gray-50"],
-        "--ods-sem-color-border-decorative-primary": this.colors["--ods-ref-color-gray-80"],
-        "--ods-sem-color-border-decorative-secondary": this.colors["--ods-ref-color-blue-90"],
-        "--ods-sem-color-brand-wasabi": "#62D84E",
-        "--ods-sem-color-brand-infinite-blue": "#032D42",
-        "--ods-sem-color-utility-transparent": this.colors["--ods-ref-color-gray-100"],
-        "--ods-sem-color-utility-shadow": this.colors["--ods-ref-color-gray-25"],
-        "--ods-sem-color-utility-states-focus": "var(--ods-sem-color-roles-primary)",
-        "--ods-sem-color-utility-states-disabled-container": this.colors["--ods-ref-color-gray-80"],
-        "--ods-sem-color-utility-states-disabled-content": this.colors["--ods-ref-color-gray-35"],
-        "--ods-sem-color-utility-states-primary-default": this.colors["--ods-ref-color-green-80"],
-        "--ods-sem-color-utility-states-primary-hover": this.setColorOpacity(this.colors["--ods-ref-color-green-80"], this.statusConstants.hover),
-        "--ods-sem-color-utility-states-primary-pressed": this.setColorOpacity(this.colors["--ods-ref-color-green-80"], this.statusConstants.pressed),
-        "--ods-sem-color-utility-states-primary-focus": this.setColorOpacity(this.colors["--ods-ref-color-green-80"], 1),
-        "--ods-sem-color-utility-states-secondary-default": this.setColorOpacity(this.colors["--ods-ref-color-blue-80"], 1),
-        "--ods-sem-color-utility-states-secondary-hover": this.setColorOpacity(this.colors["--ods-ref-color-blue-80"], this.statusConstants.hover),
-        "--ods-sem-color-utility-states-secondary-pressed": this.setColorOpacity(this.colors["--ods-ref-color-blue-80"], this.statusConstants.pressed),
-        "--ods-sem-color-utility-states-secondary-focus": this.setColorOpacity(this.colors["--ods-ref-color-blue-80"], 1),
-        "--ods-sem-color-utility-states-neutral-default": this.setColorOpacity(this.colors["--ods-ref-color-gray-80"], 1),
-        "--ods-sem-color-utility-states-neutral-hover": this.setColorOpacity(this.colors["--ods-ref-color-gray-80"], this.statusConstants.hover),
-        "--ods-sem-color-utility-states-neutral-pressed": this.setColorOpacity(this.colors["--ods-ref-color-gray-80"], this.statusConstants.pressed),
-        "--ods-sem-color-utility-states-neutral-focus": this.setColorOpacity(this.colors["--ods-ref-color-gray-80"], 1),
-        "--ods-sem-color-utility-states-error-default": this.setColorOpacity(this.colors["--ods-ref-color-red-80"], 1),
-        "--ods-sem-color-utility-states-error-hover": this.setColorOpacity(this.colors["--ods-ref-color-red-80"], this.statusConstants.pressed),
-        "--ods-sem-color-utility-states-error-pressed": this.setColorOpacity(this.colors["--ods-ref-color-red-80"], this.statusConstants.pressed),
-        "--ods-sem-color-utility-states-interactive-hover": this.setColorOpacity(this.colors["--ods-ref-color-gray-50"], this.statusConstants.hover),
-        "--ods-sem-color-utility-states-interactive-pressed": this.setColorOpacity(this.colors["--ods-ref-color-gray-50"], this.statusConstants.pressed),
-        "--ods-sem-color-utility-states-error-focus": this.setColorOpacity(this.colors["--ods-ref-color-red-80"], 1),
-        "--ods-sem-color-utility-states-on-color-default": this.colors["--ods-ref-color-gray-0"],
-        "--ods-sem-color-utility-states-primary-on-color-default": "color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) 0%)",
-        "--ods-sem-color-utility-states-primary-on-color-hover": "color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorHover, ")"),
-        "--ods-sem-color-utility-states-primary-on-color-pressed": "color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorPressed, ")"),
-        "--ods-sem-color-utility-states-primary-on-color-focus": "color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) 0%)",
-        "--ods-sem-color-utility-states-secondary-on-color-default": "color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) 0%)",
-        "--ods-sem-color-utility-states-secondary-on-color-hover": "color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorHover, ")"),
-        "--ods-sem-color-utility-states-secondary-on-color-pressed": "color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorPressed, ")"),
-        "--ods-sem-color-utility-states-secondary-on-color-focus": "color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) 0%)",
-        "--ods-sem-color-utility-states-neutral-on-color-default": "color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) 0%)",
-        "--ods-sem-color-utility-states-neutral-on-color-hover": "color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorHover, ")"),
-        "--ods-sem-color-utility-states-neutral-on-color-pressed": "color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorPressed, ")"),
-        "--ods-sem-color-utility-states-neutral-on-color-focus": "color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) 0%)",
-        "--ods-sem-color-utility-states-error-on-color-default": "color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) 0%)",
-        "--ods-sem-color-utility-states-error-on-color-hover": "color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorHover, ")"),
-        "--ods-sem-color-utility-states-error-on-color-pressed": "color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorPressed, ")"),
-        "--ods-sem-color-utility-states-error-on-color-focus": "color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) 0%)"
-      });
+      /* 
+      semanticColors = { 
+      }
+      */
       _defineProperty(this, "aliases", {
         "--text-primary": "--ods-sem-color-text-primary",
         "--text-secondary": "--ods-sem-color-text-secondary",
@@ -2043,11 +1946,11 @@
         "--role-on-primary-container": "--ods-sem-color-roles-primary-on-primary-container",
         "--role-secondary": "--ods-sem-color-roles-secondary",
         "--role-on-secondary": "--ods-sem-color-roles-secondary-on-secondary",
-        "--role-secondary-container": "--ods-sem-color-roles-secondary-secondary-container",
+        "--role-secondary-container": "--ods-sem-color-roles-secondary-container",
         "--role-on-secondary-container": "--ods-sem-color-roles-secondary-on-secondary-container",
         "--role-neutral": "--ods-sem-color-roles-neutral",
         "--role-on-neutral": "--ods-sem-color-roles-neutral-on-neutral",
-        "--role-neutral-container": "--ods-sem-color-roles-neutral-neutral-container",
+        "--role-neutral-container": "--ods-sem-color-roles-neutral-container",
         "--role-on-neutral-container": "--ods-sem-color-roles-neutral-on-neutral-container",
         "--role-accent": "--ods-sem-color-roles-accent",
         "--role-on-accent": "--ods-sem-color-roles-accent-on-accent",
@@ -2060,28 +1963,416 @@
         "--background-reverse-secondary": "--ods-sem-color-background-reverse-secondary",
         "--background-reverse-tertiary": "--ods-sem-color-background-reverse-tertiary"
       });
-      _defineProperty(this, "icons", {
-        "--ods-sem-icon-small": "16px",
-        "--ods-sem-icon-medium": " 24px",
-        "--ods-sem-icon-large": "32px"
-      });
       _defineProperty(this, "typography", {
         "--ods-ref-text-medium-regular": "16px",
         "--ods-font-family-gilroy-medium": "Gilroy-Medium,sans-serif",
-        "--ods-font-weight-600": "600",
+        "--ods-font-weight-600": "600"
+      });
+      _defineProperty(this, "componentLevel", {
         "--ods-avatar-xxl-font-size": "72px",
         "--ods-avatar-xl-font-size": "32px",
         "--ods-avatar-lg-font-size": "20px",
         "--ods-avatar-md-font-size": "14px",
-        "--ods-avatar-sm-font-size": "10px"
+        "--ods-avatar-sm-font-size": "10px",
+        "--ods-sem-icon-sm": "16px",
+        "--ods-sem-icon-md": "24px",
+        "--ods-sem-icon-lg": "32px",
+        "--ods-sem-avatar-size-xxl": "180px",
+        "--ods-sem-avatar-size-xl": "84px",
+        "--ods-sem-avatar-size-lg": "48px",
+        "--ods-sem-avatar-size-md": "32px",
+        "--ods-sem-avatar-size-sm": "24px",
+        "--ods-sem-icon-button-height": "44px",
+        "--ods-sem-icon-button-width": "44px",
+        "--ods-sem-input-padding": "6px 16px"
+      });
+      _defineProperty(this, "keyRoles", {
+        "--ods-sem-color-roles-primary": {
+          value: this.colors["--ods-ref-color-green-40"],
+          description: 'Main interactive color'
+        },
+        "--ods-sem-color-roles-primary-on-primary": {
+          value: this.colors["--ods-ref-color-green-100"],
+          description: 'Used on top of primary'
+        },
+        "--ods-sem-color-roles-primary-container": {
+          value: this.colors["--ods-ref-color-green-90"],
+          description: 'Container color based on primary'
+        },
+        "--ods-sem-color-roles-primary-on-primary-container": {
+          value: this.colors["--ods-ref-color-green-10"],
+          description: 'Used on top of primary container'
+        },
+        "--ods-sem-color-roles-secondary": {
+          value: this.colors["--ods-ref-color-blue-40"],
+          description: 'Secondary interactive color'
+        },
+        "--ods-sem-color-roles-secondary-on-secondary": {
+          value: this.colors["--ods-ref-color-blue-100"],
+          description: 'Used on top of secondary'
+        },
+        "--ods-sem-color-roles-secondary-container": {
+          value: this.colors["--ods-ref-color-blue-90"],
+          description: 'Container color based on secondary'
+        },
+        "--ods-sem-color-roles-secondary-on-secondary-container": {
+          value: this.colors["--ods-ref-color-blue-10"],
+          description: 'Used on top of secondary container'
+        },
+        "--ods-sem-color-roles-neutral": {
+          value: this.colors["--ods-ref-color-gray-40"],
+          description: 'Can be used for neutral statuses '
+        },
+        "--ods-sem-color-roles-neutral-on-neutral": {
+          value: this.colors["--ods-ref-color-gray-100"],
+          description: 'Used on top of neutral'
+        },
+        "--ods-sem-color-roles-neutral-container": {
+          value: this.colors["--ods-ref-color-gray-90"],
+          description: 'Container color based on neutral'
+        },
+        "--ods-sem-color-roles-neutral-on-neutral-container": {
+          value: this.colors["--ods-ref-color-gray-10"],
+          description: 'Used on top of neutral container'
+        },
+        "--ods-sem-color-roles-accent": {
+          value: this.colors["--ods-ref-color-purple-40"],
+          description: 'Can be used for special statuses'
+        },
+        "--ods-sem-color-roles-accent-on-accent": {
+          value: this.colors["--ods-ref-color-purple-100"],
+          description: 'Used on top of accent'
+        },
+        "--ods-sem-color-roles-accent-container": {
+          value: this.colors["--ods-ref-color-purple-90"],
+          description: 'Container color based on accent'
+        },
+        "--ods-sem-color-roles-accent-on-accent-container": {
+          value: this.colors["--ods-ref-color-purple-10"],
+          description: 'Used on top of accent container'
+        }
+      });
+      _defineProperty(this, "statusRoles", {
+        "--ods-sem-color-status-roles-error": {
+          value: this.colors["--ods-ref-color-red-40"],
+          description: 'Error or negative statuses'
+        },
+        "--ods-sem-color-status-roles-error-on-error": {
+          value: this.colors["--ods-ref-color-red-100"],
+          description: 'Used on top of error'
+        },
+        "--ods-sem-color-status-roles-error-container": {
+          value: this.colors["--ods-ref-color-red-90"],
+          description: 'Container color based on error'
+        },
+        "--ods-sem-color-status-roles-error-on-error-container": {
+          value: this.colors["--ods-ref-color-red-10"],
+          description: 'Used on top of error container'
+        },
+        "--ods-sem-color-status-roles-warning": {
+          value: this.colors["--ods-ref-color-orange-40"],
+          description: 'Warning or caution status'
+        },
+        "--ods-sem-color-status-roles-warning-on-warning": {
+          value: this.colors["--ods-ref-color-orange-100"],
+          description: 'Used on top of warning'
+        },
+        "--ods-sem-color-status-roles-warning-container": {
+          value: this.colors["--ods-ref-color-orange-90"],
+          description: 'Container color based on warning'
+        },
+        "--ods-sem-color-status-roles-warning-on-warning-container": {
+          value: this.colors["--ods-ref-color-orange-10"],
+          description: 'Used on top of warning container'
+        },
+        "--ods-sem-color-status-roles-success": {
+          value: this.colors["--ods-ref-color-green-40"],
+          description: 'Success or positive status'
+        },
+        "--ods-sem-color-status-roles-success-on-success": {
+          value: this.colors["--ods-ref-color-green-100"],
+          description: 'Used on top of success'
+        },
+        "--ods-sem-color-status-roles-success-container": {
+          value: this.colors["--ods-ref-color-green-90"],
+          description: 'Container color based on success'
+        },
+        "--ods-sem-color-status-roles-success-on-success-container": {
+          value: this.colors["--ods-ref-color-green-10"],
+          description: 'Used on top of success container'
+        },
+        "--ods-sem-color-status-roles-info": {
+          value: this.colors["--ods-ref-color-blue-40"],
+          description: 'Informative status, non-urgent'
+        },
+        "--ods-sem-color-status-roles-info-on-info": {
+          value: this.colors["--ods-ref-color-blue-100"],
+          description: 'Used on top of info'
+        },
+        "--ods-sem-color-status-roles-info-container": {
+          value: this.colors["--ods-ref-color-blue-90"],
+          description: 'Container color based on info'
+        },
+        "--ods-sem-color-status-roles-info-on-info-container": {
+          value: this.colors["--ods-ref-color-blue-10"],
+          description: 'Used on top of info container'
+        }
+      });
+      _defineProperty(this, "content", {
+        "--ods-sem-color-text-primary": {
+          value: this.colors["--ods-ref-color-gray-10"],
+          description: 'Main text color for content, all body text and headings'
+        },
+        "--ods-sem-color-text-secondary": {
+          value: this.colors["--ods-ref-color-gray-25"],
+          description: 'Text of slightly lower importance'
+        },
+        "--ods-sem-color-text-tertiary": {
+          value: this.colors["--ods-ref-color-gray-40"],
+          description: 'Placeholder content, captions, low-priority text'
+        },
+        "--ods-sem-color-text-inverse": {
+          value: this.colors["--ods-ref-color-gray-100"],
+          description: 'Used on darker backgrounds'
+        },
+        "--ods-sem-color-icon-primary": {
+          value: this.colors["--ods-ref-color-gray-10"],
+          description: 'Icons adjacent to text primary or icon buttons'
+        },
+        "--ods-sem-color-icon-secondary": {
+          value: this.colors["--ods-ref-color-gray-25"],
+          description: 'Icons adjacent to text secondary'
+        },
+        "--ods-sem-color-icon-tertiary": {
+          value: this.colors["--ods-ref-color-gray-40"],
+          description: 'Icons adjacent to text tertiary'
+        },
+        "--ods-sem-color-icon-inverse": {
+          value: this.colors["--ods-ref-color-gray-100"],
+          description: 'Used on darker backgrounds'
+        },
+        "--ods-sem-color-background-primary": {
+          value: this.colors["--ods-ref-color-blue-100"],
+          description: 'Default light background color'
+        },
+        "--ods-sem-color-background-secondary": {
+          value: this.colors["--ods-ref-color-blue-98"],
+          description: 'Alternative background color'
+        },
+        "--ods-sem-color-background-tertiary": {
+          value: this.colors["--ods-ref-color-blue-99"],
+          description: 'Additional alternative background color'
+        },
+        "--ods-sem-color-background-reverse-primary": {
+          value: this.colors["--ods-ref-color-blue-20"],
+          description: 'Default dark background color'
+        },
+        "--ods-sem-color-background-reverse-secondary": {
+          value: this.colors["--ods-ref-color-blue-25"],
+          description: 'Alternative dark background color'
+        },
+        "--ods-sem-color-background-reverse-tertiary": {
+          value: this.colors["--ods-ref-color-blue-30"],
+          description: 'Additional alternative dark background color'
+        },
+        "--ods-sem-color-border-interactive-component": {
+          value: this.colors["--ods-ref-color-gray-50"],
+          description: 'High contrast border for interactive components'
+        },
+        "--ods-sem-color-border-decorative-primary": {
+          value: this.colors["--ods-ref-color-gray-80"],
+          description: 'Lower contrast border for decorative purposes'
+        },
+        "--ods-sem-color-border-decorative-secondary": {
+          value: this.colors["--ods-ref-color-blue-90"],
+          description: 'Decorative border of lower importance'
+        }
+      });
+      _defineProperty(this, "brand", {
+        "--ods-sem-color-brand-wasabi": {
+          value: "#62D84E",
+          description: 'ServiceNow primary brand color'
+        },
+        "--ods-sem-color-brand-infinite-blue": {
+          value: "#032D42",
+          description: 'ServiceNow secondary brand color'
+        }
+      });
+      _defineProperty(this, "utility", {
+        "--ods-sem-color-utility-transparent": {
+          value: this.colors["--ods-ref-color-gray-100"],
+          description: 'Simple transparent utility'
+        },
+        "--ods-sem-color-utility-shadow": {
+          value: this.colors["--ods-ref-color-gray-25"],
+          description: ''
+        },
+        "--ods-sem-color-utility-states-focus": {
+          value: "var(--ods-sem-color-roles-primary)",
+          description: 'Used for focus styles'
+        },
+        "--ods-sem-color-utility-states-disabled-container": {
+          value: this.colors["--ods-ref-color-gray-80"],
+          description: ''
+        },
+        "--ods-sem-color-utility-states-disabled-content": {
+          value: this.colors["--ods-ref-color-gray-35"],
+          description: 'Disabled style for backgrounds and containers'
+        },
+        "--ods-sem-color-utility-states-primary-default": {
+          value: this.colors["--ods-ref-color-green-80"],
+          description: 'Disabled style for text, icons, borders, and other content'
+        },
+        "--ods-sem-color-utility-states-primary-hover": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-green-80"], this.statusConstants.hover),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-primary-pressed": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-green-80"], this.statusConstants.pressed),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-primary-focus": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-green-80"], 1),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-secondary-default": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-blue-80"], 1),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-secondary-hover": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-blue-80"], this.statusConstants.hover),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-secondary-pressed": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-blue-80"], this.statusConstants.pressed),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-secondary-focus": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-blue-80"], 1),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-neutral-default": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-gray-80"], 1),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-neutral-hover": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-gray-80"], this.statusConstants.hover),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-neutral-pressed": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-gray-80"], this.statusConstants.pressed),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-neutral-focus": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-gray-80"], 1),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-error-default": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-red-80"], 1),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-error-hover": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-red-80"], this.statusConstants.pressed),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-error-pressed": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-red-80"], this.statusConstants.pressed),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-interactive-hover": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-gray-50"], this.statusConstants.hover),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-interactive-pressed": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-gray-50"], this.statusConstants.pressed),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-error-focus": {
+          value: this.setColorOpacity(this.colors["--ods-ref-color-red-80"], 1),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-on-color-default": {
+          value: this.colors["--ods-ref-color-gray-0"],
+          description: ''
+        },
+        "--ods-sem-color-utility-states-primary-on-color-default": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) 0%)",
+          description: ''
+        },
+        "--ods-sem-color-utility-states-primary-on-color-hover": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorHover, ")"),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-primary-on-color-pressed": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorPressed, ")"),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-primary-on-color-focus": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) 0%)",
+          description: ''
+        },
+        "--ods-sem-color-utility-states-secondary-on-color-default": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) 0%)",
+          description: ''
+        },
+        "--ods-sem-color-utility-states-secondary-on-color-hover": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorHover, ")"),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-secondary-on-color-pressed": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorPressed, ")"),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-secondary-on-color-focus": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) 0%)",
+          description: ''
+        },
+        "--ods-sem-color-utility-states-neutral-on-color-default": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) 0%)",
+          description: ''
+        },
+        "--ods-sem-color-utility-states-neutral-on-color-hover": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorHover, ")"),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-neutral-on-color-pressed": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorPressed, ")"),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-neutral-on-color-focus": {
+          value: "color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) 0%)",
+          description: ''
+        },
+        "--ods-sem-color-utility-states-error-on-color-default": {
+          value: "color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) 0%)",
+          description: ''
+        },
+        "--ods-sem-color-utility-states-error-on-color-hover": {
+          value: "color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorHover, ")"),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-error-on-color-pressed": {
+          value: "color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) ".concat(this.statusConstants.onColorPressed, ")"),
+          description: ''
+        },
+        "--ods-sem-color-utility-states-error-on-color-focus": {
+          value: "color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) 0%)",
+          description: ''
+        }
       });
       _defineProperty(this, "tokens", {
-        "semantic-colors": this.semanticColors,
+        //"semantic-colors" : this.semanticColors,
+        "key-roles": this.keyRoles,
+        "status-role": this.statusRoles,
+        content: this.content,
+        brand: this.brand,
+        utility: this.utility,
         spacing: this.spacing,
         radius: this.radius,
         shadow: this.shadow,
         icons: this.icons,
-        typography: this.typography
+        typography: this.typography,
+        "component-level": this.componentLevel
       });
     }
     return _createClass(odsTokens, [{
@@ -2100,7 +2391,7 @@
     }]);
   }();
 
-  var _templateObject$i;
+  var _templateObject$k;
   var OdsIcon = /*#__PURE__*/function (_LitElement) {
     function OdsIcon() {
       var _this;
@@ -2117,7 +2408,7 @@
       value: function render() {
         var tokens = new odsTokens();
         var svg = 'x_snc_ods.' + this.name + '.svg';
-        return x(_templateObject$i || (_templateObject$i = _taggedTemplateLiteral(["\n        <style>\n        :host{\n          display: inline-flex;\n        }\n        .ods-icon{\n            display: inline-flex;\n            background-color: var(", ");\n            background-color: ", ";\n            -webkit-mask: url(", ") no-repeat center;\n            mask: url(", ") no-repeat center;\n            mask-size: 100%;\n        }\n        .ods-icon--sm{\n          height: var(--ods-sem-icon-small);\n          width:  var(--ods-sem-icon-small);\n        }\n        .ods-icon--md{\n          height: var(--ods-sem-icon-medium);\n          width:  var(--ods-sem-icon-medium);\n        }\n        .ods-icon--lg{\n          height: var(--ods-sem-icon-large);\n          width:  var(--ods-sem-icon-large);    \n        }\n        </style>\n        <div part=\"odsIcon\" class=\"ods-icon ods-icon--", "\"></div>\n        "])), tokens.getColorAlias("--".concat(this.color)), this.color && this.color !== "" && this.color !== "undefined" ? this.color : "var(--ods-sem-color-text-primary)", svg, svg, this.size.toLocaleLowerCase());
+        return x(_templateObject$k || (_templateObject$k = _taggedTemplateLiteral(["\n        <style>\n        :host{\n          display: inline-flex;\n        }\n        .ods-icon{\n            display: inline-flex;\n            background-color: var(", ");\n            background-color: ", ";\n            -webkit-mask: url(", ") no-repeat center;\n            mask: url(", ") no-repeat center;\n            mask-size: 100%;\n        }\n        .ods-icon--sm{\n          height: var(--ods-sem-icon-sm);\n          width:  var(--ods-sem-icon-sm);\n        }\n        .ods-icon--md{\n          height: var(--ods-sem-icon-md);\n          width:  var(--ods-sem-icon-md);\n        }\n        .ods-icon--lg{\n          height: var(--ods-sem-icon-lg);\n          width:  var(--ods-sem-icon-lg);    \n        }\n        </style>\n        <div part=\"odsIcon\" class=\"ods-icon ods-icon--", "\"></div>\n        "])), tokens.getColorAlias("--".concat(this.color)), this.color && this.color !== "" && this.color !== "undefined" ? this.color : "var(--ods-sem-color-text-primary)", svg, svg, this.size.toLocaleLowerCase());
       }
     }]);
   }(s$2);
@@ -2134,7 +2425,7 @@
   });
   customElements.define('ods-icon', OdsIcon);
 
-  var _templateObject$h, _templateObject2$e, _templateObject3$c, _templateObject4$a, _templateObject5$7;
+  var _templateObject$j, _templateObject2$f, _templateObject3$d, _templateObject4$a, _templateObject5$7;
 
   /**
    * Service Now Avatar Component
@@ -2167,11 +2458,11 @@
         var size = "".concat(this.size);
         size = size.toLowerCase();
         if (this.image && this.image != "") {
-          return x(_templateObject$h || (_templateObject$h = _taggedTemplateLiteral(["\n        <img\n          class=", "\n          src=\"", "\"\n          alt=\"Avatar Image\"\n          aria-label=\"Image\"\n        />\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.image);
+          return x(_templateObject$j || (_templateObject$j = _taggedTemplateLiteral(["\n        <img\n          class=", "\n          src=\"", "\"\n          alt=\"Avatar Image\"\n          aria-label=\"Image\"\n        />\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.image);
         } else if (this.icon && this.icon != "") {
-          return x(_templateObject2$e || (_templateObject2$e = _taggedTemplateLiteral(["\n        <div\n          class=", "\n          aria-label=\"Icon\"\n        >\n          <ods-icon name=\"", "\" color=\"white\"></ods-icon>\n        </div>\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.icon);
+          return x(_templateObject2$f || (_templateObject2$f = _taggedTemplateLiteral(["\n        <div\n          class=", "\n          aria-label=\"Icon\"\n        >\n          <ods-icon name=\"", "\" color=\"white\"></ods-icon>\n        </div>\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.icon);
         } else if (this.name && this.name != "") {
-          return x(_templateObject3$c || (_templateObject3$c = _taggedTemplateLiteral(["\n        <div\n          class=", "\n          aria-label=\"", "\"\n        >\n          ", "\n        </div>\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.name, this.getAvatarText());
+          return x(_templateObject3$d || (_templateObject3$d = _taggedTemplateLiteral(["\n        <div\n          class=", "\n          aria-label=\"", "\"\n        >\n          ", "\n        </div>\n      "])), ["ods-avatar", "ods-avatar-" + size].join(" "), this.name, this.getAvatarText());
         }
         return x(_templateObject4$a || (_templateObject4$a = _taggedTemplateLiteral(["\n      <div\n        class=", "\n        aria-label=\"Anonymous\"\n      >\n        <ods-icon name=\"user\" color=\"white\"></ods-icon>\n      </div>\n    "])), ["ods-avatar", "ods-avatar-" + size].join(" "));
       }
@@ -2220,7 +2511,7 @@
   }(s$2);
   customElements.define("ods-avatar", ODSAvatar);
 
-  var _templateObject$g, _templateObject2$d, _templateObject3$b, _templateObject4$9, _templateObject5$6, _templateObject6$6, _templateObject7$4, _templateObject8$1;
+  var _templateObject$i, _templateObject2$e, _templateObject3$c, _templateObject4$9, _templateObject5$6, _templateObject6$6, _templateObject7$4, _templateObject8$1;
   var hasLoadedMaterialSymbolsFont$3 = false;
   var loadLatoFont$2 = function loadLatoFont() {
     if (hasLoadedMaterialSymbolsFont$3) {
@@ -2266,7 +2557,7 @@
         }
         var icon = this.variant === 'ghost' && !this.icon ? 'arrow-right' : this.icon;
         var color = (colorMap[this.variant] || {}).hasOwnProperty(this.disabled) ? colorMap[this.variant][this.disabled] : "#515151";
-        return x(_templateObject$g || (_templateObject$g = _taggedTemplateLiteral(["\n  <ods-icon size=\"sm\" name=\"", "\" color=\"", "\"/>\n  "])), icon || 'placeholder', color);
+        return x(_templateObject$i || (_templateObject$i = _taggedTemplateLiteral(["\n  <ods-icon size=\"sm\" name=\"", "\" color=\"", "\"/>\n  "])), icon || 'placeholder', color);
       }
     }, {
       key: "getButton",
@@ -2277,7 +2568,7 @@
         var fullwidth = this["full-width"] ? 'full-width' : '';
         var tabindex = this.disabled ? -1 : 0;
         if (this.href) {
-          return x(_templateObject2$d || (_templateObject2$d = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", " ", "' href= \"", "\" target= \"", "\" tabindex= \"", "\" aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject3$b || (_templateObject3$b = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject4$9 || (_templateObject4$9 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
+          return x(_templateObject2$e || (_templateObject2$e = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", " ", "' href= \"", "\" target= \"", "\" tabindex= \"", "\" aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject3$c || (_templateObject3$c = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject4$9 || (_templateObject4$9 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
         } else {
           return x(_templateObject5$6 || (_templateObject5$6 = _taggedTemplateLiteral(["\n        <button @click=\"", "\" tabindex= \"", "\" class='btn-", " ", " ", "' aria-disabled = \"", "\" >\n      ", " \n      <slot> </slot>\n      ", "\n      </button>\n      "])), this.onClick, tabindex, this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', fullwidth, this.disabled ? 'true' : 'false', iconLeft ? x(_templateObject6$6 || (_templateObject6$6 = _taggedTemplateLiteral(["<i class= 'icon-left'> ", " </i>"])), iconLeft) : '', iconRight ? x(_templateObject7$4 || (_templateObject7$4 = _taggedTemplateLiteral(["<i class= 'icon-right'> ", " </i>"])), iconRight) : '');
         }
@@ -2300,7 +2591,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject8$1 || (_templateObject8$1 = _taggedTemplateLiteral(["\n\n    <style>\n    :host{\n      display: ", ";\n    }\n    \n    a, button {\n        font-family:'Lato', Helvetica, Arial, sans-serif;\n        font-size: var(--ods-ref-text-medium-regular);\n        text-decoration: none;\n        font-style: normal;\n        font-weight: 700;\n        line-height: var(--ods-sem-space-large);\n        border: var(--ods-sem-space-none);\n        border-radius: var( --ods-sem-space-small);\n        cursor: pointer;\n        display: inline-flex;\n        justify-content: center;\n        padding: 10px var(--ods-sem-space-large);\n        box-sizing: border-box;\n    }\n\n    .full-width {\n      width: 100%;\n    }\n\n    .button-container{\n       border-radius: var( --ods-sem-space-small);\n    }\n\n    .btn-solid {\n        color: var(--ods-sem-color-roles-primary-on-primary);\n        background-color: var(--ods-sem-color-roles-primary);\n    }\n\n    .btn-solid:hover {\n      background-color: var(--ods-sem-color-utility-states-primary-on-color-hover);\n    }\n\n    .btn-solid:active, [active-menu] {\n      background-color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n    }\n\n    .btn-outline {\n        color: var(--ods-sem-color-roles-primary);\n        background-color: var(--ods-sem-color-roles-primary-on-primary) ;\n        box-shadow:0 0 0 1px;\n    }\n\n    .btn-outline:hover {\n      background: var(--ods-sem-color-utility-states-primary-hover);\n    }\n\n    .btn-outline:active, [active-menu]{\n      background: var(--ods-sem-color-utility-states-primary-pressed);\n    }\n           \n    .btn-destructive-solid {\n        color: var(--ods-sem-color-status-roles-error-on-error);\n        background-color: var(--ods-sem-color-status-roles-error);\n    }\n\n    .btn-destructive-solid:hover {\n        background-color: var(--ods-sem-color-utility-states-error-on-color-hover);\n    }\n\n    .btn-destructive-solid:active, [active-menu]{\n        background-color: var(--ods-sem-color-utility-states-error-on-color-pressed);\n    }\n              \n    .btn-destructive-outline {\n        color: var(--ods-sem-color-status-roles-error);\n        background-color: var(--ods-sem-color-status-roles-error-on-error);\n        box-shadow:0 0 0 1px ;\n    }\n\n    .btn-destructive-outline:hover {\n      background-color: var(--ods-sem-color-utility-states-error-hover);\n    }\n\n    .btn-destructive-outline:active, [active-menu]{\n      background-color: var(--ods-sem-color-utility-states-error-pressed);\n    }\n\n    :host(:focus-within) .btn-solid, :host(:focus-within) .btn-destructive-solid {\n      outline: none;\n      box-shadow: 0 0 0 2px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 var(--ods-sem-space-xsmall) var(--ods-sem-color-utility-states-focus);\n    }\n\n    :host(:focus-within) .btn-outline{\n     outline: none;\n     box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-focus), 0 0 0 3px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 5px var(--ods-sem-color-utility-states-focus);\n    }\n    :host(:focus-within) .btn-destructive-outline {\n     outline: none;\n     box-shadow: 0 0 0 1px var(--ods-sem-color-status-roles-error), 0 0 0 3px var(--ods-sem-color-status-roles-error-on-error), 0 0 0 5px var(--ods-sem-color-utility-states-focus);\n    }\n\n    .btn-ghost {\n    padding: var(--ods-sem-space-small) var( --ods-sem-space-none);\n    border-radius:  var(--ods-sem-space-small);\n    color: var(--ods-sem-color-roles-primary);\n    background: transparent;\n    }\n\n    .btn-ghost:hover {\n    background: var(--ods-sem-color-utility-states-primary-hover);\n    }\n\n    .btn-ghost:active, [active-menu]{\n    background: var(--ods-sem-color-utility-states-primary-pressed);\n    }\n\n    :host(:focus-within) .btn-ghost{\n      outline: none;\n      box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n    }\n\n\n    .disabled-solid , .disabled-solid:hover, .disabled-solid:focus, .disabled-destructive-solid,  .disabled-destructive-solid:hover, .disabled-destructive-solid:focus {\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      background: var(--ods-sem-color-utility-states-disabled-container);\n      opacity: 0.5;\n      cursor: not-allowed;\n      pointer-events: none;\n      box-shadow: 0 0 0 0 var(--ods-sem-color-utility-transparent) !important;\n    }\n\n    .disabled-outline, .disabled-outline:hover, .disabled-outline:focus, .disabled-destructive-outline,  .disabled-destructive-outline:hover, .disabled-destructive-outline:focus  {\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      background: var(--ods-sem-color-utility-states-disabled-container);\n      opacity: 0.5;\n      box-shadow: 0 0 0 1px !important;\n      cursor: not-allowed;\n      pointer-events: none;\n    }\n\n    .disabled-ghost, .disabled-ghost:hover, .disabled-ghost:focus{\n      border-radius: var(--ods-sem-space-small);\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      opacity: 0.5;\n      cursor: not-allowed;\n      pointer-events: none;\n      background: transparent;\n      box-shadow: 0 0 0 0 var(--ods-sem-color-utility-transparent) !important;\n    }\n\n    .icon-left{\n        display: inline-flex;\n    \n    ods-icon::part(odsIcon){\n      height: var(--ods-sem-space-medium);\n      width: var(--ods-sem-space-medium);\n      margin-right: var(--ods-sem-space-small);\n      vertical-align: baseline;\n      margin-top: var(--ods-sem-space-xsmall);\n      \n        }\n    }   \n\n    .icon-right{\n      display: inline-flex;\n\n    ods-icon::part(odsIcon) {\n      height: var(--ods-sem-space-medium);\n      width: var(--ods-sem-space-medium);\n      margin-left: var(--ods-sem-space-small);\n      vertical-align: baseline;\n      margin-top: var(--ods-sem-space-xsmall);\n     \n        }\n    }   \n\n    .button-container:has(.disabled-solid, .disabled-destructive-solid, .disabled-outline, .disabled-destructive-outline, .disabled-ghost){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"button-container\">", "\n    </div>\n      "])), this["full-width"] ? 'block' : 'inline-flex', this.getButton());
+        return x(_templateObject8$1 || (_templateObject8$1 = _taggedTemplateLiteral(["\n\n    <style>\n    :host{\n      display: ", ";\n    }\n    \n    a, button {\n        font-family:'Lato', Helvetica, Arial, sans-serif;\n        font-size: var(--ods-ref-text-medium-regular);\n        text-decoration: none;\n        font-style: normal;\n        font-weight: 700;\n        line-height: var(--ods-sem-space-lg);\n        border: var(--ods-sem-space-none);\n        border-radius: var( --ods-sem-space-sm);\n        cursor: pointer;\n        display: inline-flex;\n        justify-content: center;\n        padding: 10px var(--ods-sem-space-lg);\n        box-sizing: border-box;\n    }\n\n    .full-width {\n      width: 100%;\n    }\n\n    .button-container{\n       border-radius: var( --ods-sem-space-sm);\n    }\n\n    .btn-solid {\n        color: var(--ods-sem-color-roles-primary-on-primary);\n        background-color: var(--ods-sem-color-roles-primary);\n    }\n\n    .btn-solid:hover {\n      background-color: var(--ods-sem-color-utility-states-primary-on-color-hover);\n    }\n\n    .btn-solid:active, [active-menu] {\n      background-color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n    }\n\n    .btn-outline {\n        color: var(--ods-sem-color-roles-primary);\n        background-color: var(--ods-sem-color-roles-primary-on-primary) ;\n        box-shadow:0 0 0 1px;\n    }\n\n    .btn-outline:hover {\n      background: var(--ods-sem-color-utility-states-primary-hover);\n    }\n\n    .btn-outline:active, [active-menu]{\n      background: var(--ods-sem-color-utility-states-primary-pressed);\n    }\n           \n    .btn-destructive-solid {\n        color: var(--ods-sem-color-status-roles-error-on-error);\n        background-color: var(--ods-sem-color-status-roles-error);\n    }\n\n    .btn-destructive-solid:hover {\n        background-color: var(--ods-sem-color-utility-states-error-on-color-hover);\n    }\n\n    .btn-destructive-solid:active, [active-menu]{\n        background-color: var(--ods-sem-color-utility-states-error-on-color-pressed);\n    }\n              \n    .btn-destructive-outline {\n        color: var(--ods-sem-color-status-roles-error);\n        background-color: var(--ods-sem-color-status-roles-error-on-error);\n        box-shadow:0 0 0 1px ;\n    }\n\n    .btn-destructive-outline:hover {\n      background-color: var(--ods-sem-color-utility-states-error-hover);\n    }\n\n    .btn-destructive-outline:active, [active-menu]{\n      background-color: var(--ods-sem-color-utility-states-error-pressed);\n    }\n\n    :host(:focus-within) .btn-solid, :host(:focus-within) .btn-destructive-solid {\n      outline: none;\n      box-shadow: 0 0 0 2px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 var(--ods-sem-space-xs) var(--ods-sem-color-utility-states-focus);\n    }\n\n    :host(:focus-within) .btn-outline{\n     outline: none;\n     box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-focus), 0 0 0 3px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 5px var(--ods-sem-color-utility-states-focus);\n    }\n    :host(:focus-within) .btn-destructive-outline {\n     outline: none;\n     box-shadow: 0 0 0 1px var(--ods-sem-color-status-roles-error), 0 0 0 3px var(--ods-sem-color-status-roles-error-on-error), 0 0 0 5px var(--ods-sem-color-utility-states-focus);\n    }\n\n    .btn-ghost {\n    padding: var(--ods-sem-space-sm) var( --ods-sem-space-none);\n    border-radius:  var(--ods-sem-space-sm);\n    color: var(--ods-sem-color-roles-primary);\n    background: transparent;\n    }\n\n    .btn-ghost:hover {\n    background: var(--ods-sem-color-utility-states-primary-hover);\n    }\n\n    .btn-ghost:active, [active-menu]{\n    background: var(--ods-sem-color-utility-states-primary-pressed);\n    }\n\n    :host(:focus-within) .btn-ghost{\n      outline: none;\n      box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n    }\n\n\n    .disabled-solid , .disabled-solid:hover, .disabled-solid:focus, .disabled-destructive-solid,  .disabled-destructive-solid:hover, .disabled-destructive-solid:focus {\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      background: var(--ods-sem-color-utility-states-disabled-container);\n      opacity: 0.5;\n      cursor: not-allowed;\n      pointer-events: none;\n      box-shadow: 0 0 0 0 var(--ods-sem-color-utility-transparent) !important;\n    }\n\n    .disabled-outline, .disabled-outline:hover, .disabled-outline:focus, .disabled-destructive-outline,  .disabled-destructive-outline:hover, .disabled-destructive-outline:focus  {\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      background: var(--ods-sem-color-utility-states-disabled-container);\n      opacity: 0.5;\n      box-shadow: 0 0 0 1px !important;\n      cursor: not-allowed;\n      pointer-events: none;\n    }\n\n    .disabled-ghost, .disabled-ghost:hover, .disabled-ghost:focus{\n      border-radius: var(--ods-sem-space-sm);\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      opacity: 0.5;\n      cursor: not-allowed;\n      pointer-events: none;\n      background: transparent;\n      box-shadow: 0 0 0 0 var(--ods-sem-color-utility-transparent) !important;\n    }\n\n    .icon-left{\n        display: inline-flex;\n    \n    ods-icon::part(odsIcon){\n      height: var(--ods-sem-space-md);\n      width: var(--ods-sem-space-md);\n      margin-right: var(--ods-sem-space-sm);\n      vertical-align: baseline;\n      margin-top: var(--ods-sem-space-xs);\n      \n        }\n    }   \n\n    .icon-right{\n      display: inline-flex;\n\n    ods-icon::part(odsIcon) {\n      height: var(--ods-sem-space-md);\n      width: var(--ods-sem-space-md);\n      margin-left: var(--ods-sem-space-sm);\n      vertical-align: baseline;\n      margin-top: var(--ods-sem-space-xs);\n     \n        }\n    }   \n\n    .button-container:has(.disabled-solid, .disabled-destructive-solid, .disabled-outline, .disabled-destructive-outline, .disabled-ghost){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"button-container\">", "\n    </div>\n      "])), this["full-width"] ? 'block' : 'inline-flex', this.getButton());
       }
     }], [{
       key: "properties",
@@ -2336,7 +2627,7 @@
   }(s$2);
   customElements.define('ods-button', OdsButton);
 
-  var _templateObject$f, _templateObject2$c, _templateObject3$a;
+  var _templateObject$h, _templateObject2$d, _templateObject3$b;
   /**
    * Service Now ODS Chip Component
    * @input disabled, href, target
@@ -2407,15 +2698,15 @@
       value: function getChip() {
         var tabindex = this.disabled ? -1 : 0;
         if (this.href) {
-          return x(_templateObject$f || (_templateObject$f = _taggedTemplateLiteral(["\n      <a @click=", " class='ods-chip ", "' href= \"", "\" target= \"", "\"  tabindex= \"", "\" aria-disabled = \"", "\">\n      <slot name=\"start\"></slot>\n      <slot name=\"label\"></slot>\n      <slot name=\"end\"></slot>\n      </a>\n      "])), this.stateFocus, this.disabled ? 'disabled' : '', this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false');
+          return x(_templateObject$h || (_templateObject$h = _taggedTemplateLiteral(["\n      <a @click=", " class='ods-chip ", "' href= \"", "\" target= \"", "\"  tabindex= \"", "\" aria-disabled = \"", "\">\n      <slot name=\"start\"></slot>\n      <slot name=\"label\"></slot>\n      <slot name=\"end\"></slot>\n      </a>\n      "])), this.stateFocus, this.disabled ? 'disabled' : '', this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false');
         } else {
-          return x(_templateObject2$c || (_templateObject2$c = _taggedTemplateLiteral(["\n      <button @click=", " class='ods-chip ", "' tabindex= \"", "\" aria-disabled = \"", "\">\n      <slot name=\"start\"></slot>\n      <slot name=\"label\"></slot>\n      <slot name=\"end\"></slot>\n      </button>\n      "])), this.clickValidation, this.disabled ? 'disabled' : '', tabindex, this.disabled ? 'true' : 'false');
+          return x(_templateObject2$d || (_templateObject2$d = _taggedTemplateLiteral(["\n      <button @click=", " class='ods-chip ", "' tabindex= \"", "\" aria-disabled = \"", "\">\n      <slot name=\"start\"></slot>\n      <slot name=\"label\"></slot>\n      <slot name=\"end\"></slot>\n      </button>\n      "])), this.clickValidation, this.disabled ? 'disabled' : '', tabindex, this.disabled ? 'true' : 'false');
         }
       }
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject3$a || (_templateObject3$a = _taggedTemplateLiteral(["\n  \n    <style>\n    :host{\n      display: inline-flex;\n    }\n\n    .ods-chip{\n        border-radius: var(--ods-sem-radius-xlarge);\n        text-decoration: none;\n        background: var(--ods-sem-color-roles-primary-on-primary);\n        cursor: pointer;\n        justify-content: center;\n        box-sizing: border-box;\n        display: inline-flex;\n        align-items: center;\n        padding: var(--ods-sem-radius-small) var(--ods-sem-space-medium) var(--ods-sem-radius-small) var(--ods-sem-radius-small);\n        border:1px solid var(--ods-sem-color-border-interactive-component);\n        gap: var(--ods-sem-space-small);\n      }\n\n    .ods-chip.adjusted-padding{\n      padding: var(--ods-sem-radius-small) var(--ods-sem-space-medium);\n    }\n    \n    .ods-chip:hover {\n     background: var(--ods-sem-color-utility-states-secondary-hover);\n     border:1px solid color-mix(in srgb, var(--ods-sem-color-utility-states-secondary-hover), var(--ods-sem-color-border-interactive-component));\n    }\n\n    .ods-chip:active {\n     background: var(--ods-sem-color-utility-states-secondary-pressed);\n     border:1px solid color-mix(in srgb, var(--ods-sem-color-utility-states-secondary-pressed), var(--ods-sem-color-border-interactive-component));\n    }\n\n    .ods-chip:focus {\n        outline: none;\n        border: 1px solid var(--ods-sem-color-utility-states-focus);\n        box-shadow: 0 0 0 3px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 5px var(--ods-sem-color-utility-states-focus);\n    }\n\n    .disabled {\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      opacity: 0.5;\n      background: var(--ods-sem-color-utility-states-disabled-container);\n      cursor: not-allowed;\n      box-shadow:0 0 0 1px var(--ods-sem-color-border-interactive-component);\n      pointer-events: none;\n    }\n\n\n    .disabled::slotted(ods-icon){\n     color: var(--ods-sem-color-utility-states-disabled-content);\n    }\n\n    .chip-container:has(.disabled){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"chip-container\">", "\n    </div>\n      "])), this.getChip());
+        return x(_templateObject3$b || (_templateObject3$b = _taggedTemplateLiteral(["\n  \n    <style>\n    :host{\n      display: inline-flex;\n    }\n\n    .ods-chip{\n        border-radius: var(--ods-sem-radius-xl);\n        text-decoration: none;\n        background: var(--ods-sem-color-roles-primary-on-primary);\n        cursor: pointer;\n        justify-content: center;\n        box-sizing: border-box;\n        display: inline-flex;\n        align-items: center;\n        padding: var(--ods-sem-radius-sm) var(--ods-sem-space-md) var(--ods-sem-radius-sm) var(--ods-sem-radius-sm);\n        outline:1px solid var(--ods-sem-color-border-interactive-component);\n        border: none;\n        gap: var(--ods-sem-space-sm);\n      }\n\n    .ods-chip.adjusted-padding{\n      padding: var(--ods-sem-radius-sm) var(--ods-sem-space-md);\n    }\n    \n    .ods-chip:hover {\n     background: var(--ods-sem-color-utility-states-secondary-hover);\n     border: none;\n     outline:1px solid color-mix(in srgb, var(--ods-sem-color-utility-states-secondary-hover), var(--ods-sem-color-border-interactive-component));\n    }\n\n    .ods-chip:active {\n     background: var(--ods-sem-color-utility-states-secondary-pressed);\n     border: none;\n     outline:1px solid color-mix(in srgb, var(--ods-sem-color-utility-states-secondary-pressed), var(--ods-sem-color-border-interactive-component));\n    }\n\n    .ods-chip:focus {\n        outline: 1px solid var(--ods-sem-color-utility-states-focus);\n        border: none;\n        box-shadow: 0 0 0 3px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 5px var(--ods-sem-color-utility-states-focus);\n    }\n\n    .disabled {\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      opacity: 0.5;\n      background: var(--ods-sem-color-utility-states-disabled-container);\n      cursor: not-allowed;\n      box-shadow:0 0 0 1px var(--ods-sem-color-border-interactive-component);\n      pointer-events: none;\n    }\n\n\n    .disabled::slotted(ods-icon){\n     color: var(--ods-sem-color-utility-states-disabled-content);\n    }\n\n    .chip-container:has(.disabled){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"chip-container\">", "\n    </div>\n      "])), this.getChip());
       }
     }], [{
       key: "properties",
@@ -2439,7 +2730,7 @@
   }(s$2);
   customElements.define('ods-chip', OdsChip);
 
-  var _templateObject$e;
+  var _templateObject$g;
 
   /**
    * Service Now Text Component
@@ -2459,7 +2750,7 @@
       key: "render",
       value: function render() {
         var padding = this.padding.toLowerCase();
-        return x(_templateObject$e || (_templateObject$e = _taggedTemplateLiteral([" \n    <style>\n    .ods-container{\n      display: flex;\n      padding: var(--ods-sem-space-medium);\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      border-radius: var(--ods-sem-radius-large);\n      border: 1px solid var(--ods-sem-color-border-decorative-primary);\n      background: var(--ods-sem-color-roles-neutral-on-neutral);\n      word-break: break-word;\n    }\n    \n    .ods-container--padding-md{\n      padding: var(--ods-sem-space-medium);\n    }\n    .ods-container--padding-lg{\n      padding: var(--ods-sem-space-large);\n    }\n    .ods-container--padding-none{\n      padding: var(--ods-sem-space-none);\n      ::slotted(*) {\n        border-radius: var(--ods-sem-radius-large);\n      }\n    }\n\n    .ods-container--shadow{\n      box-shadow: var(--ods-sem-shadow-small-x) var(--ods-sem-shadow-small-y) var(--ods-sem-shadow-small-blur) var(--ods-sem-shadow-small-spread) var(--ods-sem-shadow-color);\n    }\n    </style>\n    <div class=\"ods-container ods-container--padding-", " ", "\" part=\"odsContainer\">\n        <slot></slot>\n    </div>"])), padding, this.shadow ? 'ods-container--shadow' : '');
+        return x(_templateObject$g || (_templateObject$g = _taggedTemplateLiteral([" \n    <style>\n    .ods-container{\n      display: flex;\n      padding: var(--ods-sem-space-md);\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      border-radius: var(--ods-sem-radius-lg);\n      border: 1px solid var(--ods-sem-color-border-decorative-primary);\n      background: var(--ods-sem-color-roles-neutral-on-neutral);\n      word-break: break-word;\n    }\n    \n    .ods-container--padding-md{\n      padding: var(--ods-sem-space-md);\n    }\n    .ods-container--padding-lg{\n      padding: var(--ods-sem-space-lg);\n    }\n    .ods-container--padding-none{\n      padding: var(--ods-sem-space-none);\n      ::slotted(*) {\n        border-radius: var(--ods-sem-radius-lg);\n      }\n    }\n\n    .ods-container--shadow{\n      box-shadow: var(--ods-sem-shadow-sm-x) var(--ods-sem-shadow-sm-y) var(--ods-sem-shadow-sm-blur) var(--ods-sem-shadow-sm-spread) var(--ods-sem-shadow-color);\n    }\n    </style>\n    <div class=\"ods-container ods-container--padding-", " ", "\" part=\"odsContainer\">\n        <slot></slot>\n    </div>"])), padding, this.shadow ? 'ods-container--shadow' : '');
       }
     }]);
   }(s$2);
@@ -3723,7 +4014,7 @@
     }]);
   }();
 
-  var _templateObject$d, _templateObject2$b;
+  var _templateObject$f, _templateObject2$c;
 
   /**
    * Service Now ODS Dialog Component
@@ -3735,11 +4026,10 @@
       var _this;
       _classCallCheck(this, OdsDialog);
       _this = _callSuper(this, OdsDialog);
-      _this.fixed = false;
+      _this.fixed = "false";
       _this._handleKeyESC = _this._handleKeyESC.bind(_this);
-      _this._checkButtons = _this._checkButtons.bind(_this);
-      _this._firstTimeLoaded = false;
       _this["max-width"] = '600px';
+      _this["max-height"] = '527px';
       _this.NgApi = null;
       return _this;
     }
@@ -3749,9 +4039,6 @@
       value: function connectedCallback() {
         _get(_getPrototypeOf(OdsDialog.prototype), "connectedCallback", this).call(this);
         document.addEventListener('keydown', this._handleKeyESC);
-        window.addEventListener('resize', this._checkButtons);
-        this.addEventListener('open', this.openModal);
-        this._checkButtons();
         this.NgApi = new OdsBridgeApi(this);
       }
     }, {
@@ -3759,8 +4046,6 @@
       value: function disconnectedCallback() {
         _get(_getPrototypeOf(OdsDialog.prototype), "disconnectedCallback", this).call(this);
         document.removeEventListener('keydown', this._handleKeyESC);
-        window.addEventListener('resize', this._checkButtons);
-        this.removeEventListener('open', this.openModal);
       }
     }, {
       key: "_handleKeyESC",
@@ -3772,21 +4057,13 @@
     }, {
       key: "openModal",
       value: function openModal() {
-        this.open = true;
-      }
-    }, {
-      key: "firstUpdated",
-      value: function firstUpdated() {
-        this._firstTimeLoaded = true;
+        this.isOpen = "true";
       }
     }, {
       key: "closeModal",
-      value: function closeModal() {
-        this.open = false;
-        this.removeAttribute('open');
-        if (typeof this["[open]"] !== 'undefined') {
-          this.NgApi.syncScopeProperty('c', 'showDialog', false);
-        }
+      value: function closeModal(e) {
+        this.isOpen = "false";
+        this.NgApi.triggerNg(false, e);
         this.clearElements();
       }
     }, {
@@ -3835,8 +4112,11 @@
     }, {
       key: "updated",
       value: function updated(changedProperties) {
-        _get(_getPrototypeOf(OdsDialog.prototype), "updated", this).call(this, changedProperties);
-        this._checkButtons();
+        _get(_getPrototypeOf(OdsDialog.prototype), "updated", this).call(this);
+        var oldOpen = changedProperties.get('isOpen');
+        if (oldOpen !== this.isOpen && typeof oldOpen !== 'undefined') {
+          this._checkButtons();
+        }
       }
     }, {
       key: "_checkButtons",
@@ -3844,11 +4124,13 @@
         var footerSlot = this.shadowRoot.querySelector('slot[name="footer"]');
         if (!footerSlot) return;
         var assignedElements = footerSlot.assignedElements();
+        //Check for outside buttons
+        if (assignedElements.length === 0) assignedElements = Array.from(this.querySelectorAll('[slot="footer"]'));
         var hasButtons = assignedElements.some(function (el) {
           return el.tagName.toLowerCase() === 'ods-button';
         });
         if (!hasButtons) {
-          this.open = false;
+          this.closeModal();
           console.warn("At least one button must be added for the component to be valid");
         } else {
           assignedElements.forEach(function (el) {
@@ -3878,7 +4160,7 @@
         if (!this.heading) {
           return console.warn("Heading is required and cannot be omitted");
         }
-        return x(_templateObject$d || (_templateObject$d = _taggedTemplateLiteral(["\n   <div class=\"scrim\">\n   </div>\n    <div class=\"modal-container\" @click=\"", "\">\n      <div Role=\"dialog\" arial-modal= \"true\" arial-label=\"", "\" class=\"modal\" @click=\"", "\">\n        <div class=\"header\">\n          <ods-heading html-tag= 'h2' size= 'sm'>", " </ods-heading>\n          <div class=\"icon-close\">\n            <ods-icon-button variant='ghost' shape='square' icon='close' color='text-primary' tooltip=\"Close dialog\" @click=\"", "\">&times;</ods-icon-button >\n          </div>\n        </div>\n        <div class=\"content\">\n          <slot></slot>\n        </div>\n        <div class=\"footer\">\n          <slot name=\"footer\"></slot>\n        </div>\n      </div>\n    </div>"])), this.closeModal, this.heading, function (e) {
+        return x(_templateObject$f || (_templateObject$f = _taggedTemplateLiteral(["\n   <div class=\"scrim\">\n   </div>\n    <div class=\"modal-container\" @click=\"", "\">\n      <div Role=\"dialog\" arial-modal= \"true\" arial-label=\"", "\" class=\"modal\" @click=\"", "\">\n        <div class=\"header\">\n          <ods-heading html-tag= 'h2' size= 'sm'>", " </ods-heading>\n          <div class=\"icon-close\">\n            <ods-icon-button variant='ghost' shape='square' icon='close' color='text-primary' tooltip=\"Close dialog\" @click=\"", "\">&times;</ods-icon-button >\n          </div>\n        </div>\n        <div class=\"content\">\n          <slot></slot>\n        </div>\n        <div class=\"footer\">\n          <slot name=\"footer\"></slot>\n        </div>\n      </div>\n    </div>"])), this.closeModal, this.heading, function (e) {
           return e.stopPropagation();
         }, this.heading, this.closeModal);
       }
@@ -3886,8 +4168,7 @@
       key: "render",
       value: function render() {
         var maxWidth = this["max-width"];
-        if (typeof this["[open]"] !== 'undefined') this.open = this["[open]"] === 'true';
-        return x(_templateObject2$b || (_templateObject2$b = _taggedTemplateLiteral(["\n    <style>\n    :host {\n        display: block;\n      }\n      .scrim {\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background-color: var(--ods-sem-color-background-reverse-primary);\n        opacity: 0.75;\n        z-index:9998;\n      }\n      .modal-container{\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        z-index:9999;\n      }\n      .modal {\n        padding: var(--ods-sem-space-large);\n        background: var(--ods-sem-color-roles-primary-on-primary);\n        border-radius: var(--ods-sem-space-small);\n        max-width: ", ";\n        width: 100%;\n        max-height:527px;\n        display: flex;\n        flex-direction: column;\n        ", "\n        margin: var(--ods-sem-space-large);\n      }\n      \n      .header {\n        display: inline-flex;\n        justify-content: space-between;\n        align-items: center;\n        gap: var(--ods-sem-space-small);\n        margin-bottom: var( --ods-sem-space-small);\n        word-break: break-word;\n      }\n      \n      .icon-close{\n        align-self: flex-start;\n      }\n\n      .content {\n        margin-bottom: var(--ods-sem-space-xlarge);\n        ", "\n      }\n\n      .content::-webkit-scrollbar {\n        width: 10px;\n      }\n      \n      .content::-webkit-scrollbar-track {\n        background-color: #FFFFFF;\n        border-radius: var(--ods-sem-radius-full);\n      }\n      \n      .content::-webkit-scrollbar-thumb {\n        background-color: var(--ods-sem-color-border-decorative-primary);\n        border-radius: var(--ods-sem-radius-full);\n        height:30px;\n      }\n\n      .footer {\n        gap: var(--ods-sem-space-small);\n        display: flex;\n        justify-content: flex-end;\n        word-break: break-word;\n      }\n\n      .modal.small-width .footer{\n        flex-direction: column-reverse;\n        align-items: stretch;\n      }\n\n      @media screen and (max-width: 479px){\n       .footer {\n        flex-direction: column-reverse;\n        align-items: stretch;\n        }\n        }\n\n      ods-heading{\n        padding: 6px 0px;\n      }\n\n     \n    </style>\n      ", "\n    "])), maxWidth, this.fixed ? '' : 'overflow-y: auto;', this.fixed ? 'overflow-y: auto;' : '', this.open ? this.getDialog() : '');
+        return x(_templateObject2$c || (_templateObject2$c = _taggedTemplateLiteral(["\n    <style>\n    :host {\n        display: block;\n      }\n      .scrim {\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        background-color: var(--ods-sem-color-background-reverse-primary);\n        opacity: 0.75;\n        z-index:9998;\n      }\n      .modal-container{\n        position: fixed;\n        top: 0;\n        left: 0;\n        width: 100%;\n        height: 100%;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        z-index:9999;\n      }\n      .modal {\n        padding: var(--ods-sem-space-lg);\n        background: var(--ods-sem-color-roles-primary-on-primary);\n        border-radius: var(--ods-sem-space-sm);\n        max-width: ", ";\n        max-height: ", ";\n        width: 100%;\n        display: flex;\n        flex-direction: column;\n        ", "\n        margin: var(--ods-sem-space-lg);\n      }\n      \n      .header {\n        display: inline-flex;\n        justify-content: space-between;\n        align-items: center;\n        gap: var(--ods-sem-space-sm);\n        margin-bottom: var( --ods-sem-space-sm);\n        word-break: break-word;\n      }\n      \n      .icon-close{\n        align-self: flex-start;\n      }\n\n      .content {\n        margin-bottom: var(--ods-sem-space-xl);\n        ", "\n      }\n\n      .content::-webkit-scrollbar {\n        width: 10px;\n      }\n      \n      .content::-webkit-scrollbar-track {\n        background-color: #FFFFFF;\n        border-radius: var(--ods-sem-radius-full);\n      }\n      \n      .content::-webkit-scrollbar-thumb {\n        background-color: var(--ods-sem-color-border-decorative-primary);\n        border-radius: var(--ods-sem-radius-full);\n        height:30px;\n      }\n\n      .footer {\n        gap: var(--ods-sem-space-sm);\n        display: flex;\n        justify-content: flex-end;\n        word-break: break-word;\n      }\n\n      .modal.small-width .footer{\n        flex-direction: column-reverse;\n        align-items: stretch;\n      }\n\n      @media screen and (max-width: 479px){\n       .footer {\n        flex-direction: column-reverse;\n        align-items: stretch;\n        }\n        }\n\n      ods-heading{\n        padding: 6px 0px;\n      }\n     \n    </style>\n      ", "\n    "])), maxWidth, this["max-height"], this.fixed === "true" ? '' : 'overflow-y: auto;', this.fixed === "true" ? 'overflow-y: auto;' : '', this.isOpen === "true" ? this.getDialog() : '');
       }
     }], [{
       key: "properties",
@@ -3897,7 +4178,7 @@
             type: Boolean
           },
           fixed: {
-            type: Boolean
+            type: String
           },
           heading: {
             type: String
@@ -3905,7 +4186,10 @@
           "max-width": {
             type: String
           },
-          "[open]": {
+          "max-height": {
+            type: String
+          },
+          "isOpen": {
             type: String
           }
         };
@@ -3963,7 +4247,7 @@
     },
     n$2 = l(x);
 
-  var _templateObject$c, _templateObject2$a, _templateObject3$9, _templateObject4$8, _templateObject5$5, _templateObject6$5, _templateObject7$3;
+  var _templateObject$e, _templateObject2$b, _templateObject3$a, _templateObject4$8, _templateObject5$5, _templateObject6$5, _templateObject7$3;
   /**
    * Service Now Heading Component
    * @input html-tag, size
@@ -3999,13 +4283,13 @@
         var tokens = new odsTokens();
         switch (this["html-tag"]) {
           case 'h1':
-            htmlTag = s$1(_templateObject$c || (_templateObject$c = _taggedTemplateLiteral(["h1"])));
+            htmlTag = s$1(_templateObject$e || (_templateObject$e = _taggedTemplateLiteral(["h1"])));
             break;
           case 'h2':
-            htmlTag = s$1(_templateObject2$a || (_templateObject2$a = _taggedTemplateLiteral(["h2"])));
+            htmlTag = s$1(_templateObject2$b || (_templateObject2$b = _taggedTemplateLiteral(["h2"])));
             break;
           case 'h4':
-            htmlTag = s$1(_templateObject3$9 || (_templateObject3$9 = _taggedTemplateLiteral(["h4"])));
+            htmlTag = s$1(_templateObject3$a || (_templateObject3$a = _taggedTemplateLiteral(["h4"])));
             break;
           case 'h5':
             htmlTag = s$1(_templateObject4$8 || (_templateObject4$8 = _taggedTemplateLiteral(["h5"])));
@@ -4934,7 +5218,7 @@
     return value instanceof ShadowRoot || value instanceof getWindow(value).ShadowRoot;
   }
   function isOverflowElement(element) {
-    var _getComputedStyle = getComputedStyle(element),
+    var _getComputedStyle = getComputedStyle$1(element),
       overflow = _getComputedStyle.overflow,
       overflowX = _getComputedStyle.overflowX,
       overflowY = _getComputedStyle.overflowY,
@@ -4946,7 +5230,7 @@
   }
   function isContainingBlock(element) {
     var webkit = isWebKit();
-    var css = getComputedStyle(element);
+    var css = getComputedStyle$1(element);
 
     // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
     return css.transform !== 'none' || css.perspective !== 'none' || (css.containerType ? css.containerType !== 'normal' : false) || !webkit && (css.backdropFilter ? css.backdropFilter !== 'none' : false) || !webkit && (css.filter ? css.filter !== 'none' : false) || ['transform', 'perspective', 'filter'].some(function (value) {
@@ -4972,7 +5256,7 @@
   function isLastTraversableNode(node) {
     return ['html', 'body', '#document'].includes(getNodeName(node));
   }
-  function getComputedStyle(element) {
+  function getComputedStyle$1(element) {
     return getWindow(element).getComputedStyle(element);
   }
   function getNodeScroll(element) {
@@ -5030,7 +5314,7 @@
   }
 
   function getCssDimensions(element) {
-    var css = getComputedStyle(element);
+    var css = getComputedStyle$1(element);
     // In testing environments, the `width` and `height` properties are empty
     // strings for SVG elements, returning NaN. Fallback to `0` in this case.
     var width = parseFloat(css.width) || 0;
@@ -5130,7 +5414,7 @@
       while (currentIFrame && offsetParent && offsetWin !== currentWin) {
         var iframeScale = getScale(currentIFrame);
         var iframeRect = currentIFrame.getBoundingClientRect();
-        var css = getComputedStyle(currentIFrame);
+        var css = getComputedStyle$1(currentIFrame);
         var left = iframeRect.left + (currentIFrame.clientLeft + parseFloat(css.paddingLeft)) * iframeScale.x;
         var top = iframeRect.top + (currentIFrame.clientTop + parseFloat(css.paddingTop)) * iframeScale.y;
         x *= iframeScale.x;
@@ -5215,7 +5499,7 @@
     var height = max(html.scrollHeight, html.clientHeight, body.scrollHeight, body.clientHeight);
     var x = -scroll.scrollLeft + getWindowScrollBarX(element);
     var y = -scroll.scrollTop;
-    if (getComputedStyle(body).direction === 'rtl') {
+    if (getComputedStyle$1(body).direction === 'rtl') {
       x += max(html.clientWidth, body.clientWidth) - width;
     }
     return {
@@ -5289,7 +5573,7 @@
     if (parentNode === stopNode || !isElement(parentNode) || isLastTraversableNode(parentNode)) {
       return false;
     }
-    return getComputedStyle(parentNode).position === 'fixed' || hasFixedPositionAncestor(parentNode, stopNode);
+    return getComputedStyle$1(parentNode).position === 'fixed' || hasFixedPositionAncestor(parentNode, stopNode);
   }
 
   // A "clipping ancestor" is an `overflow` element with the characteristic of
@@ -5304,12 +5588,12 @@
       return isElement(el) && getNodeName(el) !== 'body';
     });
     var currentContainingBlockComputedStyle = null;
-    var elementIsFixed = getComputedStyle(element).position === 'fixed';
+    var elementIsFixed = getComputedStyle$1(element).position === 'fixed';
     var currentNode = elementIsFixed ? getParentNode(element) : element;
 
     // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
     while (isElement(currentNode) && !isLastTraversableNode(currentNode)) {
-      var computedStyle = getComputedStyle(currentNode);
+      var computedStyle = getComputedStyle$1(currentNode);
       var currentNodeIsContaining = isContainingBlock(currentNode);
       if (!currentNodeIsContaining && computedStyle.position === 'fixed') {
         currentContainingBlockComputedStyle = null;
@@ -5396,10 +5680,10 @@
     };
   }
   function isStaticPositioned(element) {
-    return getComputedStyle(element).position === 'static';
+    return getComputedStyle$1(element).position === 'static';
   }
   function getTrueOffsetParent(element, polyfill) {
-    if (!isHTMLElement(element) || getComputedStyle(element).position === 'fixed') {
+    if (!isHTMLElement(element) || getComputedStyle$1(element).position === 'fixed') {
       return null;
     }
     if (polyfill) {
@@ -5475,7 +5759,7 @@
     };
   }();
   function isRTL(element) {
-    return getComputedStyle(element).direction === 'rtl';
+    return getComputedStyle$1(element).direction === 'rtl';
   }
   var platform = {
     convertOffsetParentRelativeRectToViewportRelativeRect: convertOffsetParentRelativeRectToViewportRelativeRect,
@@ -5541,7 +5825,7 @@
     }));
   };
 
-  var _templateObject$b, _templateObject2$9, _templateObject3$8, _templateObject4$7, _templateObject5$4, _templateObject6$4;
+  var _templateObject$d, _templateObject2$a, _templateObject3$9, _templateObject4$7, _templateObject5$4, _templateObject6$4;
 
   // import './fonts/fonts.css';
   /**
@@ -5590,13 +5874,13 @@
         var weight = this.weight.toLowerCase();
         switch (this["html-tag"]) {
           case 'p':
-            htmlTag = s$1(_templateObject$b || (_templateObject$b = _taggedTemplateLiteral(["p"])));
+            htmlTag = s$1(_templateObject$d || (_templateObject$d = _taggedTemplateLiteral(["p"])));
             break;
           case 'div':
-            htmlTag = s$1(_templateObject2$9 || (_templateObject2$9 = _taggedTemplateLiteral(["div"])));
+            htmlTag = s$1(_templateObject2$a || (_templateObject2$a = _taggedTemplateLiteral(["div"])));
             break;
           case 'code':
-            htmlTag = s$1(_templateObject3$8 || (_templateObject3$8 = _taggedTemplateLiteral(["code"])));
+            htmlTag = s$1(_templateObject3$9 || (_templateObject3$9 = _taggedTemplateLiteral(["code"])));
             break;
           case 'label':
             htmlTag = s$1(_templateObject4$7 || (_templateObject4$7 = _taggedTemplateLiteral(["label"])));
@@ -5633,7 +5917,7 @@
   }(s$2);
   customElements.define("ods-text", ODSText);
 
-  var _templateObject$a;
+  var _templateObject$c;
 
   /**
    * Service Now Ods Tooltip component
@@ -5773,7 +6057,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject$a || (_templateObject$a = _taggedTemplateLiteral([" \n    <style>\n    :host {\n      visibility:hidden;\n      width: max-content;\n      position: absolute;\n      z-index: 999;\n      top: var(--ods-sem-space-none);\n      left: var(--ods-sem-space-none);\n      background: var(--ods-sem-color-background-primary);\n      color: var(--ods-sem-text-primary);\n      border-radius: var(--ods-sem-radius-small);\n      max-width: 240px;\n      box-shadow: var(--ods-sem-shadow-small-x) var(--ods-sem-shadow-small-y) var(--Shadow-Small-Blur, 4px) var(--ods-sem-shadow-small-spread) var(--Shadow-Small-Color, var(--ods-sem-shadow-small-color)); \n    }\n    .tooltip{\n      padding: var(--ods-sem-space-xsmall) var(--ods-sem-space-small);\n      border-radius: var(--ods-sem-radius-small);\n      box-shadow: 0 0 0 0 white, 0 0 0 1px var(--ods-sem-color-border-decorative-primary);\n      overflow-wrap: break-word;\n      hyphens: auto;\n    }\n    #arrow {\n      position: absolute;\n      background: var(--ods-sem-color-border-decorative-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    #indicator {\n      position: absolute;\n      background: var(--ods-sem-color-background-primary);\n      width: var(--ods-sem-space-small);\n      height: var(--ods-sem-space-small);\n    }\n    </style>\n    <div role=\"tooltip\" class='tooltip'>\n      <ods-text tag='span' size='sm'>", "</ods-text>\n      <div id='arrow'><div id='indicator'></div>\n    </div>                        \n    "])), this.label);
+        return x(_templateObject$c || (_templateObject$c = _taggedTemplateLiteral([" \n    <style>\n    :host {\n      visibility:hidden;\n      width: max-content;\n      position: absolute;\n      z-index: 999;\n      top: var(--ods-sem-space-none);\n      left: var(--ods-sem-space-none);\n      background: var(--ods-sem-color-background-primary);\n      color: var(--ods-sem-text-primary);\n      border-radius: var(--ods-sem-radius-sm);\n      max-width: 240px;\n      box-shadow: var(--ods-sem-shadow-sm-x) var(--ods-sem-shadow-sm-y) var(--Shadow-Small-Blur, 4px) var(--ods-sem-shadow-sm-spread) var(--Shadow-Small-Color, var(--ods-sem-shadow-sm-color)); \n    }\n    .tooltip{\n      padding: var(--ods-sem-space-xs) var(--ods-sem-space-sm);\n      border-radius: var(--ods-sem-radius-sm);\n      box-shadow: 0 0 0 0 white, 0 0 0 1px var(--ods-sem-color-border-decorative-primary);\n      overflow-wrap: break-word;\n      hyphens: auto;\n    }\n    #arrow {\n      position: absolute;\n      background: var(--ods-sem-color-border-decorative-primary);\n      width: var(--ods-sem-space-sm);\n      height: var(--ods-sem-space-sm);\n    }\n    #indicator {\n      position: absolute;\n      background: var(--ods-sem-color-background-primary);\n      width: var(--ods-sem-space-sm);\n      height: var(--ods-sem-space-sm);\n    }\n    </style>\n    <div role=\"tooltip\" class='tooltip'>\n      <ods-text tag='span' size='sm'>", "</ods-text>\n      <div id='arrow'><div id='indicator'></div>\n    </div>                        \n    "])), this.label);
       }
     }]);
   }(s$2);
@@ -5787,7 +6071,7 @@
   });
   customElements.define("ods-tooltip", OdsTooltip);
 
-  var _templateObject$9, _templateObject2$8, _templateObject3$7, _templateObject4$6;
+  var _templateObject$b, _templateObject2$9, _templateObject3$8, _templateObject4$6;
   var OdsIconButton = /*#__PURE__*/function (_LitElement) {
     function OdsIconButton() {
       var _this;
@@ -5814,7 +6098,7 @@
           }
         };
         var color = (colorMap[this.variant] || {}).hasOwnProperty(this.disabled) ? colorMap[this.variant][this.disabled] : "#515151";
-        return x(_templateObject$9 || (_templateObject$9 = _taggedTemplateLiteral(["\n  <ods-icon size=\"sm\" name=\"", "\" color=\"", "\" />\n  "])), this.icon || 'placeholder', color);
+        return x(_templateObject$b || (_templateObject$b = _taggedTemplateLiteral(["\n  <ods-icon size=\"sm\" name=\"", "\" color=\"", "\" />\n  "])), this.icon || 'placeholder', color);
       }
     }, {
       key: "setActiveMenu",
@@ -5836,9 +6120,9 @@
       value: function getButton() {
         var tabindex = this.disabled ? -1 : 0;
         if (this.href) {
-          return x(_templateObject2$8 || (_templateObject2$8 = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", "' href= \"", "\" target= \"", "\"  tabindex= \"", "\" aria-disabled = \"", "\"  aria-describedby='tooltip_", "' >\n      <i class='icon'> ", " </i>\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false', this.tooltipId, this.getIcon());
+          return x(_templateObject2$9 || (_templateObject2$9 = _taggedTemplateLiteral(["\n      <a class=' btn-", " ", "' href= \"", "\" target= \"", "\"  tabindex= \"", "\" aria-disabled = \"", "\"  aria-describedby='tooltip_", "' >\n      <i class='icon'> ", " </i>\n      </a>\n      "])), this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', this.href, this.target || '_self', tabindex, this.disabled ? 'true' : 'false', this.tooltipId, this.getIcon());
         } else {
-          return x(_templateObject3$7 || (_templateObject3$7 = _taggedTemplateLiteral(["\n      <button @click=\"", "\" class='btn-", " ", "' tabindex= \"", "\" aria-disabled = \"", "\" aria-describedby='tooltip_", "'>\n     <i class='icon'> ", " </i>\n      </button>\n      "])), this.onClick, this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', tabindex, this.disabled ? 'true' : 'false', this.tooltipId, this.getIcon());
+          return x(_templateObject3$8 || (_templateObject3$8 = _taggedTemplateLiteral(["\n      <button @click=\"", "\" class='btn-", " ", "' tabindex= \"", "\" aria-disabled = \"", "\" aria-describedby='tooltip_", "'>\n     <i class='icon'> ", " </i>\n      </button>\n      "])), this.onClick, this.variant || 'outline', this.disabled ? "disabled-".concat(this.variant) : '', tabindex, this.disabled ? 'true' : 'false', this.tooltipId, this.getIcon());
         }
       }
     }, {
@@ -5857,7 +6141,7 @@
     }, {
       key: "render",
       value: function render() {
-        var borderRadius = this.shape === 'round' ? 'var(--ods-sem-radius-full)' : 'var( --ods-sem-space-small)';
+        var borderRadius = this.shape === 'round' ? 'var(--ods-sem-radius-full)' : 'var( --ods-sem-space-sm)';
         return x(_templateObject4$6 || (_templateObject4$6 = _taggedTemplateLiteral(["\n  \n    <style>\n    :host{\n      display: inline-flex;\n    }\n    \n    a, button {\n        border-radius: ", ";\n        height:var(--ods-sem-icon-button-height);\n        width:var(--ods-sem-icon-button-width);\n        text-decoration: none;\n        border: var(--ods-sem-space-none);\n        cursor: pointer;\n        justify-content: center;\n        box-sizing: border-box;\n        display: inline-flex;\n        align-items: center;\n        padding: 0;\n      }\n\n    .btn-outline {\n        color: var(--ods-sem-color-roles-primary);\n        background-color: var(--ods-sem-color-roles-primary-on-primary) ;\n        box-shadow:0 0 0 1px ;\n    }\n\n    .btn-outline:hover {\n      background: var(--ods-sem-color-utility-states-primary-hover);\n    }\n\n    .btn-outline:active, .btn-outline[active-menu]{\n      background: var(--ods-sem-color-utility-states-primary-pressed);\n    }\n\n    :host(:focus-within) .btn-outline{\n     outline: none;\n     box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-focus), 0 0 0 0.188rem var(--ods-sem-color-roles-primary-on-primary), 0 0 0 0.35rem var(--ods-sem-color-utility-states-focus);\n    }\n   \n    .btn-ghost {\n    color: var(--ods-sem-color-roles-primary);\n    background: transparent;\n    }\n\n    .btn-ghost:hover {\n    background: var(--ods-sem-color-utility-states-primary-hover);\n    }\n\n    .btn-ghost:active, .btn-ghost[active-menu]{\n    background: var(--ods-sem-color-utility-states-primary-pressed);\n    }\n\n    :host(:focus-within) .btn-ghost{\n      outline: none;\n      box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n    }\n\n\n    .disabled-outline, .disabled-outline:hover, :host(:focus-within) .disabled-outline {\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      opacity: 0.5;\n      background: var(--ods-sem-color-utility-states-disabled-container);\n      box-shadow: 0 0 0  1px !important;\n      cursor: not-allowed;\n      pointer-events: none;\n\n    }\n\n    .disabled-ghost, .disabled-ghost:hover, .disabled-ghost:focus{\n      border-radius: ", ";\n      color: var(--ods-sem-color-utility-states-disabled-content);\n      background: var(--ods-sem-color-utility-states-disabled-container);\n      opacity: 0.5;\n      cursor: not-allowed;\n      pointer-events: none;\n      box-shadow: none !important;    \n    }\n\n    .icon {\n        display: inline-flex;\n        align-items: center;\n        }\n \n    .iconbutton-container:has(.disabled-outline, .disabled-ghost){\n      cursor: not-allowed;\n      }\n\n    </style>\n    <div class=\"iconbutton-container\">", "\n    <ods-tooltip id='tooltip_", "' label=\"", "\" ></ods-tooltip> \n    </div>\n      "])), borderRadius, borderRadius, this.getButton(), this.tooltipId, this.tooltip);
       }
     }], [{
@@ -6010,7 +6294,7 @@
     return _createClass(TabLoadedCustomEvent);
   }( /*#__PURE__*/_wrapNativeSuper(Event));
 
-  var _templateObject$8, _templateObject2$7, _templateObject3$6, _templateObject4$5, _templateObject5$3, _templateObject6$3;
+  var _templateObject$a, _templateObject2$8, _templateObject3$7, _templateObject4$5, _templateObject5$3, _templateObject6$3;
 
   /**
    * Service Now Ods Menu Item component
@@ -6039,15 +6323,17 @@
     }, {
       key: "isSelectable",
       value: function isSelectable() {
-        return this._parent.selectable;
+        var _this$_parent;
+        return (_this$_parent = this._parent) === null || _this$_parent === void 0 ? void 0 : _this$_parent.selectable;
       }
     }, {
       key: "updated",
       value: function updated() {
+        var _this$_parent2;
         _get(_getPrototypeOf(OdsMenuItem.prototype), "updated", this).call(this);
         this.setAvatarToSmall();
         this._parent = this.shadowRoot.host.parentElement;
-        this._selectable = this._parent.selectable;
+        this._selectable = (_this$_parent2 = this._parent) === null || _this$_parent2 === void 0 ? void 0 : _this$_parent2.selectable;
       }
     }, {
       key: "firstUpdated",
@@ -6091,9 +6377,6 @@
     }, {
       key: "handleClick",
       value: function handleClick(e) {
-        this.dispatchEvent(new MenuItemClickEvent({
-          value: this.value
-        }));
         this._noclose = this.shadowRoot.host.parentElement['no-close-on-select'];
         if (this.hasOnclickFunction()) this.onClick();
         if (this.isSelectable()) {
@@ -6109,6 +6392,9 @@
           this.handleSelectedArrayOwnPosition();
         }
         if (!this._noclose) this._parent.closeMenu();
+        this.dispatchEvent(new MenuItemClickEvent({
+          value: this.value
+        }));
       }
     }, {
       key: "handleSelectedArrayOwnPosition",
@@ -6124,7 +6410,7 @@
     }, {
       key: "getContent",
       value: function getContent() {
-        return x(_templateObject$8 || (_templateObject$8 = _taggedTemplateLiteral(["\n      <a class='menu-item' part='ods-menu-item'\n          target='", "'\n          @click=\"", "\"\n          href='", "' tabindex=\"-1\">\n          ", "\n      </a>"])), this.target, this.handleClick, this.href || 'javascript:void(0);', this.getSlots());
+        return x(_templateObject$a || (_templateObject$a = _taggedTemplateLiteral(["\n      <a class='menu-item' part='ods-menu-item'\n          target='", "'\n          @click=\"", "\"\n          href='", "' tabindex=\"-1\">\n          ", "\n      </a>"])), this.target, this.handleClick, this.href || 'javascript:void(0);', this.getSlots());
       }
     }, {
       key: "getUsedSlots",
@@ -6165,7 +6451,7 @@
     }, {
       key: "getSlots",
       value: function getSlots() {
-        return x(_templateObject2$7 || (_templateObject2$7 = _taggedTemplateLiteral(["\n    ", "\n    <div class='start-container'>\n      <slot name='start' @slotchange=\"", "\" /></slot>\n    </div>\n    <div class='text-container'>\n      <div class='maintext-container'>\n      <slot name='label'></slot>\n      </div>\n      <div class='subtext-container'>\n        <slot name='sub-label'></slot>\n      </div>\n      </div>\n      <div class='end-container'>\n        <slot name='end' @slotchange=\"", "\" /></slot>\n      </div>\n    "])), this._selectable ? x(_templateObject3$6 || (_templateObject3$6 = _taggedTemplateLiteral(["\n    <div class='check-container'>\n        ", "\n        ", "\n    </div>"])), this.selected ? x(_templateObject4$5 || (_templateObject4$5 = _taggedTemplateLiteral(["<ods-icon size='sm' name='check'></ods-icon>"]))) : '', !this.selected ? x(_templateObject5$3 || (_templateObject5$3 = _taggedTemplateLiteral(["<div class='no-icon'></div>"]))) : '') : '', this.handleSlotChange, this.handleSlotChange);
+        return x(_templateObject2$8 || (_templateObject2$8 = _taggedTemplateLiteral(["\n    ", "\n    <div class='start-container'>\n      <slot name='start' @slotchange=\"", "\" /></slot>\n    </div>\n    <div class='text-container'>\n      <div class='maintext-container'>\n      <slot name='label'></slot>\n      </div>\n      <div class='subtext-container'>\n        <slot name='sub-label'></slot>\n      </div>\n      </div>\n      <div class='end-container'>\n        <slot name='end' @slotchange=\"", "\" /></slot>\n      </div>\n    "])), this._selectable ? x(_templateObject3$7 || (_templateObject3$7 = _taggedTemplateLiteral(["\n    <div class='check-container'>\n        ", "\n        ", "\n    </div>"])), this.selected ? x(_templateObject4$5 || (_templateObject4$5 = _taggedTemplateLiteral(["<ods-icon size='sm' name='check'></ods-icon>"]))) : '', !this.selected ? x(_templateObject5$3 || (_templateObject5$3 = _taggedTemplateLiteral(["<div class='no-icon'></div>"]))) : '') : '', this.handleSlotChange, this.handleSlotChange);
       }
     }, {
       key: "createRenderRoot",
@@ -6180,7 +6466,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject6$3 || (_templateObject6$3 = _taggedTemplateLiteral([" \n    <style>\n    :host{\n      width: 100%;\n    }\n  \n    .menu-item-main-container{\n      display: flex;\n    }\n    .menu-item{\n      border: 0;\n      width: 100%;\n      padding: var(--ods-sem-space-small) var(--ods-sem-space-medium);\n      text-align: left;\n      display: grid;\n      ", "\n      column-gap: var(--ods-sem-space-small);\n      font-family: lato;\n      text-decoration: inherit;\n      color: inherit;\n      word-wrap: break-word;\n      background: inherit;\n    }\n\n    :host(:hover){\n      background: var(--ods-sem-color-utility-states-secondary-hover);\n    }\n    .menu-item:hover, :host(:hover){\n      cursor: pointer;\n    }\n    .menu-item-main-container:active{\n      background: var(--ods-sem-color-utility-states-secondary-pressed);\n    }\n    .menu-item:focus, .menu-item:focus-visible, .menu-item:focus-within{\n      outline: 2px var(--ods-sem-color-utility-states-focus) solid;\n      outline-offset: -2px;\n    }\n    \n    .no-icon{\n      display: inline-flex;\n      width: var(--ods-sem-space-medium);\n      height: var(--ods-sem-space-medium);\n    }\n    .subtext-container{\n      \n    }\n    .text-container{\n      display: flex;\n      flex-direction: column;\n      font-size: 14px;\n      line-height: 24px;\n    }\n\n    .subtext-container{\n      display: flex;\n      flex-direction: column;\n      font-size: 14px;\n      line-height: 22px;\n      word-break: break-all;\n    }\n    .start-container, .end-container, .check-container{justify-self:center;  a}\n    .start-container [name='start']::slotted(ods-icon), .check-container ods-icon, .end-container [name='end']::slotted(ods-icon){\n      margin-top: var(--ods-sem-space-xsmall) !important;\n    }\n    .start-container{grid-area: start; ", "}\n    .end-container{grid-area: end; ", "}\n    .check-container{grid-area: check; ", "}\n    .text-container{grid-area: text;}\n    .subtext-container{grid-area: subtext;}\n    </style>\n    <li class='menu-item-main-container'>\n      ", "\n    </li>\n    "])), this._gridStyle, this._iconPosition !== 'start' ? 'display: none;' : '', this._iconPosition !== 'end' ? 'display: none;' : '', !this._selectable ? 'display: none;' : '', this.getContent());
+        return x(_templateObject6$3 || (_templateObject6$3 = _taggedTemplateLiteral([" \n    <style>\n    :host{\n      width: 100%;\n    }\n  \n    .menu-item-main-container{\n      display: flex;\n    }\n    .menu-item{\n      border: 0;\n      width: 100%;\n      padding: var(--ods-sem-space-sm) var(--ods-sem-space-md);\n      text-align: left;\n      display: grid;\n      ", "\n      column-gap: var(--ods-sem-space-sm);\n      font-family: lato;\n      text-decoration: inherit;\n      color: inherit;\n      word-wrap: break-word;\n      background: inherit;\n    }\n\n    :host(:hover){\n      background: var(--ods-sem-color-utility-states-secondary-hover);\n    }\n    .menu-item:hover, :host(:hover){\n      cursor: pointer;\n    }\n    .menu-item-main-container:active{\n      background: var(--ods-sem-color-utility-states-secondary-pressed);\n    }\n    .menu-item:focus, .menu-item:focus-visible, .menu-item:focus-within{\n      outline: 2px var(--ods-sem-color-utility-states-focus) solid;\n      outline-offset: -2px;\n    }\n    \n    .no-icon{\n      display: inline-flex;\n      width: var(--ods-sem-space-md);\n      height: var(--ods-sem-space-md);\n    }\n    .subtext-container{\n      \n    }\n    .text-container{\n      display: flex;\n      flex-direction: column;\n      font-size: 14px;\n      line-height: 24px;\n    }\n\n    .subtext-container{\n      display: flex;\n      flex-direction: column;\n      font-size: 14px;\n      line-height: 22px;\n      word-break: break-all;\n    }\n    .start-container, .end-container, .check-container{justify-self:center;  a}\n    .start-container [name='start']::slotted(ods-icon), .check-container ods-icon, .end-container [name='end']::slotted(ods-icon){\n      margin-top: var(--ods-sem-space-xs) !important;\n    }\n    .start-container{grid-area: start; ", "}\n    .end-container{grid-area: end; ", "}\n    .check-container{grid-area: check; ", "}\n    .text-container{grid-area: text;}\n    .subtext-container{grid-area: subtext;}\n    </style>\n    <li class='menu-item-main-container'>\n      ", "\n    </li>\n    "])), this._gridStyle, this._iconPosition !== 'start' ? 'display: none;' : '', this._iconPosition !== 'end' ? 'display: none;' : '', !this._selectable ? 'display: none;' : '', this.getContent());
       }
     }]);
   }(s$2);
@@ -6216,7 +6502,7 @@
   });
   customElements.define("ods-menu-item", OdsMenuItem);
 
-  var _templateObject$7, _templateObject2$6, _templateObject3$5, _templateObject4$4;
+  var _templateObject$9, _templateObject2$7, _templateObject3$6, _templateObject4$4;
 
   /**
    * Service Now Ods Menu Divider component
@@ -6235,14 +6521,14 @@
     return _createClass(OdsMenuDivider, [{
       key: "getDivider",
       value: function getDivider() {
-        return x(_templateObject$7 || (_templateObject$7 = _taggedTemplateLiteral(["\n      ", "\n      ", "\n    "])), !this["hide-divider"] && this.label || !this.label ? x(_templateObject2$6 || (_templateObject2$6 = _taggedTemplateLiteral(["<div class='divider' part='ods-menu-divider'></div>"]))) : '', this.label ? x(_templateObject3$5 || (_templateObject3$5 = _taggedTemplateLiteral(["<div class=\"label\" part='ods-menu-divider-label'><ods-text size=\"sm\" weight='bold' color=\"text-tertiary\">", "</ods-text></div>"])), this.label) : '');
+        return x(_templateObject$9 || (_templateObject$9 = _taggedTemplateLiteral(["\n      ", "\n      ", "\n    "])), !this["hide-divider"] && this.label || !this.label ? x(_templateObject2$7 || (_templateObject2$7 = _taggedTemplateLiteral(["<div class='divider' part='ods-menu-divider'></div>"]))) : '', this.label ? x(_templateObject3$6 || (_templateObject3$6 = _taggedTemplateLiteral(["<div class=\"label\" part='ods-menu-divider-label'><ods-text size=\"sm\" weight='bold' color=\"text-tertiary\">", "</ods-text></div>"])), this.label) : '');
       }
     }, {
       key: "render",
       value: function render() {
         this._parent = this.shadowRoot.host.parentElement;
         if (!this._parent.selectable) {
-          return x(_templateObject4$4 || (_templateObject4$4 = _taggedTemplateLiteral([" \n        <style>\n        .divider{\n          display: flex;\n          margin: var(--ods-sem-space-small) var(--ods-sem-space-medium);\n          flex-direction: column;\n          align-items: flex-start;\n          gap: var(--ods-sem-space-none);\n          flex-shrink: 0;\n          border-color: var(--ods-border-decorative-primary);\n          background-color: var(--ods-border-decorative-primary);\n          border: 0;\n          height: 1px;\n          margin: 0;\n        }\n        .label{\n          line-height: 24px;\n          cursor: default;\n          padding-top: var(--ods-sem-space-small);\n          padding-bottom: var(--ods-sem-space-small);\n        }\n        \n        .divider ~ .label{\n          \n          line-height: 23px;\n        }\n\n        </style>\n        ", "\n        "])), this.getDivider());
+          return x(_templateObject4$4 || (_templateObject4$4 = _taggedTemplateLiteral([" \n        <style>\n        .divider{\n          display: flex;\n          margin: var(--ods-sem-space-sm) var(--ods-sem-space-md);\n          flex-direction: column;\n          align-items: flex-start;\n          gap: var(--ods-sem-space-none);\n          flex-shrink: 0;\n          border-color: var(--ods-border-decorative-primary);\n          background-color: var(--ods-border-decorative-primary);\n          border: 0;\n          height: 1px;\n          margin: 0;\n        }\n        .label{\n          line-height: 24px;\n          cursor: default;\n          padding-top: var(--ods-sem-space-sm);\n          padding-bottom: var(--ods-sem-space-sm);\n        }\n        \n        .divider ~ .label{\n          \n          line-height: 23px;\n        }\n\n        </style>\n        ", "\n        "])), this.getDivider());
         }
       }
     }]);
@@ -6257,7 +6543,7 @@
   });
   customElements.define("ods-menu-divider", OdsMenuDivider);
 
-  var _templateObject$6, _templateObject2$5, _defineProperty2;
+  var _templateObject$8, _templateObject2$6, _defineProperty2;
 
   /**
    * Service Now Ods Menu component
@@ -6899,7 +7185,7 @@
       key: "render",
       value: function render() {
         var height = this['max-height'] && this['max-height'] !== '' ? this['max-height'] : this._defaultHeight;
-        return x(_templateObject$6 || (_templateObject$6 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      font-size: 14px;\n    }\n    :host{\n      position: absolute;\n      /* Shadow/Small */\n      box-shadow: var(--ods-sem-shadow-small-x) var(--ods-sem-shadow-small-y) var(--ods-sem-shadow-small-blur) var(--ods-sem-shadow-small-spread) var(--ods-sem-shadow-color);\n      border-radius: var(--ods-border-radius-small);\n      outline: 0;\n      z-index: 998;\n    }\n    .menu-container{\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-family: lato;\n      background: var(--ods-sem-color-background-primary);\n      min-width: 184px;\n      ", "\n      ", "\n      ", "\n      min-height: min-content;\n      max-height: ", ";\n      overflow-x: clip;\n      text-wrap: wrap;\n      word-wrap: break-word;\n      overflow-y: auto;\n      position: relative;\n      border-radius: var(--ods-sem-radius-small);\n      outline: 0;\n     \n    }\n      nav{\n      outline: 0;\n      }\n    \n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-medium) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    .check-container, .icon-container{\n      width: var(--ods-sem-space-large);\n      height: var(--ods-sem-space-large);\n    }\n\n    .hide-menu, .invalid-menu{\n      display: none;\n    }\n\n    .no-items{\n      display: flex;\n      padding: var(--ods-sem-space-small) var(--ods-sem-space-medium) !important;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      flex-shrink: 0;\n      font-size: 14px;\n      line-height: 22px;\n      color: var(--ods-sem-color-text-tertiary);\n    }\n    .menu-container::-webkit-scrollbar {\n      width: 10px;\n    }\n    \n    .menu-container::-webkit-scrollbar-track {\n      background-color: var(--ods-sem-color-background-primary);\n      border-radius: var(--ods-sem-radius-xlarge);\n    }\n    \n    .menu-container::-webkit-scrollbar-thumb {\n      background-color: var(--ods-sem-color-border-decorative-primary);\n      border-radius: var(--ods-sem-radius-xlarge);\n      height:30px;\n    }\n      ul{\n      padding: 0; margin:0;}\n    </style>\n    <nav>\n    <ul tabindex=\"0\" class='menu-container hide-menu' part='ods-menu' \n      @menu-item-single-event=", " \n      @menu-item-slot-change-event=", " \n      @menu-item-key-event=", ">\n      <slot @slotchange=\"", "\"></slot>    \n      ", "\n    </ul>\n    </nav>\n    "])), !this['match-width'] ? "max-width: ".concat(this['max-width'], ";") : '', this['match-width'] ? "width: ".concat(this._anchoredWidth, "px;") : '', this._isMobile ? "width: ".concat(this._anchoredWidth, "px; max-width: unset;") : '', height, this._handleSingleClick, this._handleItemSlotChanges, this._handleKeyMenuItemEvents, this.handleSlotChange, this._empty ? x(_templateObject2$5 || (_templateObject2$5 = _taggedTemplateLiteral(["<div class='no-items'>", "</div>"])), this['no-items-label']) : null);
+        return x(_templateObject$8 || (_templateObject$8 = _taggedTemplateLiteral([" \n    <style>\n    *, :host{\n      font-size: 14px;\n    }\n    :host{\n      position: absolute;\n      /* Shadow/Small */\n      box-shadow: var(--ods-sem-shadow-sm-x) var(--ods-sem-shadow-sm-y) var(--ods-sem-shadow-sm-blur) var(--ods-sem-shadow-sm-spread) var(--ods-sem-shadow-color);\n      border-radius: var(--ods-border-radius-sm);\n      outline: 0;\n      z-index: 998;\n    }\n    .menu-container{\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-family: lato;\n      background: var(--ods-sem-color-background-primary);\n      min-width: 184px;\n      ", "\n      ", "\n      ", "\n      min-height: min-content;\n      max-height: ", ";\n      overflow-x: clip;\n      text-wrap: wrap;\n      word-wrap: break-word;\n      overflow-y: auto;\n      position: relative;\n      border-radius: var(--ods-sem-radius-sm);\n      outline: 0;\n     \n    }\n      nav{\n      outline: 0;\n      }\n    \n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-md) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    ::slotted(ods-menu-divider){\n      padding: var(--ods-sem-space-none) var(--ods-sem-space-md) !important;\n      gap: var(--ods-sem-space-none);\n      align-self: stretch;\n      font-size: 14px;\n    }\n\n    .check-container, .icon-container{\n      width: var(--ods-sem-space-lg);\n      height: var(--ods-sem-space-lg);\n    }\n\n    .hide-menu, .invalid-menu{\n      display: none;\n    }\n\n    .no-items{\n      display: flex;\n      padding: var(--ods-sem-space-sm) var(--ods-sem-space-md) !important;\n      flex-direction: column;\n      align-items: flex-start;\n      gap: var(--ods-sem-space-none);\n      flex-shrink: 0;\n      font-size: 14px;\n      line-height: 22px;\n      color: var(--ods-sem-color-text-tertiary);\n    }\n    .menu-container::-webkit-scrollbar {\n      width: 10px;\n    }\n    \n    .menu-container::-webkit-scrollbar-track {\n      background-color: var(--ods-sem-color-background-primary);\n      border-radius: var(--ods-sem-radius-xl);\n    }\n    \n    .menu-container::-webkit-scrollbar-thumb {\n      background-color: var(--ods-sem-color-border-decorative-primary);\n      border-radius: var(--ods-sem-radius-xl);\n      height:30px;\n    }\n      ul{\n      padding: 0; margin:0;}\n    </style>\n    <nav>\n    <ul tabindex=\"0\" class='menu-container hide-menu' part='ods-menu' \n      @menu-item-single-event=", " \n      @menu-item-slot-change-event=", " \n      @menu-item-key-event=", ">\n      <slot @slotchange=\"", "\"></slot>    \n      ", "\n    </ul>\n    </nav>\n    "])), !this['match-width'] ? "max-width: ".concat(this['max-width'], ";") : '', this['match-width'] ? "width: ".concat(this._anchoredWidth, "px;") : '', this._isMobile ? "width: ".concat(this._anchoredWidth, "px; max-width: unset;") : '', height, this._handleSingleClick, this._handleItemSlotChanges, this._handleKeyMenuItemEvents, this.handleSlotChange, this._empty ? x(_templateObject2$6 || (_templateObject2$6 = _taggedTemplateLiteral(["<div class='no-items'>", "</div>"])), this['no-items-label']) : null);
       }
     }]);
   }(s$2);
@@ -7152,7 +7438,7 @@
       }]);
     }(f));
 
-  var _templateObject$5, _templateObject2$4, _templateObject3$4, _templateObject4$3, _templateObject5$2, _templateObject6$2, _templateObject7$2, _templateObject8, _templateObject9, _templateObject10;
+  var _templateObject$7, _templateObject2$5, _templateObject3$5, _templateObject4$3, _templateObject5$2, _templateObject6$2, _templateObject7$2, _templateObject8, _templateObject9, _templateObject10;
   var OdsSelectField = /*#__PURE__*/function (_LitElement) {
     function OdsSelectField() {
       var _this;
@@ -7213,7 +7499,7 @@
         if (this.error != "") {
           errorAlert = true;
         }
-        return x(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n      <input\n        readonly\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        @blur=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n        anchor=\"", "\"\n        ", "\n        @ods-active-menu-event=", "\n      />\n      <ods-icon\n          class=\"ods-chevron-container\"\n          size=\"SM\"\n          name=\"chevron-down\"\n          color=\"\"\n        ></ods-icon>\n    "])), this.type, ["ods-form-control", "ods-input-select"].join(" "), this.name, this.name, this.placeholder, this.error, this.name, this.onBlur, this.value, this.isDisabled, isRequired, isOptional, errorAlert, this.name, n(this.inputRef), this._handleSetActiveMenu);
+        return x(_templateObject$7 || (_templateObject$7 = _taggedTemplateLiteral(["\n      <input\n        readonly\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        @blur=\"", "\"\n        .value=\"", "\"\n        aria-disabled=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n        anchor=\"", "\"\n        ", "\n        @ods-active-menu-event=", "\n      />\n      <span class=\"icon-wrapper\">\n        <ods-icon\n            class=\"ods-chevron-container\"\n            size=\"SM\"\n            name=\"chevron-down\"\n            color=\"\"\n          ></ods-icon>\n        </span>\n    "])), this.type, ["ods-form-control", "ods-input-select"].join(" "), this.name, this.name, this.placeholder, this.error, this.name, this.onBlur, this.value, this.isDisabled, isRequired, isOptional, errorAlert, this.name, n(this.inputRef), this._handleSetActiveMenu);
       }
     }, {
       key: "handleKeyPress",
@@ -7236,7 +7522,7 @@
       key: "getErrorMessage",
       value: function getErrorMessage() {
         if (this.error && this.error != "" && !this.isOpened) {
-          return x(_templateObject2$4 || (_templateObject2$4 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"status-error\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"status-error\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
+          return x(_templateObject2$5 || (_templateObject2$5 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"status-error\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"status-error\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
         }
         return "";
       }
@@ -7244,7 +7530,7 @@
       key: "getInfoIcon",
       value: function getInfoIcon() {
         if (this.tooltip != "") {
-          return x(_templateObject3$4 || (_templateObject3$4 = _taggedTemplateLiteral(["\n        <div class=\"ods-button\">\n          <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n            <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n          </button>\n          <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n        </div>\n      "])), this.tooltip);
+          return x(_templateObject3$5 || (_templateObject3$5 = _taggedTemplateLiteral(["\n        <div class=\"ods-button\">\n          <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n            <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n          </button>\n          <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n        </div>\n      "])), this.tooltip);
         }
       }
     }, {
@@ -7309,17 +7595,16 @@
       value: function getDropdownMenu() {
         return x(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["<ods-menu\n      @menu-toggle-event=\"", "\"\n      max-width=\"184px\"\n      max-height=\"266px\"\n      match-width=\"true\"\n      anchor=\"buttonWithStart\"\n      selectable=\"true\"\n      .elRef=", "\n      single-select\n    >\n      ", "\n    </ods-menu>"])), this.handleSelectClick, this.inputRef.value, this.getOptions());
       }
-    }, {
-      key: "updateIconPosition",
-      value: function updateIconPosition() {
-        var icon = this.shadowRoot.querySelector(".ods-chevron-container");
-        var elmHeight = this.shadowRoot.querySelector(".ods-label-container");
+
+      /* updateIconPosition() {
+        const icon = this.shadowRoot.querySelector(".ods-chevron-container");
+        const elmHeight = this.shadowRoot.querySelector(".ods-label-container");
         if (!elmHeight) {
           icon.style.top = "6px";
         } else {
-          icon.style.top = "".concat(elmHeight.offsetHeight + 9, "px");
+          icon.style.top = `${elmHeight.offsetHeight + 9}px`;
         }
-      }
+      } */
     }, {
       key: "firstUpdated",
       value: function firstUpdated() {
@@ -7377,7 +7662,7 @@
         if (this.isOpened) {
           iconPosition = "rotateZ(-180deg)";
         }
-        return x(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n      <style>\n        :host{\n            ", "\n            position: relative;\n          }\n          * {\n            box-sizng: border-box;\n            margin: var(--ods-sem-space-none);\n            padding: var(--ods-sem-space-none);\n          }\n          .ods-form-label {\n            font-family: lato;\n            font-weight: 400;\n            font-size: 14px;\n            line-height: 24px;\n            margin: var(--ods-sem-space-none);\n            color: var(--ods-sem-color-text-primary);\n          }\n          .ods-form-control {\n            display: block;\n            padding: var(--ods-sem-input-padding);\n            font-size: var(--ods-input-font-size, 16px);\n            font-family: lato, Helvetica, Arial, sans-serif;\n            font-weight: var(--ods-input-font-weight, 400);\n            line-height: var(--ods-input-line-height, 32px);\n            color: var(--ods-sem-color-text-primary);\n            background-color: var(--ods-sem-color-roles-neutral-on-neutral);\n            background-clip: padding-box;\n            box-shadow: 0 0 0 1px var(--ods-sem-color-border-interactive-component);\n            border-width: 0;\n            -webkit-appearance: none;\n            -moz-appearance: none;\n            appearance: none;\n            border-radius: var(--ods-sem-radius-small);\n            cursor:pointer;\n          }\n          @media (prefers-reduced-motion: reduce) {\n            .ods-form-control {\n              transition: none;\n            }\n          }\n          .ods-form-control::-moz-placeholder {\n            color: var(--ods-sem-color-text-tertiary);\n            opacity: 1;\n          }\n          .ods-form-control::placeholder {\n            color: var(--ods-sem-color-text-tertiary);\n            opacity: 1;\n          }\n          .ods-select-field-container {\n            width: ", ";\n          }\n          .ods-field-container {\n            width: ", ";\n            display: flex;\n            /* position: relative; */\n            flex-direction: column-reverse;\n            gap: var(--ods-sem-space-xsmall);\n            box-sizing: border-box;\n          }\n          .ods-label-container {\n            display: flex;\n            align-items: flex-start;\n            gap: 4px;\n          }\n          .ods-label-container ods-icon-button {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            --ods-icon-button-height: 24px;\n            --ods-icon-button-width: 24px;\n          }\n          .ods-button {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            --ods-icon-button-height: 24px;\n            --ods-icon-button-width: 24px;\n          }\n          ods-icon-button ods-icon::part(odsIcon) {\n            width: var(--ods-sem-space-medium);\n            height: var(--ods-sem-space-medium);\n          }\n          .ods-error-container {\n            width: ", ";\n            display: flex;\n            justify-content: flex-start;\n            gap: var(--ods-sem-space-small);\n          }\n          .ods-error-container ods-icon {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: var(--ods-sem-space-medium);\n            width: var(--ods-sem-space-medium);\n            padding: var(--ods-sem-space-xsmall) var(--ods-sem-space-none);\n          }\n\n          .ods-field-container {\n            input {\n              &:hover {\n                border-width: 0;\n                box-shadow: 0 0 0 1px var(--ods-sem-color-roles-primary);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-primary-on-color-hover);\n                }\n                ~ .ods-label-container label {\n                  cursor: pointer;\n                }\n              }\n              &:focus, &[active-menu] {\n                color: var(--ods-sem-color-text-primary);\n                background-color: var(--ods-sem-color-roles-primary-on-primary);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-primary-on-color-focus);\n                border-width: 0;\n                outline: 0;\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-primary-on-color-focus);\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-primary-on-color-pressed);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n                }\n              }\n            }\n            &.readonly {\n              opacity: 0.5;\n              cursor: not-allowed;\n              input {\n                pointer-events: none;\n                color: var(--ods-sem-color-utility-states-disabled-content);\n                background-color: var(--ods-sem-color-utility-states-disabled-container);\n                background-clip: padding-box;\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-disabled-content);\n                -webkit-appearance: none;\n                -moz-appearance: none;\n                appearance: none;\n              }\n              .ods-label-container ods-text::part(odsText) {\n                pointer-events: none;\n              }\n              .ods-button {\n                pointer-events: none;\n              }\n            }\n            &.error-state {\n              input {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-default);\n                border-width: 0;\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-status-roles-error);\n                }\n                &:hover {\n                  box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-hover);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: var(--ods-sem-color-utility-states-error-on-color-hover);\n                  }\n                }\n                &:focus {\n                  border-color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                  box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-default);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                  }\n                }\n                &:active {\n                  box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-pressed);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: var(--ods-sem-color-utility-states-error-on-color-pressed);\n                  }\n                }\n              }\n            }\n          }\n          ods-text::part(odsText) {\n            line-height: 24px;\n            word-break: break-word;\n          }\n          ods-text.left-spacing {\n            margin-left: 4px;\n          }\n          ods-text {\n            display: inline-block;\n          }\n            button {\n            border-radius: 9999px;\n            height: var(--ods-icon-button-height, 44px);\n            width: var(--ods-icon-button-width, 44px);\n            text-decoration: none;\n            border: var(--ods-sem-space-none);\n            cursor: pointer;\n            justify-content: center;\n            box-sizing: border-box;\n            display: inline-flex;\n            align-items: center;\n            padding: 0;\n          }\n          .btn-ghost {\n            color: var(--ods-sem-color-roles-primary);\n            background: transparent;\n          }\n          .btn-ghost:hover {\n            background: var(--ods-sem-color-utility-states-primary-hover);\n          }\n          .btn-ghost:focus {\n            outline: none;\n            box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n          }\n          .btn-ghost:active {\n            background: var(--ods-sem-color-utility-states-primary-pressed);\n            box-shadow: none;\n          }\n          .ods-chevron-container {\n            position: absolute;\n            right: 16px;\n           /*  top: 35px; */\n            transform: ", ";\n            transition: transform 0.2s ease-in-out;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: var(--ods-sem-space-medium);\n            width: var(--ods-sem-space-medium);\n            /* padding: var(--ods-sem-space-small) var(--ods-sem-space-none); */\n            pointer-events: none;\n            padding-top: 12px;\n            padding-bottom: 12px;\n          }\n          .select-wrapper {\n            position: relative;\n            input {\n              width: calc(100% - 32px);\n            }\n          }  \n      </style>\n      <div class=", ">\n        ", "", " ", "\n        \n      </div>\n      ", "\n    "])), this["full-width"] === "false" ? "display: inline-flex;" : "", this.width, this.width, this.width, iconPosition, ["ods-field-container", isReadOnly, isError].join(" "), this.getErrorMessage(), this.getInputField(), this.getLabelField(), this._menu);
+        return x(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n      <style>\n        :host{\n            ", "\n            position: relative;\n          }\n          * {\n            box-sizng: border-box;\n            margin: var(--ods-sem-space-none);\n            padding: var(--ods-sem-space-none);\n          }\n          .ods-form-label {\n            font-family: lato;\n            font-weight: 400;\n            font-size: 14px;\n            line-height: 24px;\n            margin: var(--ods-sem-space-none);\n            color: var(--ods-sem-color-text-primary);\n          }\n          .ods-form-control {\n            display: block;\n            padding: var(--ods-sem-input-padding);\n            font-size: var(--ods-input-font-size, 16px);\n            font-family: lato, Helvetica, Arial, sans-serif;\n            font-weight: var(--ods-input-font-weight, 400);\n            line-height: var(--ods-input-line-height, 32px);\n            color: var(--ods-sem-color-text-primary);\n            background-color: var(--ods-sem-color-roles-neutral-on-neutral);\n            background-clip: padding-box;\n            box-shadow: 0 0 0 1px var(--ods-sem-color-border-interactive-component);\n            border-width: 0;\n            -webkit-appearance: none;\n            -moz-appearance: none;\n            appearance: none;\n            border-radius: var(--ods-sem-radius-sm);\n            cursor:pointer;\n          }\n          @media (prefers-reduced-motion: reduce) {\n            .ods-form-control {\n              transition: none;\n            }\n          }\n          .ods-form-control::-moz-placeholder {\n            color: var(--ods-sem-color-text-tertiary);\n            opacity: 1;\n          }\n          .ods-form-control::placeholder {\n            color: var(--ods-sem-color-text-tertiary);\n            opacity: 1;\n          }\n          .ods-select-field-container {\n            width: ", ";\n          }\n          .ods-field-container {\n            width: ", ";\n            display: flex;\n            /* position: relative; */\n            flex-direction: column-reverse;\n            gap: var(--ods-sem-space-xs);\n            box-sizing: border-box;\n          }\n          .ods-label-container {\n            display: flex;\n            align-items: flex-start;\n            gap: 4px;\n          }\n          .ods-label-container ods-icon-button {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            --ods-icon-button-height: 24px;\n            --ods-icon-button-width: 24px;\n          }\n          .ods-button {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            --ods-icon-button-height: 24px;\n            --ods-icon-button-width: 24px;\n          }\n          ods-icon-button ods-icon::part(odsIcon) {\n            width: var(--ods-sem-space-md);\n            height: var(--ods-sem-space-md);\n          }\n          .ods-error-container {\n            width: ", ";\n            display: flex;\n            justify-content: flex-start;\n            gap: var(--ods-sem-space-sm);\n          }\n          .ods-error-container ods-icon {\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: var(--ods-sem-space-md);\n            width: var(--ods-sem-space-md);\n            padding: var(--ods-sem-space-xs) var(--ods-sem-space-none);\n          }\n\n          .ods-field-container {\n            input {\n              &:hover {\n                border-width: 0;\n                box-shadow: 0 0 0 1px var(--ods-sem-color-roles-primary);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-primary-on-color-hover);\n                }\n                ~ .ods-label-container label {\n                  cursor: pointer;\n                }\n              }\n              &:focus, &[active-menu] {\n                color: var(--ods-sem-color-text-primary);\n                background-color: var(--ods-sem-color-roles-primary-on-primary);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-primary-on-color-focus);\n                border-width: 0;\n                outline: 0;\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-primary-on-color-focus);\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-primary-on-color-pressed);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n                }\n              }\n            }\n            &.readonly {\n              opacity: 0.5;\n              cursor: not-allowed;\n              input {\n                pointer-events: none;\n                color: var(--ods-sem-color-utility-states-disabled-content);\n                background-color: var(--ods-sem-color-utility-states-disabled-container);\n                background-clip: padding-box;\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-disabled-content);\n                -webkit-appearance: none;\n                -moz-appearance: none;\n                appearance: none;\n              }\n              .ods-label-container ods-text::part(odsText) {\n                pointer-events: none;\n              }\n              .ods-button {\n                pointer-events: none;\n              }\n            }\n            &.error-state {\n              input {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-default);\n                border-width: 0;\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-status-roles-error);\n                }\n                &:hover {\n                  box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-hover);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: var(--ods-sem-color-utility-states-error-on-color-hover);\n                  }\n                }\n                &:focus {\n                  border-color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                  box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-default);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                  }\n                }\n                &:active {\n                  box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-pressed);\n                  ~ .ods-label-container ods-text::part(odsText) {\n                    color: var(--ods-sem-color-utility-states-error-on-color-pressed);\n                  }\n                }\n              }\n            }\n          }\n          ods-text::part(odsText) {\n            line-height: 24px;\n            word-break: break-word;\n          }\n          ods-text.left-spacing {\n            margin-left: 4px;\n          }\n          ods-text {\n            display: inline-block;\n          }\n            button {\n            border-radius: 9999px;\n            height: var(--ods-icon-button-height, 44px);\n            width: var(--ods-icon-button-width, 44px);\n            text-decoration: none;\n            border: var(--ods-sem-space-none);\n            cursor: pointer;\n            justify-content: center;\n            box-sizing: border-box;\n            display: inline-flex;\n            align-items: center;\n            padding: 0;\n          }\n          .btn-ghost {\n            color: var(--ods-sem-color-roles-primary);\n            background: transparent;\n          }\n          .btn-ghost:hover {\n            background: var(--ods-sem-color-utility-states-primary-hover);\n          }\n          .btn-ghost:focus {\n            outline: none;\n            box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n          }\n          .btn-ghost:active {\n            background: var(--ods-sem-color-utility-states-primary-pressed);\n            box-shadow: none;\n          }\n          .ods-chevron-container {\n            position: absolute;\n            right: 16px;\n            top: 8px;\n            transform: ", ";\n            transition: transform 0.2s ease-in-out;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            height: var(--ods-sem-space-md);\n            width: var(--ods-sem-space-md);\n            /* padding: var(--ods-sem-space-sm) var(--ods-sem-space-none); */\n            pointer-events: none;\n            padding-top: 12px;\n            padding-bottom: 12px;\n          }\n          .select-wrapper {\n            position: relative;\n            input {\n              width: calc(100% - 32px);\n            }\n          }  \n            .icon-wrapper {\n              position: relative;\n            }\n      </style>\n      <div class=", ">\n        ", "", " ", "\n        \n      </div>\n      ", "\n    "])), this["full-width"] === "false" ? "display: inline-flex;" : "", this.width, this.width, this.width, iconPosition, ["ods-field-container", isReadOnly, isError].join(" "), this.getErrorMessage(), this.getInputField(), this.getLabelField(), this._menu);
         /* <ods-icon
               class="ods-chevron-container"
               size="SM"
@@ -7440,7 +7725,7 @@
   }(s$2);
   customElements.define("ods-select-field", OdsSelectField);
 
-  var _templateObject$4, _templateObject2$3, _templateObject3$3, _templateObject4$2, _templateObject5$1, _templateObject6$1, _templateObject7$1;
+  var _templateObject$6, _templateObject2$4, _templateObject3$4, _templateObject4$2, _templateObject5$1, _templateObject6$1, _templateObject7$1;
   var ODSTextArea = /*#__PURE__*/function (_LitElement) {
     function ODSTextArea() {
       var _this;
@@ -7510,13 +7795,13 @@
         if (this.error != '') {
           errorAlert = true;
         }
-        return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n    <textarea\n    @input=\"", "\"\n    @blur=\"", "\"\n    tabindex=\"2\"\n    class=", "\n    id=\"", "\"\n    name=\"", "\"\n    resize=\"", "\"\n    placeholder=\"", "\"\n    error=\"", "\"\n    aria-describedby=\"", "\"\n    aria-disabled=\"", "\"\n    .value=\"", "\"\n    ?required=\"", "\"\n    ?optional=\"", "\"\n    aria-invalid=\"", "\"\n    @resize=\"", "\"\n\n  ></textarea>\n    "])), this.onInput, this.onBlur, ["ods-form-control"].join(" "), this.name, this.name, this.resize, this.placeholder, this.error, this.name, this.disabled, this.value, isRequired, isOptional, errorAlert, this.handletextsize);
+        return x(_templateObject$6 || (_templateObject$6 = _taggedTemplateLiteral(["\n    <textarea\n    @input=\"", "\"\n    @blur=\"", "\"\n    tabindex=\"2\"\n    class=", "\n    id=\"", "\"\n    name=\"", "\"\n    resize=\"", "\"\n    placeholder=\"", "\"\n    error=\"", "\"\n    aria-describedby=\"", "\"\n    aria-disabled=\"", "\"\n    .value=\"", "\"\n    ?required=\"", "\"\n    ?optional=\"", "\"\n    aria-invalid=\"", "\"\n    @resize=\"", "\"\n\n  ></textarea>\n    "])), this.onInput, this.onBlur, ["ods-form-control"].join(" "), this.name, this.name, this.resize, this.placeholder, this.error, this.name, this.disabled, this.value, isRequired, isOptional, errorAlert, this.handletextsize);
       }
     }, {
       key: "getErrorMessage",
       value: function getErrorMessage() {
         if (this.error && this.error != "") {
-          return x(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"status-error\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"status-error\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
+          return x(_templateObject2$4 || (_templateObject2$4 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"status-error\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"status-error\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
         }
         return "";
       }
@@ -7524,7 +7809,7 @@
       key: "getInfoIcon",
       value: function getInfoIcon() {
         if (this.tooltip != "") {
-          return x(_templateObject3$3 || (_templateObject3$3 = _taggedTemplateLiteral(["\n      <div class=\"ods-button\">\n      <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n        <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n      </button>\n      <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n    </div>\n      "])), this.tooltip);
+          return x(_templateObject3$4 || (_templateObject3$4 = _taggedTemplateLiteral(["\n      <div class=\"ods-button\">\n      <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n        <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n      </button>\n      <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n    </div>\n      "])), this.tooltip);
         }
       }
     }, {
@@ -7575,7 +7860,7 @@
           isError = "";
           this.error = "";
         }
-        return x(_templateObject7$1 || (_templateObject7$1 = _taggedTemplateLiteral(["\n    <style>\n        * {\n          box-sizng: border-box;\n          margin: var(--ods-sem-space-none);\n          padding: var(--ods-sem-space-none);\n        }\n        .ods-form-label {\n          font-family: lato;\n          font-weight: 400;\n          font-size: 14px;\n          line-height: 22px;\n          margin: var(--ods-sem-space-none);\n          color: var(--ods-sem-color-text-primary);\n        }\n        .ods-form-control {\n          display: block;\n          resize: ", ";\n          height: var(--ods-height, 156px);\n          padding: 10px var(--ods-sem-space-medium);\n          font-size: var(--ods-textarea-font-size, 16px);\n          font-family: lato, Helvetica, Arial, sans-serif;\n          font-weight: var(--ods-textarea-font-weight, 400);\n          line-height: var(--ods-textarea-line-height, 24px);\n          color: var(--ods-sem-color-text-primary);\n          background-color: var(--ods-sem-color-background-primary);\n          background-clip: padding-box;\n          box-shadow: 0 0 0 1px var(--ods-sem-color-border-interactive-component);\n          border-width: 0;\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          appearance: none;\n          border-radius: var(--ods-sem-radius-small);\n        }\n        @media (prefers-reduced-motion: reduce) {\n          .ods-form-control {\n            transition: none;\n          }\n        }\n        .ods-form-control::-moz-placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-form-control::placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-field-container {\n          width: ", ";\n          min-width:280px;\n          display: flex;\n          position: relative;\n          flex-direction: column-reverse;\n          gap: var(--ods-sem-space-xsmall);\n          box-sizing: border-box;\n        }\n        .ods-label-container {\n          display: flex;\n          align-items: flex-start;\n          gap: var(--ods-sem-space-xsmall);\n        }\n        .ods-label-container ods-icon-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        .ods-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        ods-icon-button ods-icon::part(odsIcon) {\n          width: var(--ods-sem-space-medium);\n          height: var(--ods-sem-space-medium);\n        }\n        .ods-error-container {\n          margin-top: 2px;\n          width: ", ";\n          display: flex;\n          justify-content: flex-start;\n          gap: var(--ods-sem-space-small);\n        }\n        .ods-error-container ods-icon {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          height: var(--ods-sem-space-medium);\n          width: var(--ods-sem-space-medium);\n          padding: var(--ods-sem-space-xsmall) var(--ods-sem-space-none);\n        }\n\n        .ods-field-container {\n          textarea {\n            &:hover {\n              border-width: 0;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-roles-primary);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-hover);\n              }\n              ~ .ods-label-container label {\n                cursor: pointer;\n              }\n            }\n            &:focus {\n              color: var(--ods-sem-color-text-primary);\n              background-color: var(--ods-sem-color-roles-primary-on-primary);\n              box-shadow: 0 0 0 3px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              border-width: 0;\n              outline: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-focus);\n              }\n            }\n            &:active {\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n              }\n            }\n          }\n          &.readonly {\n            opacity: 0.5;\n            cursor: not-allowed;\n            textarea {\n              pointer-events: none;\n              color: var(--ods-sem-color-utility-states-disabled-content);\n              background-color: var(--ods-sem-color-utility-states-disabled-container);\n              background-clip: padding-box;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-disabled-content);\n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n            }\n            .ods-label-container ods-text::part(odsText) {\n              pointer-events: none;\n            }\n            .ods-button {\n              pointer-events: none;\n            }\n          }\n          &.error-state {\n            textarea {\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-default);\n              border-width: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-status-roles-error);\n              }\n              &:hover {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-hover);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-hover);\n                }\n              }\n              &:focus {\n                border-color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-default);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-pressed);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-pressed);\n                  );\n                }\n              }\n            }\n          }\n        }\n        ods-text::part(odsText) {\n          line-height: 24px;\n          word-break: break-word;\n        }\n        ods-text.left-spacing {\n          margin-left: var(--ods-sem-space-xsmall);\n        }\n        ods-text {\n          display: inline-block;\n        }\n        button {\n          border-radius: var(--ods-sem-radius-full);\n          height: var(--ods-icon-button-height, 44px);\n          width: var(--ods-icon-button-width, 44px);\n          text-decoration: none;\n          border: var(--ods-sem-space-none);\n          cursor: pointer;\n          justify-content: center;\n          box-sizing: border-box;\n          display: inline-flex;\n          align-items: center;\n          border: var(--ods-sem-space-none);\n        }\n        .btn-ghost {\n          color: var(--ods-sem-color-roles-primary);\n          background: transparent;\n        }\n        .btn-ghost:hover {\n          background: var(--ods-sem-color-utility-states-primary-hover);\n        }\n        .btn-ghost:focus {\n          outline: none;\n          box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n        }\n        .btn-ghost:active {\n          background: var(--ods-sem-color-utility-states-primary-pressed);\n          box-shadow: none;\n        }\n        .ods-label-container ::-webkit-scrollbar{\n          width:12px;\n          position: absolute;\n          right: 4px;\n          top: 8px;\n      }\n      .ods-label-container ::-webkit-scrollbar-track{\n        background-color: var(--ods-sem-color-background-primary);\n        border-radius: var(--ods-sem-radius-xlarge);\n      }\n      .ods-label-container ::-webkit-scrollbar-thumb{\n        background-color: var(--ods-sem-color-border-decorative-primary);\n        border-radius: var(--ods-sem-radius-xlarge);\n        opacity:0.3;\n      }\n\n      </style>\n      <div class=", ">\n        ", " ", "\n      </div>\n      <div class=\"ods-error-container\" style=\"resize: ", ";\">\n    ", "\n  </div>\n    "])), this.resize, this.width, this.width, ["ods-field-container", isReadOnly, isError].join(" "), this.getInputField(), this.getLabelField(), this.resize, this.getErrorMessage());
+        return x(_templateObject7$1 || (_templateObject7$1 = _taggedTemplateLiteral(["\n    <style>\n        * {\n          box-sizng: border-box;\n          margin: var(--ods-sem-space-none);\n          padding: var(--ods-sem-space-none);\n        }\n        .ods-form-label {\n          font-family: lato;\n          font-weight: 400;\n          font-size: 14px;\n          line-height: 22px;\n          margin: var(--ods-sem-space-none);\n          color: var(--ods-sem-color-text-primary);\n        }\n        .ods-form-control {\n          display: block;\n          resize: ", ";\n          height: var(--ods-height, 156px);\n          padding: 10px var(--ods-sem-space-md);\n          font-size: var(--ods-textarea-font-size, 16px);\n          font-family: lato, Helvetica, Arial, sans-serif;\n          font-weight: var(--ods-textarea-font-weight, 400);\n          line-height: var(--ods-textarea-line-height, 24px);\n          color: var(--ods-sem-color-text-primary);\n          background-color: var(--ods-sem-color-background-primary);\n          background-clip: padding-box;\n          box-shadow: 0 0 0 1px var(--ods-sem-color-border-interactive-component);\n          border-width: 0;\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          appearance: none;\n          border-radius: var(--ods-sem-radius-sm);\n        }\n        @media (prefers-reduced-motion: reduce) {\n          .ods-form-control {\n            transition: none;\n          }\n        }\n        .ods-form-control::-moz-placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-form-control::placeholder {\n          color: #5e5e5e;\n          opacity: 1;\n        }\n        .ods-field-container {\n          width: ", ";\n          min-width:280px;\n          display: flex;\n          position: relative;\n          flex-direction: column-reverse;\n          gap: var(--ods-sem-space-xs);\n          box-sizing: border-box;\n        }\n        .ods-label-container {\n          display: flex;\n          align-items: flex-start;\n          gap: var(--ods-sem-space-xs);\n        }\n        .ods-label-container ods-icon-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        .ods-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        ods-icon-button ods-icon::part(odsIcon) {\n          width: var(--ods-sem-space-md);\n          height: var(--ods-sem-space-md);\n        }\n        .ods-error-container {\n          margin-top: 2px;\n          width: ", ";\n          display: flex;\n          justify-content: flex-start;\n          gap: var(--ods-sem-space-sm);\n        }\n        .ods-error-container ods-icon {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          height: var(--ods-sem-space-md);\n          width: var(--ods-sem-space-md);\n          padding: var(--ods-sem-space-xs) var(--ods-sem-space-none);\n        }\n\n        .ods-field-container {\n          textarea {\n            &:hover {\n              border-width: 0;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-roles-primary);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-hover);\n              }\n              ~ .ods-label-container label {\n                cursor: pointer;\n              }\n            }\n            &:focus {\n              color: var(--ods-sem-color-text-primary);\n              background-color: var(--ods-sem-color-roles-primary-on-primary);\n              box-shadow: 0 0 0 3px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              border-width: 0;\n              outline: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-focus);\n              }\n            }\n            &:active {\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n              }\n            }\n          }\n          &.readonly {\n            opacity: 0.5;\n            cursor: not-allowed;\n            textarea {\n              pointer-events: none;\n              color: var(--ods-sem-color-utility-states-disabled-content);\n              background-color: var(--ods-sem-color-utility-states-disabled-container);\n              background-clip: padding-box;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-disabled-content);\n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n            }\n            .ods-label-container ods-text::part(odsText) {\n              pointer-events: none;\n            }\n            .ods-button {\n              pointer-events: none;\n            }\n          }\n          &.error-state {\n            textarea {\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-default);\n              border-width: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-status-roles-error);\n              }\n              &:hover {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-hover);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-hover);\n                }\n              }\n              &:focus {\n                border-color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-default);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-pressed);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-pressed);\n                  );\n                }\n              }\n            }\n          }\n        }\n        ods-text::part(odsText) {\n          line-height: 24px;\n          word-break: break-word;\n        }\n        ods-text.left-spacing {\n          margin-left: var(--ods-sem-space-xs);\n        }\n        ods-text {\n          display: inline-block;\n        }\n        button {\n          border-radius: var(--ods-sem-radius-full);\n          height: var(--ods-icon-button-height, 44px);\n          width: var(--ods-icon-button-width, 44px);\n          text-decoration: none;\n          border: var(--ods-sem-space-none);\n          cursor: pointer;\n          justify-content: center;\n          box-sizing: border-box;\n          display: inline-flex;\n          align-items: center;\n          border: var(--ods-sem-space-none);\n        }\n        .btn-ghost {\n          color: var(--ods-sem-color-roles-primary);\n          background: transparent;\n        }\n        .btn-ghost:hover {\n          background: var(--ods-sem-color-utility-states-primary-hover);\n        }\n        .btn-ghost:focus {\n          outline: none;\n          box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n        }\n        .btn-ghost:active {\n          background: var(--ods-sem-color-utility-states-primary-pressed);\n          box-shadow: none;\n        }\n        .ods-label-container ::-webkit-scrollbar{\n          width:12px;\n          position: absolute;\n          right: 4px;\n          top: 8px;\n      }\n      .ods-label-container ::-webkit-scrollbar-track{\n        background-color: var(--ods-sem-color-background-primary);\n        border-radius: var(--ods-sem-radius-xl);\n      }\n      .ods-label-container ::-webkit-scrollbar-thumb{\n        background-color: var(--ods-sem-color-border-decorative-primary);\n        border-radius: var(--ods-sem-radius-xl);\n        opacity:0.3;\n      }\n\n      </style>\n      <div class=", ">\n        ", " ", "\n      </div>\n      <div class=\"ods-error-container\" style=\"resize: ", ";\">\n    ", "\n  </div>\n    "])), this.resize, this.width, this.width, ["ods-field-container", isReadOnly, isError].join(" "), this.getInputField(), this.getLabelField(), this.resize, this.getErrorMessage());
       }
     }], [{
       key: "properties",
@@ -7623,7 +7908,7 @@
   }(s$2);
   customElements.define("ods-text-area", ODSTextArea);
 
-  var _templateObject$3, _templateObject2$2, _templateObject3$2, _templateObject4$1, _templateObject5, _templateObject6, _templateObject7;
+  var _templateObject$5, _templateObject2$3, _templateObject3$3, _templateObject4$1, _templateObject5, _templateObject6, _templateObject7;
 
   /**
    * Service Now ODSTextField Component
@@ -7644,14 +7929,28 @@
     }
     _inherits(ODSTextField, _LitElement);
     return _createClass(ODSTextField, [{
+      key: "customEventHandler",
+      value: function customEventHandler(event, eventName) {
+        var obj = {};
+        obj[this.name] = event.target.value;
+        var myEvent = new CustomEvent(eventName, {
+          detail: _objectSpread2({}, obj),
+          bubbles: true,
+          composed: true
+        });
+        this.dispatchEvent(myEvent);
+      }
+    }, {
       key: "onBlur",
       value: function onBlur(e) {
         this.NgApi.triggerNg(e.target.value, e);
+        this.customEventHandler(e, 'ods-text-field-blur');
       }
     }, {
       key: "onInput",
       value: function onInput(e) {
         this.NgApi.triggerNg(e.target.value, e);
+        this.customEventHandler(e, 'ods-text-field-change');
       }
     }, {
       key: "getInputField",
@@ -7665,13 +7964,13 @@
         if (this.error != "") {
           errorAlert = true;
         }
-        return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["\n      <input\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        @input=\"", "\"\n        @blur=\"", "\"\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        aria-disabled=\"", "\"\n        .value=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n      />\n    "])), this.type, ["ods-form-control"].join(" "), this.onInput, this.onBlur, this.name, this.name, this.placeholder, this.error, this.name, this.isDisabled, this.value, isRequired, isOptional, errorAlert);
+        return x(_templateObject$5 || (_templateObject$5 = _taggedTemplateLiteral(["\n      <input\n        tabindex=\"2\"\n        type=\"", "\"\n        class=", "\n        @input=\"", "\"\n        @blur=\"", "\"\n        id=\"", "\"\n        name=\"", "\"\n        placeholder=\"", "\"\n        error=\"", "\"\n        aria-describedby=\"", "\"\n        aria-disabled=\"", "\"\n        .value=\"", "\"\n        ?required=\"", "\"\n        ?optional=\"", "\"\n        aria-invalid=\"", "\"\n      />\n    "])), this.type, ["ods-form-control"].join(" "), this.onInput, this.onBlur, this.name, this.name, this.placeholder, this.error, this.name, this.isDisabled, this.value, isRequired, isOptional, errorAlert);
       }
     }, {
       key: "getErrorMessage",
       value: function getErrorMessage() {
         if (this.error && this.error != "") {
-          return x(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"status-error\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"status-error\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
+          return x(_templateObject2$3 || (_templateObject2$3 = _taggedTemplateLiteral(["\n        <div class=\"ods-error-container\">\n          <ods-icon\n            size=\"SM\"\n            name=\"error\"\n            color=\"status-error\"\n            aria-describedby=\"tooltip\"\n          ></ods-icon>\n          <ods-text html-tag=\"span\" size=\"sm\" weight=\"regular\" color=\"status-error\">\n            ", "\n          </ods-text>\n        </div>\n      "])), this.error);
         }
         return "";
       }
@@ -7679,7 +7978,7 @@
       key: "getInfoIcon",
       value: function getInfoIcon() {
         if (this.tooltip != "") {
-          return x(_templateObject3$2 || (_templateObject3$2 = _taggedTemplateLiteral(["\n        <div class=\"ods-button\">\n          <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n            <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n          </button>\n          <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n        </div>\n      "])), this.tooltip);
+          return x(_templateObject3$3 || (_templateObject3$3 = _taggedTemplateLiteral(["\n        <div class=\"ods-button\">\n          <button tabindex=\"1\" class=\"btn-ghost\" aria-describedby=\"tooltip\">\n            <ods-icon size=\"SM\" name=\"info\" color=\"\"> </ods-icon>\n          </button>\n          <ods-tooltip id=\"tooltip\" label=\"", "\"></ods-tooltip>\n        </div>\n      "])), this.tooltip);
         }
       }
     }, {
@@ -7735,7 +8034,7 @@
           isError = "";
           this.error = "";
         }
-        return x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          box-sizng: border-box;\n          margin: var(--ods-sem-space-none);\n          padding: var(--ods-sem-space-none);\n        }\n        .ods-form-control {\n          display: block;\n          padding: 10px var(--ods-sem-space-medium);\n          font-size: var(--ods-input-font-size, 16px);\n          font-family: lato, Helvetica, Arial, sans-serif;\n          font-weight: var(--ods-input-font-weight, 400);\n          line-height: var(--ods-input-line-height, 24px);\n          color: var(--ods-sem-color-text-primary);\n          background-color: var(--ods-sem-color-background-primary);\n          background-clip: padding-box;\n          box-shadow: 0 0 0 1px var(--ods-sem-color-border-interactive-component);\n          border-width: 0;\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          appearance: none;\n          border-radius: var(--ods-sem-radius-small);\n        }\n        @media (prefers-reduced-motion: reduce) {\n          .ods-form-control {\n            transition: none;\n          }\n        }\n        .ods-form-control::-moz-placeholder {\n          color: var(--ods-sem-color-text-tertiary);\n          opacity: 1;\n        }\n        .ods-form-control::placeholder {\n          color: var(--ods-sem-color-text-tertiary);\n          opacity: 1;\n        }\n        .ods-field-container {\n          width: ", ";\n          display: flex;\n          position: relative;\n          flex-direction: column-reverse;\n          gap: var(--ods-sem-space-xsmall);\n          box-sizing: border-box;\n        }\n        .ods-label-container {\n          display: flex;\n          align-items: flex-start;\n          gap: var(--ods-sem-space-xsmall);\n        }\n        .ods-label-container ods-icon-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        .ods-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        ods-icon-button ods-icon::part(odsIcon) {\n          width: var(--ods-sem-space-medium);\n          height: var(--ods-sem-space-medium);\n        }\n        .ods-error-container {\n          margin-top: 4px;\n          width: ", ";\n          display: flex;\n          justify-content: flex-start;\n          gap: var(--ods-sem-space-small);\n        }\n        .ods-error-container ods-icon {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          height: var(--ods-sem-space-medium);\n          width: var(--ods-sem-space-medium);\n          padding: var(--ods-sem-space-xsmall) var(--ods-sem-space-none);\n        }\n\n        .ods-field-container {\n          input {\n            &:hover {\n              border-width: 0;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-roles-primary);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-hover);\n              }\n              ~ .ods-label-container label {\n                cursor: pointer;\n              }\n            }\n            &:focus {\n              color: var(--ods-sem-color-text-primary);\n              background-color: var(--ods-sem-color-roles-primary-on-primary);\n              box-shadow: 0 0 0 3px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              border-width: 0;\n              outline: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-focus);\n              }\n            }\n            &:active {\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n              }\n            }\n          }\n          &.readonly {\n            opacity: 0.5;\n            cursor: not-allowed;\n            input {\n              pointer-events: none;\n              color: var(--ods-sem-color-utility-states-disabled-content);\n              background-color: var(--ods-sem-color-utility-states-disabled-container);\n              background-clip: padding-box;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-disabled-content);\n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n            }\n            .ods-label-container ods-text::part(odsText) {\n              pointer-events: none;\n            }\n            .ods-button {\n              pointer-events: none;\n            }\n          }\n          &.error-state {\n            input {\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-default);\n              border-width: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-status-roles-error);\n              }\n              &:hover {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-hover);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-hover);\n                }\n              }\n              &:focus {\n                border-color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-default);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-pressed);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-pressed);\n                  );\n                }\n              }\n            }\n          }\n        }\n        ods-text::part(odsText) {\n          line-height: 24px;\n          word-break: break-word;\n        }\n        ods-text.left-spacing {\n          margin-left: var(--ods-sem-space-xsmall);\n        }\n        ods-text {\n          display: inline-block;\n        }\n        button {\n          border-radius: var(--ods-sem-radius-full);\n          height: var(--ods-icon-button-height, 44px);\n          width: var(--ods-icon-button-width, 44px);\n          text-decoration: none;\n          border: var(--ods-sem-space-none);\n          cursor: pointer;\n          justify-content: center;\n          box-sizing: border-box;\n          display: inline-flex;\n          align-items: center;\n          border: var(--ods-sem-space-none);\n        }\n        .btn-ghost {\n          color: var(--ods-sem-color-roles-primary);\n          background: transparent;\n        }\n        .btn-ghost:hover {\n          background: var(--ods-sem-color-utility-states-primary-hover);\n        }\n        .btn-ghost:focus {\n          outline: none;\n          box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n        }\n        .btn-ghost:active {\n          background: var(--ods-sem-color-utility-states-primary-pressed);\n          box-shadow: none;\n        }\n      </style>\n      <div class=", ">\n        ", " ", "\n      </div>\n      ", "\n    "])), this.width, this.width, ["ods-field-container", isReadOnly, isError].join(" "), this.getInputField(), this.getLabelField(), this.getErrorMessage());
+        return x(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n      <style>\n        * {\n          box-sizng: border-box;\n          margin: var(--ods-sem-space-none);\n          padding: var(--ods-sem-space-none);\n        }\n        .ods-form-control {\n          display: block;\n          padding: 10px var(--ods-sem-space-md);\n          font-size: var(--ods-input-font-size, 16px);\n          font-family: lato, Helvetica, Arial, sans-serif;\n          font-weight: var(--ods-input-font-weight, 400);\n          line-height: var(--ods-input-line-height, 24px);\n          color: var(--ods-sem-color-text-primary);\n          background-color: var(--ods-sem-color-background-primary);\n          background-clip: padding-box;\n          box-shadow: 0 0 0 1px var(--ods-sem-color-border-interactive-component);\n          border-width: 0;\n          -webkit-appearance: none;\n          -moz-appearance: none;\n          appearance: none;\n          border-radius: var(--ods-sem-radius-sm);\n        }\n        @media (prefers-reduced-motion: reduce) {\n          .ods-form-control {\n            transition: none;\n          }\n        }\n        .ods-form-control::-moz-placeholder {\n          color: var(--ods-sem-color-text-tertiary);\n          opacity: 1;\n        }\n        .ods-form-control::placeholder {\n          color: var(--ods-sem-color-text-tertiary);\n          opacity: 1;\n        }\n        .ods-field-container {\n          width: ", ";\n          display: flex;\n          position: relative;\n          flex-direction: column-reverse;\n          gap: var(--ods-sem-space-xs);\n          box-sizing: border-box;\n        }\n        .ods-label-container {\n          display: flex;\n          align-items: flex-start;\n          gap: var(--ods-sem-space-xs);\n        }\n        .ods-label-container ods-icon-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        .ods-button {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          --ods-icon-button-height: 24px;\n          --ods-icon-button-width: 24px;\n        }\n        ods-icon-button ods-icon::part(odsIcon) {\n          width: var(--ods-sem-space-md);\n          height: var(--ods-sem-space-md);\n        }\n        .ods-error-container {\n          margin-top: 4px;\n          width: ", ";\n          display: flex;\n          justify-content: flex-start;\n          gap: var(--ods-sem-space-sm);\n        }\n        .ods-error-container ods-icon {\n          display: flex;\n          align-items: center;\n          justify-content: center;\n          height: var(--ods-sem-space-md);\n          width: var(--ods-sem-space-md);\n          padding: var(--ods-sem-space-xs) var(--ods-sem-space-none);\n        }\n\n        .ods-field-container {\n          input {\n            &:hover {\n              border-width: 0;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-roles-primary);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-hover);\n              }\n              ~ .ods-label-container label {\n                cursor: pointer;\n              }\n            }\n            &:focus {\n              color: var(--ods-sem-color-text-primary);\n              background-color: var(--ods-sem-color-roles-primary-on-primary);\n              box-shadow: 0 0 0 3px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              border-width: 0;\n              outline: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-focus);\n              }\n            }\n            &:active {\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n              }\n            }\n          }\n          &.readonly {\n            opacity: 0.5;\n            cursor: not-allowed;\n            input {\n              pointer-events: none;\n              color: var(--ods-sem-color-utility-states-disabled-content);\n              background-color: var(--ods-sem-color-utility-states-disabled-container);\n              background-clip: padding-box;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-disabled-content);\n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n            }\n            .ods-label-container ods-text::part(odsText) {\n              pointer-events: none;\n            }\n            .ods-button {\n              pointer-events: none;\n            }\n          }\n          &.error-state {\n            input {\n              box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-default);\n              border-width: 0;\n              ~ .ods-label-container ods-text::part(odsText) {\n                color: var(--ods-sem-color-status-roles-error);\n              }\n              &:hover {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-hover);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-hover);\n                }\n              }\n              &:focus {\n                border-color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-default);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-focus);\n                }\n              }\n              &:active {\n                box-shadow: 0 0 0 1px var(--ods-sem-color-utility-states-error-on-color-pressed);\n                ~ .ods-label-container ods-text::part(odsText) {\n                  color: var(--ods-sem-color-utility-states-error-on-color-pressed);\n                  );\n                }\n              }\n            }\n          }\n        }\n        ods-text::part(odsText) {\n          line-height: 24px;\n          word-break: break-word;\n        }\n        ods-text.left-spacing {\n          margin-left: var(--ods-sem-space-xs);\n        }\n        ods-text {\n          display: inline-block;\n        }\n        button {\n          border-radius: var(--ods-sem-radius-full);\n          height: var(--ods-icon-button-height, 44px);\n          width: var(--ods-icon-button-width, 44px);\n          text-decoration: none;\n          border: var(--ods-sem-space-none);\n          cursor: pointer;\n          justify-content: center;\n          box-sizing: border-box;\n          display: inline-flex;\n          align-items: center;\n          border: var(--ods-sem-space-none);\n        }\n        .btn-ghost {\n          color: var(--ods-sem-color-roles-primary);\n          background: transparent;\n        }\n        .btn-ghost:hover {\n          background: var(--ods-sem-color-utility-states-primary-hover);\n        }\n        .btn-ghost:focus {\n          outline: none;\n          box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-focus);\n        }\n        .btn-ghost:active {\n          background: var(--ods-sem-color-utility-states-primary-pressed);\n          box-shadow: none;\n        }\n      </style>\n      <div class=", ">\n        ", " ", "\n      </div>\n      ", "\n    "])), this.width, this.width, ["ods-field-container", isReadOnly, isError].join(" "), this.getInputField(), this.getLabelField(), this.getErrorMessage());
       }
     }], [{
       key: "properties",
@@ -7780,7 +8079,7 @@
   }(s$2);
   customElements.define("ods-text-field", ODSTextField);
 
-  var _templateObject$2, _templateObject2$1, _templateObject3$1;
+  var _templateObject$4, _templateObject2$2, _templateObject3$2;
 
   /**
    * Service Now Tab Component
@@ -7954,9 +8253,9 @@
       key: "getTab",
       value: function getTab() {
         if (this.href) {
-          return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["\n    <li class=\"ods-tab ", "\"  @click=\"", "\" @focus=\"", "\" tabindex= \"", "\">\n    <a tabindex=\"-1\" href=\"", "\" target= \"", "\" @click=", " role= \"", "\" aria-selected = \"", "\" aria-controls='tab_", "' >\n    <ods-text size='md' weight='regular' color=\"role-on-primary\" for=\"\" ><slot></slot></ods-text>\n    <div class='chevron-container'><slot name='more-icon'></slot></div>\n    </a>\n    <div class=\"highlight ", " \"> </div>\n    \n  </li>\n  \n  "])), this.selected ? 'selected' : '', this.handleTabSelected, this.handleFocus, this.selected ? '0' : '-1', this.href, this.target, this.stateFocus, this.slot, this.selected ? 'true' : 'false', this.tabId, this.selected ? '' : 'hidden');
+          return x(_templateObject$4 || (_templateObject$4 = _taggedTemplateLiteral(["\n    <li class=\"ods-tab ", "\"  @click=\"", "\" @focus=\"", "\" tabindex= \"", "\">\n    <a tabindex=\"-1\" href=\"", "\" target= \"", "\" @click=", " role= \"", "\" aria-selected = \"", "\" aria-controls='tab_", "' >\n    <ods-text size='md' weight='regular' color=\"role-on-primary\" for=\"\" ><slot></slot></ods-text>\n    <div class='chevron-container'><slot name='more-icon'></slot></div>\n    </a>\n    <div class=\"highlight ", " \"> </div>\n    \n  </li>\n  \n  "])), this.selected ? 'selected' : '', this.handleTabSelected, this.handleFocus, this.selected ? '0' : '-1', this.href, this.target, this.stateFocus, this.slot, this.selected ? 'true' : 'false', this.tabId, this.selected ? '' : 'hidden');
         } else {
-          return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n    <li class=\"ods-tab ", "\"  @click=\"", "\" @focus=\"", "\" tabindex=\"", "\">\n    <button @click=", " tabindex= \"-1\" role= \"", "\" aria-selected = \"", "\" aria-controls='tab_", "' >\n     <ods-text size='md' weight='regular' color=\"role-on-primary\" for=\"\" ><slot></slot></ods-text>\n     <div class='chevron-container'><slot name='more-icon'></slot></div>\n    </button>\n    \n    <div class=\"highlight ", " \"> </div>\n  </li>\n  \n  "])), this.selected ? 'selected' : '', this.handleTabSelected, this.handleFocus, this.selected ? '0' : '-1', this.clickValidation, this.slot, this.selected ? 'true' : 'false', this.tabId, this.selected ? '' : 'hidden');
+          return x(_templateObject2$2 || (_templateObject2$2 = _taggedTemplateLiteral(["\n    <li class=\"ods-tab ", "\"  @click=\"", "\" @focus=\"", "\" tabindex=\"", "\">\n    <button @click=", " tabindex= \"-1\" role= \"", "\" aria-selected = \"", "\" aria-controls='tab_", "' >\n     <ods-text size='md' weight='regular' color=\"role-on-primary\" for=\"\" ><slot></slot></ods-text>\n     <div class='chevron-container'><slot name='more-icon'></slot></div>\n    </button>\n    \n    <div class=\"highlight ", " \"> </div>\n  </li>\n  \n  "])), this.selected ? 'selected' : '', this.handleTabSelected, this.handleFocus, this.selected ? '0' : '-1', this.clickValidation, this.slot, this.selected ? 'true' : 'false', this.tabId, this.selected ? '' : 'hidden');
         }
       }
     }, {
@@ -7967,7 +8266,7 @@
         var userLang = navigator.language || navigator.userLanguage;
         //console.log(this.textContent.trim().length)
         if (parent.classList && parent.classList.contains('ods-tab-nav-list') || parent.nodeName.toLowerCase() === 'ods-tab-group') {
-          return x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["\n    <style>\n    \n   .ods-tab{\n        outline: none;\n        display: flex;\n        justify-content: center;\n        width: 100%;\n        position: relative;\n    }\n\n    :host{\n      min-width: 60px;\n      align-self: stretch;\n      ", "\n      ", "\n      position: relative;\n      }\n      :host([more-tab]){\n        min-width: 95px;\n      } \n      :host .focus-ring{\n        display: none;\n        pointer-events: none;\n      }\n\n       :host(:focus-within) .focus-ring{\n        outline: none;\n        z-index: 2;\n        position: absolute;\n        display:block;\n        top: 0px;\n        left: 0px;\n      }\n\n      :host(:focus-within) .focus-ring::after{\n        content: \"\";\n        position: fixed;\n        display:block;\n        width:", "px;\n        height:", "px;\n        border-radius: var(--ods-sem-space-small);\n        box-shadow: 0 0 0 2px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 var(--ods-sem-space-xsmall) var(--ods-sem-color-utility-states-primary-on-color-focus);\n      }\n\n    \n    :host {\n      text-decoration: none;\n      line-height: var(--ods-sem-space-large);\n      border: var(--ods-sem-space-none);\n      cursor: pointer;\n      display: inline-flex;\n      justify-content: center;\n      box-sizing: border-box;\n      background: var(--ods-sem-color-background-reverse-primary);\n      overflow: hidden;\n      margin: 0;\n    }\n\n    :host(:hover) {\n      background: var(--ods-sem-color-background-reverse-tertiary);\n    }\n\n    :host:active {\n      background: var(--ods-sem-color-background-reverse-tertiary);\n    }\n\n    :host([active-menu]) .ods-tab {\n      background: var(--ods-sem-color-background-reverse-tertiary);\n    }\n\n    :host .chevron-container{\n      display: none;\n    }\n    :host([more-tab]) .chevron-container{\n      display: flex;\n      transition: transform 0.2s ease-in-out;  \n    }\n    :host([active-menu]) .chevron-container{\n      transform: rotateZ(180deg);\n    }\n\n    :host([hide]){\n      display:none;\n    }\n\n      :host .selected{\n      background: var(--ods-sem-color-background-reverse-tertiary);\n    }\n    \n    :host .selected ods-text::part(odsText){\n        text-shadow: 0 0 1px currentColor;\n    }\n\n    :host button{\n      display: inline-flex;\n      background: none;\n      align-items: center;\n      border: none;\n      color: inherit;\n      font; inherit;\n      line-height: inherit;\n      margin: 0;\n      cursor:pointer;\n      display: inline-flex;\n      justify-content: center;\n      width: 100%;\n      text-decoration: none;\n      outline: none;\n      gap: var(--ods-sem-space-small);\n    }\n\n    :host a {\n      display: inline-flex;\n      align-items: center;\n      width: 100%;\n      height: 100%;\n      color: inherit;\n      text-decoration: none;\n      outline: none;\n      gap: var(--ods-sem-space-small);\n    }\n\n    .tab-container{\n      display:flex;\n      width: 100%;\n    }\n    \n\n   .highlight {\n      position: absolute;\n      bottom: 0;\n      left: 0;\n      width: 100%;\n      height: var(--ods-sem-space-xsmall);\n      background-color: var(--ods-sem-color-brand-wasabi);\n   }\n   \n   .highlight.hidden {\n      display: none;\n   }\n\n  .icon {\n    display: inline-flex;\n    align-items: center;\n    gap: var(--ods-sem-space-small);\n  }   \n\n  .ods-tab a, .ods-tab button {\n      padding: 12px var(--ods-sem-space-medium) var(--ods-sem-space-medium) var(--ods-sem-space-medium);\n       ", "\n    }\n\n    </style>\n    <div class=\"tab-container\" part=\"odsTab\" lang=", ">", "</div>\n    <div class=\"focus-ring\"></div>\n    \n    "])), !this.isFullWidth ? 'max-width: 220px;' : '', this.isFullWidth ? 'flex: 1;' : '', this._focusWidth, this._focusHeight, cutLongLabels ? "overflow-wrap: anywhere;\n      hyphens: auto;" : '', userLang, this.getTab());
+          return x(_templateObject3$2 || (_templateObject3$2 = _taggedTemplateLiteral(["\n    <style>\n    \n   .ods-tab{\n        outline: none;\n        display: flex;\n        justify-content: center;\n        width: 100%;\n        position: relative;\n    }\n\n    :host{\n      min-width: 60px;\n      align-self: stretch;\n      ", "\n      ", "\n      position: relative;\n      }\n      :host([more-tab]){\n        min-width: 95px;\n      } \n      :host .focus-ring{\n        display: none;\n        pointer-events: none;\n      }\n\n       :host(:focus-within) .focus-ring{\n        outline: none;\n        z-index: 2;\n        position: absolute;\n        display:block;\n        top: 0px;\n        left: 0px;\n      }\n\n      :host(:focus-within) .focus-ring::after{\n        content: \"\";\n        position: fixed;\n        display:block;\n        width:", "px;\n        height:", "px;\n        border-radius: var(--ods-sem-space-sm);\n        box-shadow: 0 0 0 2px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 var(--ods-sem-space-xs) var(--ods-sem-color-utility-states-primary-on-color-focus);\n      }\n\n    \n    :host {\n      text-decoration: none;\n      line-height: var(--ods-sem-space-lg);\n      border: var(--ods-sem-space-none);\n      cursor: pointer;\n      display: inline-flex;\n      justify-content: center;\n      box-sizing: border-box;\n      background: var(--ods-sem-color-background-reverse-primary);\n      overflow: hidden;\n      margin: 0;\n    }\n\n    :host(:hover) {\n      background: var(--ods-sem-color-background-reverse-tertiary);\n    }\n\n    :host:active {\n      background: var(--ods-sem-color-background-reverse-tertiary);\n    }\n\n    :host([active-menu]) .ods-tab {\n      background: var(--ods-sem-color-background-reverse-tertiary);\n    }\n\n    :host .chevron-container{\n      display: none;\n    }\n    :host([more-tab]) .chevron-container{\n      display: flex;\n      transition: transform 0.2s ease-in-out;  \n    }\n    :host([active-menu]) .chevron-container{\n      transform: rotateZ(180deg);\n    }\n\n    :host([hide]){\n      display:none;\n    }\n\n      :host .selected{\n      background: var(--ods-sem-color-background-reverse-tertiary);\n    }\n    \n    :host .selected ods-text::part(odsText){\n        text-shadow: 0 0 1px currentColor;\n    }\n\n    :host button{\n      display: inline-flex;\n      background: none;\n      align-items: center;\n      border: none;\n      color: inherit;\n      font; inherit;\n      line-height: inherit;\n      margin: 0;\n      cursor:pointer;\n      display: inline-flex;\n      justify-content: center;\n      width: 100%;\n      text-decoration: none;\n      outline: none;\n      gap: var(--ods-sem-space-sm);\n    }\n\n    :host a {\n      display: inline-flex;\n      align-items: center;\n      width: 100%;\n      height: 100%;\n      color: inherit;\n      text-decoration: none;\n      outline: none;\n      gap: var(--ods-sem-space-sm);\n    }\n\n    .tab-container{\n      display:flex;\n      width: 100%;\n    }\n    \n\n   .highlight {\n      position: absolute;\n      bottom: 0;\n      left: 0;\n      width: 100%;\n      height: var(--ods-sem-space-xs);\n      background-color: var(--ods-sem-color-brand-wasabi);\n   }\n   \n   .highlight.hidden {\n      display: none;\n   }\n\n  .icon {\n    display: inline-flex;\n    align-items: center;\n    gap: var(--ods-sem-space-sm);\n  }   \n\n  .ods-tab a, .ods-tab button {\n      padding: 12px var(--ods-sem-space-md) var(--ods-sem-space-md) var(--ods-sem-space-md);\n       ", "\n    }\n\n    </style>\n    <div class=\"tab-container\" part=\"odsTab\" lang=", ">", "</div>\n    <div class=\"focus-ring\"></div>\n    \n    "])), !this.isFullWidth ? 'max-width: 220px;' : '', this.isFullWidth ? 'flex: 1;' : '', this._focusWidth, this._focusHeight, cutLongLabels ? "overflow-wrap: anywhere;\n      hyphens: auto;" : '', userLang, this.getTab());
         }
       }
     }], [{
@@ -8015,7 +8314,7 @@
   }(s$2);
   customElements.define("ods-tab", Tab);
 
-  var _templateObject$1;
+  var _templateObject$3;
   /**
    * Service Now Text Component
    * @input html-tag, size, weight, color
@@ -8052,7 +8351,7 @@
     }, {
       key: "render",
       value: function render() {
-        return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["\n    <style>\n    :host{\n      display: none;\n    }\n    </style>\n    <div class=\"ods-tab-panel\" role=\"", "\" aria-labelledby='tab_", "' part=\"odsTabPanel\" > \n      <slot></slot>\n    </div>\n    "])), this.slot, this.tabId);
+        return x(_templateObject$3 || (_templateObject$3 = _taggedTemplateLiteral(["\n    <style>\n    :host{\n      display: none;\n    }\n    </style>\n    <div class=\"ods-tab-panel\" role=\"", "\" aria-labelledby='tab_", "' part=\"odsTabPanel\" > \n      <slot></slot>\n    </div>\n    "])), this.slot, this.tabId);
       }
     }], [{
       key: "properties",
@@ -8067,7 +8366,7 @@
   }(s$2);
   customElements.define("ods-tab-panel", TabPanel);
 
-  var _templateObject, _templateObject2, _templateObject3, _templateObject4;
+  var _templateObject$2, _templateObject2$1, _templateObject3$1, _templateObject4;
   var TabGroup = /*#__PURE__*/function (_LitElement) {
     function TabGroup() {
       var _this;
@@ -8270,7 +8569,7 @@
     }, {
       key: "getMoreTabItem",
       value: function getMoreTabItem() {
-        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["<ods-tab more-tab ", " hide\n   @ods-active-menu-event=", ">\n      ", "\n        <ods-icon name='chevron-up' color='role-on-primary' size=\"sm\" slot='more-icon'></ods-icon>    \n    </ods-tab>"])), n(this.moreButtonRef), this._handleSetActiveMenu, this['more-label']);
+        return x(_templateObject$2 || (_templateObject$2 = _taggedTemplateLiteral(["<ods-tab more-tab ", " hide\n   @ods-active-menu-event=", ">\n      ", "\n        <ods-icon name='chevron-up' color='role-on-primary' size=\"sm\" slot='more-icon'></ods-icon>    \n    </ods-tab>"])), n(this.moreButtonRef), this._handleSetActiveMenu, this['more-label']);
       }
     }, {
       key: "calculateLabelSize",
@@ -8333,7 +8632,7 @@
         });
         if (tabMenu && tabMenu.length > 0) {
           items = tabMenu.map(function (option) {
-            return x(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n          <ods-menu-item\n            value=\"", "\"\n            @menu-item-click-event=\"", "\"\n          >\n            <ods-text size=\"sm\" color=\"text-primary\" slot=\"label\"\n              >", "</ods-text\n            >\n          </ods-menu-item>\n        "])), JSON.stringify(option), _this4.handleItemClick, option.label);
+            return x(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["\n          <ods-menu-item\n            value=\"", "\"\n            @menu-item-click-event=\"", "\"\n          >\n            <ods-text size=\"sm\" color=\"text-primary\" slot=\"label\"\n              >", "</ods-text\n            >\n          </ods-menu-item>\n        "])), JSON.stringify(option), _this4.handleItemClick, option.label);
           });
         }
         return items;
@@ -8343,7 +8642,7 @@
       value: function getDropdownMenu(tabs) {
         this._menu = null;
         if (tabs && tabs.length > 0) {
-          this._menu = x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<ods-menu\n      @menu-toggle-event=\"", "\"\n      max-width=\"184px\"\n      max-height=\"266px\"\n      anchor=\"buttonWithStart\"\n      .elRef=\"", "\"\n    >\n       ", "\n    </ods-menu>"])), this.handleMenuToggle, this.moreButtonRef.value, this.getTabOptions(tabs));
+          this._menu = x(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["<ods-menu\n      @menu-toggle-event=\"", "\"\n      max-width=\"184px\"\n      max-height=\"266px\"\n      anchor=\"buttonWithStart\"\n      .elRef=\"", "\"\n    >\n       ", "\n    </ods-menu>"])), this.handleMenuToggle, this.moreButtonRef.value, this.getTabOptions(tabs));
         }
       }
     }, {
@@ -8380,5 +8679,354 @@
     }]);
   }(s$2);
   customElements.define("ods-tab-group", TabGroup);
+
+  var _templateObject$1, _templateObject2, _templateObject3;
+  /**
+   * Service Now ODS Tag Component
+   * @input variant, inverse, label
+   * @output <ods-tag> in dom
+   */
+
+  var OdsTag = /*#__PURE__*/function (_LitElement) {
+    function OdsTag() {
+      var _this;
+      _classCallCheck(this, OdsTag);
+      _this = _callSuper(this, OdsTag);
+      _this.variant = "neutral";
+      _this.inverse = false;
+      return _this;
+    }
+    _inherits(OdsTag, _LitElement);
+    return _createClass(OdsTag, [{
+      key: "getText",
+      value: function getText() {
+        var colorMap = {
+          neutral: {
+            "true": "text-inverse",
+            "false": "role-on-neutral-container"
+          },
+          positive: {
+            "true": "text-inverse",
+            "false": "role-on-primary-container"
+          },
+          negative: {
+            "true": "text-inverse",
+            "false": "status-error-on-container"
+          },
+          warning: {
+            "true": "text-inverse",
+            "false": "status-on-warning-container"
+          },
+          informative: {
+            "true": "text-inverse",
+            "false": "role-on-secondary-container"
+          },
+          accent: {
+            "true": "text-inverse",
+            "false": "role-on-accent-container"
+          }
+        };
+        var color = (colorMap[this.variant] || {}).hasOwnProperty(this.inverse) ? colorMap[this.variant][this.inverse] : "text-inverse";
+        return x(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["\n        <ods-text color=\"", "\" size=\"sm\">", "</ods-text>\n        "])), color, this.label);
+      }
+    }, {
+      key: "handleSlotChange",
+      value: function handleSlotChange(event) {
+        var slot = event.target;
+        this.setIconColor(slot);
+      }
+    }, {
+      key: "getIconColor",
+      value: function getIconColor() {
+        var colorMap = {
+          neutral: {
+            "true": "icon-inverse",
+            "false": "role-on-neutral-container"
+          },
+          positive: {
+            "true": "icon-inverse",
+            "false": "role-on-primary-container"
+          },
+          negative: {
+            "true": "icon-inverse",
+            "false": "status-error-on-container"
+          },
+          warning: {
+            "true": "icon-inverse",
+            "false": "status-on-warning-container"
+          },
+          informative: {
+            "true": "icon-inverse",
+            "false": "role-on-secondary-container"
+          },
+          accent: {
+            "true": "icon-inverse",
+            "false": "role-on-accent-container"
+          }
+        };
+        return (colorMap[this.variant] || {}).hasOwnProperty(this.inverse) ? colorMap[this.variant][this.inverse] : "icon-inverse";
+      }
+    }, {
+      key: "getTag",
+      value: function getTag() {
+        return x(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      <div class='ods-tag ods-tag-", " ", "' >\n      <slot name=\"start\" @slotchange=", "></slot>  \n      ", "\n      <slot name=\"end\" @slotchange=", "></slot>\n      </div>\n      "])), this.variant, this.inverse ? "ods-tag-inverse-".concat(this.variant) : '', this.handleSlotChange, this.getText(), this.handleSlotChange);
+      }
+    }, {
+      key: "setIconColor",
+      value: function setIconColor(slot) {
+        var _this2 = this;
+        var assignedNodes = slot.assignedNodes({
+          flatten: true
+        });
+        assignedNodes.forEach(function (node) {
+          if (node.nodeName === 'ODS-ICON') {
+            var iconElement = node.shadowRoot ? node.shadowRoot.querySelector('.ods-icon--md') : node;
+            if (iconElement) {
+              iconElement.classList.remove('ods-icon--md');
+              iconElement.style.height = '14px';
+              iconElement.style.width = '14px';
+            }
+            var color = _this2.getIconColor();
+            node.setAttribute('color', color);
+          }
+        });
+      }
+    }, {
+      key: "validateSlot",
+      value: function validateSlot() {
+        var _this3 = this;
+        var query = this.shadowRoot.querySelectorAll('slot[name="start"], slot[name="end"]');
+        query.forEach(function (slot) {
+          _this3.setIconColor(slot);
+        });
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        this.validateSlot();
+        return x(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  \n    <style>\n    :host{\n      display: inline-flex;\n      margin: var(--ods-sem-space-xs);\n    }\n    \n    .ods-tag {\n      border-radius: var(--ods-sem-radius-full);\n      text-decoration: none;\n      cursor: pointer;\n      justify-content: center;\n      box-sizing: border-box;\n      display: inline-flex;\n      align-items: center;\n      padding: var(--Padding-Vertical, 1px) var(--Padding-Horizontal, 12px);\n      gap: var(--Gap, 6px);\n      pointer-events: none;\n    }\n\n    .ods-tag-neutral{\n     background: var(--ods-sem-color-roles-neutral-container);\n    }\n    \n    .ods-tag-positive{\n     background: var(--ods-sem-color-status-roles-success-container);\n    }\n\n    .ods-tag-warning{\n    background: var(--ods-sem-color-status-roles-warning-container);\n    }\n\n    .ods-tag-negative{\n    background: var(--ods-sem-color-status-roles-error-container);\n    }\n\n    .ods-tag-informative{\n     background: var(--ods-sem-color-roles-secondary-container);\n    }\n\n    .ods-tag-accent{\n     background: var(--ods-sem-color-roles-accent-container);\n    }\n    \n\n    .ods-tag-inverse-neutral{\n     background: var(--ods-sem-color-roles-neutral);\n\n    }\n\n    .ods-tag-inverse-positive{\n    background: var(--ods-sem-color-status-roles-success);\n    }\n    \n     .ods-tag-inverse-warning{\n     background: var(--ods-sem-color-status-roles-warning);\n    }\n    \n     .ods-tag-inverse-negative{\n     background: var(--ods-sem-color-status-roles-error);\n     }\n\n     .ods-tag-inverse-informative{\n     background: var(--ods-sem-color-status-roles-info);\n     }\n\n     .ods-tag-inverse-accent{\n      background: var(--ods-sem-color-roles-accent);\n     }\n    \n    </style>\n    <div class=\"tag-container\">", "\n    </div>\n      "])), this.getTag());
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return {
+          variant: {
+            type: String
+          },
+          inverse: {
+            type: Boolean
+          },
+          label: {
+            type: String
+          }
+        };
+      }
+    }]);
+  }(s$2);
+  customElements.define('ods-tag', OdsTag);
+
+  /**
+   * Handle String to Boolean
+   */
+  function getBoolean(str) {
+    try {
+      str = str.trim().toLowerCase();
+      if (str === "true" || str === true) {
+        return true;
+      } else if (str === "false" || str === false) {
+        return false;
+      } else if (str === "1") {
+        return true;
+      } else if (str === "0") {
+        return false;
+      }
+      return false;
+    } catch (err) {
+      return false;
+    }
+  }
+
+  /**
+   * Check if prop is missing to render empty component
+   */
+  function isAvailable(arg) {
+    if (arg === undefined || arg === '' || arg === null) {
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * Get Random ID
+   */
+  function getRandomStr() {
+    return Math.random().toString(36).substr(2, 9);
+  }
+
+  var _templateObject;
+
+  /**
+   * Service Now OdsCheckbox Component
+   * @input label, type
+   * @output <ods-checkbox> in dom
+   */
+  var OdsCheckbox = /*#__PURE__*/function (_LitElement) {
+    function OdsCheckbox() {
+      var _this;
+      _classCallCheck(this, OdsCheckbox);
+      _this = _callSuper(this, OdsCheckbox);
+      _this.isWrapping = false;
+      _this.NgApi = null;
+      return _this;
+    }
+    _inherits(OdsCheckbox, _LitElement);
+    return _createClass(OdsCheckbox, [{
+      key: "handleSelect",
+      value: function handleSelect() {
+        var el = this.shadowRoot.querySelector(".form-check-input");
+        var value = getBoolean(this.selected);
+        el.checked = value;
+      }
+    }, {
+      key: "handleIndeterminate",
+      value: function handleIndeterminate() {
+        var el = this.shadowRoot.querySelector(".form-check-input");
+        var isIndeterminate = getBoolean(this.indeterminate);
+        if (isIndeterminate) {
+          el.indeterminate = true;
+        } else {
+          el.indeterminate = false;
+        }
+      }
+    }, {
+      key: "checkLabelWrapping",
+      value: function checkLabelWrapping() {
+        var _this2 = this;
+        var childElement = this.shadowRoot.querySelector("ods-text");
+        childElement.updateComplete.then(function () {
+          var spanElement = childElement.shadowRoot.querySelector("span");
+          var offsetHeight = spanElement.offsetHeight;
+          var lineHeight = parseFloat(getComputedStyle(spanElement).lineHeight);
+          if (offsetHeight > lineHeight) {
+            _this2.isWrapping = true;
+          } else {
+            _this2.isWrapping = false;
+          }
+        });
+      }
+    }, {
+      key: "handleInputChange",
+      value: function handleInputChange(e) {
+        var el = this.shadowRoot.querySelector(".form-check-input");
+        this.customEventHandler(el.checked, 'ods-checkbox-change');
+        this.NgApi.triggerNg(el.checked, e);
+      }
+    }, {
+      key: "handleBlurEvent",
+      value: function handleBlurEvent(e) {
+        var el = this.shadowRoot.querySelector(".form-check-input");
+        this.customEventHandler(el.checked, 'ods-checkbox-blur');
+        this.NgApi.triggerNg(el.checked, e);
+      }
+    }, {
+      key: "customEventHandler",
+      value: function customEventHandler(isChecked, event) {
+        var obj = {};
+        if (isChecked) {
+          obj[this.name] = this.value;
+          obj['isChecked'] = true;
+        } else {
+          obj[this.name] = null;
+          obj['isChecked'] = true;
+        }
+        var myEvent = new CustomEvent(event, {
+          detail: _objectSpread2({}, obj),
+          bubbles: true,
+          composed: true
+        });
+        this.dispatchEvent(myEvent);
+      }
+    }, {
+      key: "firstUpdated",
+      value: function firstUpdated() {
+        _get(_getPrototypeOf(OdsCheckbox.prototype), "firstUpdated", this).call(this);
+        this.checkLabelWrapping();
+        this.handleIndeterminate();
+      }
+    }, {
+      key: "updated",
+      value: function updated(changedProperties) {
+        _get(_getPrototypeOf(OdsCheckbox.prototype), "updated", this).call(this);
+        var label = changedProperties.get("label");
+        var hideLabel = changedProperties.get("hide-label");
+        if (label != undefined || hideLabel != undefined) {
+          this.checkLabelWrapping();
+        }
+        var selected = changedProperties.get("selected");
+        if (selected != undefined) {
+          this.handleSelect();
+        }
+        var indteriminate = changedProperties.get("indeterminate");
+        if (indteriminate != undefined) {
+          this.handleIndeterminate();
+        }
+      }
+    }, {
+      key: "connectedCallback",
+      value: function connectedCallback() {
+        _get(_getPrototypeOf(OdsCheckbox.prototype), "connectedCallback", this).call(this);
+        this.NgApi = new OdsBridgeApi(this);
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var randomId = getRandomStr();
+        var isDisabled = getBoolean(this["is-disabled"]);
+        var isReadOnly = isDisabled ? "readonly" : "";
+        var isInDeterminate = getBoolean(this.indeterminate) ? "indeterminate" : "";
+        var isChecked = getBoolean(this.selected);
+        var isInvalid = getBoolean(this["is-invalid"]);
+        var isLabelHide = getBoolean(this["hide-label"]) ? "hide-label" : "";
+        if (!(isAvailable(this.name) && isAvailable(this.value))) {
+          return null;
+        }
+        return x(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <style>\n        * {\n          margin: var(--ods-sem-space-none);\n          padding: var(--ods-sem-space-none);\n          box-sizing:border-box;\n        }\n        .ods-checkbox-container{\n            display:inline-flex;\n            gap:12px;\n            padding:10px ", ";\n            align-items:", ";\n            .form-check-label{\n              margin:0;\n              padding:0;\n              word-break: break-word;\n              cursor:pointer;\n              width:100%;\n              display:inline-block;\n              ods-text{\n                display:inline-block;\n                height:auto;\n                line-height:var(--ods-sem-space-lg);\n                height:var(--ods-sem-space-lg);\n              }\n            }\n            .hide-label{\n              display:none;\n            }\n            .form-check-input {\n              border-radius: var(--ods-sem-radius-sm);\n              min-width: var(--ods-sem-space-lg);\n              height: var(--ods-sem-space-lg);\n              vertical-align: top;\n              cursor:pointer;\n              margin-top: ", ";\n              background-color: var(--ods-sem-color-roles-primary-on-primary);\n              background-repeat: no-repeat;\n              background-position: center;\n              background-size: auto;\n              box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-primary-on-color-default);\n           \n              -webkit-appearance: none;\n              -moz-appearance: none;\n              appearance: none;\n              -webkit-print-color-adjust: exact;\n              color-adjust: exact;\n              &:focus-visible {\n                outline: none;\n              }\n              &:focus{\n                background-color: var(--ods-sem-color-roles-primary-on-primary);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-primary-on-color-focus);\n              }\n              &:hover {\n                background-color: var(--ods-sem-color-utility-states-primary-hover);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-primary-on-color-hover);\n              }\n              &:active{\n                background-color: var(--ods-sem-color-utility-states-primary-pressed);\n                box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-primary-on-color-pressed);\n              }\n            }\n            &:focus-within {\n              border-radius: var(--ods-sem-radius-sm);\n              border:none;\n              box-shadow: 0 0 0 1px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 1px var(--ods-sem-color-roles-primary-on-primary), 0 0 0 3px var(--ods-sem-color-utility-states-focus);\n              background-color: var(--ods-sem-color-roles-primary-on-primary);\n            }\n        }\n        .ods-checkbox-container.readonly{\n          cursor: not-allowed;\n           .form-check-input{\n            pointer-events: none;\n            background-color:  var(--ods-sem-color-utility-states-disabled-container);\n            opacity: 0.5;\n            box-shadow: 0 0 0 2px var( --ods-sem-color-utility-states-disabled-content);\n        }\n        .form-check-label{\n          pointer-events: none;\n          opacity: 0.5;\n        }\n      }\n      .form-check-input:checked[type=\"checkbox\"],.form-check-input:indeterminate {\n          background-image:url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M15.8339%203.16611C16.0554%203.38759%2016.0554%203.75195%2015.8339%203.97343L6.11744%2013.6899C5.89596%2013.9114%205.53159%2013.9114%205.31011%2013.6899L0.166108%208.54588C-0.0553695%208.3244%20-0.0553695%207.96004%200.166108%207.73856C0.387587%207.51708%200.751954%207.51708%200.973432%207.73856L5.71378%2012.4789L15.0266%203.16611C15.248%202.94463%2015.6124%202.94463%2015.8339%203.16611Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E');\n          background-color:var(--ods-sem-color-roles-primary);\n          &:focus{\n            background-color: var(--ods-sem-color-utility-states-primary-on-color-focus);\n          }\n          &:hover{\n            background-color:var(--ods-sem-color-utility-states-primary-on-color-hover);\n          }\n          &:active{\n            background-color: var(--ods-sem-color-utility-states-primary-on-color-pressed);\n          }\n        }\n      .ods-checkbox-container.readonly{\n          cursor: not-allowed;\n          .form-check-input:checked[type=\"checkbox\"] {\n            pointer-events: none;\n            background-color:  var(--ods-sem-color-utility-states-disabled-content);\n            opacity: 0.5;\n            box-shadow: 0 0 0 2px var( --ods-sem-color-utility-states-disabled-content);\n        }\n      }\n      .ods-checkbox-container{\n          .form-check-input.indeterminate:indeterminate[type=\"checkbox\"] {\n            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2IDcuNjE1MzhDMTYgNy45NTM4NSAxNS43MjMxIDguMjMwNzcgMTUuMzg0NiA4LjIzMDc3SDAuNjE1Mzg1QzAuMjc2OTIzIDguMjMwNzcgMCA3Ljk1Mzg1IDAgNy42MTUzOEMwIDcuMjc2OTIgMC4yNzY5MjMgNyAwLjYxNTM4NSA3SDE1LjM4NDZDMTUuNzIzMSA3IDE2IDcuMjc2OTIgMTYgNy42MTUzOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=')\n        }\n      }\n      .ods-checkbox-container .error{\n          box-shadow: 0 0 0 2px var(--ods-sem-color-status-roles-error);\n          &:focus{\n            box-shadow: 0 0 0 2px var(--ods-sem-color-status-roles-error);\n            box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-focus);\n          }\n          &:hover{\n            background-color: var(--ods-sem-color-utility-states-error-hover);\n            box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-hover);\n          }\n          &:active{\n            background-color: var(--ods-sem-color-utility-states-error-pressed);\n            box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-pressed);\n          }   \n      }\n      .ods-checkbox-container .error{\n        &:checked,&:indeterminate{\n          background-color:  var(--ods-sem-color-status-roles-error);\n          &:focus{\n            background-color:var(--ods-sem-color-utility-states-error-on-color-focus);\n            box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-focus);\n          }\n          &:hover{\n            background-color:var(--ods-sem-color-utility-states-error-on-color-hover);\n            box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-hover);\n          }\n          &:active{\n            background-color:var(--ods-sem-color-utility-states-error-on-color-pressed);\n            box-shadow: 0 0 0 2px var(--ods-sem-color-utility-states-error-on-color-pressed);\n          }\n        }\n      }\n      </style>\n      <div class=\"ods-checkbox-container ", " \">\n          <input tabindex=\"", "\"\n            class=\"form-check-input ", " ", "\"\n            type=\"checkbox\"\n            id=\"ods_checkbox_", "\" \n            aria-disabled=\"", "\"\n            aria-describedby=\"checkboxdescription\"\n            ?checked=\"", "\"\n            ?is-invalid=\"", "\"\n            value=\"", "\"\n            @input=\"", "\"\n            @blur=\"", "\"\n          />\n          <label class=\"form-check-label ", "\" for=\"ods_checkbox_", "\">\n          <ods-text class=\"custom-tag\" html-tag=\"span\" size=\"md\" weight=\"regular\" color=\"text-primary\">\n          ", "\n          </ods-text>\n          </label>\n          </div>\n        </div>\n      </div>\n    "])), getBoolean(this["hide-label"]) ? "10px" : "2px", this.isWrapping ? "start" : "center", this.isWrapping ? "6px" : "0px", isReadOnly, isDisabled ? -1 : 0, isInDeterminate, isInvalid ? "error" : "", randomId, this["is-disabled"], isChecked, isInvalid, this.value, this.handleInputChange, this.handleBlurEvent, isLabelHide, randomId, this.label);
+      }
+    }], [{
+      key: "properties",
+      get: function get() {
+        return {
+          "is-disabled": {
+            type: String
+          },
+          "hide-label": {
+            type: String
+          },
+          indeterminate: {
+            type: String
+          },
+          "is-invalid": {
+            type: String
+          },
+          label: {
+            type: String
+          },
+          name: {
+            type: String
+          },
+          selected: {
+            type: String
+          },
+          value: {
+            type: String
+          },
+          isWrapping: {
+            state: true
+          }
+        };
+      }
+    }]);
+  }(s$2);
+  customElements.define("ods-checkbox", OdsCheckbox);
 
 }));
