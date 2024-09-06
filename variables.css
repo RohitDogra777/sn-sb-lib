@@ -1,1 +1,157 @@
-*{--ods-sem-color-roles-primary: #298319;--ods-sem-color-roles-primary-on-primary: #FFFFFF;--ods-sem-color-roles-primary-container: #B3F7A8;--ods-sem-color-roles-primary-on-primary-container: #0C2708;--ods-sem-color-roles-secondary: #395F72;--ods-sem-color-roles-secondary-on-secondary: #FFFFFF;--ods-sem-color-roles-secondary-container: #C9E8F8;--ods-sem-color-roles-secondary-on-secondary-container: #002131;--ods-sem-color-roles-neutral: #5E5E5E;--ods-sem-color-roles-neutral-on-neutral: #FFFFFF;--ods-sem-color-roles-neutral-container: #E1E1E1;--ods-sem-color-roles-neutral-on-neutral-container: #1B1B1B;--ods-sem-color-roles-accent: #4A5CA4;--ods-sem-color-roles-accent-on-accent: #FFFFFF;--ods-sem-color-roles-accent-container: #DFE2FB;--ods-sem-color-roles-accent-on-accent-container: #041750;--ods-sem-color-status-roles-error: #AB2D25;--ods-sem-color-status-roles-error-on-error: #FFFFFF;--ods-sem-color-status-roles-error-container: #F9DBD7;--ods-sem-color-status-roles-error-on-error-container: #3B0605;--ods-sem-color-status-roles-warning: #7A571A;--ods-sem-color-status-roles-warning-on-warning: #FFFFFF;--ods-sem-color-status-roles-warning-container: #FADEB5;--ods-sem-color-status-roles-warning-on-warning-container: #261803;--ods-sem-color-status-roles-success: #298319;--ods-sem-color-status-roles-success-on-success: #FFFFFF;--ods-sem-color-status-roles-success-container: #B3F7A8;--ods-sem-color-status-roles-success-on-success-container: #0C2708;--ods-sem-color-status-roles-info: #395F72;--ods-sem-color-status-roles-info-on-info: #FFFFFF;--ods-sem-color-status-roles-info-container: #C9E8F8;--ods-sem-color-status-roles-info-on-info-container: #002131;--ods-sem-color-text-primary: #1B1B1B;--ods-sem-color-text-secondary: #3B3B3B;--ods-sem-color-text-tertiary: #5E5E5E;--ods-sem-color-text-inverse: #FFFFFF;--ods-sem-color-icon-primary: #1B1B1B;--ods-sem-color-icon-secondary: #3B3B3B;--ods-sem-color-icon-tertiary: #5E5E5E;--ods-sem-color-icon-inverse: #FFFFFF;--ods-sem-color-background-primary: #FFFFFF;--ods-sem-color-background-secondary: #F5FBFE;--ods-sem-color-background-tertiary: #F9FDFE;--ods-sem-color-background-reverse-primary: #032D42;--ods-sem-color-background-reverse-secondary: #1A4053;--ods-sem-color-background-reverse-tertiary: #244A5D;--ods-sem-color-border-interactive-component: #767676;--ods-sem-color-border-decorative-primary: #C5C5C5;--ods-sem-color-border-decorative-secondary: #C9E8F8;--ods-sem-color-brand-wasabi: #62D84E;--ods-sem-color-brand-infinite-blue: #032D42;--ods-sem-color-utility-transparent: #FFFFFF;--ods-sem-color-utility-shadow: #3B3B3B;--ods-sem-color-utility-states-focus: var(--ods-sem-color-roles-primary);--ods-sem-color-utility-states-disabled-container: #C5C5C5;--ods-sem-color-utility-states-disabled-content: #515151;--ods-sem-color-utility-states-primary-default: #8FDA83;--ods-sem-color-utility-states-primary-hover: rgba(143, 218, 131, 0.4);--ods-sem-color-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);--ods-sem-color-utility-states-primary-focus: rgba(143, 218, 131, 1);--ods-sem-color-utility-states-secondary-default: rgba(162, 200, 219, 1);--ods-sem-color-utility-states-secondary-hover: rgba(162, 200, 219, 0.4);--ods-sem-color-utility-states-secondary-pressed: rgba(162, 200, 219, 0.64);--ods-sem-color-utility-states-secondary-focus: rgba(162, 200, 219, 1);--ods-sem-color-utility-states-neutral-default: rgba(197, 197, 197, 1);--ods-sem-color-utility-states-neutral-hover: rgba(197, 197, 197, 0.4);--ods-sem-color-utility-states-neutral-pressed: rgba(197, 197, 197, 0.64);--ods-sem-color-utility-states-neutral-focus: rgba(197, 197, 197, 1);--ods-sem-color-utility-states-error-default: rgba(245, 183, 174, 1);--ods-sem-color-utility-states-error-hover: rgba(245, 183, 174, 0.64);--ods-sem-color-utility-states-error-pressed: rgba(245, 183, 174, 0.64);--ods-sem-color-utility-states-interactive-hover: rgba(118, 118, 118, 0.4);--ods-sem-color-utility-states-interactive-pressed: rgba(118, 118, 118, 0.64);--ods-sem-color-utility-states-error-focus: rgba(245, 183, 174, 1);--ods-sem-color-utility-states-on-color-default: #000000;--ods-sem-color-utility-states-primary-on-color-default: color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) 0%);--ods-sem-color-utility-states-primary-on-color-hover: color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) 24%);--ods-sem-color-utility-states-primary-on-color-pressed: color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) 56%);--ods-sem-color-utility-states-primary-on-color-focus: color-mix(in srgb, var(--ods-sem-color-roles-primary), var(--ods-sem-color-utility-states-on-color-default) 0%);--ods-sem-color-utility-states-secondary-on-color-default: color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) 0%);--ods-sem-color-utility-states-secondary-on-color-hover: color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) 24%);--ods-sem-color-utility-states-secondary-on-color-pressed: color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) 56%);--ods-sem-color-utility-states-secondary-on-color-focus: color-mix(in srgb, var(--ods-sem-color-roles-secondary), var(--ods-sem-color-utility-states-on-color-default) 0%);--ods-sem-color-utility-states-neutral-on-color-default: color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) 0%);--ods-sem-color-utility-states-neutral-on-color-hover: color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) 24%);--ods-sem-color-utility-states-neutral-on-color-pressed: color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) 56%);--ods-sem-color-utility-states-neutral-on-color-focus: color-mix(in srgb, var(--ods-sem-color-roles-neutral), var(--ods-sem-color-utility-states-on-color-default) 0%);--ods-sem-color-utility-states-error-on-color-default: color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) 0%);--ods-sem-color-utility-states-error-on-color-hover: color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) 24%);--ods-sem-color-utility-states-error-on-color-pressed: color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) 56%);--ods-sem-color-utility-states-error-on-color-focus: color-mix(in srgb, var(--ods-sem-color-status-roles-error), var(--ods-sem-color-utility-states-on-color-default) 0%);--ods-sem-space-none: 0;--ods-sem-space-xs: 4px;--ods-sem-space-sm: 8px;--ods-sem-space-md: 16px;--ods-sem-space-lg: 24px;--ods-sem-space-xl: 32px;--ods-sem-space-xxl: 40px;--ods-sem-space-xxxl: 48px;--ods-sem-radius-none: 0;--ods-sem-radius-sm: 4px;--ods-sem-radius-md: 8px;--ods-sem-radius-lg: 16px;--ods-sem-radius-xl: 24px;--ods-sem-radius-full: 999px;--ods-sem-shadow-color: rgba(59, 59, 59, 0.2);--ods-sem-shadow-sm-x: 0;--ods-sem-shadow-sm-y: 2px;--ods-sem-shadow-sm-blur: 4px;--ods-sem-shadow-sm-spread: 0;--ods-sem-shadow-md-x: 0;--ods-sem-shadow-md-y: 4px;--ods-sem-shadow-md-blur: 8px;--ods-sem-shadow-md-spread: 0;--ods-sem-shadow-lg-x: 0;--ods-sem-shadow-lg-y: 8px;--ods-sem-shadow-lg-blur: 12px;--ods-sem-shadow-lg-spread: 0;--ods-sem-shadow-xl-x: 0;--ods-sem-shadow-xl-y: 12px;--ods-sem-shadow-xl-blur: 16px;--ods-sem-shadow-xl-spread: 0;--ods-ref-text-medium-regular: 16px;--ods-font-family-gilroy-medium: Gilroy-Medium,sans-serif;--ods-font-weight-600: 600;--ods-avatar-xxl-font-size: 72px;--ods-avatar-xl-font-size: 32px;--ods-avatar-lg-font-size: 20px;--ods-avatar-md-font-size: 14px;--ods-avatar-sm-font-size: 10px;--ods-sem-icon-sm: 16px;--ods-sem-icon-md: 24px;--ods-sem-icon-lg: 32px;--ods-sem-avatar-size-xxl: 180px;--ods-sem-avatar-size-xl: 84px;--ods-sem-avatar-size-lg: 48px;--ods-sem-avatar-size-md: 32px;--ods-sem-avatar-size-sm: 24px;--ods-sem-icon-button-height: 44px;--ods-sem-icon-button-width: 44px;--ods-sem-input-padding: 6px 16px;}
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --ods-sem-color-roles-primary: #298319; /* Main interactive color */
+  --ods-sem-color-roles-primary-on-primary: #ffffff; /* Used on top of primary */
+  --ods-sem-color-roles-primary-container: #aff7a3; /* Container color based on primary */
+  --ods-sem-color-roles-primary-on-primary-container: #0c2708; /* Used on top of primary container */
+  --ods-sem-color-roles-secondary: #395f72; /* Secondary interactive color */
+  --ods-sem-color-roles-secondary-on-secondary: #ffffff; /* Used on top of secondary */
+  --ods-sem-color-roles-secondary-container: #c9e8f8; /* Container color based on secondary */
+  --ods-sem-color-roles-secondary-on-secondary-container: #002131; /* Used on top of secondary container */
+  --ods-sem-color-roles-neutral: #5e5e5e; /* Can be used for neutral statuses */
+  --ods-sem-color-roles-neutral-on-neutral: #ffffff; /* Used on top of neutral */
+  --ods-sem-color-roles-neutral-container: #e1e1e1; /* Container color based on neutral */
+  --ods-sem-color-roles-neutral-on-neutral-container: #1b1b1b; /* Used on top of neutral container */
+  --ods-sem-color-roles-accent: #4a5ca4; /* Can be used for special statuses */
+  --ods-sem-color-roles-accent-on-accent: #ffffff; /* Used on top of accent */
+  --ods-sem-color-roles-accent-container: #dfe2fb; /* Container color based on accent */
+  --ods-sem-color-roles-accent-on-accent-container: #041750; /* Used on top of accent container */
+  --ods-sem-color-status-roles-error: #ab2d25; /* Error or negative statuses */
+  --ods-sem-color-status-roles-error-on-error: #ffffff; /* Used on top of error */
+  --ods-sem-color-status-roles-error-container: #f9dbd7; /* Container color based on error */
+  --ods-sem-color-status-roles-error-on-error-container: #3b0605; /* Used on top of error container */
+  --ods-sem-color-status-roles-warning: #7a571a; /* Warning or caution status */
+  --ods-sem-color-status-roles-warning-on-warning: #ffffff; /* Used on top of warning */
+  --ods-sem-color-status-roles-warning-container: #fadeb5; /* Container color based on warning */
+  --ods-sem-color-status-roles-warning-on-warning-container: #261803; /* Used on top of warning container */
+  --ods-sem-color-status-roles-success: #298319; /* Success or positive status */
+  --ods-sem-color-status-roles-success-on-success: #ffffff; /* Used on top of success */
+  --ods-sem-color-status-roles-success-container: #aff7a3; /* Container color based on success */
+  --ods-sem-color-status-roles-success-on-success-container: #0c2708; /* Used on top of success container */
+  --ods-sem-color-status-roles-info: #395f72; /* Informative status, non-urgent */
+  --ods-sem-color-status-roles-info-on-info: #ffffff; /* Used on top of info */
+  --ods-sem-color-status-roles-info-container: #c9e8f8; /* Container color based on info */
+  --ods-sem-color-status-roles-info-on-info-container: #002131; /* Used on top of info container */
+  --ods-sem-color-background-primary: #ffffff; /* Default light background color */
+  --ods-sem-color-background-secondary: #f5fbfe; /* Alternative background color */
+  --ods-sem-color-background-tertiary: #f8f8f8;
+  --ods-sem-color-background-reverse-primary: #032d42;
+  --ods-sem-color-background-reverse-secondary: #1a4053;
+  --ods-sem-color-background-reverse-tertiary: #3b3b3b;
+  --ods-sem-color-text-primary: #1b1b1b; /* Main text color for content, all body text and headings */
+  --ods-sem-color-text-secondary: #3b3b3b; /* Text of slightly lower importance */
+  --ods-sem-color-text-tertiary: #5e5e5e; /* Placeholder content, captions, low-priority text */
+  --ods-sem-color-text-inverse: #ffffff; /* Used on darker backgrounds */
+  --ods-sem-color-icon-primary: #1b1b1b; /* Icons adjacent to text primary or icon buttons */
+  --ods-sem-color-icon-secondary: #3b3b3b; /* Icons adjacent to text secondary */
+  --ods-sem-color-icon-tertiary: #5e5e5e; /* Icons adjacent to text tertiary */
+  --ods-sem-color-icon-inverse: #ffffff; /* Used on darker backgrounds */
+  --ods-sem-color-border-interactive-component: #767676;
+  --ods-sem-color-border-decorative-primary: #c5c5c5;
+  --ods-sem-color-border-decorative-secondary: #c9e8f8;
+  --ods-sem-color-brand-wasabi: #62d84e;
+  --ods-sem-color-brand-infinite-blue: #032d42;
+  --ods-sem-color-utility-transparent: rgba(255, 255, 255, 0);
+  --ods-sem-color-utility-states-focus: #298319;
+  --ods-sem-color-utility-states-disabled-container: #c5c5c5;
+  --ods-sem-color-utility-states-disabled-content: #515151;
+  --ods-sem-color-utility-states-primary-default: rgba(143, 218, 131, 0);
+  --ods-sem-color-utility-states-primary-hover: rgba(143, 218, 131, 0.4);
+  --ods-sem-color-utility-states-primary-pressed: rgba(143, 218, 131, 0.64);
+  --ods-sem-color-utility-states-primary-focus: rgba(143, 218, 131, 0);
+  --ods-sem-color-utility-states-secondary-default: rgba(162, 200, 219, 0);
+  --ods-sem-color-utility-states-secondary-hover: rgba(162, 200, 219, 0.4);
+  --ods-sem-color-utility-states-secondary-pressed: rgba(162, 200, 219, 0.64);
+  --ods-sem-color-utility-states-secondary-focus: rgba(162, 200, 219, 0);
+  --ods-sem-color-utility-states-neutral-default: rgba(197, 197, 197, 0);
+  --ods-sem-color-utility-states-neutral-hover: rgba(197, 197, 197, 0.4);
+  --ods-sem-color-utility-states-neutral-pressed: rgba(197, 197, 197, 0.64);
+  --ods-sem-color-utility-states-neutral-focus: rgba(197, 197, 197, 0);
+  --ods-sem-color-utility-states-error-default: rgba(245, 183, 174, 0);
+  --ods-sem-color-utility-states-error-hover: rgba(245, 183, 174, 0.4);
+  --ods-sem-color-utility-states-error-pressed: rgba(245, 183, 174, 0.64);
+  --ods-sem-color-utility-states-error-focus: rgba(245, 183, 174, 0);
+  --ods-sem-color-utility-states-on-color-default: rgba(0, 0, 0, 0);
+  --ods-sem-color-utility-states-on-color-hover: rgba(0, 0, 0, 0.24);
+  --ods-sem-color-utility-states-on-color-pressed: rgba(0, 0, 0, 0.56);
+  --ods-sem-color-utility-states-on-color-focus: rgba(0, 0, 0, 0);
+  --ods-sem-color-utility-states-fixed-primary-default: #298319;
+  --ods-sem-color-utility-states-fixed-primary-hover: #1f6413; /* DEVELOPERS: Do not use hex value, use On Color/Primary/Hover. */
+  --ods-sem-color-utility-states-fixed-primary-pressed: #123a0b;
+  --ods-sem-color-utility-states-fixed-primary-focus: #298319; /* DEVELOPERS: Do not use hex value, use On Color/Primary/Pressed. */
+  --ods-sem-color-utility-states-fixed-error-default: #ab2d25;
+  --ods-sem-color-utility-states-fixed-error-hover: #82221c; /* DEVELOPERS: Do not use hex value, use On Color/Error/Hover. */
+  --ods-sem-color-utility-states-fixed-error-pressed: #4b1410; /* DEVELOPERS: Do not use hex value, use On Color/Error/Pressed. */
+  --ods-sem-color-utility-states-fixed-error-focus: #ab2d25;
+  --ods-sem-space-none: 0px;
+  --ods-sem-space-xs: 4px;
+  --ods-sem-space-sm: 8px;
+  --ods-sem-space-md: 16px;
+  --ods-sem-space-lg: 24px;
+  --ods-sem-space-xl: 32px;
+  --ods-sem-space-xxl: 40px;
+  --ods-sem-space-xxxl: 48px;
+  --ods-sem-radius-none: 0px;
+  --ods-sem-radius-sm: 4px;
+  --ods-sem-radius-md: 8px;
+  --ods-sem-radius-lg: 16px;
+  --ods-sem-radius-full: 9999px;
+  --ods-sem-shadow-color: rgba(59, 59, 59, 0.25);
+  --ods-sem-shadow-none-x: 0px;
+  --ods-sem-shadow-none-y: 0px;
+  --ods-sem-shadow-none-blur: 0px;
+  --ods-sem-shadow-none-spread: 0px;
+  --ods-sem-shadow-none-color: rgba(59, 59, 59, 0.25);
+  --ods-sem-shadow-sm-x: 0px;
+  --ods-sem-shadow-sm-y: 2px;
+  --ods-sem-shadow-sm-blur: 4px;
+  --ods-sem-shadow-sm-spread: 0px;
+  --ods-sem-shadow-sm-color: rgba(59, 59, 59, 0.25);
+  --ods-sem-shadow-md-x: 0px;
+  --ods-sem-shadow-md-y: 4px;
+  --ods-sem-shadow-md-blur: 8px;
+  --ods-sem-shadow-md-spread: 0px;
+  --ods-sem-shadow-md-color: rgba(59, 59, 59, 0.25);
+  --ods-sem-shadow-lg-x: 0px;
+  --ods-sem-shadow-lg-y: 8px;
+  --ods-sem-shadow-lg-blur: 12px;
+  --ods-sem-shadow-lg-spread: 0px;
+  --ods-sem-shadow-lg-color: rgba(59, 59, 59, 0.25);
+  --ods-sem-avatar-font-size-xxl: 72px;
+  --ods-sem-avatar-font-size-xl: 32px;
+  --ods-sem-avatar-font-size-lg: 20px;
+  --ods-sem-avatar-font-size-md: 14px;
+  --ods-sem-avatar-font-size-sm: 10px;
+  --ods-sem-avatar-size-xxl: 180px;
+  --ods-sem-avatar-size-xl: 84px;
+  --ods-sem-avatar-size-lg: 48px;
+  --ods-sem-avatar-size-md: 32px;
+  --ods-sem-avatar-size-sm: 24px;
+  --ods-sem-icon-lg: 32px;
+  --ods-sem-icon-md: 24px;
+  --ods-sem-icon-sm: 16px;
+  --ods-sem-icon-button-height: 44px;
+  --ods-sem-icon-button-width: 44px;
+  --ods-sem-input-padding: 6px 10px;
+  --ods-sem-font-family-gilroy-md: Gilroy-Medium,sans-serif;
+  --ods-sem-font-weight-600: 600;
+  --ods-sem-color-utility-states-primary-on-color-default: #298319;
+  --ods-sem-color-utility-states-primary-on-color-hover: color-mix(in srgb, #298319, #1b1b1b 24%);
+  --ods-sem-color-utility-states-primary-on-color-pressed: color-mix(in srgb, #298319, #1b1b1b 56%);
+  --ods-sem-color-utility-states-primary-on-color-focus: #298319;
+  --ods-sem-color-utility-states-secondary-on-color-default: #395f72;
+  --ods-sem-color-utility-states-secondary-on-color-hover: color-mix(in srgb, #395f72, #1b1b1b 24%);
+  --ods-sem-color-utility-states-secondary-on-color-pressed: color-mix(in srgb, #395f72, #1b1b1b 56%);
+  --ods-sem-color-utility-states-secondary-on-color-focus: #395f72;
+  --ods-sem-color-utility-states-neutral-on-color-default: #5e5e5e;
+  --ods-sem-color-utility-states-neutral-on-color-hover: color-mix(in srgb, #5e5e5e, #1b1b1b 24%);
+  --ods-sem-color-utility-states-neutral-on-color-pressed: color-mix(in srgb, #5e5e5e, #1b1b1b 56%);
+  --ods-sem-color-utility-states-neutral-on-color-focus: #5e5e5e;
+  --ods-sem-color-utility-states-error-on-color-default: #ab2d25;
+  --ods-sem-color-utility-states-error-on-color-hover: color-mix(in srgb, #ab2d25, #1b1b1b 24%);
+  --ods-sem-color-utility-states-error-on-color-pressed: color-mix(in srgb, #ab2d25, #1b1b1b 56%);
+  --ods-sem-color-utility-states-error-on-color-focus: #ab2d25;
+}
